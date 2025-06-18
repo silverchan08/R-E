@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  18 JUN 2025 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  18 JUN 2025 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -246,7 +246,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--26
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
@@ -267,7 +267,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  61i,7n,69p,488b,262s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb>
-Output written on test.pdf (2 pages, 285430 bytes).
+Output written on test.pdf (2 pages, 284590 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream

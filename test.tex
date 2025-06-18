@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{kotex}
+\usepackage{amsmath}
 
 \title{R\&E 참고용}
 \author{조은찬 24-097}
@@ -22,6 +23,53 @@ $\mathbf{Definition}$ Let any exception row(with three '1's) $i$ and it's two ou
 $\mathbf{Theorem}$ 
 Hun's matrix good good verygood
 ASDF
+
+\section{Proof in the case of theta curve}
+Erase the vertices(dots) of the row which has 3 vertices and also erase connected vertices of the left and right erased vertices in the grid diagram. Then, we can make the matrix of this grid diagram by (section n).\\
+한 row를 지울 때 양옆의 점이 지워지면, 그에 따라 다른 세 개의 점을 가진 row의 무슨 점이 지워지는지에 따라 지움(용어가 있으면 좋겠다)을 시행한 grid diagram은 각자 다른 matrix을 낳을 수 있다.
+\begin{enumerate}
+    \item \textbf{0개}\\
+    T자 모양의 도형이 나온다.
+    \item \textbf{1개 (가운데 점)}\\
+    선 모양의 도형이 나온다.
+    \item \textbf{1개 (끝 점)}\\
+    선 모양의 도형이 나온다.
+    \item \textbf{2개 (끝 점 2개}\\
+    T 모양의 도형이 나온다.
+    \item \textbf{2개 (가운데와 끝 점)}\\
+    선 모양의 도형이 나온다.
+\end{enumerate}
+
+\begin{enumerate}
+    \item \textbf{선 모양}\\
+    다음과 같은 matrix를 생각하자.
+    $$\begin{pmatrix}
+        1 & 1 & 1 & 0\\
+        0 & 1 & 1 & 1\\
+        1 & 0 & 0 & 1
+    \end{pmatrix}$$
+    여기서 Hun's matrix를 만드는 작업을 하면 다음과 같은 그림의 선을 얻을 수 있다.
+    이를 (section n)에 따라 matrix로 변환하면,
+    $$\begin{pmatrix}
+        1 & 1 \\
+        0 & 1
+    \end{pmatrix}$$
+    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. 다른 모양들도 적절히 변형시키면 같은 결과를 얻을 수 있다.
+    \item \textbf{T 모양}\\
+        다음과 같은 matrix를 생각하자.
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        1 & 1 & 1\\
+    \end{pmatrix}$$
+    여기서 Hun's matrix를 만드는 작업을 하면 다음과 같은 그림의 T 모양을 얻을 수 있다. 이를 (section n)에 따라 matrix로 변환하면,
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        0 & 1 & 0\\
+        0 & 0 & 1
+    \end{pmatrix}$$
+    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. 다른 모양들도 적절히 변형시키면 같은 결과를 얻을 수 있다.
+\end{enumerate}
+Therefore, $\pm 1$ will be the determinant of the theta curve's Hun's matrix.
 
 
 \end{document}

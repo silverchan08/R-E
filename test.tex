@@ -2,6 +2,12 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{kotex}
 \usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsthm}
+
+\newtheorem{thm}{Theorem}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
 
 \title{R\&E 참고용}
 \author{조은찬 24-097}
@@ -12,13 +18,20 @@
 \maketitle
 
 \section{Introduction}
-$\mathbf{Definition}$ The grid diagram of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.) \\ \\
+
+\begin{defn}
+The grid diagram of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
+\end{defn}
+
 $\mathbf{Definition}$ The THC-Cromwell matrix is the matrix that satisfies the following conditions.
 \begin{enumerate}
     \item It is a $n\times(n+1)$ matrix with entries 0 and 1
     \item It has only two '1's in every row and column, except for two rows. These two rows have three '1's.
 \end{enumerate}
-$\mathbf{Theorem}$ Every Theta knot and Hand-Cuff knot has its corresponding THC-Cromwell matrix. \\ \\
+
+\begin{thm}
+Every Theta knot and Hand-Cuff knot has its corresponding THC-Cromwell matrix.
+\end{thm}
 $\mathbf{Definition}$ Let any exception row(with three '1's) $i$ and it's two outer '1's $j$, $k$. The Hun's Matrix of THC-matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$,$k$.\\
 $\mathbf{Theorem}$ 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  18 JUN 2025 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  18 JUN 2025 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -168,7 +168,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
@@ -185,13 +185,13 @@ L3 programming layer <2025-05-26>
 Here is how much of TeX's memory you used:
  1744 strings out of 467886
  28517 string characters out of 5438218
- 429021 words of memory out of 5000000
+ 430021 words of memory out of 5000000
  30300 multiletter control sequences out of 15000+600000
  633130 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,7n,65p,479b,262s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb>
-Output written on test.pdf (1 page, 267717 bytes).
+Output written on test.pdf (1 page, 268794 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

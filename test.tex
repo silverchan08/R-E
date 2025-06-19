@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{amsthm}
 
 
 \title{R\&E 참고용}
@@ -22,9 +23,12 @@ $\mathbf{Definition}$ The \textbf{THC-Cromwell matrix} is the matrix that satisf
     \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
 \end{enumerate}
 $\mathbf{Theorem}$ Every theta-curve and handcuff knot has its corresponding THC-Cromwell matrix. \\ \\
-$\mathbf{Definition}$ Let any exception row(with three '1's) $i$ and its two outer '1's $j$, $k$. The \textbf{H-deletion} Matrix of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$,$k$.
+$\mathbf{Definition}$ Let any exception row(with three '1's) $i$ and its two outer '1's $j$, $k$. The \textbf{H-deletion} Matrix of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$,$k$.\\ \\
+\section{Main Theorem}
+$\mathbf{Theorem}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff knot if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
 
-\section{Method of changing grid diagram of a knot to simple matrix}
+\begin{proof}
+\subsection{Method of changing grid diagram of a knot to simple matrix}
 First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
 By applying row operation, we should make matrix such as
     $$\begin{pmatrix} 
@@ -47,8 +51,8 @@ Lastly, by subtracting ($2i-1$)th row $(i \in \mathbb{N})$ with multiplying row 
 
 
 
-\section{Proof in the case of theta-curve}
-Erase the vertices of the row which has 3 vertices and also erase connected vertices of the left and right erased vertices in the grid diagram. Then, we can make the matrix of this grid diagram by previous section.\\ If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+\subsection{Proof in the case of theta-curve}
+Do the H-deletion. Then, we can make the matrix of this grid diagram by previous section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
 \begin{enumerate}
     \item \textbf{0}\\
     T-shaped figure is given.
@@ -70,12 +74,12 @@ Erase the vertices of the row which has 3 vertices and also erase connected vert
         0 & 1 & 1 & 1\\
         1 & 0 & 0 & 1
     \end{pmatrix}$$
-    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to (section n),
+    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
     $$\begin{pmatrix}
         1 & 1 \\
         0 & 1
     \end{pmatrix}$$
-    is given.
+    is given.\\
     If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
     \item \textbf{T-shaped figure}\\
     Let the matrix is given.
@@ -83,15 +87,50 @@ Erase the vertices of the row which has 3 vertices and also erase connected vert
         1 & 1 & 1\\
         1 & 1 & 1\\
     \end{pmatrix}$$
-    If you work on deleting rows and columns here, you can get the T-shaped figure of the following figure. If you convert this into a matrix according to (section n),
+    If you work on deleting rows and columns here, you can get the T-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
     $$\begin{pmatrix}
         1 & 1 & 1\\
         0 & 1 & 0\\
         0 & 0 & 1
     \end{pmatrix}$$
+    is given.\\
     If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
 \end{enumerate}
 Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
 
+\subsection{Proof in the case of handcuff knot}
+Do the H-deletion. Then, we can make the matrix of this grid diagram by upper section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+\begin{enumerate}
+    \item \textbf{0}\\
+    Knot is given.
+    \item \textbf{1 (middle vertex)}\\
+    Line-shaped figure is given.
+    \item \textbf{1 (end vertex)}\\
+    It is not given since one column might have 3 vertices.
+    \item \textbf{2 (two end vertices)}\\
+    It is not given since rows which have 3 vertices is connected with 2 line.
+    \item \textbf{2 (middle and end vertices)}\\
+    It is not given since rows which have 3 vertices is connected with 2 line.
+\end{enumerate}
 
+\begin{enumerate}
+    \item \textbf{Knot}\\
+    By upper section, the determinant becomes 0 or $\pm 2$.
+    \item \textbf{Line-shaped figure}
+    Let the matrix is given.
+    $$\begin{pmatrix}
+        0 & 0 & 0 & 1 & 1\\
+        0 & 1 & 0 & 1 & 1\\
+        1 & 1 & 1 & 0 & 0\\
+        1 & 0 & 1 & 0 & 0
+    \end{pmatrix}$$
+    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+    $$\begin{pmatrix}
+        1 & 1 & 0 \\
+        0 & 1 & 1 \\
+        0 & 0 & 0 \\
+    \end{pmatrix}$$
+    Since it is upper triangular matrix, the determinant of the matrix is trace, so the determinant of this matrix is 0.
+\end{enumerate}
+\end{proof}
 \end{document}

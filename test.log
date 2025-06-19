@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  19 JUN 2025 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  19 JUN 2025 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -286,9 +286,9 @@ Here is how much of TeX's memory you used:
  31591 multiletter control sequences out of 15000+600000
  639724 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,9n,65p,577b,289s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59i,9n,65p,577b,285s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on test.pdf (4 pages, 543410 bytes).
+Output written on test.pdf (4 pages, 543421 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

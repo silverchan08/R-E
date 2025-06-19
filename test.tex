@@ -22,13 +22,13 @@ $\mathbf{Definition}$ The \textbf{THC-Cromwell matrix} is the matrix that satisf
     \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
     \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
 \end{enumerate}
-$\mathbf{Theorem}$ Every theta-curve and handcuff knot has its corresponding THC-Cromwell matrix. \\ \\
-$\mathbf{Definition}$ Let any exception row(with three '1's) $i$ and its two outer '1's $j$, $k$. The \textbf{H-deletion} Matrix of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$,$k$.\\ \\
+$\mathbf{Theorem}$ Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix. \\ \\
+$\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$. The \textbf{H-deletion} Matrix of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\ \\
 \section{Main Theorem}
-$\mathbf{Theorem}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff knot if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
+$\mathbf{Theorem}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
 
-\begin{proof}
 \subsection{Method of changing grid diagram of a knot to simple matrix}
+\begin{proof}
 First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
 By applying row operation, we should make matrix such as
     $$\begin{pmatrix} 
@@ -98,7 +98,7 @@ Do the H-deletion. Then, we can make the matrix of this grid diagram by previous
 \end{enumerate}
 Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
 
-\subsection{Proof in the case of handcuff knot}
+\subsection{Proof in the case of handcuff graph}
 Do the H-deletion. Then, we can make the matrix of this grid diagram by upper section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
 \begin{enumerate}
     \item \textbf{0}\\

@@ -1,61 +1,74 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.18)  19 JUN 2025 21:14
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.14)  18 JUN 2025 14:35
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/Users/io25j/Pictures/백업/documents/GitHub/R-E/test.tex
 (c:/Users/io25j/Pictures/백업/documents/GitHub/R-E/test.tex
+<<<<<<< Updated upstream
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (c:/texlive/2025/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+=======
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
+(c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+>>>>>>> Stashed changes
 )
-\c@part=\count275
-\c@section=\count276
-\c@subsection=\count277
-\c@subsubsection=\count278
-\c@paragraph=\count279
-\c@subparagraph=\count280
-\c@figure=\count281
-\c@table=\count282
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-\bibindent=\dimen148
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
-) (c:/texlive/2025/texmf-dist/tex/latex/cjk-ko/kotex.sty
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (c:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kotex.sty
 Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
- (c:/texlive/2025/texmf-dist/tex/latex/kotex-utf/kotex.cfg) (c:/texlive/2025/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotex.cfg) (c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
 Package: kotexutf 2022/06/22 v3.0.0 typesetting UTF-8 Korean documents
- (c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
+ (c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-) (c:/texlive/2025/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
-\unih@ngulpoint=\count283
-\dhucs@emph@raise=\dimen151
+) (c:/texlive/2023/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count193
+\dhucs@emph@raise=\dimen143
 )
 Now handling font encoding LUC ...
 ... processing UTF-8 mapping file for font encoding LUC
- (c:/texlive/2025/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+ (c:/texlive/2023/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
 File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
    defining Unicode char U+00B7 (decimal 183)
    defining Unicode char U+2018 (decimal 8216)
@@ -103,10 +116,11 @@ File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
    defining Unicode char U+FF64 (decimal 65380)
    defining Unicode char U+FF65 (decimal 65381)
 )
-\@josa=\count284
+\@josa=\count194
 \josatoks=\toks20
- (c:/texlive/2025/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
 Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+<<<<<<< Updated upstream
 ))) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/05/18 v2.17x AMS math features
 \@mathmargin=\skip51
@@ -231,9 +245,52 @@ LaTeX Font Info:    ... okay on input line 14.
 \makeMPintoPDFobject=\count303
 \everyMPtoPDFconversion=\toks33
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+=======
+))) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+) (./test.aux)
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
+)
+LaTeX Font Info:    ... okay on input line 9.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count196
+\scratchdimen=\dimen144
+\scratchbox=\box52
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen145
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks22
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+>>>>>>> Stashed changes
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
@@ -249,6 +306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
  []
 
 
+<<<<<<< Updated upstream
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
@@ -260,13 +318,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+>>>>>>> Stashed changes
 
  []
-
-
 
 [1
 
+<<<<<<< Updated upstream
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 [2]
@@ -274,12 +334,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 [3]
 
 [4] (./test.aux)
+=======
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./test.aux)
+>>>>>>> Stashed changes
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-05-26>
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  3084 strings out of 467886
  45099 string characters out of 5438218
  450768 words of memory out of 5000000
@@ -289,6 +353,17 @@ Here is how much of TeX's memory you used:
  59i,9n,65p,577b,285s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
 Output written on test.pdf (4 pages, 543421 bytes).
+=======
+ 1742 strings out of 475735
+ 28745 string characters out of 5786250
+ 1855753 words of memory out of 5000000
+ 22488 multiletter control sequences out of 15000+600000
+ 519692 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 59i,7n,65p,488b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb>
+Output written on test.pdf (1 page, 267839 bytes).
+>>>>>>> Stashed changes
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

@@ -1,0 +1,3 @@
+import topoly
+
+print(topoly.yamada(chain="1a8e.cif.gz", closure=2, tries=20, chain_boundary=None, reduce_method=1, max_cross=15, poly_reduce=True, translate=True, hide_trivial=True, hide_rare=True, chiral=False, minimal=True, matrix_calc_cutoff=0, pdb_chain=None, pdb_model=None, pdb_bridges=None, matrix=False, matrix_density=1, matrix_filename='', matrix_format='dict', matrix_map=False, map_cutoff=0.48, map_palette={'3_1': 'Greens', '4_1': 'Oranges', '5_1': 'Reds', '5_2': 'Purples', '6_1': 'Blues', '8_20|3_1#3_1': 'Reds', 'name': 'knot'}, map_arrows=True, map_filename='KnotFingerprint', map_fileformat='png', cuda=True, run_parallel=True, parallel_workers=None, bridges=[], breaks=[], debug=False, external_dictionary=''))

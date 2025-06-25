@@ -542,14 +542,6 @@ print(cromwell_binary_list([[0,0,0,1,1,0],[0,0,1,1,0,1],[1,0,0,0,1,0],[1,1,1,0,0
 
 print("="*30)
 
-print(can_apply_reidemeister3_bitmask([164, 18, 48, 200, 10, 68])) #false
-print(can_apply_reidemeister3_bitmask([80, 40, 18, 44, 70])) #true
-print(can_apply_reidemeister3_bitmask([24, 22, 14])) #false
-print(can_apply_reidemeister3_bitmask([36, 34, 26, 28])) #false
-
-
-print("="*30)
-
 print(can_apply_reidemeister3_bitmask([82, 9, 24, 100, 5, 34])) #false
 print(can_apply_reidemeister3_bitmask([40, 20, 9, 22, 35])) #true
 print(can_apply_reidemeister3_bitmask([12, 11, 7])) #false

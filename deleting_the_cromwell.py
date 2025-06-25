@@ -135,8 +135,16 @@ def cromwell_binary(cromwell):
     for i in range(len(binary_list)):
         sum += binary_list[i]
     return sum
-print(cromwell_binary([[1,0,1],[0,0,1]]))
 
+def cromwell_binary_list(cromwell):
+    n = len(cromwell)
+    binary_list = []
+    for i in range(n):
+        a=0
+        for j in range(n+1):
+            a += cromwell[i][j] * (2**(n+1-j))
+        binary_list.append(a)
+    return binary_list
 
 #cromwell matrix를 모은 list 같은 게 필요함, 나중에 수정하기, 현재는 matrix 하나를 넣으면 symmetry인 것만 리턴함
 cromwell_list = []
@@ -210,9 +218,8 @@ mat = Matrix(4, 5, [
     [1,1,0,0,0]   # row 3
 ])
 
-print(HorizontalOne(mat))
 
-def reidemeister2_delete_simple(cromwell_integer):
+def reidemeister2_delete(cromwell_integer):
     n = len(cromwell_integer)
     m = max(cromwell_integer).bit_length()
 
@@ -253,23 +260,119 @@ def reidemeister2_delete_simple(cromwell_integer):
                                                 return True
     return False
 
+print(cromwell_binary_list([[1,0,1,0,0,1,0],[0,0,0,1,0,0,1],[0,0,1,1,0,0,0],[1,1,0,0,1,0,0],[0,0,0,0,1,0,1],[0,1,0,0,0,1,0]]))
+print(cromwell_binary_list([[1,0,1,0,0,0],[0,1,0,1,0,0],[0,0,1,0,0,1],[0,1,0,1,1,0],[1,0,0,0,1,1]]))
 
 
+def get_bit(num, bit_pos):
+    """
+    정수 num의 bit_pos 위치의 비트 값을 반환합니다.
+    (0-indexed, 가장 오른쪽 비트가 0)
+    예: num = 5 (101), bit_pos = 0 -> 1, bit_pos = 1 -> 0, bit_pos = 2 -> 1
+    """
+    return (num >> bit_pos) & 1
 
-print(reidemeister2_delete_simple([24, 10, 37, 35, 20]))
-print(reidemeister2_delete_simple([20, 35, 37, 10, 24]))
+def can_apply_reidemeister3_bitmask(input_rows):
+    """
+    비트마스킹된 정수 리스트로 주어진 격자 다이어그램에서
+    라이데마이스터 3 변환이 가능한 특정 패턴을 탐지합니다.
 
-def reidemeister2_delete_complex(cromwell_integer):
-    n = len(cromwell_integer)
-    for i in range(n):
-        for j in range(n-1):
-            if cromwell_integer[i][j] == "1":
-                for k in range(j+1, n-1):
-                    if cromwell_integer[i][k] == "1":
-                        if k-j > 1:
-                            for p1 in range(i, n-4):
-                                for p2 in range(j, n-1):
-                                    if cromwell_integer[p1][p2] == 1:
-                                        for q2 in range(p2, n-1):
-                                            if cromwell_integer[p1][q2] == 1:
-                                                
+    Args:
+        input_rows (list of int): 각 정수가 격자 다이어그램의 한 행을 나타내며,
+                                  정수의 각 비트가 해당 칸에 꼭짓점(1)이 있는지 없는지(0)를 의미합니다.
+
+    Returns:
+        bool: 라이데마이스터 3 변환이 가능한 패턴을 찾으면 True, 그렇지 않으면 False.
+    """
+    n_rows = len(input_rows)
+
+    # 행렬의 최대 열 크기를 추정합니다.
+    # 가장 큰 정수의 비트 길이를 기준으로 합니다.
+    max_val = 0
+    if input_rows:
+        max_val = max(input_rows)
+    
+    # max_val이 0일 경우, 최소 3열 (예: 2^2 = 4)은 있어야 3x3 패턴을 찾을 수 있습니다.
+    n_cols = max(3, max_val.bit_length()) 
+
+    # 라이데마이스터 3 변환은 최소 3x3 영역에서 세 개의 꼬임이 얽힐 때 발생합니다.
+    # 우리는 이 3x3 영역을 순회하며 특정 패턴을 찾을 것입니다.
+    for r_start in range(n_rows - 2):
+        for c_start in range(n_cols - 2):
+            # 현재 3x3 부분 격자 추출 (비트마스킹된 값에서 비트 추출)
+            # sub_grid[row_offset][col_offset]
+            sub_grid = [
+                [get_bit(input_rows[r_start], c_start), get_bit(input_rows[r_start], c_start + 1), get_bit(input_rows[r_start], c_start + 2)],
+                [get_bit(input_rows[r_start + 1], c_start), get_bit(input_rows[r_start + 1], c_start + 1), get_bit(input_rows[r_start + 1], c_start + 2)],
+                [get_bit(input_rows[r_start + 2], c_start), get_bit(input_rows[r_start + 2], c_start + 1), get_bit(input_rows[r_start + 2], c_start + 2)]
+            ]
+
+            # --- 라이데마이스터 3 변환 패턴 (이전과 동일) ---
+            # 1 0 1
+            # 0 1 0
+            # 1 0 1
+            if (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
+                sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
+                sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
+                print(f"라이데마이스터 3 변환 패턴 1 발견 (시작점: ({r_start},{c_start}))")
+                return True
+
+            # 0 1 0
+            # 1 0 1
+            # 0 1 0
+            if (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
+                sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
+                sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
+                print(f"라이데마이스터 3 변환 패턴 2 발견 (시작점: ({r_start},{c_start}))")
+                return True
+            
+            # 1 0 0
+            # 0 1 0
+            # 0 0 1
+            if (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 0 and
+                sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
+                sub_grid[2][0] == 0 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
+                print(f"라이데마이스터 3 변환 패턴 3 발견 (시작점: ({r_start},{c_start}))")
+                return True
+            
+            # 0 0 1
+            # 0 1 0
+            # 1 0 0
+            if (sub_grid[0][0] == 0 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
+                sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
+                sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
+                print(f"라이데마이스터 3 변환 패턴 4 발견 (시작점: ({r_start},{c_start}))")
+                return True
+
+    return False
+
+
+### 테스트 실행
+
+# 첫 번째 행렬 (False가 나와야 함)
+# 각 행을 이진수로 변환:
+# [1,0,1,0,0,1,0] -> 64 + 16 + 2 = 82
+# [0,0,0,1,0,0,1] -> 8 + 1 = 9
+# [0,0,1,1,0,0,0] -> 16 + 8 = 24
+# [1,1,0,0,1,0,0] -> 64 + 32 + 4 = 100
+# [0,0,0,0,1,0,1] -> 4 + 1 = 5
+# [0,1,0,0,0,1,0] -> 32 + 2 = 34
+bitmask_matrix1 = [82, 9, 24, 100, 5, 34]
+print("--- 첫 번째 행렬 (비트마스킹) ---")
+print(can_apply_reidemeister3_bitmask(bitmask_matrix1))
+
+print("\n" + "="*30 + "\n")
+
+# 두 번째 행렬 (True가 나와야 함)
+# 각 행을 이진수로 변환:
+# [1,0,1,0,0,0] -> 32 + 8 = 40
+# [0,1,0,1,0,0] -> 16 + 4 = 20
+# [0,0,1,0,0,1] -> 8 + 1 = 9
+# [0,1,0,1,1,0] -> 16 + 4 + 2 = 22
+# [1,0,0,0,1,1] -> 32 + 2 + 1 = 35
+bitmask_matrix2 = [40, 20, 9, 22, 35]
+print("--- 두 번째 행렬 (비트마스킹) ---")
+print(can_apply_reidemeister3_bitmask(bitmask_matrix2))
+
+print(can_apply_reidemeister3_bitmask([164, 18, 48, 200, 10, 68]))
+print(can_apply_reidemeister3_bitmask([80, 40, 18, 44, 70]))

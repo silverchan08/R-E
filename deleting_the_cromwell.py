@@ -211,18 +211,35 @@ def HorizontalOne(cromwell):
                         return True
     return False
 
+def get_bit(num, bit_pos):
+    """
+    정수에서 특정 위치의 비트 값을 가져옵니다.
+    bit_pos는 가장 오른쪽 비트(Least Significant Bit)부터 0으로 시작하는 인덱스입니다.
+    """
+    return (num >> bit_pos) & 1
+
+def set_bit(num, bit_pos, value):
+    """
+    정수의 특정 위치의 비트를 설정합니다.
+    value가 1이면 해당 비트를 1로, 0이면 0으로 만듭니다.
+    """
+    if value == 1:
+        return num | (1 << bit_pos)  # 해당 비트를 1로 설정
+    else:
+        return num & (~(1 << bit_pos)) # 해당 비트를 0으로 설정
+
 def reidemeister2_delete(cromwell_integer):
     """
-    비트마스킹된 정수 리스트로 주어진 격자 다이어그램에서 라이데마이스터 2 변환 패턴을 탐지합니다.
-    이 버전은 특정 입력([12,11,7] 및 [12, 26, 68, 112, 34])에 대해 False를 반환하도록
-    패턴 인식 조건을 더 엄격하게 조정합니다.
+    비트마스킹된 정수 리스트에서 순수한 라이데마이스터 2 변환 (생성)을 시뮬레이션합니다.
+    변환 후 '첫 번째 원소'의 값이 변환 전보다 커지면 True를 반환합니다.
 
     Args:
         cromwell_integer (list of int): 각 정수가 격자 다이어그램의 한 행을 나타내며,
                                         정수의 각 비트가 해당 칸에 꼭짓점(1)이 있는지 없는지(0)를 의미합니다.
 
     Returns:
-        bool: 라이데마이스터 2 변환 패턴을 찾으면 True, 그렇지 않으면 False.
+        bool: 라이데마이스터 2 변환(생성)으로 인해 첫 번째 원소의 값이 증가하면 True,
+              그렇지 않으면 False.
     """
     n_rows = len(cromwell_integer)
     if n_rows < 2:  # 2x2 패턴을 확인하려면 최소 2개 행 필요
@@ -230,113 +247,75 @@ def reidemeister2_delete(cromwell_integer):
 
     m_cols = 0
     if cromwell_integer:
-        m_cols = max(cromwell_integer).bit_length()
-    if m_cols < 2:  # 2x2 패턴을 확인하려면 최소 2개 열 필요
-        return False
+        # 최대값의 비트 길이를 사용하여 열의 수를 결정합니다. 최소 2개의 열이 필요합니다.
+        m_cols = max(2, max(cromwell_integer).bit_length())
+    else:
+        return False # 빈 리스트인 경우 처리
 
-    def get_bit(num, bit_pos):
-        return (num >> bit_pos) & 1
+    # 원본 첫 번째 원소 값을 저장
+    original_first_element = cromwell_integer[0]
 
     # 모든 가능한 2x2 부분 격자를 탐색합니다.
     for r_start in range(n_rows - 1):
         for c_start in range(m_cols - 1):
             
+            # 현재 2x2 영역의 비트 상태를 가져옵니다.
             top_left_bit = get_bit(cromwell_integer[r_start], c_start)
             top_right_bit = get_bit(cromwell_integer[r_start], c_start + 1)
             bottom_left_bit = get_bit(cromwell_integer[r_start + 1], c_start)
             bottom_right_bit = get_bit(cromwell_integer[r_start + 1], c_start + 1)
 
-            # 패턴 A: (1 0 / 0 1)
-            #   1 0
-            #   0 1
-            if (top_left_bit == 1 and top_right_bit == 0 and
-                bottom_left_bit == 0 and bottom_right_bit == 1):
+            # --- 라이데마이스터 2 변환 (생성) 시뮬레이션 ---
+            # 비어있는 2x2 영역 (0 0 / 0 0)을 찾습니다.
+            if (top_left_bit == 0 and top_right_bit == 0 and
+                bottom_left_bit == 0 and bottom_right_bit == 0):
                 
-                # 추가적인 엄격한 조건:
-                # 라이데마이스터 2 변환은 '고립된' 꼬임 쌍에서 발생한다고 가정.
-                # 즉, 2x2 패턴의 주변에 다른 '1'이 있으면 안 된다.
-                # (r_start, c_start)를 시작점으로 하는 2x2 블록의 바깥쪽 인접 비트 확인
+
+                # 1. 패턴 A (1 0 / 0 1) 생성 시도
+                # 원본을 변경하지 않기 위해 현재 상태의 cromwell_integer 복사
+                temp_grid_rows_a = list(cromwell_integer) 
                 
-                # 왼쪽 (c_start-1) 열 확인
-                if c_start > 0:
-                    if get_bit(cromwell_integer[r_start], c_start - 1) == 1 or \
-                       get_bit(cromwell_integer[r_start + 1], c_start - 1) == 1:
-                        # print(f"패턴 A ({(r_start, c_start)}) - 왼쪽 1 발견, 스킵")
-                        continue # 이 패턴은 유효하지 않음
+                # 해당 2x2 영역에 패턴 A를 '생성'합니다.
+                temp_grid_rows_a[r_start] = set_bit(temp_grid_rows_a[r_start], c_start, 1)     # (r, c) = 1
+                temp_grid_rows_a[r_start] = set_bit(temp_grid_rows_a[r_start], c_start + 1, 0) # (r, c+1) = 0
+                temp_grid_rows_a[r_start + 1] = set_bit(temp_grid_rows_a[r_start + 1], c_start, 0) # (r+1, c) = 0
+                temp_grid_rows_a[r_start + 1] = set_bit(temp_grid_rows_a[r_start + 1], c_start + 1, 1) # (r+1, c+1) = 1
 
-                # 오른쪽 (c_start+2) 열 확인
-                if c_start + 2 < m_cols:
-                    if get_bit(cromwell_integer[r_start], c_start + 2) == 1 or \
-                       get_bit(cromwell_integer[r_start + 1], c_start + 2) == 1:
-                        # print(f"패턴 A ({(r_start, c_start)}) - 오른쪽 1 발견, 스킵")
-                        continue # 이 패턴은 유효하지 않음
-
-                # 위쪽 (r_start-1) 행 확인
-                if r_start > 0:
-                    if get_bit(cromwell_integer[r_start - 1], c_start) == 1 or \
-                       get_bit(cromwell_integer[r_start - 1], c_start + 1) == 1:
-                        # print(f"패턴 A ({(r_start, c_start)}) - 위쪽 1 발견, 스킵")
-                        continue # 이 패턴은 유효하지 않음
-
-                # 아래쪽 (r_start+2) 행 확인
-                if r_start + 2 < n_rows:
-                    if get_bit(cromwell_integer[r_start + 2], c_start) == 1 or \
-                       get_bit(cromwell_integer[r_start + 2], c_start + 1) == 1:
-                        # print(f"패턴 A ({(r_start, c_start)}) - 아래쪽 1 발견, 스킵")
-                        continue # 이 패턴은 유효하지 않음
+                # 변환 후의 첫 번째 원소 값 확인
+                # 변환이 첫 번째 행(인덱스 0)에 영향을 주는 경우에만 값 증가 여부 확인.
+                # r_start가 0이면 temp_grid_rows_a[0]의 값이 바뀔 수 있습니다.
+                if r_start == 0:
+                    i = 0
+                    while i <= n_rows:
+                        if temp_grid_rows_a[i] > original_first_element:
+                            return True
+                        elif temp_grid_rows_a[i] == original_first_element:
+                            i += 1
+                        
                 
-                # 모든 엄격한 조건을 통과했다면 유효한 R2 패턴으로 간주
-                print(f"라이데마이스터 2 변환 패턴 A 발견 (시작점: 행 {r_start}, 열 {c_start})")
-                return True
-
-            # 패턴 B: (0 1 / 1 0)
-            #   0 1
-            #   1 0
-            if (top_left_bit == 0 and top_right_bit == 1 and
-                bottom_left_bit == 1 and bottom_right_bit == 0):
+                # 2. 패턴 B (0 1 / 1 0) 생성 시도
+                # 다시 원본을 변경하지 않기 위해 현재 상태의 cromwell_integer 복사
+                temp_grid_rows_b = list(cromwell_integer)
                 
-                # 패턴 A와 동일하게 주변 비트 엄격 조건 적용
-                # 왼쪽 (c_start-1) 열 확인
-                if c_start > 0:
-                    if get_bit(cromwell_integer[r_start], c_start - 1) == 1 or \
-                       get_bit(cromwell_integer[r_start + 1], c_start - 1) == 1:
-                        # print(f"패턴 B ({(r_start, c_start)}) - 왼쪽 1 발견, 스킵")
-                        continue
+                # 해당 2x2 영역에 패턴 B를 '생성'합니다.
+                temp_grid_rows_b[r_start] = set_bit(temp_grid_rows_b[r_start], c_start, 0)     # (r, c) = 0
+                temp_grid_rows_b[r_start] = set_bit(temp_grid_rows_b[r_start], c_start + 1, 1) # (r, c+1) = 1
+                temp_grid_rows_b[r_start + 1] = set_bit(temp_grid_rows_b[r_start + 1], c_start, 1) # (r+1, c) = 1
+                temp_grid_rows_b[r_start + 1] = set_bit(temp_grid_rows_b[r_start + 1], c_start + 1, 0) # (r+1, c+1) = 0
 
-                # 오른쪽 (c_start+2) 열 확인
-                if c_start + 2 < m_cols:
-                    if get_bit(cromwell_integer[r_start], c_start + 2) == 1 or \
-                       get_bit(cromwell_integer[r_start + 1], c_start + 2) == 1:
-                        # print(f"패턴 B ({(r_start, c_start)}) - 오른쪽 1 발견, 스킵")
-                        continue
+                # 변환 후의 첫 번째 원소 값 확인
+                if r_start == 0:
+                    i = 0
+                    while i <= n_rows:
+                        if temp_grid_rows_b[i] > original_first_element:
+                            return True
+                        elif temp_grid_rows_b[i] == original_first_element:
+                            i += 1
 
-                # 위쪽 (r_start-1) 행 확인
-                if r_start > 0:
-                    if get_bit(cromwell_integer[r_start - 1], c_start) == 1 or \
-                       get_bit(cromwell_integer[r_start - 1], c_start + 1) == 1:
-                        # print(f"패턴 B ({(r_start, c_start)}) - 위쪽 1 발견, 스킵")
-                        continue
-
-                # 아래쪽 (r_start+2) 행 확인
-                if r_start + 2 < n_rows:
-                    if get_bit(cromwell_integer[r_start + 2], c_start) == 1 or \
-                       get_bit(cromwell_integer[r_start + 2], c_start + 1) == 1:
-                        # print(f"패턴 B ({(r_start, c_start)}) - 아래쪽 1 발견, 스킵")
-                        continue
                 
-                # 모든 엄격한 조건을 통과했다면 유효한 R2 패턴으로 간주
-                print(f"라이데마이스터 2 변환 패턴 B 발견 (시작점: 행 {r_start}, 열 {c_start})")
-                return True
-
+    # 어떤 패턴도 발견되지 않거나, 생성 후 첫 번째 원소가 증가하지 않으면 False 반환
     return False
 
-
-def get_bit(num, bit_pos):
-    """
-    정수에서 특정 위치의 비트 값을 가져옵니다.
-    bit_pos는 가장 오른쪽 비트(Least Significant Bit)부터 0으로 시작하는 인덱스입니다.
-    """
-    return (num >> bit_pos) & 1
 
 def get_bit(num, bit_pos):
     """
@@ -348,16 +327,18 @@ def get_bit(num, bit_pos):
 def can_apply_reidemeister3_bitmask(input_rows):
     """
     비트마스킹된 정수 리스트로 주어진 격자 다이어그램에서
-    라이데마이스터 3 변환이 가능한 특정 패턴을 탐지하고,
-    변환 후의 가상 합이 변환 전의 합보다 큰 경우에만 True를 반환합니다.
-    (새로운 라이데마이스터 3 변환 패턴을 추가하여 [6, 13, 34, 56, 17]에 대해 True를 반환합니다.)
+    라이데마이스터 3 변환을 시뮬레이션합니다.
+    변환 후 리스트의 첫 번째 원소(input_rows[0])의 값이 변환 전보다 커지면 True를 반환합니다.
+    만약 첫 번째 원소의 값이 같다면, 두 번째 원소(input_rows[1])의 값이
+    변환 전보다 커지는지 확인하여 크면 True를 반환합니다.
 
     Args:
         input_rows (list of int): 각 정수가 격자 다이어그램의 한 행을 나타내며,
                                   정수의 각 비트가 해당 칸에 꼭짓점(1)이 있는지 없는지(0)를 의미합니다.
 
     Returns:
-        bool: 라이데마이스터 3 변환이 가능한 패턴을 찾고, 그로 인해 가상 합이 증가하면 True,
+        bool: 라이데마이스터 3 변환이 가능한 패턴을 찾아 적용했을 때,
+              첫 번째 원소의 값이 증가하거나, 첫 번째 원소의 값이 같고 두 번째 원소의 값이 증가하면 True,
               그렇지 않으면 False.
     """
     n_rows = len(input_rows)
@@ -371,65 +352,187 @@ def can_apply_reidemeister3_bitmask(input_rows):
     # 3x3 패턴을 찾기 위해 최소 3열이 필요합니다.
     n_cols = max(3, max_val.bit_length()) 
 
-    original_sum = 0
-    for row_val in input_rows:
-        original_sum += bin(row_val).count('1')
+    # 원본 리스트의 첫 번째와 두 번째 원소 값을 저장합니다.
 
+    # 모든 가능한 3x3 부분 격자를 탐색합니다.
     for r_start in range(n_rows - 2):
         for c_start in range(n_cols - 2):
+            
+            # 현재 3x3 부분 격자의 비트 값을 가져옵니다.
             sub_grid = [
                 [get_bit(input_rows[r_start], c_start), get_bit(input_rows[r_start], c_start + 1), get_bit(input_rows[r_start], c_start + 2)],
                 [get_bit(input_rows[r_start + 1], c_start), get_bit(input_rows[r_start + 1], c_start + 1), get_bit(input_rows[r_start + 1], c_start + 2)],
                 [get_bit(input_rows[r_start + 2], c_start), get_bit(input_rows[r_start + 2], c_start + 1), get_bit(input_rows[r_start + 2], c_start + 2)]
             ]
             
-            # --- 기존 라이데마이스터 3 변환 패턴 ---
+            # 변환 시뮬레이션을 위한 임시 리스트를 미리 준비합니다.
+            # 각 패턴마다 새롭게 복사하여 독립적인 변환을 시도합니다.
+            temp_rows = list(input_rows) # 초기 복사
+
+            # --- 라이데마이스터 3 변환 패턴 및 시뮬레이션 ---
+            # 각 패턴에 대해 변환 로직을 정의하고 결과 확인
+
+            transformed = False # 변환이 실제로 일어났는지 여부
+
             # 1. 1 0 1 / 0 1 0 / 1 0 1
             if (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
                 sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
                 sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
-                transformed_sum = original_sum + 2 
-                return transformed_sum > original_sum
+                
+                
+                # 변환 시뮬레이션: (원본 상태를 패턴 2로 변환하는 것으로 가정)
+                # 101 -> 010
+                # 010 -> 101
+                # 101 -> 010
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 0)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 1)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 0)
+
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 1)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 0)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 1)
+                
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 1)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
+                transformed = True
 
             # 2. 0 1 0 / 1 0 1 / 0 1 0
-            if (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
-                sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
-                sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
-                transformed_sum = original_sum + 2
-                return transformed_sum > original_sum
-            
-            # 3. 1 0 0 / 0 1 0 / 0 0 1 (주로 사용되는 R3 패턴)
-            if (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 0 and
-                sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
-                sub_grid[2][0] == 0 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
-                transformed_sum = original_sum + 2
-                return transformed_sum > original_sum
-            
-            # 4. 0 0 1 / 0 1 0 / 1 0 0 (패턴 3의 대칭)
-            if (sub_grid[0][0] == 0 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
-                sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
-                sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
-                transformed_sum = original_sum + 2
-                return transformed_sum > original_sum
+            elif (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
+                  sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
+                  sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
+                
+                
+                # 변환 시뮬레이션: (원본 상태를 패턴 1로 변환하는 것으로 가정)
+                # 010 -> 101
+                # 101 -> 010
+                # 010 -> 101
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 1)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 0)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 1)
 
-            # --- 새로 추가된 라이데마이스터 3 변환 패턴 (6, 13, 34 에서 발견된 패턴) ---
-            # 5. 1 1 0 / 0 1 1 / 1 0 0
-            if (sub_grid[0][0] == 1 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
-                sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 1 and
-                sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
-                transformed_sum = original_sum + 2
-                return transformed_sum > original_sum
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 0)
+                
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 1)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 1)
+                transformed = True
+
+            # 3. 1 0 0 / 0 1 0 / 0 0 1 (주로 사용되는 R3 패턴 - 대각선 이동)
+            elif (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 0 and
+                  sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
+                  sub_grid[2][0] == 0 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
+                
+                
+                # 변환 시뮬레이션: (원본 상태를 패턴 4로 변환하는 것으로 가정)
+                # 100 -> 001
+                # 010 -> 010
+                # 001 -> 100
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 0)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 0)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 1)
+
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 0)
+                
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 1)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
+                transformed = True
+
+            # 4. 0 0 1 / 0 1 0 / 1 0 0 (패턴 3의 대칭)
+            elif (sub_grid[0][0] == 0 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
+                  sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
+                  sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
+                
+                
+                # 변환 시뮬레이션: (원본 상태를 패턴 3으로 변환하는 것으로 가정)
+                # 001 -> 100
+                # 010 -> 010
+                # 100 -> 001
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 1)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 0)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 0)
+
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 0)
+                
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 1)
+                transformed = True
+
+            # 5. 1 1 0 / 0 1 1 / 1 0 0 (새롭게 추가된 패턴)
+            elif (sub_grid[0][0] == 1 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
+                  sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 1 and
+                  sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
+                
+                
+                # 이 패턴에 대한 R3 변환 예시를 가정합니다. (패턴 6으로 변환)
+                # 110 -> 011
+                # 011 -> 101
+                # 100 -> 010
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 0)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 1)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 1)
+
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 1)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 0)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 1)
+                
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 1)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
+                transformed = True
 
             # 6. 0 1 1 / 1 0 1 / 0 1 0 (패턴 5의 대칭 또는 회전)
-            # 이 패턴은 1 1 0 / 0 1 1 / 1 0 0 의 90도 회전 혹은 다른 변형일 수 있습니다.
-            # 예: sub_grid[0][0]이 0, sub_grid[0][1]이 1, sub_grid[0][2]가 1 일 때
-            if (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 1 and
-                sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
-                sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
-                transformed_sum = original_sum + 2
-                return transformed_sum > original_sum
+            elif (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 1 and
+                  sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
+                  sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
+                
+                
+                # 이 패턴에 대한 R3 변환 예시를 가정합니다. (패턴 5로 변환)
+                # 011 -> 110
+                # 101 -> 011
+                # 010 -> 100
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 1)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 1)
+                temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 0)
 
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
+                temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 1)
+                
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 1)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
+                temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
+                transformed = True
+
+            # 변환이 일어났다면 (어떤 R3 패턴이든 발견되어 시뮬레이션되었다면) 결과 확인
+            if transformed:
+                i = 0
+                while i < n_rows-1:
+                    if temp_rows[i] > input_rows[i]:
+                        return True
+                    elif temp_rows[i] < input_rows[i]:
+                        break
+                    elif temp_rows[i] == input_rows[i]:
+                        i += 1
+
+                
+                # 다음 패턴 탐색을 위해 temp_rows를 다시 원본으로 초기화할 필요 없음.
+                # 다음 루프에서 sub_grid를 다시 input_rows에서 가져오므로 문제 없음.
+                # 그러나 이 함수는 "어떤 한 번의 변환으로라도" 증가하면 True를 반환하므로,
+                # 한 패턴을 적용 후 True가 아니면 바로 다음 패턴으로 넘어가는 것이 효율적입니다.
+                # (continue 대신 if-else if 구조 사용)
+                
+    # 모든 패턴을 탐색했음에도 조건을 만족하는 변환을 찾지 못하면 False 반환
     return False
+
 
 print(cromwell_binary_list([[1,0,1,0,0,1,0],[0,0,0,1,0,0,1],[0,0,1,1,0,0,0],[1,1,0,0,1,0,0],[0,0,0,0,1,0,1],[0,1,0,0,0,1,0]]))
 print(cromwell_binary_list([[1,0,1,0,0,0],[0,1,0,1,0,0],[0,0,1,0,0,1],[0,1,0,1,1,0],[1,0,0,0,1,1]]))
@@ -456,7 +559,12 @@ print("="*30)
 
 print(reidemeister2_delete([12,11,7])) #false
 print(can_apply_reidemeister3_bitmask([12,11,7])) #false
-print(reidemeister2_delete([6, 13, 34, 56, 17])) #false
+print(reidemeister2_delete([6, 13, 34, 56, 17])) #true
 print(can_apply_reidemeister3_bitmask([6, 13, 34, 56, 17])) #true
 print(reidemeister2_delete([7,7])) #false
 print(can_apply_reidemeister3_bitmask([7,7])) #false
+
+print("="*30)
+
+print(reidemeister2_delete([14, 17, 9, 22])) #false
+print(can_apply_reidemeister3_bitmask([14, 17, 9, 22])) #false

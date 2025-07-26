@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage[margin=2cm,nonhead]{geometry}
+\usepackage{setspace}
+\usepackage{abstract}
+\usepackage{authblk}
+
+
+\onehalfspacing
+
+\newtheorem{thm}{Theorem}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+
+\renewcommand\Affilfont{\small}
+
+\title{R\&E 과제명 (영문)}
+\author[1]{조은찬\thanks{email}}
+\author[1]{Jeongwon Shin\thanks{io25jellyfish@gmail.com}}
+\author[1]{서보연\thanks{이메일}}
+\author[1]{최민호\thanks{이메일}}
+\author[2]{김훈\thanks{이메일}}
+\author[3]{진교택\thanks{이메일}}
+\author[4]{이재원\thanks{이메일}}
+\affil[1]{Researcher, Korea Scinece Academy of KAIST}
+\affil[2]{Supervisor, Department of Mechanical Engineering, \LaTeX\ University}
+\affil[3]{Co-Supervisor, Department of Computer Science, \LaTeX\ University}
+\affil[4]{Assistant, Department of Computer Science, \LaTeX\ University}
+
+
+\renewcommand\Authands{ and }
+
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\renewenvironment{abstract}
+{\begin{quote}
+\noindent \rule{\linewidth}{.5pt}\par{\bfseries \abstractname.}}
+{\medskip\noindent \rule{\linewidth}{.5pt}
+\end{quote}
+}
+
+
+\begin{abstract}
+Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear  and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\\
+\end{abstract}
+
+
+\section{Introduction}
+
+\section{Theoretical Background}
+우리가 여름방학 때 공부한 것들, 선행연구 논문에 있던 것들,
+
+\section{Research Methods and Procedure}
+
+\section{Research Result}
+
+\section{Conclusion}
+
+\begin{thebibliography}{9}
+    \bibitem{lamport94}
+    Leslie Lamport.
+    \newblock \LaTeX: A Document Preparation System.
+    \newblock Addison Wesley, Reading, Massachusetts, second edition, 1994.
+    \bibitem{knuth84}
+    Donald E. Knuth.
+    \newblock The \TeX book.
+    \newblock Addison Wesley, Reading, Massachusetts, 1984.
+\end{thebibliography}
+
+
+\end{document}

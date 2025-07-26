@@ -2,6 +2,16 @@ from collections import deque
 import time
 import topoly
 
+def toBinary(n):
+    ret = ''
+    while n>0:
+        if n%2 == 0:
+            ret += '0'
+        else:
+            ret += '1'
+        n >>= 1
+    return ret[::-1]
+
 def determinant(matrix):
     n = len(matrix)
     for p in range(n):
@@ -23,7 +33,8 @@ def determinant(matrix):
         det *= matrix[i][i]
     return det
 
-def isThetaOrHandcuff(cromwell_bit): # Theta를 만들고 component를 셀 때, theta/handcuff를 해당 component에서 먼저 세고 다 셌는데 방문 못 한 곳이 있으면 False, None을 return, 아니면 True, "(종류)"
+def isThetaOrHandcuff(cromwell_bit):
+    # Theta를 만들고 component를 셀 때, theta/handcuff를 해당 component에서 먼저 세고 다 셌는데 방문 못 한 곳이 있으면 False, None을 return, 아니면 True, "(종류)"
     n = len(cromwell_bit)
 
     cromwell = [[0]*(n+1) for _ in range(n)]
@@ -68,16 +79,6 @@ def isComposite1(cromwell_bit): # 1자로 연결된 composite
             return True
     return False
 
-def LeftOne(row):
-    CP = []
-    n = row.bit_length()
-    m = row.bit_count()
-    for i in range(n+1):
-        if (row >> i).bit_count() != m:
-            CP.append(i)
-            m = (row >> i).bit_count()
-    return CP[1]
-
 def LeftOne(list):
     CP = []
     n = list.bit_length()
@@ -96,7 +97,7 @@ def R1(list):
         if list[row_i].bit_count() == 3:
             three.append(row_i)
     
-    # 1이 하나만 곂치는 두 행 찾기
+    # 1이 하나만 겹치는 두 행 찾기
     for i in range(n):
         for j in range(i+1,n):
             t = 0
@@ -135,7 +136,7 @@ def R1(list):
                         break
                     return True
     
-    return False
+    return False            
 
 def R2(L):
     n = len(L)
@@ -186,286 +187,12 @@ def R2(L):
                         break
             if test:
                 return True
-    return False        
-
-def R3(cromwell):
-    #가로선 두 개 찾고, 세로선 하나 찾고, 1 위에 있고 아래 있는 거 확인
-    n = len(cromwell)
-    m = len(cromwell[0])
-
-    all_horizontal_lines = []
-    for r in range(n):
-        for c1 in range(m):
-            if cromwell[r][c1] == 1:
-                for c2 in range(c1 + 1, m):
-                    if cromwell[r][c2] == 1:
-                        all_horizontal_lines.append([[r, c1], [r, c2]])
-
-    for line1 in all_horizontal_lines:
-        for line2 in all_horizontal_lines:
-            if line1[0][0] < line2[0][0]:
-                col1_start = line1[0][1] # line1의 시작 열
-                col1_end = line1[1][1]   # line1의 끝 열
-
-                row2_start = line2[0][0] # line2의 행
-                col2_start = line2[0][1] # line2의 시작 열
-                col2_end = line2[1][1]   # line2의 끝 열
-
-                if col1_start <= col2_start and col2_end <= col1_end:
-                    found_below_line2_start = False
-                    for r_below in range(row2_start + 1, n):
-                        if cromwell[r_below][col2_start] == 1:
-                            found_below_line2_start = True
-                            break # 찾았으면 더 이상 탐색할 필요 없음
-
-                    if not found_below_line2_start:
-                        continue # 이 패턴은 다음 line2 조합으로 넘어감
-
-                    
-                    found_spanning_vertical_line = False
-                    
-                    for vert_col in range(col1_end + 1, m): 
-                        potential_vert_start_row = -1
-                        potential_vert_end_row = -1
-                        for r_vert_start in range(n):
-                            if cromwell[r_vert_start][vert_col] == 1:
-                                potential_vert_start_row = r_vert_start
-                                break # 첫 번째 1을 찾았으므로 시작점으로 간주
-
-                        if potential_vert_start_row != -1: # 시작점 찾음
-                            for r_vert_end in range(potential_vert_start_row + 1, n):
-                                if cromwell[r_vert_end][vert_col] == 1:
-                                    potential_vert_end_row = r_vert_end
-                                    break # 두 번째 1을 찾았으므로 끝점으로 간주
-                        
-                        if potential_vert_start_row != -1 and potential_vert_end_row != -1:
-                            if potential_vert_start_row <= line1[0][0] and \
-                               potential_vert_end_row >= line2[0][0]:
-                                found_spanning_vertical_line = True
-                                break # 조건을 만족하는 세로줄을 찾았으므로 더 이상 탐색할 필요 없음
-                    
-                    if found_spanning_vertical_line:
-                        return True # 모든 조건을 만족하는 패턴을 찾음
-
-    return False # 어떤 패턴도 찾지 못함
-
-
-
-
-# def get_bit(num, bit_pos):
-#     """
-#     정수에서 특정 위치의 비트 값을 가져옵니다.
-#     bit_pos는 가장 오른쪽 비트(Least Significant Bit)부터 0으로 시작하는 인덱스입니다.
-#     """
-#     return (num >> bit_pos) & 1
-
-# def set_bit(num, bit_pos, value):
-#     """
-#     정수의 특정 위치의 비트를 설정합니다.
-#     value가 1이면 해당 비트를 1로, 0이면 0으로 만듭니다.
-#     """
-#     if value == 1:
-#         return num | (1 << bit_pos)  # 해당 비트를 1로 설정
-#     else:
-#         return num & (~(1 << bit_pos)) # 해당 비트를 0으로 설정
-
-
-# def R3(input_rows):
-#     """
-#     비트마스킹된 정수 리스트로 주어진 격자 다이어그램에서
-#     라이데마이스터 3 변환을 시뮬레이션합니다.
-#     변환 후 리스트의 첫 번째 원소(input_rows[0])의 값이 변환 전보다 커지면 True를 반환합니다.
-#     만약 첫 번째 원소의 값이 같다면, 두 번째 원소(input_rows[1])의 값이
-#     변환 전보다 커지는지 확인하여 크면 True를 반환합니다.
-
-#     Args:
-#         input_rows (list of int): 각 정수가 격자 다이어그램의 한 행을 나타내며,
-#                                   정수의 각 비트가 해당 칸에 꼭짓점(1)이 있는지 없는지(0)를 의미합니다.
-
-#     Returns:
-#         bool: 라이데마이스터 3 변환이 가능한 패턴을 찾아 적용했을 때,
-#               첫 번째 원소의 값이 증가하거나, 첫 번째 원소의 값이 같고 두 번째 원소의 값이 증가하면 True,
-#               그렇지 않으면 False.
-#     """
-#     n_rows = len(input_rows)
-#     if n_rows < 3: # 3x3 패턴을 확인하려면 최소 3개 행 필요
-#         return False
-
-#     max_val = 0
-#     if input_rows:
-#         max_val = max(input_rows)
-    
-#     # 3x3 패턴을 찾기 위해 최소 3열이 필요합니다.
-#     n_cols = max(3, max_val.bit_length()) 
-
-#     # 원본 리스트의 첫 번째와 두 번째 원소 값을 저장합니다.
-
-#     # 모든 가능한 3x3 부분 격자를 탐색합니다.
-#     for r_start in range(n_rows - 2):
-#         for c_start in range(n_cols - 2):
-            
-#             # 현재 3x3 부분 격자의 비트 값을 가져옵니다.
-#             sub_grid = [
-#                 [get_bit(input_rows[r_start], c_start), get_bit(input_rows[r_start], c_start + 1), get_bit(input_rows[r_start], c_start + 2)],
-#                 [get_bit(input_rows[r_start + 1], c_start), get_bit(input_rows[r_start + 1], c_start + 1), get_bit(input_rows[r_start + 1], c_start + 2)],
-#                 [get_bit(input_rows[r_start + 2], c_start), get_bit(input_rows[r_start + 2], c_start + 1), get_bit(input_rows[r_start + 2], c_start + 2)]
-#             ]
-            
-#             # 변환 시뮬레이션을 위한 임시 리스트를 미리 준비합니다.
-#             # 각 패턴마다 새롭게 복사하여 독립적인 변환을 시도합니다.
-#             temp_rows = list(input_rows) # 초기 복사
-
-#             # --- 라이데마이스터 3 변환 패턴 및 시뮬레이션 ---
-#             # 각 패턴에 대해 변환 로직을 정의하고 결과 확인
-
-#             transformed = False # 변환이 실제로 일어났는지 여부
-
-#             # 1. 1 0 1 / 0 1 0 / 1 0 1
-#             if (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
-#                 sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
-#                 sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
-                
-                
-#                 # 변환 시뮬레이션: (원본 상태를 패턴 2로 변환하는 것으로 가정)
-#                 # 101 -> 010
-#                 # 010 -> 101
-#                 # 101 -> 010
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 0)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 1)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 0)
-
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 1)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 0)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 1)
-                
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 1)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
-#                 transformed = True
-
-#             # 2. 0 1 0 / 1 0 1 / 0 1 0
-#             elif (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
-#                   sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
-#                   sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
-                
-                
-#                 # 변환 시뮬레이션: (원본 상태를 패턴 1로 변환하는 것으로 가정)
-#                 # 010 -> 101
-#                 # 101 -> 010
-#                 # 010 -> 101
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 1)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 0)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 1)
-
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 0)
-                
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 1)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 1)
-#                 transformed = True
-
-#             # 3. 1 0 0 / 0 1 0 / 0 0 1 (주로 사용되는 R3 패턴 - 대각선 이동)
-#             elif (sub_grid[0][0] == 1 and sub_grid[0][1] == 0 and sub_grid[0][2] == 0 and
-#                   sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
-#                   sub_grid[2][0] == 0 and sub_grid[2][1] == 0 and sub_grid[2][2] == 1):
-                
-                
-#                 # 변환 시뮬레이션: (원본 상태를 패턴 4로 변환하는 것으로 가정)
-#                 # 100 -> 001
-#                 # 010 -> 010
-#                 # 001 -> 100
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 0)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 0)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 1)
-
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 0)
-                
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 1)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
-#                 transformed = True
-
-#             # 4. 0 0 1 / 0 1 0 / 1 0 0 (패턴 3의 대칭)
-#             elif (sub_grid[0][0] == 0 and sub_grid[0][1] == 0 and sub_grid[0][2] == 1 and
-#                   sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 0 and
-#                   sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
-                
-                
-#                 # 변환 시뮬레이션: (원본 상태를 패턴 3으로 변환하는 것으로 가정)
-#                 # 001 -> 100
-#                 # 010 -> 010
-#                 # 100 -> 001
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 1)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 0)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 0)
-
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 0)
-                
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 1)
-#                 transformed = True
-
-#             # 5. 1 1 0 / 0 1 1 / 1 0 0 (새롭게 추가된 패턴)
-#             elif (sub_grid[0][0] == 1 and sub_grid[0][1] == 1 and sub_grid[0][2] == 0 and
-#                   sub_grid[1][0] == 0 and sub_grid[1][1] == 1 and sub_grid[1][2] == 1 and
-#                   sub_grid[2][0] == 1 and sub_grid[2][1] == 0 and sub_grid[2][2] == 0):
-                
-                
-#                 # 이 패턴에 대한 R3 변환 예시를 가정합니다. (패턴 6으로 변환)
-#                 # 110 -> 011
-#                 # 011 -> 101
-#                 # 100 -> 010
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 0)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 1)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 1)
-
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 1)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 0)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 1)
-                
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 1)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
-#                 transformed = True
-
-#             # 6. 0 1 1 / 1 0 1 / 0 1 0 (패턴 5의 대칭 또는 회전)
-#             elif (sub_grid[0][0] == 0 and sub_grid[0][1] == 1 and sub_grid[0][2] == 1 and
-#                   sub_grid[1][0] == 1 and sub_grid[1][1] == 0 and sub_grid[1][2] == 1 and
-#                   sub_grid[2][0] == 0 and sub_grid[2][1] == 1 and sub_grid[2][2] == 0):
-                
-                
-#                 # 이 패턴에 대한 R3 변환 예시를 가정합니다. (패턴 5로 변환)
-#                 # 011 -> 110
-#                 # 101 -> 011
-#                 # 010 -> 100
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start, 1)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 1, 1)
-#                 temp_rows[r_start] = set_bit(temp_rows[r_start], c_start + 2, 0)
-
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start, 0)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 1, 1)
-#                 temp_rows[r_start + 1] = set_bit(temp_rows[r_start + 1], c_start + 2, 1)
-                
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start, 1)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 1, 0)
-#                 temp_rows[r_start + 2] = set_bit(temp_rows[r_start + 2], c_start + 2, 0)
-#                 transformed = True
-
-#             # 변환이 일어났다면 (어떤 R3 패턴이든 발견되어 시뮬레이션되었다면) 결과 확인
-#             if transformed:
-#                 if temp_rows > input_rows:
-#                     return True
-#     return False
-
+    return False
 
 def Theta_makeCromwell_spatial(n):
+    if n == 2:
+        return [[7, 7]]
+    
     all_matrices = []
 
     # 1 두 개짜리 행 다 만들기 / 내림차순으로 생성
@@ -559,10 +286,6 @@ def Theta_makeCromwell_spatial(n):
 
             if row_idx == n-1:
                 if R2(Newone):
-                    continue
-
-            if row_idx == n-1:
-                if R3(Newone):
                     continue
 
             if isValid:
@@ -907,59 +630,7 @@ def get_pd_code(cromwell_bit):
         ret += ';' if idx != len(planar)-1 else ''
     return ret
 
-def main():
-    max_cromwell_size = 7 # n by n+1 cromwell matrix에서 "n".
-    # 이때 판별되는 arc index의 최대는 max_cromwell_size + 1 = 8 (arc index는 n by n+1에서 n+1)
-    # arc index <= crossing + 3. crossing 몇까지 모두 판별? => arc index의 하한을 구하고 나서 알 수 있음 (몰루)
-    # 적어도 crossing c를 보장하기 위해서는 cromwell size를 c+2 (c+2 by c+3)까지 돌리면 됨
-
-    arc_index_for_theta = dict()
-
-    # size를 2 by 3부터 점점 올리기
-    for cromwell_size in range(2, max_cromwell_size+1):
-        # n(=cromwell size) by n+1짜리 후보 전부 생성
-        cromwell_matrix_for_theta = Theta_makeCromwell_spatial(cromwell_size)
-        # 각 cromwell matrix를 돌면서 yamada polynomial 구하기
-        for cromwell in cromwell_matrix_for_theta:
-
-            # component 2 이상이면 쳐내기
-            if not isOneComponent(cromwell):
-                continue
-
-            # Theta curve 아니면 쳐내기
-            if isThetaOrHandcuff(cromwell) != "Theta":
-                continue
-
-            # yamada polynomial 구하기
-            pd_code = get_pd_code(cromwell)
-            knot = topoly.yamada(pd_code)
-            if '#' in knot: # prime knot이 아닌 경우
-                continue
-            if knot == "Unknown": # 모르는 knot => crossing 8 이상
-                continue
-            yamada_poly = str(topoly.getpoly('y', knot))
-
-            # 만약 yamada polynomial이 이미 있으면 넘기고, 없으면 추가 (이때 arc index 값은 n by n+1에서 "n+1")
-            if yamada_poly not in arc_index_for_theta:
-                print(yamada_poly, "의 arc index:", cromwell_size+1, cromwell)
-                arc_index_for_theta[yamada_poly] = cromwell_size+1
-    
-    # crossing이 min_crossing인 것부터 max_crossing인 것까지 arc index를 출력
-    min_crossing = 3
-    max_crossing = 7
-    num_theta_for_each_crossing = {3:1, 4:1, 5:7, 6:16, 7:65}
-    for crossing in range(min_crossing, max_crossing+1):
-        all_num_theta = num_theta_for_each_crossing[crossing]
-        for num_theta in range(1, all_num_theta+1):
-            theta_name = f"{crossing}_{num_theta}"
-            yamada_poly = str(topoly.getpoly('y', f"t{crossing}_{num_theta}"))
-            if yamada_poly in arc_index_for_theta:
-                print(f"{theta_name}의 arc index: {arc_index_for_theta[yamada_poly]}")
-            else:
-                print(f"{theta_name}의 arc index: None")
-    print(arc_index_for_theta)
-
-s = time.time()
-main()
-e = time.time()
-print(e-s)
+cromwell = [274, 65, 136, 36, 10, 68, 288, 145]
+pd = get_pd_code(cromwell)
+knot = topoly.yamada(pd)
+print(knot, topoly.getpoly('y', knot))

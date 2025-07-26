@@ -188,86 +188,22 @@ def R2(L):
                 return True
     return False        
 
-def R3(cromwell):
-    #가로선 두 개 찾고, 세로선 하나 찾고, 1 위에 있고 아래 있는 거 확인
-    n = len(cromwell)
-    m = len(cromwell[0])
+def get_bit(num, bit_pos):
+    """
+    정수에서 특정 위치의 비트 값을 가져옵니다.
+    bit_pos는 가장 오른쪽 비트(Least Significant Bit)부터 0으로 시작하는 인덱스입니다.
+    """
+    return (num >> bit_pos) & 1
 
-    all_horizontal_lines = []
-    for r in range(n):
-        for c1 in range(m):
-            if cromwell[r][c1] == 1:
-                for c2 in range(c1 + 1, m):
-                    if cromwell[r][c2] == 1:
-                        all_horizontal_lines.append([[r, c1], [r, c2]])
-
-    for line1 in all_horizontal_lines:
-        for line2 in all_horizontal_lines:
-            if line1[0][0] < line2[0][0]:
-                col1_start = line1[0][1] # line1의 시작 열
-                col1_end = line1[1][1]   # line1의 끝 열
-
-                row2_start = line2[0][0] # line2의 행
-                col2_start = line2[0][1] # line2의 시작 열
-                col2_end = line2[1][1]   # line2의 끝 열
-
-                if col1_start <= col2_start and col2_end <= col1_end:
-                    found_below_line2_start = False
-                    for r_below in range(row2_start + 1, n):
-                        if cromwell[r_below][col2_start] == 1:
-                            found_below_line2_start = True
-                            break # 찾았으면 더 이상 탐색할 필요 없음
-
-                    if not found_below_line2_start:
-                        continue # 이 패턴은 다음 line2 조합으로 넘어감
-
-                    
-                    found_spanning_vertical_line = False
-                    
-                    for vert_col in range(col1_end + 1, m): 
-                        potential_vert_start_row = -1
-                        potential_vert_end_row = -1
-                        for r_vert_start in range(n):
-                            if cromwell[r_vert_start][vert_col] == 1:
-                                potential_vert_start_row = r_vert_start
-                                break # 첫 번째 1을 찾았으므로 시작점으로 간주
-
-                        if potential_vert_start_row != -1: # 시작점 찾음
-                            for r_vert_end in range(potential_vert_start_row + 1, n):
-                                if cromwell[r_vert_end][vert_col] == 1:
-                                    potential_vert_end_row = r_vert_end
-                                    break # 두 번째 1을 찾았으므로 끝점으로 간주
-                        
-                        if potential_vert_start_row != -1 and potential_vert_end_row != -1:
-                            if potential_vert_start_row <= line1[0][0] and \
-                               potential_vert_end_row >= line2[0][0]:
-                                found_spanning_vertical_line = True
-                                break # 조건을 만족하는 세로줄을 찾았으므로 더 이상 탐색할 필요 없음
-                    
-                    if found_spanning_vertical_line:
-                        return True # 모든 조건을 만족하는 패턴을 찾음
-
-    return False # 어떤 패턴도 찾지 못함
-
-
-
-
-# def get_bit(num, bit_pos):
-#     """
-#     정수에서 특정 위치의 비트 값을 가져옵니다.
-#     bit_pos는 가장 오른쪽 비트(Least Significant Bit)부터 0으로 시작하는 인덱스입니다.
-#     """
-#     return (num >> bit_pos) & 1
-
-# def set_bit(num, bit_pos, value):
-#     """
-#     정수의 특정 위치의 비트를 설정합니다.
-#     value가 1이면 해당 비트를 1로, 0이면 0으로 만듭니다.
-#     """
-#     if value == 1:
-#         return num | (1 << bit_pos)  # 해당 비트를 1로 설정
-#     else:
-#         return num & (~(1 << bit_pos)) # 해당 비트를 0으로 설정
+def set_bit(num, bit_pos, value):
+    """
+    정수의 특정 위치의 비트를 설정합니다.
+    value가 1이면 해당 비트를 1로, 0이면 0으로 만듭니다.
+    """
+    if value == 1:
+        return num | (1 << bit_pos)  # 해당 비트를 1로 설정
+    else:
+        return num & (~(1 << bit_pos)) # 해당 비트를 0으로 설정
 
 
 # def R3(input_rows):
@@ -561,9 +497,7 @@ def Theta_makeCromwell_spatial(n):
                 if R2(Newone):
                     continue
 
-            if row_idx == n-1:
-                if R3(Newone):
-                    continue
+
 
             if isValid:
                 # 만약 유효하면 현재 열에 저장

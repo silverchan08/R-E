@@ -3,11 +3,13 @@
 \usepackage{kotex}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage[margin=2cm,nonhead]{geometry}
 \usepackage{setspace}
 \usepackage{abstract}
 \usepackage{authblk}
+\usepackage{enumitem}
 
 
 \onehalfspacing
@@ -49,18 +51,154 @@
 
 
 \begin{abstract}
-Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear  and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\\
+%연구했던 방향을 그림으로 그린 다음 정리하면 좋을 듯? 내가 카이알앤이 첫날에 했던 것처럼\\
+Our purpose of this research is classifying theta-curves and handcuff graphs by their arc index, which their crossing is less or equal to 7.
+We tried to find those arc indices by proving lower bounds and upper bounds of the theta-curves and handcuff graphs.
+Also we programmed Python code that returns Cromwell matrix of the theta curves which have crossing less than 7.
+Yamada polynomial was used to prove bounds and programming the Python code.\\
+\textbf{Keywords : Theta-curves, Handcuff graphs, arc index, Yamada polynomial}
+\\
 \end{abstract}
 
 
 \section{Introduction}
-연구했던 방향을 그림으로 그린 다음 정리하면 좋을 듯? 내가 카이알앤이 첫날에 했던 것처럼
+% 쓸 것\\
+% - theta-curve, handcuff graph의 정의\\
+% - arc index, cromwell matrix의 정의\\
+% - yamada polynomial의 정의\\
+
+Theta curve is a spatial knot on 3-sphere which has 2 vertices and 3 edges.
 
 \section{Theoretical Background}
-우리가 여름방학 때 공부한 것들, 선행연구 논문에 있던 것들 요약 정리
+우리가 여름방학 때 공부한 것들, 선행연구 논문에 있던 것들 요약 정리\\
+졸업논문에 나와있던 호지수의 범위 요약하면 좋을 듯?
 
 \section{Research Methods and Procedure}
 Theorem을 적어나가면서 하나씩 증명하는 방법이면 좋을 것 같음 (졸업논문처럼)
+
+\subsection{The Python code(가제)}
+The python code(가제) generates the possible Cromwell matrix of theta-curves, and compares with the existing knots in the table which is less or equal to 7 crossings.
+It eventually returns the Cromwell matrix of the compared theta-curve.
+To distinguish the Cromwell matrices from theta-curves and handcuff graphs, which is generated and removed by the rules from the above section, we should use the determinant of the Cromwell matrices.
+
+$\mathbf{Definition}$ The \textbf{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.) \\ \\
+$\mathbf{Definition}$ The \textbf{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
+\begin{enumerate}
+    \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
+    \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
+\end{enumerate}
+$\mathbf{Theorem}$ Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix. \\ \\
+$\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$. The \textbf{H-deletion} Matrix of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+
+\subsection{Main Theorem}
+$\mathbf{Theorem}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
+
+\begin{proof}
+\begin{enumerate}
+    \item \textbf{Method of changing grid diagram of a knot to simple matrix}\\
+    First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
+By applying row operation, we should make matrix such as
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    1 & 0 & \cdots & 0 & 1
+    \end{pmatrix}$$
+Let matrix is $n\times n$.
+Next, we apply the row operation. We add the upper rows to the most bottom row. Then,
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    2 & 2 & \cdots & 2 & 2
+    \end{pmatrix}$$
+Lastly, by subtracting ($2i-1$)th row $(i \in \mathbb{N})$ with multiplying row by 2 and substract with most bottom row, if n is even, the most bottom row only contains 0. Since it is upper triangular matrix, we can obtain determinant by trace. Hence the last entry is 0, the determinant is 0. If n is odd, the last entry of most bottom row is 2 and other entry is all 0. Since it is upper triangular matrix, we can obtain determinant by trace too. Hence the other entry is all 1, the determinant is $\pm 2$.\\
+
+\item \textbf{Proof in the case of theta-curve}\\
+Do the H-deletion. Then, we can make the matrix of this grid diagram by previous section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+\begin{enumerate}
+    \item \textbf{0}\\
+    T-shaped figure is given.
+    \item \textbf{1 (middle vertex)}\\
+    Line-shaped figure is given.
+    \item \textbf{1 (end vertex)}\\
+    Line-shaped figure is given.
+    \item \textbf{2 (two end vertices)}\\
+    T-shaped figure is given.
+    \item \textbf{2 (middle and end vertices)}\\
+    Line-shaped figure is given.
+\end{enumerate}
+
+\begin{enumerate}[label={(\roman*)}]
+    \item \textbf{Line-shaped figure}\\
+    Let the matrix is given.
+    $$\begin{pmatrix}
+        1 & 1 & 1 & 0\\
+        0 & 1 & 1 & 1\\
+        1 & 0 & 0 & 1
+    \end{pmatrix}$$
+    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+    $$\begin{pmatrix}
+        1 & 1 \\
+        0 & 1
+    \end{pmatrix}$$
+    is given.\\
+    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+    \item \textbf{T-shaped figure}\\
+    Let the matrix is given.
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        1 & 1 & 1\\
+    \end{pmatrix}$$
+    If you work on deleting rows and columns here, you can get the T-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        0 & 1 & 0\\
+        0 & 0 & 1
+    \end{pmatrix}$$
+    is given.\\
+    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+\end{enumerate}
+Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
+
+\item \textbf{Proof in the case of handcuff graph}\\
+    Do the H-deletion. Then, we can make the matrix of this grid diagram by upper section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+    \begin{enumerate}
+        \item \textbf{0}\\
+        Knot is given.
+        \item \textbf{1 (middle vertex)}\\
+        Line-shaped figure is given.
+        \item \textbf{1 (end vertex)}\\
+        It is not given since one column might have 3 vertices.
+        \item \textbf{2 (two end vertices)}\\
+        It is not given since rows which have 3 vertices is connected with 2 line.
+        \item \textbf{2 (middle and end vertices)}\\
+        It is not given since rows which have 3 vertices is connected with 2 line.
+    \end{enumerate}
+    
+    \begin{enumerate}[label={(\roman*)}]
+        \item \textbf{Knot}\\
+        By upper section, the determinant becomes 0 or $\pm 2$.
+        \item \textbf{Line-shaped figure}
+        Let the matrix is given.
+        $$\begin{pmatrix}
+            0 & 0 & 0 & 1 & 1\\
+            0 & 1 & 0 & 1 & 1\\
+            1 & 1 & 1 & 0 & 0\\
+            1 & 0 & 1 & 0 & 0
+        \end{pmatrix}$$
+        If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+        $$\begin{pmatrix}
+            1 & 1 & 0 \\
+            0 & 1 & 1 \\
+            0 & 0 & 0 \\
+        \end{pmatrix}$$
+        Since it is upper triangular matrix, the determinant of the matrix is trace, so the determinant of this matrix is 0.
+    \end{enumerate}
+\end{enumerate}
+\end{proof}
 
 \section{Research Result}
 뭔가 나오긴 하겠지...............?

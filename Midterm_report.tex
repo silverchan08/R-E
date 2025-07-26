@@ -20,7 +20,7 @@
 
 \renewcommand\Affilfont{\small}
 
-\title{R\&E 과제명 (영문)}
+\title{\textbf{Classifying Theta-Curves and Handcuff Graphs up to 7 Crossing by Arc Index(가제)}}
 \author[1]{조은찬\thanks{email}}
 \author[1]{Jeongwon Shin\thanks{io25jellyfish@gmail.com}}
 \author[1]{서보연\thanks{이메일}}
@@ -39,9 +39,7 @@
 \date{\vspace{-5ex}}
 
 \begin{document}
-
 \maketitle
-
 \renewenvironment{abstract}
 {\begin{quote}
 \noindent \rule{\linewidth}{.5pt}\par{\bfseries \abstractname.}}
@@ -51,12 +49,11 @@
 
 
 \begin{abstract}
-%연구했던 방향을 그림으로 그린 다음 정리하면 좋을 듯? 내가 카이알앤이 첫날에 했던 것처럼\\
-Our purpose of this research is classifying theta-curves and handcuff graphs by their arc index, which their crossing is less or equal to 7.
+Our purpose of this research is classifying theta-curves and handcuff graphs by their arc index, which their crossing is up to 7.
 We tried to find those arc indices by proving lower bounds and upper bounds of the theta-curves and handcuff graphs.
-Also we programmed Python code that returns Cromwell matrix of the theta curves which have crossing less than 7.
-Yamada polynomial was used to prove bounds and programming the Python code.\\
-\textbf{Keywords : Theta-curves, Handcuff graphs, arc index, Yamada polynomial}
+Also we programmed Python code that returns Cromwell matrix of the theta curves which have crossing up to 7.
+Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
+\textbf{Keywords : theta-curves, handcuff graphs, arc index, Yamada polynomial}
 \\
 \end{abstract}
 
@@ -67,7 +64,11 @@ Yamada polynomial was used to prove bounds and programming the Python code.\\
 % - arc index, cromwell matrix의 정의\\
 % - yamada polynomial의 정의\\
 
-Theta curve is a spatial knot on 3-sphere which has 2 vertices and 3 edges.
+Theta-curve is a spatial knot on 3-sphere which has 2 vertices and 3 edges. In the projection of the theta-curve, the section where theta-curve meets itself is named crossing. If the one theta-curve and other theta-curve's continuous transform of the graph is same, these curves are equivalent. To transform a projection of theta-curve, the Reidemeister move is used. (이미지 넣어야 함)\\
+
+Handcuff graph consists of two loops and an edge joining the loops. In the projection of the handcuff graph, the section where handcuff graph meets itself is named crossing. If the one handcuff graph and other handcuff graph's continuous transform of the graph is same, these graphs are equivalent. Similar with the theta-curve, the Reidemeister move is used to transfrom a projection of handcuff graph. (이미지 넣어야 함)\\
+
+Arc presentation of the theta curve is by one binding axis, 
 
 \section{Theoretical Background}
 우리가 여름방학 때 공부한 것들, 선행연구 논문에 있던 것들 요약 정리\\
@@ -90,7 +91,7 @@ $\mathbf{Definition}$ The \textbf{THC-Cromwell matrix} is the matrix that satisf
 $\mathbf{Theorem}$ Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix. \\ \\
 $\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$. The \textbf{H-deletion} Matrix of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
 
-\subsection{Main Theorem}
+\subsubsection{Main Theorem}
 $\mathbf{Theorem}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
 
 \begin{proof}

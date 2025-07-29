@@ -1,6 +1,7 @@
 from collections import deque
 import time
 import topoly
+import copy
 
 def toBinary(n):
     ret = ''
@@ -398,7 +399,7 @@ def get_pd_code(cromwell_bit):
             current_col_ones = [current_row_one for current_row_one in range(n+1) if cromwell[crossing_row][current_row_one] == 1]
             if current_col_ones[0] < col_idx < current_col_ones[-1]:
                 cromwell[crossing_row][col_idx] = 2
-
+    X = copy.deepcopy(cromwell)
     # n by n+1 방문 리스트, 이동 횟수, crossing에 붙일 숫자
     visited = [[False]*(n+1) for _ in range(n)]
     num_move = 1
@@ -408,7 +409,7 @@ def get_pd_code(cromwell_bit):
     isFinished = False
 
     # 행 내 이동 / first_three_ones_row에서 시작
-    def move_row(current_point):
+    def move_row_left(current_point):
         nonlocal num_move, crossing_label, visited, cromwell, cromwell_bit, planar, isFinished
 
         current_row = current_point[0]
@@ -518,6 +519,115 @@ def get_pd_code(cromwell_bit):
         visited[next_point[0]][next_point[1]] = True
         return next_point
 
+    def move_row_right(current_point):
+        nonlocal num_move, crossing_label, visited, cromwell, cromwell_bit, planar, isFinished
+
+        current_row = current_point[0]
+        current_col = current_point[1]
+        # 행 이동할 다음 점
+        next_point = [current_row, 0]
+
+        # 1이 세 개일 때
+        if current_row == first_three_vertex[0] or current_row == second_three_vertex[0]:
+            ones_same_row = [col_idx for col_idx in range(n+1) if (cromwell_bit[current_row] >> col_idx) & 1] # 같은 행에 있는 1들의 리스트
+            # 맨 왼쪽/오른쪽 1일 때: 가운데로
+            if current_col == ones_same_row[0] or current_col == ones_same_row[2]:
+                next_point[1] = ones_same_row[1]
+            # 가운데 1일 때: 안 간 곳으로
+            else:
+                if not visited[current_row][ones_same_row[2]]:
+                    next_point[1] = ones_same_row[2]
+                else:
+                    next_point[1] = ones_same_row[0]
+                # 만약 첫번째 1 세 개짜리 행인데 처음 지나가면 labeling
+                if current_point == first_three_vertex:
+                    if cromwell[current_row][current_col] == 1:
+                        cromwell[current_row][current_col] += crossing_label + 1
+                        crossing_label += 1
+                        planar.append([num_move, 0, 0, "down"])
+                # 두번째 1 세 개짜리 행이면 labeling
+                else:
+                    if not visited[current_row][ones_same_row[2]]:
+                        planar[-1][2] = num_move
+                    else:
+                        planar[-1][0] = num_move
+        # 1이 두 개일 때: 해당 행 다른 칸으로
+        else:
+            for col_idx in range(n+1):
+                if cromwell[current_row][col_idx] == 1 and col_idx != current_col:
+                    next_point[1] = col_idx
+                    break
+
+        # 왼쪽으로 이동한 경우
+        if current_col > next_point[1]:
+            # 그 사이 점들 탐색
+            for middle_point_col in range(current_col-1, next_point[1]-1, -1):
+                # 만약 0, 1이 아닌 경우: 2거나(교점) 5개거나(이미 지나가서 labeling한 교점) 3개(이미 지나간 1 세 개짜리 행)
+                if cromwell[current_row][middle_point_col] not in [0, 1]:
+                    if cromwell[current_row][middle_point_col] == 2: # 2일 때 (교점) => labeling
+                        cromwell[current_row][middle_point_col] += crossing_label
+                        planar.append([num_move, 0, num_move+1, 0, 'left'])
+                        crossing_label += 1
+                    elif len(planar[cromwell[current_row][middle_point_col]-3]) == 5: # 교점들은 3부터 labeling (3으로 labeling 돼있는 게 0번째)
+                        vertex_pd_code = planar[cromwell[current_row][middle_point_col]-3]
+                        vertex_pd_code[0] = num_move
+                        vertex_pd_code[2] = num_move + 1
+                        if vertex_pd_code[4] == 'up':
+                            vertex_pd_code[1], vertex_pd_code[3] = vertex_pd_code[3], vertex_pd_code[1]
+                    else: # 1 세 개짜리 행
+                        vertex_pd_code = planar[cromwell[current_row][middle_point_col]-3]
+                        if next_point == first_three_vertex:
+                            vertex_pd_code[2] = num_move
+                            vertex_pd_code[1] = num_move+1
+                        else:
+                            vertex_pd_code[2] = num_move
+                    num_move += 1
+                # vertex(cromwell이 1)인 경우
+                elif cromwell[current_row][middle_point_col] == 1:
+                    if [current_row, middle_point_col] == second_three_vertex:
+                        cromwell[current_row][middle_point_col] += crossing_label+1
+                        crossing_label += 1
+                        planar.append([0, 0, num_move, "down"])
+                        num_move += 1
+
+        # 오른쪽으로 이동한 경우
+        if current_col < next_point[1]:
+            # 그 사이 점들 탐색
+            for middle_point_col in range(current_col+1, next_point[1]+1):
+                # 만약 0, 1이 아닌 경우: 2거나(교점) 5개거나(이미 지나가서 labeling한 교점) 3개(이미 지나간 1 세 개짜리 행)
+                if cromwell[current_row][middle_point_col] not in [0, 1]:
+                    if cromwell[current_row][middle_point_col] == 2: # 2일 때 (교점) => labeling
+                        cromwell[current_row][middle_point_col] += crossing_label
+                        planar.append([num_move, 0, num_move+1, 0, 'right'])
+                        crossing_label += 1
+                    elif len(planar[cromwell[current_row][middle_point_col]-3]) == 5: # 교점들은 3부터 labeling (3으로 labeling 돼있는 게 0번째)
+                        vertex_pd_code = planar[cromwell[current_row][middle_point_col]-3]
+                        vertex_pd_code[0] = num_move
+                        vertex_pd_code[2] = num_move + 1
+                        if vertex_pd_code[4] == 'down':
+                            vertex_pd_code[1], vertex_pd_code[3] = vertex_pd_code[3], vertex_pd_code[1]
+                    else: # 1 세 개짜리 행
+                        vertex_pd_code = planar[cromwell[current_row][middle_point_col]-3]
+                        if next_point == first_three_vertex:
+                            vertex_pd_code[0] = num_move
+                            vertex_pd_code[1] = num_move+1
+                        else:
+                            vertex_pd_code[0] = num_move
+                    num_move += 1
+                # vertex(cromwell이 1)인 경우
+                elif cromwell[current_row][middle_point_col] == 1:
+                    if [current_row, middle_point_col] == second_three_vertex:
+                        cromwell[current_row][middle_point_col] += crossing_label+1
+                        crossing_label += 1
+                        planar.append([num_move, 0, 0, "down"])
+                        num_move += 1
+
+        if visited[next_point[0]][next_point[1]]:
+            isFinished = True
+            return
+        visited[next_point[0]][next_point[1]] = True
+        return next_point
+
     def move_col(current_point):
         nonlocal num_move, crossing_label, visited, cromwell, cromwell_bit, planar, isFinished
 
@@ -530,6 +640,12 @@ def get_pd_code(cromwell_bit):
             if row_idx != current_row and ((cromwell_bit[row_idx] >> current_col) & 1):
                 next_point[0] = row_idx
                 break
+        # 만약 첫번째 1 세 개짜리 행인데 처음 지나가면 labeling
+        if current_point == first_three_vertex:
+            if cromwell[current_row][current_col] == 1:
+                cromwell[current_row][current_col] += crossing_label + 1
+                crossing_label += 1
+                planar.append([num_move, 0, 0, "down"])
 
         # 첫번째 1 세 개짜리 행이고 올라가면 마지막 up으로 변경 (기존 down)
         if (current_point == first_three_vertex):
@@ -540,7 +656,7 @@ def get_pd_code(cromwell_bit):
         if (current_point == second_three_vertex):
             planar[-1][1] = num_move
             if current_row > next_point[0]:
-                planar[-1][3] = "up"
+                planar[-1][3] = "down"
         
         # 위로 이동한 경우
         if current_row > next_point[0]:
@@ -617,7 +733,7 @@ def get_pd_code(cromwell_bit):
     current_point = first_three_vertex
     while not isFinished:
         if not isFinished:
-            current_point = move_row(current_point)
+            current_point = move_row_left(current_point)
         if not isFinished:
             current_point = move_col(current_point)
 
@@ -628,9 +744,36 @@ def get_pd_code(cromwell_bit):
         else:
             ret += f"X[{elem[0]}, {elem[1]}, {elem[2]}, {elem[3]}]"
         ret += ';' if idx != len(planar)-1 else ''
-    return ret
+    ret1 = ret
 
-cromwell = [148, 10, 68, 272, 129, 288, 66, 41]
+    isFinished = False  #변수 초기화
+    current_point = first_three_vertex
+    visited = [[0]*(n+1) for i in range(n)]
+    num_move = 1
+    crossing_label = 1
+    cromwell = X
+    planar = []
+    current_point = first_three_vertex
+    while not isFinished:   #오른 시작으로 한 번 더
+        if not isFinished:
+            current_point = move_row_right(current_point)
+        if not isFinished:
+            current_point = move_col(current_point)
+
+    ret = ''
+    for idx, elem in enumerate(planar):
+        if len(elem) == 4:
+            ret += f"V[{elem[0]}, {elem[1]}, {elem[2]}]" if elem[3] == "down" else f"V[{elem[0]}, {elem[2]}, {elem[1]}]"
+        else:
+            ret += f"X[{elem[0]}, {elem[1]}, {elem[2]}, {elem[3]}]"
+        ret += ';' if idx != len(planar)-1 else ''
+    ret2 = ret
+    if ' 0' in ret1 or '[0' in ret1: #둘 중에 하나는 맞음, 틀린 것은 꼬리에 0 남음
+        return ret2
+    else:
+        return ret1
+
+cromwell = [73, 18, 132, 320, 34, 640, 264, 36, 529]
 pd = get_pd_code(cromwell)
 knot = topoly.yamada(pd)
 print(knot, topoly.getpoly('y', knot))

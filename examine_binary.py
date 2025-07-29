@@ -630,7 +630,7 @@ def get_pd_code(cromwell_bit):
         ret += ';' if idx != len(planar)-1 else ''
     return ret
 
-code = '10100010 01001000 00100001 10010100 00001010 01000100 00010001'
+code = '01010010 00100100 10001000 01000100 00001001 10000010 00110001'
 code = code.split(' ')
 n = len(code)+1
 

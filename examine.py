@@ -630,7 +630,7 @@ def get_pd_code(cromwell_bit):
         ret += ';' if idx != len(planar)-1 else ''
     return ret
 
-cromwell = [148, 10, 68, 272, 129, 288, 66, 41]
+cromwell = [392, 196, 272, 40, 18, 5, 66, 33]
 pd = get_pd_code(cromwell)
 knot = topoly.yamada(pd)
 print(knot, topoly.getpoly('y', knot))

@@ -58,10 +58,22 @@
 % ====================
 
 \footercontent{
-  \href{https://utfpr.edu.br/ct/ppgca}{utfpr.edu.br/ct/ppgca} \hfill
-  Mostra de Trabalhos do PPGCA --- TechTalks 2024 \hfill
-  \href{mailto:ppgca-ct@utfpr.edu.br}{ppgca-ct@utfpr.edu.br}}
-% (can be left out to remove footer)
+  \begin{center}
+    \begin{minipage}[c]{\linewidth}
+      \centering
+      \quad \includegraphics[height=2cm]{../Midterm_Poster/logos/ksa_logo.jpg} \hfill
+      \centering
+      \includegraphics[height=2cm]{../Midterm_Poster/logos/kaist_logo.png} \hfill
+      \centering
+      \includegraphics[height=2cm]{../Midterm_Poster/logos/gwaguibu_logo.png} \quad
+    \end{minipage}
+
+    \vspace{0.3cm}
+
+    Korea Science Academy of KAIST \quad
+    \href{http://www.ksa.hs.kr}{ksa.hs.kr} \quad
+  \end{center}
+}
 
 
 % ====================
@@ -117,8 +129,15 @@
   \end{block}
   \column{0.33\textwidth}
   \begin{block}{Classifying Theta-Curves and Handcuff Graphs by Determinant}
-      $\mathbf{Theorem.}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.
-      The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
+    $\mathbf{Definition.}$ The \textbf{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
+    \begin{enumerate}
+      \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
+      \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
+    \end{enumerate}
+    $\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$.
+    The \textbf{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+    $\mathbf{Theorem.}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.
+    The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.\\
   \end{block}
   \column{0.33\textwidth}
   \begin{block}{새로운 거}
@@ -152,7 +171,6 @@
   \begin{columns}[t]
   \begin{column}{0.5\textwidth}
   \begin{alertblock}{Theta-Curves}
-  \hspace{1cm}
   \begin{figure}
     \begin{subfigure}{0.075\textwidth}
     \includegraphics[width=\columnwidth]{../Midterm_Poster/grid_diagram/theta_3_1.png}

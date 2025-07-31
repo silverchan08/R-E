@@ -26,6 +26,7 @@
 \usepackage{amssymb}
 \usepackage[labelformat=empty]{caption}
 \usepackage{subcaption}
+\usepackage{algpseudocode}
 
 \captionsetup[subfigure]{labelformat=empty}
 
@@ -141,26 +142,25 @@
   \column{0.33\textwidth}
   \begin{block}{새로운 거(민호씨 알고리즘 넣으쇼)}
 
-    This block catches your eye, so \textbf{important stuff} should probably go
-    here.
-
-    Curabitur eu libero vehicula, cursus est fringilla, luctus est. Morbi
-    consectetur mauris quam, at finibus elit auctor ac. Aliquam erat volutpat.
-    Aenean at nisl ut ex ullamcorper eleifend et eu augue. Aenean quis velit
-    tristique odio convallis ultrices a ac odio.
-
-    \begin{itemize}
-      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In
-        consequat, nibh sed mattis luctus, augue diam fermentum lectus.
-      \item \textbf{In euismod erat metus} non ex. Vestibulum luctus augue in
-        mi condimentum, at sollicitudin lorem viverra.
-      \item \textbf{Suspendisse vulputate} mauris vel placerat consectetur.
-        Mauris semper, purus ac hendrerit molestie, elit mi dignissim odio, in
-        suscipit felis sapien vel ex.
-    \end{itemize}
-
-    Aenean tincidunt risus eros, at gravida lorem sagittis vel. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+    \begin{algorithm}
+      \caption{An algorithm with caption}\label{alg:cap}
+      \begin{algorithmic}
+        \Require $n \geq 0$
+        \Ensure $y = x^n$
+        \State $y \gets 1$
+        \State $X \gets x$
+        \State $N \gets n$
+        \While{$N \neq 0$}
+        \If{$N$ is even}
+            \State $X \gets X \times X$
+            \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
+        \ElsIf{$N$ is odd}
+            \State $y \gets y \times X$
+            \State $N \gets N - 1$
+        \EndIf
+        \EndWhile
+      \end{algorithmic}
+    \end{algorithm}
 
   \end{block}
 \end{columns}

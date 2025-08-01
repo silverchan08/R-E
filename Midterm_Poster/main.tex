@@ -28,6 +28,7 @@
 \usepackage{subcaption}
 \usepackage{algpseudocode}
 
+
 \captionsetup[subfigure]{labelformat=empty}
 
 % ====================
@@ -758,8 +759,17 @@
 
   \end{block}
   \column{0.33\textwidth}
-  \begin{block}{새로운 거}
-    새로운 거
+  \begin{block}{Bounds of Arc Index}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.8\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
+      \caption{Stacked tangle and simple closure of theta-curve $2_1$}
+    \end{figure}
+    $\mathbf{Theorem.}$ Let $S_T$ be a simple closure of a theta or handcuff curve, and let $n$ be the number of crossings in $S_T$. Then,
+     \[ \mathrm{spr}(R(S_T)) \leq 2n+2 \]
+    \indent where $R(S_T)$ is the Yamada polynomial of $S_T$, and $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$.
+    $\mathbf{Corollary.}$  Let $G$ be a theta or handcuff graph. Then, the arc index of $G$ is bounded by
+      \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}. \]
   \end{block}
   \column{0.33\textwidth}
   \begin{block}{Refernces}

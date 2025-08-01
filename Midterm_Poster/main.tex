@@ -28,6 +28,7 @@
 \usepackage{subcaption}
 \usepackage{algpseudocode}
 
+
 \captionsetup[subfigure]{labelformat=empty}
 
 % ====================
@@ -48,11 +49,13 @@
 % Title
 % ====================
 
-\title{Classifying Theta-Curves and Handcuff Graphs up to 7 Crossing by Arc Index(가제)}
+%\title{Arc Indices of Theta-Curves and Handcuff Graphs}
+\title{Minimal Grid Diagrams of \\ Theta-Curves and Handcuff Graphs Up to 7 Crossings}
 
-\author{Cho Eunchan \inst{1} \and Jeongwon Shin \inst{1} \and Boyeon Seo \inst{1} \and Minho Choi \inst{1} \and Kim Hun \inst{2} \and 진교택 \inst{3}}
 
-\institute[shortinst]{\inst{1} Researcher, Korea Science Academy of KAIST \samelineand \inst{2} Supervisor, Another Institute \samelineand \inst{3} Co-Supervisor, asdf \samelineand}
+\author{Cho, Eunchan \inst{1} \and  Shin, Jeongwon \inst{1} \and  Seo, Boyeon \inst{1} \and  Choi, Minho \inst{1} \and Kim, Hun \inst{2} \and Jin, Gyo Taek \inst{3}}
+
+\institute[shortinst]{\inst{1} Korea Science Academy of KAIST \samelineand \inst{2} Supervisor, Korea Science Academy of KAIST \samelineand \inst{3} Supervisor, asdf \samelineand}
 
 % ====================
 % Footer (optional)
@@ -111,17 +114,17 @@
 \begin{columns}[t]
   \column{0.33\textwidth}
   \begin{block}{Definitions}
-    \textbf{Knot} is an embedding of a circle in 3-dimensional Euclidean space.
-    In \textbf{Knot Theory}, people classify each knot using their \textbf{Knot Invariant}. \\
+    %\textbf{Knot} is an embedding of a circle in 3-dimensional Euclidean space.
+    %In \textbf{Knot Theory}, people classify each knot using their \textbf{Knot Invariant}. \\
     \begin{itemize}
       \item \textbf{Theta-curve} is a spatial knot on 3-sphere which has 2 vertices and 3 edges.
-      In the projection of the theta-curve, the section where theta-curve meets itself is named \textbf{crossing}.
-      If the one theta-curve and other theta-curve's continuous transform of the graph is same, these curves are \textbf{equivalent}.
+      %In the projection of the theta-curve, the section where theta-curve meets itself is named \textbf{crossing}.
+      %If the one theta-curve and other theta-curve's continuous transform of the graph is same, these curves are \textbf{equivalent}.
       To transform a projection of theta-curve, the \textbf{generalized Reidemeister move} is used.
       \item \textbf{Handcuff graph} consists of two loops and an edge joining the loops.
     \end{itemize}
     \begin{figure}
-      \includegraphics[width = 7.5cm]{figure/reidemeister move.png}
+      \includegraphics[width = 7.5cm]{figure/reidemeister.pdf}
       \caption{reidemeister moves for theta and hundcuff knots}
     \end{figure}
     
@@ -755,8 +758,17 @@
 
   \end{block}
   \column{0.33\textwidth}
-  \begin{block}{새로운 거}
-    새로운 거
+  \begin{block}{Bounds of Arc Index}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.8\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
+      \caption{Stacked tangle and simple closure of theta-curve $2_1$}
+    \end{figure}
+    $\mathbf{Theorem.}$ Let $S_T$ be a simple closure of a theta or handcuff curve, and let $n$ be the number of crossings in $S_T$. Then,
+     \[ \mathrm{spr}(R(S_T)) \leq 2n+2 \]
+    \indent where $R(S_T)$ is the Yamada polynomial of $S_T$, and $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$.
+    $\mathbf{Corollary.}$  Let $G$ be a theta or handcuff graph. Then, the arc index of $G$ is bounded by
+      \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}. \]
   \end{block}
   \column{0.33\textwidth}
   \begin{block}{Refernces}

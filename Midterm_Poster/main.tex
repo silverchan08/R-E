@@ -124,7 +124,7 @@
       \item \textbf{generalized Reidemeister move} : used to transform a projection of theta-curve
     \end{itemize}
     \begin{figure}
-      \includegraphics[width = 7.5cm]{figure/reidemeister.pdf}
+      \includegraphics[width = 7.5cm]{figure/reidemeister.png}
       \caption{reidemeister moves for theta and hundcuff knots}
     \end{figure}
     
@@ -730,41 +730,46 @@
 
 \begin{columns}[t]
   \column{0.33\textwidth}
-  \begin{block}{Bounds of Arc Index}
-  \textbf{Stacked tangle} is stacked disks each with the frame as boundary with following properties:
-  \begin{itemize}
-  \item Only two disk called \textbf{non-simple disks} contain one vertex and three line
-  segments which joins the vertex and boundary point.
-  \item One of the non-simple disks is at the top.
-  \item Other disks called \textbf{simple disks} contain simple arc which joins two
-  points on the boundary.
-  \item When view from above
-  \begin{itemize}
-      \item two arcs in different simple disks intersect at most one point (by RII)
-      \item arc in simple disk and tree in non-simple disk intersect at most one point (by RV)
-  \end{itemize}
-  \end{itemize}
+  \begin{block}{Stacked Tangle Representation}
 
-  \textbf{Simple closure} of stacked tangle is a stacked tangle with \textbf{caps} satisfying following properties:
   \begin{itemize}
-      \item A \textbf{cap} is a simple arc in outside of stacked tangle joining end points of arcs or line segments
-      \item When view from above any tow caps have no intersection.
+    \item \textbf{Stacked tangle} of an theta-curve or handcuff graph is a configuration of stacked disks with arcs and caps.
+    \item \textbf{Arcs} are segments properly embedded in each disk, with endpoints on the boundary.
+    \item \textbf{Caps} are segments from the arc in one disk to the arc in another disk.
+    \item A \textbf{Simple closure} of stacked tangle is the planar projection of the stacked tangle without any nested caps.
   \end{itemize}
   % Then a simple closure of a stacked tangle without any nested caps is
   % corresponding to an arc presentation.
 
+  \begin{figure}
+      \centering
+      \includegraphics[width=0.8\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
+      \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
+  \end{figure}
+
   \end{block}
   \column{0.33\textwidth}
   \begin{block}{Bounds of Arc Index}
-    \begin{figure}
-      \centering
-      \includegraphics[width=0.8\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
-      \caption{Stacked tangle and simple closure of theta-curve $2_1$}
-    \end{figure}
-    $\mathbf{Theorem.}$ Let $S_T$ be a simple closure of a theta or handcuff curve, and let $n$ be the number of crossings in $S_T$. Then,
+
+    $\mathbf{Definition.}$ For a graph $G$ and its edge set $E$, let
+    \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)}. \]
+    \ ($\mu(G)$ is the number of connected components of $G$, and $\beta(G)$ is the first Betti number of $G$.) \\
+    \ Then, the \textbf{Yamada polynomial} of a graph $G$, $R(G)$ is defined by
+    \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
+
+    \vspace{1em}
+
+    $\mathbf{Theorem}$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
+
+    \vspace{1em}
+    
+    $\mathbf{Theorem.}$ Let $S_T$ be a simple closure of stacked tangle of a theta-curve or handcuff graph, and let $n$ be the number of crossings in $S_T$. Then,
      \[ \mathrm{spr}(R(S_T)) \leq 2n+2 \]
-    \indent where $R(S_T)$ is the Yamada polynomial of $S_T$, and $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$.
-    $\mathbf{Corollary.}$  Let $G$ be a theta or handcuff graph. Then, the arc index of $G$ is bounded by
+    where $R(S_T)$ is the Yamada polynomial of $S_T$, and $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. \\
+
+    \vspace{1em}
+
+    $\mathbf{Corollary.}$  Let $G$ be a theta-curve or handcuff graph. Then, the arc index of $G$ is bounded by
       \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}. \]
   \end{block}
   \column{0.33\textwidth}

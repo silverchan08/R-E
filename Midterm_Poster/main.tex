@@ -151,7 +151,6 @@
           \includegraphics[width=0.3\textwidth]{figure/openbook.png} \\
         \end{tabular}
         \caption{Grid diagram and Arc presentation of $\theta$-curve $3_1$}
-        \label{fig:two_images}
       \end{figure}
     \end{Diagrams}
 
@@ -165,6 +164,8 @@
     \item \textbf{Caps} : segments from the arc in one disk to the arc in another disk
     \item \textbf{Simple closure}: the planar projection of the stacked tangle without any nested caps
   \end{itemize}
+
+  
   % Then a simple closure of a stacked tangle without any nested caps is
   % corresponding to an arc presentation.
 
@@ -751,7 +752,7 @@
 
 \begin{columns}[t]
   \column{0.33\textwidth}
-  \begin{block}{Classifying Theta-Curves and Handcuff Graphs by Determinant}
+  \begin{block}{Classifying Theta-Curves and Handcuff Graphs}
     % $\mathbf{Definition.}$ The \textbf{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
     % \begin{enumerate}
     %   \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
@@ -759,9 +760,17 @@
     %   \item It represents a theta-curve or a handcuff graph.
     % \end{enumerate}
     $\mathbf{Definition.}$ Let any exception row(with three `1's) $i$ and its two outer 1s $j$, $k$.
-    The \textbf{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
-    $\mathbf{Theorem.}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.
-    The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.\\
+    The \textbf{H-deletion Matrix} of Cromwell matrix of $\theta$-curve and handcuff graph is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+    $\mathbf{Theorem.}$ The given Cromwell matrix of $\theta$-curve and handcuff graph is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$,
+    and is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.\\
+    \begin{figure}[h]
+        \centering
+        \begin{tabular}{cc}
+          \includegraphics[width=0.3\textwidth]{figure/Hdeletion_grid.png} &
+          \includegraphics[width=0.3\textwidth]{figure/Hdeletion_cromwell.png} \\
+        \end{tabular}
+        \caption{H-deletion of handcuff graph $2_1$}
+      \end{figure}
   \end{block}
 
 

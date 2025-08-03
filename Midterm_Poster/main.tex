@@ -69,7 +69,7 @@
       \centering
       \includegraphics[height=2cm]{../Midterm_Poster/logos/kaist_logo.png} \hfill
       \centering
-      \includegraphics[height=2cm]{../Midterm_Poster/logos/gwaguibu_logo.png} \quad
+      \includegraphics[height=2cm]{../Midterm_Poster/logos/gwagibu_logo.jpg} \quad
     \end{minipage}
 
     \vspace{0.3cm}
@@ -125,7 +125,7 @@
     \end{itemize}
     \begin{figure}
       \includegraphics[width = 7.5cm]{figure/reidemeister.png}
-      \caption{reidemeister moves for theta and hundcuff knots}
+      \caption{Reidemeister moves for theta-curves and handcuff graphs}
     \end{figure}
     
   \end{block}
@@ -137,7 +137,7 @@
       \begin{itemize} 
         \item \textbf{grid diagram} : made of horizontal lines and vertical lines, and vertical lines are always on top of horizontal lines
         \item \textbf{Cromwell matrix} : matrix made of 0 and 1 - except 2 rows, each row and columns has exactly two 1s, and for 2 rows, there are exactly three 1s, if the 1s are connected by horizontal and vertical lines, it leads to the grid diagram
-        \item \textbf{arc presentation} : can be expressed by grid diagram and vice versa \\ number of half planes are $\alpha$ on minimal arc presentation $\Rightarrow$ the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
+        \item \textbf{arc presentation} : can be expressed by grid diagram and vice versa, number of half planes are $\alpha$ on minimal arc presentation $\Rightarrow$ the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$
       \end{itemize} 
     \end{Diagrams}
 
@@ -147,9 +147,10 @@
     $\mathbf{Definition.}$ The \textbf{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
     \begin{enumerate}
       \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
-      \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
+      \item It has only two 1s in every row and column, except for two rows. These two rows have three 1s.
+      \item It represents a theta-curve or a handcuff graph.
     \end{enumerate}
-    $\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$.
+    $\mathbf{Definition.}$ Let any exception row(with three `1's) $i$ and its two outer 1s $j$, $k$.
     The \textbf{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
     $\mathbf{Theorem.}$ The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.
     The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.\\
@@ -743,7 +744,7 @@
 
   \begin{figure}
       \centering
-      \includegraphics[width=0.8\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
+      \includegraphics[width=0.7\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
       \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
   \end{figure}
 
@@ -776,7 +777,7 @@
   \begin{block}{Refernces}
     \begin{enumerate}
       \item Yoonsang Lee. (year). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
-      \item H. Moriuchi. (2009). \textit{A table of 0-curves and handcuff graphs with up to seven crossings}. Advanced Studies in Pure Mathematics 55, 2009 Noncommutativity and Singularities
+      \item H. Moriuchi. (2009). \textit{A table of $\theta$-curves and handcuff graphs with up to seven crossings}. Advanced Studies in Pure Mathematics 55, 2009 Noncommutativity and Singularities
 pp. 281-290
       \item MINJUNG LEE & SUNGJONG NO & AND SEUNGSANG OH. (2017). \textit{ARC INDEX OF SPATIAL GRAPHS}. arXiv:1711.08116v1 [math.GT] 22 Nov 2017
     \end{enumerate}

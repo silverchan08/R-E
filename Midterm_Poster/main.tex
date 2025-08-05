@@ -89,7 +89,7 @@
 % ====================
 
 % use this to include logos on the left and/or right side of the header:
-% \logoright{\includegraphics[height=2.5cm]{logos/utfpr-logo.png}}
+% \logoright{\includegraphics[height=2.4cm]{logos/utfpr-logo.png}}
 % \logoleft{\hspace{20ex}\includegraphics[height=3.5cm]{logos/ppgca-logo.png}}
 
 % ====================
@@ -105,7 +105,7 @@
 % \addtobeamertemplate{headline}{}
 % {
 %     \begin{tikzpicture}[remember picture,overlay]
-%       \node [anchor=north west, inner sep=3cm] at ([xshift=-2.5cm,yshift=1.75cm]current page.north west)
+%       \node [anchor=north west, inner sep=3cm] at ([xshift=-2.4cm,yshift=1.75cm]current page.north west)
 %       {\includegraphics[height=7cm]{logos/unott-logo.eps}}; 
 %     \end{tikzpicture}
 % }
@@ -121,20 +121,19 @@
     %\textbf{Knot} is an embedding of a circle in 3-dimensional Euclidean space.
     %In \textbf{Knot Theory}, people classify each knot using their \textbf{Knot Invariant}. \\
     \begin{itemize}
-      \item \textbf{Theta-curve} : a spatial knot on 3-sphere which has 2 vertices and 3 edges
+      \item \textbf{Theta-curve} : A graph embedded in $S^3$, consisting of two vertices and three edges, where each edge connects the two vertices.
       %In the projection of the theta-curve, the section where theta-curve meets itself is named \textbf{crossing}.
       %If the one theta-curve and other theta-curve's continuous transform of the graph is same, these curves are \textbf{equivalent}.
-      \item \textbf{Handcuff graph} : consists of two loops and an edge joining the loops
-      \item \textbf{Generalized Reidemeister move} : used to transform a projection of theta-curve
+      \item \textbf{Handcuff graph} : A graph embedded in $S^3$, consisting of two vertices and three edges, where one edge connects the two vertices, and each of the other two edges forms a loop at one of the vertices.
+      \item \textbf{Generalized Reidemeister move} : Five local moves on a spatial graph that does not alter the isotopy class of the spatial graph in $\mathbb{R}^3$.
     \end{itemize}
     \begin{figure}[h]
         \centering
         \begin{tabular}{ccc}
-          \includegraphics[width=0.1\textwidth]{figure/y6.png} &
-          \includegraphics[width=0.3\textwidth]{figure/y7.png} &
-          \includegraphics[width=0.3\textwidth]{figure/reidemeister.png} \\
+          \includegraphics[width=0.43\textwidth]{figure/spatial_deformation.png} &
+          \includegraphics[width=0.43\textwidth]{figure/reidemeister.png} \\
         \end{tabular}
-        \caption{Trivial $\theta$-curve, handcuff graph and Generalized reidemeister move}
+        \caption{$\theta$-curve, handcuff graph and generalized Reidemeister move}
     \end{figure}
 
     
@@ -145,10 +144,10 @@
     \begin{Diagrams}
       \caption{An algorithm with caption}\label{alg:cap}
       \begin{itemize} 
-        \item \textbf{Grid diagram} : made of horizontal lines and vertical lines, and vertical lines are always on top of horizontal lines
-        \item \textbf{Cromwell matrix} : matrix made of 0 and 1 - except 2 rows, each row and columns has exactly two 1s, and for 2 rows, there are exactly three 1s, if the 1s are connected by horizontal and vertical lines, it leads to the grid diagram
-        \item \textbf{Arc presentation} : can be expressed by grid diagram and vice versa, number of half planes are $\alpha$ on minimal arc presentation $\Rightarrow$ the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$
-      \end{itemize} 
+        \item \textbf{Grid diagram}: A diagram consisting of horizontal and vertical lines, where the vertical lines always pass over the horizontal lines.
+        \item \textbf{Cromwell matrix}: A (0, 1)-Matrix which each row and column contains exactly two 1s, except for two rows that contain three 1s.
+        \item \textbf{Arc presentation}: A configuration of half-planes with embedded arcs.
+      \end{itemize}
 
       \begin{figure}[h]
         \centering
@@ -165,10 +164,10 @@
   \begin{block}{Stacked Tangle Representation}
 
   \begin{itemize}
-    \item \textbf{Stacked tangle} : a configuration of stacked disks with arcs and caps
-    \item \textbf{Arcs} : segments properly embedded in each disk, with endpoints on the boundary
-    \item \textbf{Caps} : segments from the arc in one disk to the arc in another disk
-    \item \textbf{Simple closure}: the planar projection of the stacked tangle without any nested caps
+    \item \textbf{Stacked tangle} : A configuration of stacked disks with arcs and caps
+    \item \textbf{Arcs} : Segments properly embedded in each disk, with endpoints on the boundary
+    \item \textbf{Caps} : Segments from the arc in one disk to the arc in another disk
+    \item \textbf{Simple closure}: The planar projection of the stacked tangle without any nested caps
   \end{itemize}
 
   
@@ -190,363 +189,363 @@
   \begin{alertblock}{Theta-Curves}
   \begin{figure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_3_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_3_1.png}
     \caption{$3_1$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_4_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_4_1.png}
     \caption{$4_1$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_1.png}
     \caption{$5_1$}
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_2.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_2.png}
     \caption{$5_2$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_3.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_3.png}
     \caption{$5_3$}
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_4.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_4.png}
     \caption{$5_4$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_5.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_5.png}
     \caption{$5_5$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_6.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_6.png}
     \caption{$5_6$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_5_7.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_7.png}
     \caption{$5_7$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_1.png}
     \caption{$6_1$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_2.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_2.png}
     \caption{$6_2$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_3.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_3.png}
     \caption{$6_3$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_4.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_4.png}
     \caption{$6_4$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_5.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_5.png}
     \caption{$6_5$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_6.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_6.png}
     \caption{$6_6$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_7.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_7.png}
     \caption{$6_7$} 
     \end{subfigure}
       \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_8.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_8.png}
     \caption{$6_8$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_9.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_9.png}
     \caption{$6_9$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_10.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_10.png}
     \caption{$6_{10}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_11.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_11.png}
     \caption{$6_{11}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_12.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_12.png}
     \caption{$6_{12}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_13.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_13.png}
     \caption{$6_{13}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_14.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_14.png}
     \caption{$6_{14}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_15.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_15.png}
     \caption{$6_{15}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_6_16.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_16.png}
     \caption{$6_{16}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_1.png}
     \caption{$7_{1}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_2.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_2.png}
     \caption{$7_{2}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_3.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_3.png}
     \caption{$7_{3}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_4.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_4.png}
     \caption{$7_{4}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_5.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_5.png}
     \caption{$7_{5}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_6.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_6.png}
     \caption{$7_{6}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_7.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_7.png}
     \caption{$7_{7}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_8.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_8.png}
     \caption{$7_{8}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_9.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_9.png}
     \caption{$7_{9}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_10.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_10.png}
     \caption{$7_{10}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_11.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_11.png}
     \caption{$7_{11}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_12.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_12.png}
     \caption{$7_{12}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_13.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_13.png}
     \caption{$7_{13}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_14.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_14.png}
     \caption{$7_{14}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_15.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_15.png}
     \caption{$7_{15}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_16.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_16.png}
     \caption{$7_{16}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_17.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_17.png}
     \caption{$7_{17}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_18.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_18.png}
     \caption{$7_{18}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_19.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_19.png}
     \caption{$7_{19}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_20.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_20.png}
     \caption{$7_{20}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_21.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_21.png}
     \caption{$7_{21}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_22.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_22.png}
     \caption{$7_{22}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_23.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_23.png}
     \caption{$7_{23}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_24.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_24.png}
     \caption{$7_{24}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_25.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_25.png}
     \caption{$7_{25}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_26.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_26.png}
     \caption{$7_{26}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_27.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_27.png}
     \caption{$7_{27}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_28.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_28.png}
     \caption{$7_{28}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_29.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_29.png}
     \caption{$7_{29}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_30.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_30.png}
     \caption{$7_{30}$}
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_31.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_31.png}
     \caption{$7_{31}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_32.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_32.png}
     \caption{$7_{32}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_33.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_33.png}
     \caption{$7_{33}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_34.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_34.png}
     \caption{$7_{34}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_35.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_35.png}
     \caption{$7_{35}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_36.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_36.png}
     \caption{$7_{36}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_37.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_37.png}
     \caption{$7_{37}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_38.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_38.png}
     \caption{$7_{38}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_39.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_39.png}
     \caption{$7_{39}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_40.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_40.png}
     \caption{$7_{40}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_41.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_41.png}
     \caption{$7_{41}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_42.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_42.png}
     \caption{$7_{42}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_43.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_43.png}
     \caption{$7_{43}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_44.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_44.png}
     \caption{$7_{44}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_45.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_45.png}
     \caption{$7_{45}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_46.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_46.png}
     \caption{$7_{46}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_47.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_47.png}
     \caption{$7_{47}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_48.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_48.png}
     \caption{$7_{48}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_49.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_49.png}
     \caption{$7_{49}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_50.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_50.png}
     \caption{$7_{50}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_51.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_51.png}
     \caption{$7_{51}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_52.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_52.png}
     \caption{$7_{52}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_53.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_53.png}
     \caption{$7_{53}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_54.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_54.png}
     \caption{$7_{54}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_55.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_55.png}
     \caption{$7_{55}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_56.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_56.png}
     \caption{$7_{56}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_57.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_57.png}
     \caption{$7_{57}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_58.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_58.png}
     \caption{$7_{58}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_59.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_59.png}
     \caption{$7_{59}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_60.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_60.png}
     \caption{$7_{60}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_61.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_61.png}
     \caption{$7_{61}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_62.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_62.png}
     \caption{$7_{62}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_63.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_63.png}
     \caption{$7_{63}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_64.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_64.png}
     \caption{$7_{64}$} 
     \end{subfigure}
     \begin{subfigure}{0.075\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/theta_7_65.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_65.png}
     \caption{$7_{65}$} 
     \end{subfigure}
   \end{figure}
@@ -558,195 +557,195 @@
   \begin{alertblock}{Handcuff Graphs}
   \begin{figure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_2_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_2_1.png}
     \caption{$2_{1}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_4_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_4_1.png}
     \caption{$4_{1}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_5_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_5_1.png}
     \caption{$5_{1}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_1.png}
     \caption{$6_{1}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_2.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_2.png}
     \caption{$6_{2}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_3.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_3.png}
     \caption{$6_{3}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_4.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_4.png}
     \caption{$6_{4}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_5.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_5.png}
     \caption{$6_{5}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_6.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_6.png}
     \caption{$6_{6}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_7.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_7.png}
     \caption{$6_{7}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_8.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_8.png}
     \caption{$6_{8}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_6_9.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_9.png}
     \caption{$6_{9}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_1.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_1.png}
     \caption{$7_{1}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_2.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_2.png}
     \caption{$7_{2}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_3.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_3.png}
     \caption{$7_{3}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_4.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_4.png}
     \caption{$7_{4}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_5.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_5.png}
     \caption{$7_{5}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_6.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_6.png}
     \caption{$7_{6}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_7.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_7.png}
     \caption{$7_{7}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_8.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_8.png}
     \caption{$7_{8}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_9.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_9.png}
     \caption{$7_{9}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_10.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_10.png}
     \caption{$7_{10}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_11.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_11.png}
     \caption{$7_{11}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_12.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_12.png}
     \caption{$7_{12}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_13.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_13.png}
     \caption{$7_{13}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_14.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_14.png}
     \caption{$7_{14}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_15.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_15.png}
     \caption{$7_{15}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_16.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_16.png}
     \caption{$7_{16}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_17.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_17.png}
     \caption{$7_{17}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_18.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_18.png}
     \caption{$7_{18}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_19.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_19.png}
     \caption{$7_{19}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_20.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_20.png}
     \caption{$7_{20}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_21.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_21.png}
     \caption{$7_{21}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_22.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_22.png}
     \caption{$7_{22}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_23.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_23.png}
     \caption{$7_{23}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_24.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_24.png}
     \caption{$7_{24}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_25.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_25.png}
     \caption{$7_{25}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_26.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_26.png}
     \caption{$7_{26}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_27.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_27.png}
     \caption{$7_{27}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_28.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_28.png}
     \caption{$7_{28}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_29.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_29.png}
     \caption{$7_{29}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_30.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_30.png}
     \caption{$7_{30}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_31.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_31.png}
     \caption{$7_{31}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_32.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_32.png}
     \caption{$7_{32}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_33.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_33.png}
     \caption{$7_{33}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_34.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_34.png}
     \caption{$7_{34}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_35.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_35.png}
     \caption{$7_{35}$} 
     \end{subfigure}
     \begin{subfigure}{0.15\textwidth}
-    \includegraphics[width=2.5cm]{../Midterm_Poster/grid_diagram/handcuff_7_36.png}
+    \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_36.png}
     \caption{$7_{36}$} 
     \end{subfigure}
   \end{figure}
@@ -764,19 +763,16 @@
     %   \item It has only two 1s in every row and column, except for two rows. These two rows have three 1s.
     %   \item It represents a theta-curve or a handcuff graph.
     % \end{enumerate}
-    $\mathbf{Definition.}$ Let any exception row(with three `1's) $i$ and its two outer 1s $j$, $k$.
-    The \textbf{H-deletion Matrix} of $\theta$-curve and handcuff graph is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.
+    $\mathbf{Definition.}$ For a Cromwell matrix of a $\theta$-curve or handcuff graph, if the $i$-th row has three 1s,
+    the \textbf{H-deletion matrix} is the $(n{-}1)\times(n{-}1)$ matrix after removing $i$th row and the columns of its leftmost and rightmost 1s.
 
     \vspace{1em}
-    $\mathbf{Theorem.}$ The given Cromwell matrix of $\theta$-curve and handcuff graph is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$,
-    and is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.\\
+    $\mathbf{Theorem.}$ Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
+    $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
     \begin{figure}[h]
         \centering
-        \begin{tabular}{cc}
-          \includegraphics[width=0.3\textwidth]{figure/Hdeletion_grid.png} &
-          \includegraphics[width=0.3\textwidth]{figure/Hdeletion_cromwell.png} \\
-        \end{tabular}
-        \caption{H-deletion of handcuff graph $2_1$}
+        \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
+        \caption{H-deletion of $\theta$-curve graph $3_1$}
       \end{figure}
   \end{block}
 

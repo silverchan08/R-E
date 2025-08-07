@@ -69,13 +69,13 @@
     \begin{minipage}[c]{\linewidth}
       \centering
       \makebox[0.3\linewidth][r]{%
-        \includegraphics[height=2cm]{../Midterm_Poster/logos/image.png}
+        \includegraphics[height=2cm]{logos/image.png}
       }%
       \makebox[0.4\linewidth][c]{%
-        \includegraphics[height=2cm]{../Midterm_Poster/logos/kaist_logo.png}
+        \includegraphics[height=2cm]{logos/kaist_logo.png}
       }%
       \makebox[0.3\linewidth][l]{%
-        \includegraphics[height=2cm]{../Midterm_Poster/logos/gwagibu_logo.jpg}
+        \includegraphics[height=2cm]{logos/gwagibu_logo.jpg}
       }
     \end{minipage}
 
@@ -138,77 +138,51 @@
         \end{tabular}
         \caption{$\theta$-curve, handcuff graph and generalized Reidemeister move}
     \end{figure}
-
-    
   \end{block}
+
   \begin{block}{Diagrams}
+    %\caption{An algorithm with caption}\label{alg:cap}
+    \begin{itemize} 
+      \item \textbf{Grid diagram}: A link diagram of vertical strands and the same number of horizontal strands with the properties that at every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co-linear and no two vertical segments are co-linear.
+      \item \textbf{Cromwell matrix}: An n × n binary matrix each of whose rows and columns has exactly two 1’s.
+      \item \textbf{Arc presentation}: There is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis. Every link L can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
+    \end{itemize}
 
-    \begin{Diagrams}
-      %\caption{An algorithm with caption}\label{alg:cap}
-      \begin{itemize} 
-        \item \textbf{Grid diagram}: A link diagram of vertical strands and the same number of horizontal strands with the properties that at every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co-linear and no two vertical segments are co-linear.
-        \item \textbf{Cromwell matrix}: An n × n binary matrix each of whose rows and columns has exactly two 1’s.
-        \item \textbf{Arc presentation}: There is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis.
-        Every link L can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
-      \end{itemize}
-
-      \begin{figure}[h]
-        \centering
-        \begin{tabular}{cc}
-          \includegraphics[width=0.3\textwidth]{figure/grid.png} &
-          \includegraphics[width=0.3\textwidth]{figure/openbook.png} \\
-        \end{tabular}
-        \caption{Grid diagram and Arc presentation of $\theta$-curve $3_1$}
-      \end{figure}
-    \end{Diagrams}
-
-    
-
-  
-  % Then a simple closure of a stacked tangle without any nested caps is
-  % corresponding to an arc presentation.
-
-  
+    \begin{figure}[h]
+      \centering
+      \begin{tabular}{cc}
+        \includegraphics[width=0.3\textwidth]{figure/grid.png} &
+        \includegraphics[width=0.3\textwidth]{figure/openbook.png} \\
+      \end{tabular}        
+      \caption{Grid diagram and Arc presentation of $\theta$-curve $3_1$}
+    \end{figure}
   \end{block}
-    \column{0.33\textwidth}
 
-  
-
+  \column{0.33\textwidth}
   \begin{block}{Stacked Tangle Representation}
     \begin{itemize}
-    \item \textbf{Non-simple disk} : A disk which contains one vertex and three line segments which joins the vertex and boundary point. 
-    \item \textbf{Simple disk} : A disk which contains simple arc which joins two points on the boundary.
-    \item \textbf{Stacked tangle} : Stacked disks each with the frame as boundary. Only two disks are non-simple disks(one is at the top), and others are simple disks. \\
-    %\item \textbf{Arcs} : Segments properly embedded in each disk, with endpoints on the boundary
-    \item \textbf{Caps} : Simple arc in outside of stacked tangle joining end points of arcs or line segments. \\
-    \begin{figure}
-      \centering
-      \includegraphics[width=0.45\textwidth]{figure/stacked_theta.png}
-      \caption{Stacked tangle of $\theta$-curve}
-    \end{figure}
-    \item Two arcs in different simple disks or arc in simple disk and tree in non-simple disk intersect at most one point, and any two caps have no intersection when viewed from above.
-    \begin{figure}
-      \centering
-      \includegraphics[width=0.7\textwidth]{../Midterm_Poster/figure/stacked_tangle.png}
-      \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
-    \end{figure}
-    \item \textbf{Reduced simple closure of a stacked tangle} : A simple closure of a stacked tangle without any nested caps. Any two arcs (including line segment) joining by caps have no intersection when viewed from above.
-    
-    
+      \item \textbf{Non-simple disk} : A disk which contains one vertex and three line segments which joins the vertex and boundary point. 
+      \item \textbf{Simple disk} : A disk which contains simple arc which joins two points on the boundary.
+      \item \textbf{Stacked tangle} : Stacked disks each with the frame as boundary. Only two disks are non-simple disks(one is at the top), and others are simple disks. \\
+      %\item \textbf{Arcs} : Segments properly embedded in each disk, with endpoints on the boundary
+      \item \textbf{Caps} : Simple arc in outside of stacked tangle joining end points of arcs or line segments. \\
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{figure/stacked_theta.png}
+        \caption{Stacked tangle of $\theta$-curve}
+      \end{figure}
+      \item Two arcs in different simple disks or arc in simple disk and tree in non-simple disk intersect at most one point, and any two caps have no intersection when viewed from above.
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figure/stacked_tangle.png}
+        \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
+      \end{figure}
+      \item \textbf{Reduced simple closure of a stacked tangle} : A simple closure of a stacked tangle without any nested caps. Any two arcs (including line segment) joining by caps have no intersection when viewed from above.
     %\item \textbf{Simple closure}: The planar projection of the stacked tangle without any nested caps
-  \end{itemize}
-    
-
-    
-
+    \end{itemize}
   \end{block}
+
   \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
-    % $\mathbf{Definition.}$ The \textbf{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
-    % \begin{enumerate}
-    %   \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
-    %   \item It has only two 1s in every row and column, except for two rows. These two rows have three 1s.
-    %   \item It represents a theta-curve or a handcuff graph.
-    % \end{enumerate}
     $\mathbf{Definition.}$ For a Cromwell matrix of a $\theta$-curve or handcuff graph, if the $i$-th row has three 1s,
     the \textbf{H-deletion matrix} is the $(n{-}1)\times(n{-}1)$ matrix after removing $i$th row and the columns of its leftmost and rightmost 1s.
 
@@ -226,7 +200,7 @@
   $\mathbf{Theorem.}$ For any spartial graph $G$,
   \begin{equation*}
     \alpha(H) \leq c(H) + e + b
-  \end{equation+*}
+  \end{equation*}
   where $\alpha (G)$ is arc index of $G$, $c(G)$ is crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
   
   $\mathbf{Corollary.} For any handcuff graph $H$,
@@ -234,7 +208,6 @@
     \alpha(H) \leq c(H) + t
   \end{equation*}
   where $t=5$ if $H$ is trivial, otherwise $t=3$.
-
 
  % $\mathbf{Theorem.}$ If H is handcuff, then 
  % \begin{equation*}
@@ -252,9 +225,7 @@
   %  -20 & (x \equiv 5 \pmod{6})
  %   \end{cases}
  % \end{equation*}
-%proof. Represent $H$'s arc index by loops and lines diagram. If $\alpha (H)$ is even, split loops two groups by its heights(If odd, it will follow similar way). Then number of crossings is less or equal than $2(\Sigma_{i-1}^{k = 1}[\frac{1}{2}\cdot2(k-1)] + \Sigma_{k = i+1}^{m}[\frac{1}{2}\cdot(2(k-1)+1)]+[\frac{2}{3}\cdot(i-1)])$. Select that the maximum value and evaluate, we can get the lower bound.
 
-%\section{proof of lower bound - 2}
   $\mathbf{Theorem.}$ If L is non-split alternating link, then 
   \begin{equation*}
     \alpha(L) = c(L)+2
@@ -265,9 +236,6 @@
   \begin{equation*}
     \alpha(H) \geq c(L) + 3
   \end{equation*}
-
-
-%proof. We know that $\alpha(L) = c(L)+2$. And in arc representation diagram, connecting edge is composed at least one arc. So $\alpha (H) \geq \alpha(L) + 1$, obviously, $\alpha(H) \geq c(L) + 3$.
 
     $\mathbf{Definition.}$ For a graph $G$ and its edge set $E$, let
     \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)}. \]
@@ -300,623 +268,7 @@
       
     \end{enumerate}
   \end{block}
-\end{columns}
 
-%  \begin{alertblock}{Grid Diagram of the Theta-Curves and Handcuff Graphs Up to 7 Crossings}
-%   \begin{columns}[t]
-%   \begin{column}{0.6\textwidth}
-%   \begin{alertblock}{Theta-Curves}
-%   \begin{figure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_3_1.png}
-%     \caption{$3_1$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_4_1.png}
-%     \caption{$4_1$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_1.png}
-%     \caption{$5_1$}
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_2.png}
-%     \caption{$5_2$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_3.png}
-%     \caption{$5_3$}
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_4.png}
-%     \caption{$5_4$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_5.png}
-%     \caption{$5_5$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_6.png}
-%     \caption{$5_6$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_5_7.png}
-%     \caption{$5_7$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_1.png}
-%     \caption{$6_1$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_2.png}
-%     \caption{$6_2$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_3.png}
-%     \caption{$6_3$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_4.png}
-%     \caption{$6_4$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_5.png}
-%     \caption{$6_5$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_6.png}
-%     \caption{$6_6$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_7.png}
-%     \caption{$6_7$} 
-%     \end{subfigure}
-%       \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_8.png}
-%     \caption{$6_8$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_9.png}
-%     \caption{$6_9$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_10.png}
-%     \caption{$6_{10}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_11.png}
-%     \caption{$6_{11}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_12.png}
-%     \caption{$6_{12}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_13.png}
-%     \caption{$6_{13}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_14.png}
-%     \caption{$6_{14}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_15.png}
-%     \caption{$6_{15}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_6_16.png}
-%     \caption{$6_{16}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_1.png}
-%     \caption{$7_{1}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_2.png}
-%     \caption{$7_{2}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_3.png}
-%     \caption{$7_{3}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_4.png}
-%     \caption{$7_{4}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_5.png}
-%     \caption{$7_{5}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_6.png}
-%     \caption{$7_{6}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_7.png}
-%     \caption{$7_{7}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_8.png}
-%     \caption{$7_{8}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_9.png}
-%     \caption{$7_{9}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_10.png}
-%     \caption{$7_{10}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_11.png}
-%     \caption{$7_{11}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_12.png}
-%     \caption{$7_{12}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_13.png}
-%     \caption{$7_{13}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_14.png}
-%     \caption{$7_{14}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_15.png}
-%     \caption{$7_{15}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_16.png}
-%     \caption{$7_{16}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_17.png}
-%     \caption{$7_{17}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_18.png}
-%     \caption{$7_{18}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_19.png}
-%     \caption{$7_{19}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_20.png}
-%     \caption{$7_{20}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_21.png}
-%     \caption{$7_{21}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_22.png}
-%     \caption{$7_{22}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_23.png}
-%     \caption{$7_{23}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_24.png}
-%     \caption{$7_{24}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_25.png}
-%     \caption{$7_{25}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_26.png}
-%     \caption{$7_{26}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_27.png}
-%     \caption{$7_{27}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_28.png}
-%     \caption{$7_{28}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_29.png}
-%     \caption{$7_{29}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_30.png}
-%     \caption{$7_{30}$}
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_31.png}
-%     \caption{$7_{31}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_32.png}
-%     \caption{$7_{32}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_33.png}
-%     \caption{$7_{33}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_34.png}
-%     \caption{$7_{34}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_35.png}
-%     \caption{$7_{35}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_36.png}
-%     \caption{$7_{36}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_37.png}
-%     \caption{$7_{37}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_38.png}
-%     \caption{$7_{38}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_39.png}
-%     \caption{$7_{39}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_40.png}
-%     \caption{$7_{40}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_41.png}
-%     \caption{$7_{41}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_42.png}
-%     \caption{$7_{42}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_43.png}
-%     \caption{$7_{43}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_44.png}
-%     \caption{$7_{44}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_45.png}
-%     \caption{$7_{45}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_46.png}
-%     \caption{$7_{46}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_47.png}
-%     \caption{$7_{47}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_48.png}
-%     \caption{$7_{48}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_49.png}
-%     \caption{$7_{49}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_50.png}
-%     \caption{$7_{50}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_51.png}
-%     \caption{$7_{51}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_52.png}
-%     \caption{$7_{52}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_53.png}
-%     \caption{$7_{53}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_54.png}
-%     \caption{$7_{54}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_55.png}
-%     \caption{$7_{55}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_56.png}
-%     \caption{$7_{56}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_57.png}
-%     \caption{$7_{57}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_58.png}
-%     \caption{$7_{58}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_59.png}
-%     \caption{$7_{59}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_60.png}
-%     \caption{$7_{60}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_61.png}
-%     \caption{$7_{61}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_62.png}
-%     \caption{$7_{62}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_63.png}
-%     \caption{$7_{63}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_64.png}
-%     \caption{$7_{64}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.075\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/theta_7_65.png}
-%     \caption{$7_{65}$} 
-%     \end{subfigure}
-%   \end{figure}
-
-
-%   \end{alertblock}
-% \end{column}
-% \begin{column}{0.3\textwidth}
-%   \begin{alertblock}{Handcuff Graphs}
-%   \begin{figure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_2_1.png}
-%     \caption{$2_{1}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_4_1.png}
-%     \caption{$4_{1}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_5_1.png}
-%     \caption{$5_{1}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_1.png}
-%     \caption{$6_{1}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_2.png}
-%     \caption{$6_{2}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_3.png}
-%     \caption{$6_{3}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_4.png}
-%     \caption{$6_{4}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_5.png}
-%     \caption{$6_{5}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_6.png}
-%     \caption{$6_{6}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_7.png}
-%     \caption{$6_{7}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_8.png}
-%     \caption{$6_{8}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_6_9.png}
-%     \caption{$6_{9}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_1.png}
-%     \caption{$7_{1}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_2.png}
-%     \caption{$7_{2}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_3.png}
-%     \caption{$7_{3}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_4.png}
-%     \caption{$7_{4}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_5.png}
-%     \caption{$7_{5}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_6.png}
-%     \caption{$7_{6}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_7.png}
-%     \caption{$7_{7}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_8.png}
-%     \caption{$7_{8}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_9.png}
-%     \caption{$7_{9}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_10.png}
-%     \caption{$7_{10}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_11.png}
-%     \caption{$7_{11}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_12.png}
-%     \caption{$7_{12}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_13.png}
-%     \caption{$7_{13}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_14.png}
-%     \caption{$7_{14}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_15.png}
-%     \caption{$7_{15}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_16.png}
-%     \caption{$7_{16}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_17.png}
-%     \caption{$7_{17}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_18.png}
-%     \caption{$7_{18}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_19.png}
-%     \caption{$7_{19}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_20.png}
-%     \caption{$7_{20}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_21.png}
-%     \caption{$7_{21}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_22.png}
-%     \caption{$7_{22}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_23.png}
-%     \caption{$7_{23}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_24.png}
-%     \caption{$7_{24}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_25.png}
-%     \caption{$7_{25}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_26.png}
-%     \caption{$7_{26}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_27.png}
-%     \caption{$7_{27}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_28.png}
-%     \caption{$7_{28}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_29.png}
-%     \caption{$7_{29}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_30.png}
-%     \caption{$7_{30}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_31.png}
-%     \caption{$7_{31}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_32.png}
-%     \caption{$7_{32}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_33.png}
-%     \caption{$7_{33}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_34.png}
-%     \caption{$7_{34}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_35.png}
-%     \caption{$7_{35}$} 
-%     \end{subfigure}
-%     \begin{subfigure}{0.15\textwidth}
-%     \includegraphics[width=2.4cm]{../Midterm_Poster/grid_diagram/handcuff_7_36.png}
-%     \caption{$7_{36}$} 
-%     \end{subfigure}
-%   \end{figure}
-%   \end{alertblock}
-%   \end{column}
-%   \end{columns}
-%   \end{alertblock}
-
-\begin{columns}[t]
-  \column{0.33\textwidth}
-    %\begin{block}{Diagrams}
-
-    %\begin{Diagrams}
-     % \caption{An algorithm with caption}\label{alg:cap}
-      %\begin{itemize} 
-       % \item \textbf{Grid diagram}: A link diagram of vertical strands and the same number of horizontal strands with the properties that at every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co-linear and no two vertical segments are co-linear.
-        %\item \textbf{Cromwell matrix}: An n × n binary matrix each of whose rows and columns has exactly two 1’s.
-        %\item \textbf{Arc presentation}: There is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis.
-        %Every link L can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
-      %\end{itemize}
-
-     % \begin{figure}[h]
-      %  \centering
-      %  \begin{tabular}{cc}
-       %   \includegraphics[width=0.3\textwidth]{figure/grid.png} &
-       %   \includegraphics[width=0.3\textwidth]{figure/openbook.png} \\
-      %  \end{tabular}
-      %  \caption{Grid diagram and Arc presentation of $\theta$-curve $3_1$}
-     % \end{figure}
-   % \end{Diagrams}
-
-    
-
-  
-  % Then a simple closure of a stacked tangle without any nested caps is
-  % corresponding to an arc presentation.
-
-  
-  %\end{block}
-  \column{0.33\textwidth}
-  
-
-
-  \column{0.33\textwidth}
-  %%
-
-  
-\end{columns}
-
-
-
-% \end{columns}
 \end{frame}
 
 \end{document}

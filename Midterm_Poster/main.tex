@@ -56,7 +56,7 @@
 \title{Minimal Grid Diagrams of \\ Theta-Curves and Handcuff Graphs Up to 7 Crossings}
 
 
-\author{Cho, Eunchan \inst{1} \and  Shin, Jeongwon \inst{1} \and  Seo, Boyeon \inst{1} \and  Choi, Minho \inst{1} \and Kim, Hun \inst{2} \and Jin, Gyo Taek \inst{3}}
+\author{Cho, Eunchan \inst{1} \and  Shin, Jeongwon \inst{1} \and  Seo, Boyeon \inst{1} \and  Choi, Minho \inst{1} \and Kim, Hun \inst{2} \and Jin, GyoTaek \inst{3}}
 
 \institute[shortinst]{\inst{1} Korea Science Academy of KAIST \samelineand \inst{2} Supervisor, Korea Science Academy of KAIST \samelineand \inst{3} Supervisor, Department of Mathematical Sciences, Korea Advanced Institute of Science and Technology \samelineand}
 
@@ -144,53 +144,60 @@
     %\caption{An algorithm with caption}\label{alg:cap}
     \begin{itemize} 
       \item \textbf{Grid diagram}: A link diagram of vertical strands and the same number of horizontal strands with the properties that at every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co-linear and no two vertical segments are co-linear.
-      \item \textbf{Cromwell matrix}: An n × n binary matrix each of whose rows and columns has exactly two 1’s.
+      \item \textbf{Cromwell matrix}: An $n\times n$ binary matrix each of whose rows and columns has exactly two $1$'s. For $\theta$-curve and handcuff graph, its cromwell matrix is an $n\times(n{+}1)$ binary matrix that exactly two rows (called Three-rows) has exactly three $1$'s and rest of the rows and each columns has exactly two $1$'s.
       \item \textbf{Arc presentation}: There is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis. Every link L can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
     \end{itemize}
 
     \begin{figure}[h]
       \centering
       \begin{tabular}{cc}
-        \includegraphics[width=0.3\textwidth]{figure/grid.png} &
-        \includegraphics[width=0.3\textwidth]{figure/openbook.png} \\
+        \includegraphics[width=0.45\textwidth]{figure/grid.png} &
+        \includegraphics[width=0.45\textwidth]{figure/openbook.png} \\
       \end{tabular}        
       \caption{Grid diagram and Arc presentation of $\theta$-curve $3_1$}
     \end{figure}
   \end{block}
+    
 
-  \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
-    $\mathbf{Definition.}$ For a Cromwell matrix of a $\theta$-curve or handcuff graph, if the $i$-th row has three 1s,
-    the \textbf{H-deletion matrix} is the $(n{-}1)\times(n{-}1)$ matrix after removing $i$th row and the columns of its leftmost and rightmost 1s.
-
-    \vspace{1em}
-    $\mathbf{Theorem.}$ Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
-    $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
-        \caption{H-deletion of $\theta$-curve graph $3_1$}
-      \end{figure}
-  \end{block}
 
   \column{0.33\textwidth}
+  \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
+  \textbf{H-deletion matrix} : An $(n{-}1)\times(n{-}1)$ matrix after removing any Three-row and the columns of its leftmost and rightmost $1$s from a cromwell matrix of a $\theta$-curve or handcuff graph. 
+
+  \vspace{0.33em}
+  
+  $\mathbf{Theorem.}$ Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
+  $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
+    \caption{H-deletion of $\theta$-curve graph $3_1$}
+  \end{figure}
+  \end{block}
+
+  
   \begin{block}{Stacked Tangle Representation}
     \begin{itemize}
       \item \textbf{Non-simple disk} : A disk which contains one vertex and three line segments which joins the vertex and boundary point. 
       \item \textbf{Simple disk} : A disk which contains simple arc which joins two points on the boundary.
-      \item \textbf{Stacked tangle} : Stacked disks each with the frame as boundary. Only two disks are non-simple disks(one is at the top), and others are simple disks. \\
+      \item \textbf{Stacked tangle} : Stacked disks each with the frame as boundary. Only two disks of the stacked tangle are non-simple disks(one is at the top), and others are simple disks. \\
       %\item \textbf{Arcs} : Segments properly embedded in each disk, with endpoints on the boundary
       \item \textbf{Caps} : Simple arc in outside of stacked tangle joining end points of arcs or line segments. \\
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.45\textwidth]{figure/stacked_theta.png}
-        \caption{Stacked tangle of $\theta$-curve}
-      \end{figure}
-      \item Two arcs in different simple disks or arc in simple disk and tree in non-simple disk intersect at most one point, and any two caps have no intersection when viewed from above.
-      \begin{figure}
-        \centering
-        \includegraphics[width=0.7\textwidth]{figure/stacked_tangle.png}
-        \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
-      \end{figure}
+    \end{itemize}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.4\textwidth]{figure/stacked_theta.png}
+      \caption{Stacked tangle of $\theta$-curve}
+    \end{figure}
+    \begin{itemize}
+      \item An arc in simple disk and arc in other simple disk or tree in non-simple disk intersect at most one point, and any two caps have no intersection when viewed from above.
+    \end{itemize}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.7\textwidth]{figure/stacked_tangle.png}
+      \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
+    \end{figure}
+    \begin{itemize}
       \item \textbf{Reduced simple closure of a stacked tangle} : A simple closure of a stacked tangle without any nested caps. Any two arcs (including line segment) joining by caps have no intersection when viewed from above.
     %\item \textbf{Simple closure}: The planar projection of the stacked tangle without any nested caps
     \end{itemize}
@@ -199,17 +206,16 @@
   
   \column{0.33\textwidth}
   \begin{block}{Bounds of Arc Index}
-  $\mathbf{Theorem.}$ For any spatial graph $G$,
+  $\mathbf{Theorem.}$ $[$3$]$ For any spatial graph $G$, 
   \begin{equation*}
     \alpha(H) \leq c(H) + e + b
   \end{equation*}
-  where $\alpha (G)$ is arc index of $G$, $c(G)$ is crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
+  where $\alpha (G)$, $c(G)$ are each arc index, crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
   
-  $\mathbf{Corollary.}$ For any handcuff graph $H$,
+  $\mathbf{Corollary.}$ For any non-trivial handcuff graph $H$,
   \begin{equation*}
-    \alpha(H) \leq c(H) + t
+    \alpha(H) \leq c(H) + 3
   \end{equation*}
-  where $t=5$ if $H$ is trivial, otherwise $t=3$.
 
  % $\mathbf{Theorem.}$ If H is handcuff, then 
  % \begin{equation*}
@@ -228,13 +234,13 @@
  %   \end{cases}
  % \end{equation*}
 
-  $\mathbf{Theorem.}$ If L is non-split alternating link, then 
-  \begin{equation*}
-    \alpha(L) = c(L)+2
-  \end{equation*}
+  %$\mathbf{Theorem.}$ If $L$ is non-split alternating link, then 
+  %\begin{equation*}
+   % \alpha(L) = c(L)+2
+  %\end{equation*}
 
 
-  $\mathbf{Theorem.}$ Let H be a handcuff graph and L is link that connecting edge is deleted from H. If L is non-split alternating, then 
+  $\mathbf{Theorem.}$ Let $H$ be a handcuff graph and $L$ is link that connecting edge is deleted from $H$. If $L$ is non-split alternating, then 
   \begin{equation*}
     \alpha(H) \geq c(L) + 3
   \end{equation*}
@@ -247,17 +253,17 @@
 
     \vspace{1em}
 
-    $\mathbf{Theorem}$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
+    $\mathbf{Theorem.}$ $[$5$]$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
 
     \vspace{1em}
     
-    $\mathbf{Theorem.}$ Let $S_T$ be a simple closure of stacked tangle of a theta-curve or handcuff graph, and let $n$ be the number of crossings in $S_T$. Then,
+    $\mathbf{Theorem.}$ $[$1$]$ Let $S_T$ be a simple closure of stacked tangle of a theta-curve or handcuff graph, and let $n$ be the number of crossings in $S_T$. Then,
      \[ \mathrm{spr}(R(S_T)) \leq 2n+2 \]
-     where $R(S_T)$ is the Yamada polynomial of $S_T$, and $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. \\
+     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. \\
 
     \vspace{1em}
 
-    $\mathbf{Corollary.}$  Let $G$ be a theta-curve or handcuff graph. Then, the arc index of $G$ is bounded by
+    $\mathbf{Corollary.}$ Let $G$ be a theta-curve or handcuff graph. Then, the arc index of $G$ is bounded by
       \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}. \]
   \end{block}
   \begin{block}{Refernces}

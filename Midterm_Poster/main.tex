@@ -158,6 +158,20 @@
     \end{figure}
   \end{block}
 
+  \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
+    $\mathbf{Definition.}$ For a Cromwell matrix of a $\theta$-curve or handcuff graph, if the $i$-th row has three 1s,
+    the \textbf{H-deletion matrix} is the $(n{-}1)\times(n{-}1)$ matrix after removing $i$th row and the columns of its leftmost and rightmost 1s.
+
+    \vspace{1em}
+    $\mathbf{Theorem.}$ Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
+    $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
+        \caption{H-deletion of $\theta$-curve graph $3_1$}
+      \end{figure}
+  \end{block}
+
   \column{0.33\textwidth}
   \begin{block}{Stacked Tangle Representation}
     \begin{itemize}
@@ -182,28 +196,16 @@
     \end{itemize}
   \end{block}
 
-  \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
-    $\mathbf{Definition.}$ For a Cromwell matrix of a $\theta$-curve or handcuff graph, if the $i$-th row has three 1s,
-    the \textbf{H-deletion matrix} is the $(n{-}1)\times(n{-}1)$ matrix after removing $i$th row and the columns of its leftmost and rightmost 1s.
-
-    \vspace{1em}
-    $\mathbf{Theorem.}$ Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
-    $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
-        \caption{H-deletion of $\theta$-curve graph $3_1$}
-      \end{figure}
-  \end{block}
+  
   \column{0.33\textwidth}
   \begin{block}{Bounds of Arc Index}
-  $\mathbf{Theorem.}$ For any spartial graph $G$,
+  $\mathbf{Theorem.}$ For any spatial graph $G$,
   \begin{equation*}
     \alpha(H) \leq c(H) + e + b
   \end{equation*}
   where $\alpha (G)$ is arc index of $G$, $c(G)$ is crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
   
-  $\mathbf{Corollary.} For any handcuff graph $H$,
+  $\mathbf{Corollary.}$ For any handcuff graph $H$,
   \begin{equation*}
     \alpha(H) \leq c(H) + t
   \end{equation*}
@@ -261,13 +263,15 @@
   \begin{block}{Refernces}
     \begin{enumerate}
       \item Yoonsang Lee. (year). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
-      \item Lee, H. J., Hong, K., Lee, H., & Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.
-      \item Lee, M. J., No, S., & Oh, S. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
+      \item Lee, H. J., Hong, K., Lee, H., \& Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.
+      \item Lee, M. J., No, S., \& Oh, S. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
       \item Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.
       \item Yamada, S. (1989). An invariant of spatial graphs. \textit{Journal of Graph Theory, 13}(5), 537–551.
       
     \end{enumerate}
   \end{block}
+
+\end{columns}
 
 \end{frame}
 

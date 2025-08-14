@@ -53,7 +53,7 @@
 % ====================
 
 %\title{Arc Indices of Theta-Curves and Handcuff Graphs}
-\title{Minimal Grid Diagrams of \\ Theta-Curves and Handcuff Graphs Up to 7 Crossings}
+\title{Arc Index of Theta-curves and Handcuff-graphs}
 
 
 \author{Cho, Eunchan \inst{1} \and  Shin, Jeongwon \inst{1} \and  Seo, Boyeon \inst{1} \and  Choi, Minho \inst{1} \and Kim, Hun \inst{2} \and Jin, GyoTaek \inst{3}}
@@ -213,7 +213,7 @@
   \end{equation*}
   where $\alpha (G)$, $c(G)$ are each arc index, crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
   
-  $\mathbf{Corollary.}$ For any non-trivial handcuff graph $H$,
+  $\mathbf{Corollary.}$ $[$3$]$ For non-trivial handcuff graph $H$,
   \begin{equation*}
     \alpha(H) \leq c(H) + 3
   \end{equation*}
@@ -248,28 +248,35 @@
 
     $\mathbf{Definition.}$ For a graph $G$ and its edge set $E$, let
     \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)}. \]
-    \ ($\mu(G)$ is the number of connected components of $G$, and $\beta(G)$ is the first Betti number of $G$.) \\
+    \ where $\mu(G)$ is the number of connected components of $G$, and $\beta(G)$ is the first Betti number of $G$. \\
     \ Then, the \textbf{Yamada polynomial} of a graph $G$, $R(G)$ is defined by
     \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
 
-    \vspace{1em}
+    %\vspace{1em}
 
-    $\mathbf{Theorem.}$ $[$5$]$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
+    %$\mathbf{Theorem.}$ $[$5$]$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
 
-    \vspace{1em}
+    %\vspace{1em}
     
     $\mathbf{Theorem.}$ $[$1$]$ Let $S_T$ be a simple closure of stacked tangle of a theta-curve or handcuff graph, and let $n$ be the number of crossings in $S_T$. Then,
      \[ \mathrm{spr}(R(S_T)) \leq 2n+2 \]
      where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. \\
 
-    \vspace{1em}
+    %\vspace{1em}
 
-    $\mathbf{Corollary.}$ Let $G$ be a theta-curve or handcuff graph. Then, the arc index of $G$ is bounded by
+    $\mathbf{Corollary.}$ $[$1$]$ Let $G$ be a theta-curve or handcuff graph. Then, the arc index of $G$ is bounded by
       \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}. \]
   \end{block}
+
+  \begin{block}{Further Studies}
+    \begin{itemize}
+      \item 
+    \end{itemize}
+  \end{block}
+
   \begin{block}{Refernces}
     \begin{enumerate}
-      \item Yoonsang Lee. (year). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
+      \item Yoonsang Lee. (2023). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
       \item Lee, H. J., Hong, K., Lee, H., \& Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.
       \item Lee, M. J., No, S., \& Oh, S. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
       \item Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.

@@ -144,7 +144,7 @@
     %\caption{An algorithm with caption}\label{alg:cap}
     \begin{itemize} 
       \item \textbf{Grid diagram}: A handcuff graph or $\theta$-curve diagram of vertical strands and one less number of horizontal strands with the properties that at every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co-linear and no two vertical segments are co-linear.
-      \item \textbf{Cromwell matrix}: An $n\times n$ binary matrix each of whose rows and columns has exactly two $1$s. For $\theta$-curve and handcuff graph, its cromwell matrix is an $n\times(n{+}1)$ binary matrix that exactly two rows (called Three-rows) has exactly three $1$s and rest of the rows and each columns has exactly two $1$s.
+      \item \textbf{Cromwell matrix}: An $n\times n$ binary matrix each of whose rows and columns has exactly two $1$s. For $\theta$-curve and handcuff graph, its cromwell matrix is an $n\times(n{+}1)$ binary matrix that exactly two rows (called \textit{Three-rows}) has exactly three $1$s and rest of the rows and each columns has exactly two $1$s.
       \item \textbf{Arc presentation}: There is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis. Every spatial graph $G$ can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
       \item \textbf{Arc index} : The minimal number of pages among all possible arc presentations of K.
     \end{itemize}
@@ -163,7 +163,7 @@
 
   \column{0.33\textwidth}
   \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
-  \textbf{H-deletion matrix} : An $(n{-}1)\times(n{-}1)$ matrix after removing any Three-row and the columns of its leftmost and rightmost $1$s from a cromwell matrix of a $\theta$-curve or handcuff graph. 
+  \textbf{H-deletion matrix} : An $(n{-}1)\times(n{-}1)$ matrix after removing any \textit{Three-row} and the columns of its leftmost and rightmost $1$s from a cromwell matrix of a $\theta$-curve or handcuff graph. 
 
   \vspace{0.33em}
   
@@ -246,10 +246,10 @@
     \alpha(H) \geq c(L) + 3
   \end{equation*}
 
-    $\mathbf{Definition\ 1.}$ For a graph $G$ and its edge set $E$, let
+    $\mathbf{Definition\ 1.}$ $[$5$]$ For a graph $G$, let
     \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)}. \]
-    \ where $\mu(G)$ and $\beta(G)$ are the number of connected components, the first Betti number of $G$. \\
-    \ Then, the \textbf{Yamada polynomial} of a graph $G$, $R(G)$ is defined by
+    where $\mu(G)$, $\beta(G)$, and $E$ are the number of connected components, the first Betti number, edge set of $G$ each.
+    Then, the \textbf{Yamada polynomial} of a graph $G$, $R(G)$ is defined by
     \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
 
     %\vspace{1em}

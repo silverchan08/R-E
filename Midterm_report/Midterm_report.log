@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 14:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report"
-(c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
+**c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report
+(c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -449,40 +449,35 @@ Package fontspec Info:
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <17.28> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 49.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <10> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 58.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 72.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
+Underfull \hbox (badness 10000) in paragraph at lines 72--79
 
  []
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 68.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 82.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
  []
 
 
 LaTeX Font Warning: Font shape `TU/UnBatang.ttf(0)/m/it' undefined
-(Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 83.
+(Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 97.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
@@ -491,74 +486,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 [1
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
 File: generalized_reidemeister.png Graphic file (type bmp)
 <generalized_reidemeister.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 
  []
 
 File: An arc presentation and a grid diagram of the knot.png Graphic file (type bmp)
 <An arc presentation and a grid diagram of the knot.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 146.
 
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
-
- []
-
+LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 161.
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
+
+
 
 [6]
 
 [7]
+
+[8]
 File: image.png Graphic file (type bmp)
 <image.png>
 
 
-[8]
+[9]
 
-[9] (./Midterm_report.aux)
+[10] (./Midterm_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -569,12 +574,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9923 strings out of 468527
- 185849 string characters out of 5451377
- 614403 words of memory out of 5000000
- 38155 multiletter control sequences out of 15000+600000
- 635050 words of font info for 114 fonts, out of 8000000 for 9000
+ 9903 strings out of 468527
+ 185420 string characters out of 5451377
+ 614405 words of memory out of 5000000
+ 38143 multiletter control sequences out of 15000+600000
+ 633481 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,9n,105p,933b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,9n,105p,926b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (9 pages).
+Output written on Midterm_report.pdf (10 pages).

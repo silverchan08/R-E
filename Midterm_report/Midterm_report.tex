@@ -3,57 +3,13 @@
 \usepackage{kotex}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage[margin=2cm,nonhead]{geometry}
-\usepackage{setspace}
+\usepackage{setspace}   
 \usepackage{abstract}
 \usepackage{authblk}
-\usepackage{multicol,layout,epsf,verbatim,array,tabularx,graphicx,kotex,amssymb,amsmath,setspace}
-\usepackage{enumerate}
-\usepackage{tikz}
-\usetikzlibrary{
-  hobby,
-  intersections,
-  spath3,
-  decorations.markings,
-  arrows.meta,
-}
-
-\newcommand{\czero}{
-  \tikz[baseline=-0.6ex, scale=0.7]{
-    \path (0,0) coordinate (base);
-    \draw[line width=0.7pt] (0,0.4) .. controls (0.3,0.3) and (0.3,-0.3) .. (0,-0.4);
-    \draw[line width=0.7pt] (0.8,0.4) .. controls (0.5,0.3) and (0.5,-0.3) .. (0.8,-0.4);
-  }
-}
-\newcommand{\cinf}{
-  \tikz[baseline=1.2ex, scale=0.7]{
-    \path (0,0) coordinate (base);
-    \draw[line width=0.7pt] (0.4, 0) .. controls (0.2, 0.3) and (-0.2, 0.3) .. (-0.4, 0);
-    \draw[line width=0.7pt] (0.4, 0.8) .. controls (0.2, 0.5) and (-0.2, 0.5) .. (-0.4, 0.8);
-  }
-}
-
-\newcommand{\Xslashfront}{
-  \tikz[baseline=-0.6ex, scale=0.28]{
-    \draw[line width=0.7pt] (-1,1) -- (1,-1);
-    \draw[line width=4.0pt, white] (-0.5,-0.5) -- (0.5, 0.5);
-    \draw[line width=0.7pt] (-1,-1) -- (1,1);
-  }
-}
-
-\newcommand{\Xslashback}{
-  \tikz[baseline=-0.6ex, scale=0.28]{
-    \draw[line width=0.7pt] (-1,-1) -- (1,1);
-    \draw[line width=4.0pt, white] (-0.5,0.5) -- (0.5,-0.5);
-    \draw[line width=0.7pt] (-1,1) -- (1,-1);
-  }
-}
-
-\onehalfspacing
-
-\newcommand{\rarrow}{\rightarrow}
-\newcommand{\larrow}{\leftarrow}
+\usepackage{enumitem}
 
 \newtheorem{thm}{Theorem}
 \theoremstyle{definition}
@@ -65,14 +21,18 @@
 \theoremstyle{corollary}
 \newtheorem*{corol}{Corollary}
 
+
+\onehalfspacing
+\setlength\parindent{0pt}
+
 \renewcommand\Affilfont{\small}
 
-\title{R\&E 과제명 (영문)}
-\author[1]{조은찬\thanks{email}}
+\title{\textbf{Classifying Theta-Curves and Handcuff Graphs up to 7 Crossing by Arc Index(가제)}}
+\author[1]{Cho Eunchan\thanks{24-097@ksa.hs.kr}}
 \author[1]{Jeongwon Shin\thanks{io25jellyfish@gmail.com}}
-\author[1]{서보연\thanks{이메일}}
-\author[1]{최민호\thanks{이메일}}
-\author[2]{김훈\thanks{이메일}}
+\author[1]{Boyeon Seo\thanks{24-044@ksa.hs.kr}}
+\author[1]{Minho Choi\thanks{24-104@ksa.hs.kr}}
+\author[2]{Kim Hun\thanks{이메일}}
 \author[3]{진교택\thanks{이메일}}
 \author[4]{이재원\thanks{이메일}}
 \affil[1]{Researcher, Korea Scinece Academy of KAIST}
@@ -86,9 +46,7 @@
 \date{\vspace{-5ex}}
 
 \begin{document}
-
 \maketitle
-
 \renewenvironment{abstract}
 {\begin{quote}
 \noindent \rule{\linewidth}{.5pt}\par{\bfseries \abstractname.}}
@@ -98,17 +56,263 @@
 
 
 \begin{abstract}
-Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear  and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\\
+Our purpose of this research is classifying theta-curves and handcuff graphs by their arc index, which their crossing is up to 7.
+We tried to find those arc indices by proving lower bounds and upper bounds of the theta-curves and handcuff graphs.
+Also we programmed Python code that returns Cromwell matrix of the theta curves which have crossing up to 7.
+Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
+\textbf{Keywords : theta-curve, handcuff graph, arc index, Yamada polynomial}
+\\
 \end{abstract}
 
 
 \section{Introduction}
- In knot theory, \textit{arc index} is a knot invariant defined by the minimal number of half planes in the arc presentation. We find the arc index for the prime theta and handcuff curve(대충 prime 정의에논문 출처 박아주고) with up to seven crossings. 뭐시기저시기
+
+\textit{Theta-curve} is a spatial knot on 3-sphere which has 2 vertices and 3 edges. In the projection of the theta-curve, the section where theta-curve meets itself is named \textit{crossing}. If the one theta-curve and other theta-curve's continuous transform of the graph is same, these curves are \textit{equivalent}. To transform a projection of theta-curve, the \textit{generalized Reidemeister move} is used.\\
+
+\textit{Handcuff graph} consists of two loops and an edge joining the loops. In the projection of the handcuff graph, the section where handcuff graph meets itself is named \textit{crossing}. If the one handcuff graph and other handcuff graph's continuous transform of the graph is same, these graphs are \textit{equivalent}. Similar with the theta-curve, the \textit{generalized Reidemeister move} is used to transfrom a projection of handcuff graph.\\
+
+\begin{figure*}
+    \centerline{\includegraphics[width=0.5\textwidth]{generalized_reidemeister.png}}
+    \caption{Generalized Reidemeister moves.}
+    \label{figure_1} 
+\end{figure*}
+
+When there is one binding axis and finite number of half plane is embedded, it is called \textit{arc presentation}. The intersection of the half plane and theta curve should be a simple curve. In knot theory, \textit{arc index}, which is representated as $\alpha(G)$ when the knot is G, is a knot invariant defined by the minimal number of half planes in the arc presentation. This arc presentation is \textit{minimal arc presentation.} \textit{Prime knots} are knots that is not constructed by combining simpler knots. We are finding the arc index for the prime theta-curve and handcuff graph with up to seven crossings.\\
+
+The \textit{grid diagram} is made of horizontal lines and vertical lines, and vertical lines are always on top of horizontal lines. Except the vertices, two points that are bent vertically should be on each horizontal and vertical lines. The \textit{Cromwell matrix} of theta-curve and handcuff graphs is the matrix made of 0 and 1. Excpet 2 rows, each row and columns has exactly two 1s, and for 2 rows, there are exactly three 1s. If the 1s are connected by horizontal and vertical lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes are $\alpha$ on minimal arc presentation, the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
+
+\begin{figure*}[h]
+    \centerline{\includegraphics[width=0.5\linewidth]{An arc presentation and a grid diagram of the knot.png}}
+    \caption{An arc presentation and a grid diagram of the knot}
+    \label{figure_2}
+\end{figure*}
 
 \section{Theoretical Background}
-The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}. The $\theta$-curve 아귀찮아 이건 나중에
+The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}. The $\theta$-curve 아귀찮아 이건 나중에\\
+
+The polynomial of the knot is invariant. \textit{Yamada polynomial} is invariant when it is mulitplied $(-x)^n$ for some integer n. The \textit{span} of a knot, is substraction of maximal degree of minimal degree of the polynomial. It is a invariant since Yamada polynomial is invariant when mulitplied by $(-x)^n$.\\
+
+\begin{figure*}
+    \centerline{\includegraphics[width=0.75\linewidth]{yamada_property.png}}
+    \caption{Properties of Yamada polynomial.}
+    \label{figure_3}
+\end{figure*}
+
+Let 3 edges of theta-curve is $e_1, e_2, e_3$, then $e_1 \cup e_2$, $e_2 \cup e_3$, $e_3 \cup e_1$ becomes a knot on 3-sphere. This knots are \textit{consituent knot} of the theta-curve.
+
+\textit{Stacked tangle} of an theta-curve is stacked disks each with the frame as boundary with following properties:
+\begin{itemize}
+\item Only two disk called \textit{non-simple disks} contain one vertex and three line
+segments which joins the vertex and boundary point.
+\item One of the non-simple disks is at the top.
+\item Other disks called \textit{simple disks} contain simple arc which joins two
+points on the boundary.
+\item When view from above
+\begin{itemize}
+    \item two arcs in different simple disks intersect at most one point (by RII)
+    \item arc in simple disk and tree in non-simple disk intersect at most one
+point (by RV)
+\end{itemize}
+\end{itemize}
+
+\textit{Simple closure} of stacked tangle is a stacked tangle with \textit{caps} satisfying following properties:
+\begin{itemize}
+    \item A \textit{cap} is a simple arc in outside of stacked tangle joining end points of arcs or line segments
+    \item When view from above any tow caps have no intersection.
+\end{itemize}
+Then a simple closure of a stacked tangle without any nested caps is
+corresponding to an arc presentation.\\
+
+A \textit{reduced simple closure of a stacked tangle} is
+\begin{itemize}
+    \item a simple closure of a stacked tangle without any nested caps
+    \item any two arcs(including line segment) joining by caps have no intersection when view from above
+\end{itemize}
+
+\subsection{Lower bounds of Arc Index in Theta-Curve}
+
+\begin{theorem}
+Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
+\end{theorem}
+
+\begin{theorem}
+Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \frac{1}{2}\sum_{i=1}^3\alpha(K_i).$$
+\end{theorem}
+
+\begin{theorem}
+For any theta-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta))+36c(\theta)}}{3} \left(f(x) = \begin{cases} 
+		73 & x \equiv 0 \pmod 6\\ 
+		4 & x \equiv 1 \pmod 6\\ 
+		25 & x \equiv 2 \pmod 6\\ 
+		-8 & x \equiv 3 \pmod 6\\ 
+		49 & x \equiv 4 \pmod 6\\ 
+		20 & x \equiv 5 \pmod 6\\ 
+     \end{cases} \right).$$
+\end{theorem}
+
+\begin{theorem}
+Let T be any theta-curve. Then $$2+\sqrt{\max\deg_x R(S_T) - \min\deg_x R(S_T) + 4} \leq \alpha(T)$$ where $R(T)$ is a Yamada polynomial of the theta-curve T, and $S_{T}$ be a reduce simple closure of stacked tangle of a theta-curve T corresponding to minimal arc presentation of T.
+\end{theorem}
+
+\subsection{Upper bound of Arc Index in Theta-Curve}
+
+\begin{theorem}
+For theta-curve $\theta$, if $c(\theta)$ is the minimal crossing number, then $$\alpha(\theta) \leq c(\theta) + 3.$$
+\end{theorem}
+
+\begin{proof}
+$$\alpha(\theta) \leq c(\theta) + e + b$$ when e is number of edges, b is number of bouquet cut-components. We have 3 edges, 0 bouquet cut-componentes for theta-curves. Therefore, $$\alpha(\theta) \leq c(\theta) + 3.$$
+\end{proof}
 
 \section{Research Methods and Procedure}
+First, we made a Python Code to find the arc index and the cromwell matrix of the knots. Then we used the upper and lower bounds, and also found the smaller upper bounds and larger lower bounds. Finally we used the direct method to find the arc index by drawing the binding circle.
+
+\subsection{The Python Code(가제)}
+The Python Code(가제) generates the possible Cromwell matrix of theta-curves, and compares with the existing knots in the table which is less or equal to 7 crossings.
+It eventually returns the Cromwell matrix of the compared theta-curve.
+To distinguish the Cromwell matrices from theta-curves and handcuff graphs, which is generated and removed by the rules from the above section, we should use the determinant of the Cromwell matrices.\\
+
+\begin{defn}
+The \textit{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
+\end{defn}
+\begin{defn}
+The \textit{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
+\end{defn}
+\begin{enumerate}
+    \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
+    \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
+\end{enumerate}
+\begin{theorem}
+Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
+\end{theorem}
+$\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$. The \textit{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+
+\subsubsection{Main Theorem}
+\begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+    \item \textbf{Method of changing grid diagram of a knot to simple matrix}\\
+    First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
+By applying row operation, we should make matrix such as
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    1 & 0 & \cdots & 0 & 1
+    \end{pmatrix}$$
+Let matrix is $n\times n$.
+Next, we apply the row operation. We add the upper rows to the most bottom row. Then,
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    2 & 2 & \cdots & 2 & 2
+    \end{pmatrix}$$
+Lastly, by subtracting ($2i-1$)th row $(i \in \mathbb{N})$ with multiplying row by 2 and substract with most bottom row, if n is even, the most bottom row only contains 0. Since it is upper triangular matrix, we can obtain determinant by trace. Hence the last entry is 0, the determinant is 0. If n is odd, the last entry of most bottom row is 2 and other entry is all 0. Since it is upper triangular matrix, we can obtain determinant by trace too. Hence the other entry is all 1, the determinant is $\pm 2$.\\
+
+\item \textbf{Proof in the case of theta-curve}\\
+Do the H-deletion. Then, we can make the matrix of this grid diagram by previous section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+\begin{enumerate}
+    \item \textbf{0}\\
+    T-shaped figure is given.
+    \item \textbf{1 (middle vertex)}\\
+    Line-shaped figure is given.
+    \item \textbf{1 (end vertex)}\\
+    Line-shaped figure is given.
+    \item \textbf{2 (two end vertices)}\\
+    T-shaped figure is given.
+    \item \textbf{2 (middle and end vertices)}\\
+    Line-shaped figure is given.
+\end{enumerate}
+
+\begin{enumerate}[label={(\roman*)}]
+    \item \textbf{Line-shaped figure}\\
+    Let the matrix is given.
+    $$\begin{pmatrix}
+        1 & 1 & 1 & 0\\
+        0 & 1 & 1 & 1\\
+        1 & 0 & 0 & 1
+    \end{pmatrix}$$
+    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+    $$\begin{pmatrix}
+        1 & 1 \\
+        0 & 1
+    \end{pmatrix}$$
+    is given.\\
+    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+    \item \textbf{T-shaped figure}\\
+    Let the matrix is given.
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        1 & 1 & 1\\
+    \end{pmatrix}$$
+    If you work on deleting rows and columns here, you can get the T-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        0 & 1 & 0\\
+        0 & 0 & 1
+    \end{pmatrix}$$
+    is given.\\
+    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+\end{enumerate}
+Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
+
+\item \textbf{Proof in the case of handcuff graph}\\
+    Do the H-deletion. Then, we can make the matrix of this grid diagram by upper section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+    \begin{enumerate}
+        \item \textbf{0}\\
+        Knot is given.
+        \item \textbf{1 (middle vertex)}\\
+        Line-shaped figure is given.
+        \item \textbf{1 (end vertex)}\\
+        It is not given since one column might have 3 vertices.
+        \item \textbf{2 (two end vertices)}\\
+        It is not given since rows which have 3 vertices is connected with 2 line.
+        \item \textbf{2 (middle and end vertices)}\\
+        It is not given since rows which have 3 vertices is connected with 2 line.
+    \end{enumerate}
+    
+    \begin{enumerate}[label={(\roman*)}]
+        \item \textbf{Knot}\\
+        By upper section, the determinant becomes 0 or $\pm 2$.
+        \item \textbf{Line-shaped figure}
+        Let the matrix is given.
+        $$\begin{pmatrix}
+            0 & 0 & 0 & 1 & 1\\
+            0 & 1 & 0 & 1 & 1\\
+            1 & 1 & 1 & 0 & 0\\
+            1 & 0 & 1 & 0 & 0
+        \end{pmatrix}$$
+        If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+        $$\begin{pmatrix}
+            1 & 1 & 0 \\
+            0 & 1 & 1 \\
+            0 & 0 & 0 \\
+        \end{pmatrix}$$
+        Since it is upper triangular matrix, the determinant of the matrix is trace, so the determinant of this matrix is 0.
+    \end{enumerate}
+\end{enumerate}
+\end{proof}
+
+\subsection{Bounds of Arc Index in case of Theta-Curves}
+We used the bounds from theoretical background, and used the Python code to find the arc index. If we could not find the arc index by the computer, we directly found the arc index by drawing the binding circle of the theta-curve.
+
+\subsection{Bounds of Arc Index in case of Handcuff Graphs}
+
+\begin{defn}
+    The \textit{non-simple cap} is the cap that connects simple disk and non-simple disk or two non-simple disks.
+\end{defn}
+
+\begin{theorem}
+The number of the simple cap of the graph $G$ is invariant if least one of the edges are not crossed with others when the projection has minimal crossing, except the trivial theta-curve.
+\end{theorem}
+\begin{proof}
+     To find the number of the non-simple cap from the grid diagram, we can draw the horizontal lines which include 1 from row that has three 1s. Since non-simple cap connects 1s from rows which have three 1s, the number of horizontal lines is the number of the non-simple caps. When the edge that directly connects two vertices is not crossed, the number of edges that starts from the vertices, which is 5, is the number of the horizontal lines. It can be shown by drawing the binding circle of the knot. Since the binding circle crosses the crossed area of two other edges, the number of edges that starts from the vertices is 5, 2 from each vertices and 1 that directly connects the vertices, except the trivial theta-curve. Since $\alpha(G))$ is the number of caps, the number of simple cap is $\alpha(G) - 5$.\\
+\end{proof}
 
 \begin{defn}
     In a handcuff curve, the \textit{vertex edge} is an edge that is connected to both vertices.
@@ -142,9 +346,9 @@ The \textit{link with $n$-components} is an embedding of the disjoint union of $
 \end{proof}
 
 \begin{figure*}
-    \centerline{\includegraphics[width=\textwidth]{bouquet_pulling.png}}
-    \caption{In a handcuff curve, the process of pulling out the inner bouquet without affecting the rest.}
-    \label{figure_1} 
+    \centerline{\includegraphics[width=\textwidth]{image.png}}
+    \caption{caption}
+    \label{figure_4} 
 \end{figure*}
 
 \begin{prop}
@@ -159,12 +363,9 @@ The \textit{link with $n$-components} is an embedding of the disjoint union of $
 Using the Theorem 1, we obtain the following corollary.
 
 \begin{corol}
-    In the handcuff curve $H$, if its link component $L$ is alternating and non-split, then
+    In the handcuff curve, if the link component $L$ is alternating and non-split, then
     \[ \alpha(H) \geq c(L)+3. \]
 \end{corol}
-\begin{proof}
-    Since $L$ is alternating and non-split link, $\alpha(L)=c(L)+2$ by Theorem 1. Thus, \[\alpha(H) \geq \alpha(L)+1 = \left( c(L)+2 \right)+1 = c(L)+3\] according to Proposition 1.
-\end{proof}
 
 Combining the above corollary and the corollary of Theorem 2, we have the following theorem.
 
@@ -173,99 +374,17 @@ Combining the above corollary and the corollary of Theorem 2, we have the follow
     \[ \alpha(H) = c(L)+3. \]
 \end{theorem}
 
-We now consider the Yamada polynomial(주석으로 야마다 달아주고) of the handcuff curve and investigate the relationship between the difference of its maximum and minimum degrees and the arc index.
-
-\begin{defn}
-    For a graph $G=(V, E)$, where $V$ is vertex set of $G$ and $E$ is edge set of $G$, let us define $2$-variable Laurent polynomial
-    \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)} \]
-    where $\mu(G)$ and $\beta(G)$ is the number of connected components of $G$ and the first Betti number of $G$. \\
-    Then, the Yamada polynomial of a graph $G$, $R(G)$ is defined by
-    \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
-\end{defn}
-
-It is known that, for some integer $n$, the product $(-x)^n R(G)$ (where $R(G)$ is the Yamada polynomial of the spatial graph $G$) is an ambient isotopy invariant. Moreover, the Yamada polynomial satisfies the following properties.
-
 \begin{theorem}
-    For the Yamada polynomial, the following properties hold.
-    \begin{enumerate}
-        \item $R( \cdot ) = -1$
-        \item Let $e$ be a non-loop edge of a graph $G$. Then, $R(G) = R(G / e) + R(G - e)$, where $G/e$, $G-e$ denote the graphs obtained by contracting and deleting the edge $e$, respectively.
-        \item Let $e$ be a loop edge of a graph $G$. Then, $R(G) = -(x+1+x^{-1}) R(G-e)$.
-        \item Let $G_1 \cup G_2$ be a disjoint union of graphs $G_1$ and $G_2$. Then, $R(G_1 \cup G_2) = R(G_1)R(G_2)$.
-        \item Let $G_1 \cdot G_2$ be a union of graphs $G_1$ and $G_2$ having one common point. Then, $R(G_1 \cdot G_2) = -R(G_1)R(G_2)$.
-        \item If $G$ has an isthmus, then $R(G)=0$.
-    \end{enumerate}
+    뭐시기 출처 모름
 \end{theorem}
-
-\begin{theorem}
-    For the Yamada polynomial, the following properties hold.
-    \begin{enumerate}
-        \item 그림 그려서 넣어야함 각 crossing 부근을 뭐시기뭐시기 한거 그림.
-    \end{enumerate}
-\end{theorem}
-
-Now, using the stacked tangle representation and the Yamada polynomial, we will prove the following theorem. The following theorem gives a lower bound for the arc index in terms of the Yamada polynomial.
-
-\begin{theorem}
-    Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Then,
-    \[ \text{spr}(R(S_T)) \leq 2n+2 \]
-    where $n$ is the number of crossings in $S_T$ and $\mathrm{spr}(f)$ denotes the spread of $f$, the difference between the maximal and minimal degrees of $f$.
-\end{theorem}
-
-\begin{corol}
-    If $G$ is a theta curve or handcuff curve, then
-    \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}, \]
-    except when $G$ is the trivial theta curve.
-\end{corol}
-
-\begin{proof}
-    Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Let $c_s, c_{ss}, c_n, n$ be the number of simple cap, semi-simple cap, non-simple cap and the number of crossings in $S_T$, respectively. We will prove the theorem using the mathematical induction on the pair $(c_s+c_{ss}, n)$, ordered lexicographically.
-    \begin{enumerate}
-        \item Basis cases \\
-        First, suppose $c_s + c_{ss} = 0$. Then, since there are no simple disks, $S_T$ must be the trivial theta curve. In this case, the number of crossing is at least $1$. Since the spread of Yamada polynomial of trivial theta curve is $4$, $\mathrm{spr}(R(S_T)) = 4 \leq 2n+2$. \\
-        Second, suppose $n = 0$. Then, $S_T$ must be the disjoint union of trivial handcuff graph and possibly some circles(unlink). Since the Yamada polynomial of trivial handcuff is zero, $\mathrm{spr}(R(S_T)) = 0 \leq 2 = 2n+2$. \\
-        Hence, basis step is proven.
-        
-        \item Inductive step \\
-        Assume that the theorem holds for all pairs $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and suppose $c_s+c_{ss} > 0$. Then the top disk must have a semi-simple cap. Let the disk connected to the top disk be denoted by $D_s$. (Note that if the top disk had only a non-simple cap, then there would be no simple or semi-simple cap at all.) Since $D_s$ is not top disk, there exists a disk $D$ directly above $D_s$. Now we consider two cases, depending on whether there exists a cap between $D_s$ and $D$. First, suppose that there is no cap between $D_s$ and $D$. Then, there are two possibilities: there is an intersection between $D_s$ and $D$, or there is not. \\
-        If there is no intersection between $D_s$ and $D$, we can swap the position of $D_s$ and $D$ without affecting the rest of the diagram. If there is an intersection between $D_s$ and $D$, we can use the relation
-
-        \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right). \]
-
-        In $S_T$, let $S_T'$, $S_T^0$ and $S_T^\infty$ be the diagrams obtained by replacing the $\Xslashfront$ crossing with $\Xslashback$, $\czero$ and $\cinf$, respectively. Since both $R \left( S_T^0 \right)$ and $R \left ( S_T^\infty \right)$ have $c_s$ simple disks, $c_{ss}$ semi-simple disks, and $n-1$ crossings, their spread is at most $2(n-1)+2=2n$ by the induction hypothesis. Therefore, the spread of $(x - x^{-1}) \left( R \left( S_T^0 \right) - R \left ( S_T^\infty \right) \right)$ is at most $2n+2$. It is thus sufficient to prove that the spread of $R \left ( S_T' \right)$ is at most $2n+2$. Now, observe that $S_T'$ can be interpreted as the diagram obtained by swapping the positions of $D_s$ and $D$ in $S_T$. Therefore, in both cases, it is enough to prove that the inequality holds after this swapping. However, after each swap, the distance between the top disk and $D_s$ decreases. Hence, we can continue swapping $D_s$ with the disk directly above it until either the disk above $D_s$ is the top disk, or there is a cap between $D_s$ and the disk above it. Then it suffices to consider the case where there is a cap between $D_s$ and $D$. \\
-        Now, consider the case where there is a cap between $D_s$ and $D$. There are two cases: either $D_s$ is simple or it is non-simple. If $D_s$ is simple, we can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. Its spread is at most $2n+2$ by the induction hypothesis. Therefore, the spread of $S_T$ is at most $2n+2$. If $D_s$ is non-simple, the number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
-    \end{enumerate}
-    Hence, by the base cases and the inductive step, the theorem follows by mathematical induction. \\ \\
-    Corollary follows by bounding the number of crossings $n$ in terms of the arc index $\alpha(G)$. Suppose $G$ is a theta curve, let $RS_T$ be a reduced stacked tangle with no nested caps. Since the stacked tangle has $2$ non-simple disks and $\alpha(G)-3$ simple disks, the following holds.
-    \begin{enumerate}
-        \item The number of crossings between simple disks is at most $\binom{\alpha(G)-3}{2}$.
-        \item The number of crossings between simple and non-simple disks is at most $2 \cdot (\alpha(G)-3)$.
-        \item The number of crossings between the two non-simple disks is at most $2$, except for the trivial theta curve.
-    \end{enumerate}
-    However, for each cap, the two arcs that it connects have no crossing since $RS_T$ has no nested caps. Moreover, any pair of simple arcs is connected by at most one cap. Note that between the two non-simple disks, there are at most two caps, except in the trivial theta curve case. Therefore, we obtain the following upper bound on $n$ in terms of $\alpha(G)$:
-    \[ n \leq \binom{\alpha(G)-3}{2} + 2(\alpha(G)-3) + 2 - (\alpha(G)-2) = \frac{1}{2} (\alpha(G)^2 - 5 \alpha(G) + 8). \]
-    Using the above theorem, we have the following inequality:
-    \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
-    Now suppose $G$ is a handcuff curve. Similarly, the following holds.
-    \begin{enumerate}
-        \item The number of crossings between simple disks is at most $\binom{\alpha(G)-3}{2}$.
-        \item The number of crossings between simple and non-simple disks is at most $2 \cdot (\alpha(G)-3)$.
-        \item The number of crossings between the two non-simple disks is at most $1$.
-    \end{enumerate}
-    Note that, in contrast to the theta case, some two arcs in a handcuff curve can be connected to two caps simultaneously when a simple arc intersects a non-simple one, because there are two loops in a handcuff curve. Moreover, since a handcuff curve has only one edge connecting the two vertices, there can be at most one cap between the two non-simple disks. Thus, the number of crossings satisfies the same upper bound:
-    \[ n \leq \binom{\alpha(G)-3}{2} + 2(\alpha(G)-3) + 1 - (\alpha(G)-1-2) = \frac{1}{2} (\alpha(G)^2 - 5 \alpha(G) + 8), \]
-    and we obtain the following inequality:
-    \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
-\end{proof}
-
-Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
-
 \begin{theorem}
     뭐시기 출처 모름
 \end{theorem}
 
+
 \section{Research Result}
-뭔가 나오긴 하겠지...............?
+The Python Code did not work since the Topoly Library had error of the Yamada polynomial function. However, we were able to examine some of our answers by the Python Code. Also, we were able to found the bounds of the arc index of the handcuff graphs.
+
 
 \section{Conclusion}
 요약, 더 나아가서 어떻게 써먹을 수 있을지?
@@ -275,10 +394,12 @@ Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
     Leslie Lamport.
     \newblock \LaTeX: A Document Preparation System.
     \newblock Addison Wesley, Reading, Massachusetts, second edition, 1994.
+    
     \bibitem{knuth84}
     Donald E. Knuth.
     \newblock The \TeX book.
     \newblock Addison Wesley, Reading, Massachusetts, 1984.
 \end{thebibliography}
+
 
 \end{document}

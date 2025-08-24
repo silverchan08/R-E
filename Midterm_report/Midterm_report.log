@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 15:24
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -449,35 +449,26 @@ Package fontspec Info:
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <17.28> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 51.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <10> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 72.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 68.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--79
+Underfull \hbox (badness 10000) in paragraph at lines 90--97
 
  []
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 82.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 100.
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
-
- []
-
-
-LaTeX Font Warning: Font shape `TU/UnBatang.ttf(0)/m/it' undefined
-(Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 97.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
@@ -486,43 +477,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+LaTeX Font Warning: Font shape `TU/UnBatang.ttf(0)/m/it' undefined
+(Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 115.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 File: generalized_reidemeister.png Graphic file (type bmp)
 <generalized_reidemeister.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
-
- []
-
-File: An arc presentation and a grid diagram of the knot.png Graphic file (type bmp)
-<An arc presentation and a grid diagram of the knot.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+File: An arc presentation and a grid diagram of the knot.png Graphic file (type bmp)
+<An arc presentation and a grid diagram of the knot.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
@@ -530,23 +529,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
 [3]
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 161.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 179.
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 

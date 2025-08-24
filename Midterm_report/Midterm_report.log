@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 13:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report
-(c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -498,78 +498,3 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 [1
 
 ]
-File: An arc presentation and a grid diagram of the knot.png Graphic file (type bmp)
-<An arc presentation and a grid diagram of the knot.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-File: yamada_property.png Graphic file (type bmp)
-<yamada_property.png>
-
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
-
- []
-
-LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 130.
-
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
-
- []
-
-
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
-
- []
-
-
-
-[5]
-
-[6]
-
-[7]
-File: image.png Graphic file (type bmp)
-<image.png>
-
-
-[8]
-
-[9] (./Midterm_report.aux)
- ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-05-26>
- ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
-Here is how much of TeX's memory you used:
- 9924 strings out of 468527
- 185852 string characters out of 5451377
- 615510 words of memory out of 5000000
- 38156 multiletter control sequences out of 15000+600000
- 635050 words of font info for 114 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 102i,9n,105p,926b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on Midterm_report.pdf (9 pages).

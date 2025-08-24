@@ -75,7 +75,9 @@ Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
     \label{figure_1} 
 \end{figure*}
 
-When there is one binding axis and finite number of half plane is embedded, it is called \textit{arc presentation}. The intersection of the half plane and theta curve should be a simple curve. In knot theory, \textit{arc index}, which is representated as $\alpha(G)$ when the knot is G, is a knot invariant defined by the minimal number of half planes in the arc presentation. This arc presentation is \textit{minimal arc presentation.} \textit{Prime knots} are knots that is not constructed by combining simpler knots. We are finding the arc index for the prime theta-curve and handcuff graph with up to seven crossings.\\
+\textit{Arc presentation} is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis. Every spatial graph $G$ can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
+In knot theory, \textit{arc index}, is the minimal number of pages among all possible arc presentations of K.
+This arc presentation with the minimal number of pages is \textit{minimal arc presentation.} \textit{Prime knots} are knots that is not constructed by combining simpler knots. We are finding the arc index for the prime theta-curve and handcuff graph with up to seven crossings.\\
 
 The \textit{grid diagram} is made of horizontal lines and vertical lines, and vertical lines are always on top of horizontal lines. Except the vertices, two points that are bent vertically should be on each horizontal and vertical lines. The \textit{Cromwell matrix} of theta-curve and handcuff graphs is the matrix made of 0 and 1. Excpet 2 rows, each row and columns has exactly two 1s, and for 2 rows, there are exactly three 1s. If the 1s are connected by horizontal and vertical lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes are $\alpha$ on minimal arc presentation, the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
 
@@ -84,6 +86,11 @@ The \textit{grid diagram} is made of horizontal lines and vertical lines, and ve
     \caption{An arc presentation and a grid diagram of the knot}
     \label{figure_2}
 \end{figure*}
+
+We first decided to used the Python Code to examine the arc index.
+For this, we found the method classifying theta-curve and handcuff graphs by Cromwell matrix.
+Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal arc index of the graph, but the Topoly library of the Python did not work, so we could not examine the Yamada polynomial.
+So, we found out the smallest Cromwell matrix by hand with using the bounds of the arc index, and used the Python Code to examine if we found the right Cromwell matrices.
 
 \section{Theoretical Background}
 The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}. The $\theta$-curve 아귀찮아 이건 나중에\\

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 14:05
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  24 AUG 2025 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,23 +468,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--63
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <14.4> not available
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 66.
 
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+
 LaTeX Font Warning: Font shape `TU/UnBatang.ttf(0)/m/it' undefined
-(Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 68.
+(Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 81.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-File: generalized_reidemeister.png Graphic file (type bmp)
-<generalized_reidemeister.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
@@ -493,49 +486,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--81
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+File: generalized_reidemeister.png Graphic file (type bmp)
+<generalized_reidemeister.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 File: An arc presentation and a grid diagram of the knot.png Graphic file (type bmp)
 <An arc presentation and a grid diagram of the knot.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 138.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 144.
 
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
@@ -565,7 +570,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  9924 strings out of 468527
  185852 string characters out of 5451377
- 614510 words of memory out of 5000000
+ 615510 words of memory out of 5000000
  38156 multiletter control sequences out of 15000+600000
  635050 words of font info for 114 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

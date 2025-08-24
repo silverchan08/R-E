@@ -54,7 +54,7 @@
 
 
 \begin{abstract}
-Our purpose of this research is classifying theta-curves and handcuff graphs by their arc index, which their crossing is up to 7.
+Our purpose of this research is classifying theta-curves and handcuff graphs by their arc indices, which their crossing is up to 7.
 We tried to find those arc indices by proving lower bounds and upper bounds of the theta-curves and handcuff graphs.
 Also we programmed Python code that returns Cromwell matrix of the theta curves which have crossing up to 7.
 Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
@@ -64,6 +64,19 @@ Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
 
 
 \section{Introduction}
+Knot theory is a field of mathematics that studies simple closed curves embedded in three-dimensional space.
+Study of theta-curves and handcuff graphs is included in knot theory.
+In this research, we tried to classify those graphs by their arc indices, which are up to 7 crossings.\\
+
+
+We first decided to used the Python code to examine the arc index.
+For this, we found the method classifying theta-curve and handcuff graphs by Cromwell matrix.
+Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal arc index of the graph, but the Topoly library of the Python did not work, so we could not examine the Yamada polynomial.
+So, we found out the smallest Cromwell matrix by hand with using the bounds of the arc index, and used the Python code to examine if we found the right Cromwell matrices.
+Then we tried to decrease the gap of upper and lower bounds, and found out arc indices of some graphs.
+
+\section{Theoretical Background}
+
 
 \textit{Theta-curve} is a spatial knot on 3-sphere which has 2 vertices and 3 edges. In the projection of the theta-curve, the section where theta-curve meets itself is named \textit{crossing}. If the one theta-curve and other theta-curve's continuous transform of the graph is same, these curves are \textit{equivalent}. To transform a projection of theta-curve, the \textit{generalized Reidemeister move} is used.\\
 
@@ -87,13 +100,6 @@ The \textit{grid diagram} is made of horizontal lines and vertical lines, and ve
     \label{figure_2}
 \end{figure*}
 
-We first decided to used the Python Code to examine the arc index.
-For this, we found the method classifying theta-curve and handcuff graphs by Cromwell matrix.
-Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal arc index of the graph, but the Topoly library of the Python did not work, so we could not examine the Yamada polynomial.
-So, we found out the smallest Cromwell matrix by hand with using the bounds of the arc index, and used the Python Code to examine if we found the right Cromwell matrices.
-Then we tried to decrease the gap of upper and lower bounds, and found out arc indices of some graphs.
-
-\section{Theoretical Background}
 The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}. The $\theta$-curve 아귀찮아 이건 나중에\\
 
 The polynomial of the knot is invariant. \textit{Yamada polynomial} is invariant when it is mulitplied $(-x)^n$ for some integer n. The \textit{span} of a knot, is substraction of maximal degree of minimal degree of the polynomial. It is a invariant since Yamada polynomial is invariant when mulitplied by $(-x)^n$.\\

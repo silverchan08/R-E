@@ -120,8 +120,8 @@ Also, we used some mathematical methods to found out the minimal grid diagrams b
 \end{figure*}
 
 In the projection of the handcuff graph and $\theta$-curve, the section where they meet themselves is named \textit{crossing}. 
-If the one handcuff graph or $\theta$-curve and other handcuff graph's or $\theta$-curve's continuous transform of the graph is same, these graphs are \textit{equivalent}. 
-The \textit{generalized Reidemeister move} is used to transfrom a projection of handcuff graphs and $\theta$-curves.\\
+If the one graph and other graph's continuous transform of the graph is same, these graphs are \textit{equivalent}. 
+The \textit{Generalized Reidemeister Moves} are used to transfrom a projection of handcuff graphs and $\theta$-curves.\\
 
 \begin{figure*}[h]
     \centerline{\includegraphics[width=0.5\textwidth]{figure/reidemeister.png}}
@@ -147,12 +147,23 @@ In the similiar way, a handcuff graph is said to be trivial if it can be embedde
 Every spatial graph $G$ can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
 In knot theory, \textit{arc index}, is the minimal number of pages among all possible arc presentations of graph. This arc presentation with the minimal number of pages is \textit{minimal arc presentation.} \textit{Prime knots} are knots that is not constructed by combining simpler knots. We are finding the arc index for the prime theta-curve and handcuff graph up to seven crossings.
 
+\begin{figure*}[h]
+    \centering
+    \subfloat{\includegraphics[width=0.28\textwidth]{figure/openbook.png}}
+    \subfloat{\includegraphics[width=0.3\textwidth]{figure/handcuff_openbook.png}}
+    \caption{Arc presentation of $\theta$-curve $3_1$ and a trivial handcuff graph}
+    \label{figure_1} 
+\end{figure*}
+
+
 \begin{defn}
     The \textit{grid diagram} is a handcuff graph or theta‐curve diagram of vertical strands and one less number of horizontal strands with the properties that at every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co‐linear and no two vertical segments are co‐linear.
 \end{defn}
 
+\begin{defn}
+   The \textit{Cromwell matrix} is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s. For theta‐curve and handcuff graph, its Cromwell matrix is an $n \times (n+1)$ binary matrix that exactly two rows (called \textit{Three‐rows}) has exactly three 1s and rest of the rows and each columns has exactly two 1s. 
+\end{defn}
 
-The \textit{Cromwell matrix} is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s. For theta‐curve and handcuff graph, its Cromwell matrix is an $n \times (n+1)$ binary matrix that exactly two rows (called Three‐rows) has exactly three 1s and rest of the rows and each columns has exactly two 1s.
 If the 1s are connected by horizontal and vertical lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes are $\alpha$ on minimal arc presentation, the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
 
 \begin{figure*}[h]
@@ -160,6 +171,13 @@ If the 1s are connected by horizontal and vertical lines, it leads to the grid d
     \caption{An arc presentation and a grid diagram of the knot}
     \label{figure_2}
 \end{figure*}
+
+\begin{theorem}
+    There exists arc presentations for every $\theta$-curve and handcuff graph. 
+\end{theorem}
+\begin{proof}
+    For any $\theta$-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy
+\end{proof}
 
 The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}. The $\theta$-curve 아귀찮아 이건 나중에\\
 

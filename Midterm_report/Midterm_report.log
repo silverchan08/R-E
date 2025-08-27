@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  27 AUG 2025 09:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  27 AUG 2025 13:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,39 +560,37 @@ File: figure/openbook.png Graphic file (type bmp)
 File: figure/handcuff_openbook.png Graphic file (type bmp)
 <figure/handcuff_openbook.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
+
+
+[3]
 File: An arc presentation and a grid diagram of the knot.png Graphic file (type bmp)
 <An arc presentation and a grid diagram of the knot.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: figure/crossings.png Graphic file (type bmp)
 <figure/crossings.png>
 File: figure/move crossing.png Graphic file (type bmp)
 <figure/move crossing.png>
 
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 237.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 244.
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 276--282
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
 
  []
 
@@ -622,6 +620,10 @@ File: image.png Graphic file (type bmp)
 [10]
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 [11]
@@ -717,6 +719,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 550--553
 
  []
 
+
+
+[13]
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -902,9 +907,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 576--939
 
  []
 
-
-
-[13]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -993,56 +995,4 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_31.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_31.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_7_32.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_32.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_33.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_33.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_34.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_34.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_35.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_35.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_36.png>
-
-
-[14]
-
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:1153: LaTeX Error: \begin{defn} on input line 165 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1153 \end{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
-[15] (./Midterm_report.aux)
- ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-05-26>
- ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 165 (\begingroup)
-### bottom level 
-Here is how much of TeX's memory you used:
- 12765 strings out of 468527
- 275813 string characters out of 5451377
- 667773 words of memory out of 5000000
- 40833 multiletter control sequences out of 15000+600000
- 635074 words of font info for 117 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 102i,9n,105p,1262b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on Midterm_report.pdf (15 pages).
+File: ../Midterm_Poste

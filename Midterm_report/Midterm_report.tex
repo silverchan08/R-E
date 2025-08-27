@@ -164,9 +164,16 @@ In knot theory, \textit{arc index}, is the minimal number of pages among all pos
 
 \begin{defn}
    The \textit{Cromwell matrix} is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s. 
-   For theta‐curve and handcuff graph, its Cromwell matrix is called the \textit{THC-Cromwell matrix} and it is described in definition 9.
+   For theta‐curve and handcuff graph, its Cromwell matrix is called the 
+   the \textit{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
+\end{defn}
+\begin{enumerate}
+    \item It is a binary $n\times(n+1)$ matrix.
+    \item It has exactly two 1s in every column.
+    \item There are only three 1s in two distinct rows (which are called the \textit{Three-row}) and every other rows has exactly two 1s.
+\end{enumerate}
 
-If the 1s are connected by horizontal and vertical lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes in arc presentation is $\alpha$, then the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
+If the 1s of the Cromwell matrix are connected by horizontal and vertical lines with vertical lines are always on the horizontal lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes in arc presentation is $\alpha$, then the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
 
 \begin{figure*}[h]
     \centerline{\includegraphics[width=0.5\linewidth]{An arc presentation and a grid diagram of the knot.png}}
@@ -280,17 +287,10 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %The \textit{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
 %\end{defn}
 
-\begin{defn}
-The \textit{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
-\end{defn}
-\begin{enumerate}
-    \item It is a $n\times(n+1)$ matrix with entries 0 and 1.
-    \item It has only two `1's in every row and column, except for two rows. These two rows have three `1's.
-\end{enumerate}
 \begin{theorem}
 Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 \end{theorem}
-$\mathbf{Definition}$ Let any exception row(with three `1's) $i$ and its two outer `1's $j$, $k$. The \textit{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+$\mathbf{Definition}$ Let any Three-row $i$ and its two outer `1's $j$, $k$. The \textit{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
 
 \subsubsection{Main Theorem}
 \begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.

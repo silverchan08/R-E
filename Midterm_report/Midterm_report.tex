@@ -290,7 +290,10 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 \begin{theorem}
 Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 \end{theorem}
-$\mathbf{Definition}$ Let any Three-row $i$ and its two outer `1's $j$, $k$. The \textit{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+\begin{defn}
+    Let any THC matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ from the Matrix G\\
+\end{defn}
+
 
 \subsubsection{Main Theorem}
 \begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
@@ -1135,7 +1138,7 @@ The Python Code did not work since the Topoly Library had error of the Yamada po
   \end{figure}
 
 
-\section{Conclusion}
+\section{Further Researches}
 요약, 더 나아가서 어떻게 써먹을 수 있을지?
 
 \section*{References}

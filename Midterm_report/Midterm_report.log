@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  27 AUG 2025 13:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  27 AUG 2025 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,14 +595,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--289
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 319--321
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
 
  []
 
@@ -627,8 +627,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [11]
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:545: Undefined control sequence.
-l.545         \[ R \left( \Xslashfront
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:548: Undefined control sequence.
+l.548         \[ R \left( \Xslashfront
                                        \right) - R \left( \Xslashback \right...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -636,8 +636,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:545: Undefined control sequence.
-l.545 ...slashfront \right) - R \left( \Xslashback
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:548: Undefined control sequence.
+l.548 ...slashfront \right) - R \left( \Xslashback
                                                    \right) = (x - x^{-1}) \l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -645,8 +645,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:545: Undefined control sequence.
-l.545 ...ht) = (x - x^{-1}) \left( R \left( \czero
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:548: Undefined control sequence.
+l.548 ...ht) = (x - x^{-1}) \left( R \left( \czero
                                                    \right) - R \left ( \cinf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -654,8 +654,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:545: Undefined control sequence.
-l.545 ...R \left( \czero \right) - R \left ( \cinf
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:548: Undefined control sequence.
+l.548 ...R \left( \czero \right) - R \left ( \cinf
                                                    \right) \right). \]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -663,10 +663,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:547: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:550: Undefined control sequence.
 <recently read> \Xslashfront 
                              
-l.547 ...s obtained by replacing the $\Xslashfront
+l.550 ...s obtained by replacing the $\Xslashfront
                                                   $ crossing with $\Xslashba...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -674,10 +674,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:547: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:550: Undefined control sequence.
 <recently read> \Xslashback 
                             
-l.547 ...$\Xslashfront$ crossing with $\Xslashback
+l.550 ...$\Xslashfront$ crossing with $\Xslashback
                                                   $, $\czero$ and $\cinf$, r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -685,10 +685,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:547: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:550: Undefined control sequence.
 <recently read> \czero 
                        
-l.547 ...ont$ crossing with $\Xslashback$, $\czero
+l.550 ...ont$ crossing with $\Xslashback$, $\czero
                                                   $ and $\cinf$, respectivel...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -696,10 +696,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:547: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:550: Undefined control sequence.
 <recently read> \cinf 
                       
-l.547 ...g with $\Xslashback$, $\czero$ and $\cinf
+l.550 ...g with $\Xslashback$, $\czero$ and $\cinf
                                                   $, respectively. Since bot...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -708,14 +708,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--549
+Underfull \hbox (badness 10000) in paragraph at lines 550--552
 
  []
 
 
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 550--553
+Underfull \hbox (badness 10000) in paragraph at lines 553--556
 
  []
 
@@ -903,7 +903,7 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--939
+Underfull \hbox (badness 10000) in paragraph at lines 579--942
 
  []
 
@@ -1021,11 +1021,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12765 strings out of 468527
- 275813 string characters out of 5451377
+ 12754 strings out of 468527
+ 275506 string characters out of 5451377
  667773 words of memory out of 5000000
- 40833 multiletter control sequences out of 15000+600000
- 635074 words of font info for 117 fonts, out of 8000000 for 9000
+ 40828 multiletter control sequences out of 15000+600000
+ 635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,9n,105p,1262b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

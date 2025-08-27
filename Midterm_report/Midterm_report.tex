@@ -115,8 +115,8 @@
 
 
     \begin{abstract}
-        본 연구에서는 공간 그래프(spatial graph), 특히 엇갈림수(crossing number) $7$까지의 $\theta$-커브($\theta$-curve)과 수갑 그래프(handcuff graph)에서의 최소 그물 그림(minimal grid diagram)을 구함으로써 그들의 호 지수(arc index)를 확정시키고자 하였다. 또한 그 과정에서 호 지수의 상한과 하한을 구할 수 있었으며, 야마다 다항식(yamada polynomial)에 기반한 파이썬 프로그램을 작성하여 이를 확인해 보았다.\\ \\
-        \textbf{중심어 : $\theta$-커브, 수갑 그래프, 호 지수, 최소 그물 그림}
+        본 연구에서는 공간 그래프(spatial graph), 특히 엇갈림수(crossing number) $7$까지의 세타커브(theta-curve)과 수갑 그래프(handcuff graph)에서의 최소 그물 그림(minimal grid diagram)을 구함으로써 그들의 호 지수(arc index)를 확정시키고자 하였다. 또한 그 과정에서 호 지수의 상한과 하한을 구할 수 있었으며, 야마다 다항식(yamada polynomial)에 기반한 파이썬 프로그램을 작성하여 이를 확인해 보았다.\\ \\
+        \textbf{중심어 : 세타커브, 수갑 그래프, 호 지수, 최소 그물 그림}
         \\
     \end{abstract}
 
@@ -147,13 +147,13 @@ Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
 \newpage
 \section{Introduction}
 Knot theory is a field of mathematics that studies simple closed curves embedded in three-dimensional space. Study of theta-curves and handcuff graphs is included in knot theory. In this research, we tried to get the minimal grid diagrams of those graphs, which are up to 7 crossings.\\ \\
-We first decided to use the Python code to examine the minimal grid diagrams of $\theta$-curves and handcuff graphs. For this, we found the method to classify theta-curve and handcuff graphs by their Cromwell matrices, which are called THC matrices. Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal grid diagram of the graph. \\ \\
+We first decided to use the Python code to examine the minimal grid diagrams of theta-curves and handcuff graphs. For this, we found the method to classify theta-curve and handcuff graphs by their Cromwell matrices, which are called THC matrices. Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal grid diagram of the graph. \\ \\
 Also, we used some mathematical methods to found out the minimal grid diagrams by using the bounds of the arc index, and used the Python code to examine if we found the right grid diagrams. Then we tried to decrease the gap of upper and lower bounds, and found out arc indices of some graphs.
 
 \section{Theoretical Background}
 
 \begin{defn}
-    \textit{$\theta$-curve} is a spatial knot on $3$-sphere which has $2$ vertices and $3$ edges. 
+    \textit{Theta-curve} is a spatial knot on $3$-sphere which has $2$ vertices and $3$ edges. 
 \end{defn}
 \begin{defn}
     \textit{Handcuff graph} consists of $2$ loops and $1$ edge joining the loops.
@@ -161,14 +161,14 @@ Also, we used some mathematical methods to found out the minimal grid diagrams b
 
 \begin{figure*}[h]
     \centerline{\includegraphics[width=0.3\textwidth]{figure/theta and handcuff graph.png}}
-    \caption{Examples of $\theta$-curves and handcuff graphs.}
+    \caption{Examples of theta-curves and handcuff graphs.}
     \label{figure_1} 
 \end{figure*}
 
-In the projection of the handcuff graph and $\theta$-curve, the section where they meet themselves is named \textit{crossing}. 
-For each handcuff graphs and $\theta$-curves, the minimal number of crossings are called the \textit{crossing number}.
+In the projection of the handcuff graph and theta-curve, the section where they meet themselves is named \textit{crossing}. 
+For each handcuff graphs and theta-curves, the minimal number of crossings are called the \textit{crossing number}.
 If the one graph and other graph's continuous transform of the graph is same, these graphs are \textit{equivalent}. 
-The \textit{Generalized Reidemeister Moves} are used to transfrom a projection of handcuff graphs and $\theta$-curves.\\
+The \textit{Generalized Reidemeister Moves} are used to transfrom a projection of handcuff graphs and theta-curves.\\
 
 \begin{figure*}[h]
     \centerline{\includegraphics[width=0.5\textwidth]{figure/reidemeister.png}}
@@ -176,7 +176,7 @@ The \textit{Generalized Reidemeister Moves} are used to transfrom a projection o
     \label{figure_1} 
 \end{figure*}
 
-A $\theta$-curve is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
+A theta-curve is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
 In the similiar way, a handcuff graph is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
 
 \begin{figure*}[h]
@@ -184,7 +184,7 @@ In the similiar way, a handcuff graph is said to be trivial if it can be embedde
     \subfloat{\includegraphics[width=0.1\textwidth]{figure/y6.png}}
     \hspace{0.05\linewidth}
     \subfloat{\includegraphics[width=0.25\textwidth]{figure/y7.png}}
-    \caption{Trivial $\theta$-curve and handcuff graph.}
+    \caption{Trivial theta-curve and handcuff graph.}
     \label{figure_1} 
 \end{figure*}
 
@@ -199,7 +199,7 @@ In knot theory, \textit{arc index}, is the minimal number of pages among all pos
     \centering
     \subfloat{\includegraphics[width=0.33\textwidth]{figure/openbook.png}}
     \subfloat{\includegraphics[width=0.37\textwidth]{figure/handcuff_openbook.png}}
-    \caption{Arc presentation of $\theta$-curve $3_1$ and a trivial handcuff graph}
+    \caption{Arc presentation of theta-curve $3_1$ and a trivial handcuff graph}
     \label{figure_1} 
 \end{figure*}
 
@@ -228,10 +228,10 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
 \end{figure*}
 
 \begin{theorem}
-    Arc presentations exist for every $\theta$-curve and handcuff graph. 
+    Arc presentations exist for every theta-curve and handcuff graph. 
 \end{theorem}
 \begin{proof}
-    For any $\theta$-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
+    For any theta-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
     Then for every crossing it has, there are only two following cases. \\
     \begin{figure*}[h]
         \centerline{\includegraphics[width=0.5\linewidth]{figure/crossings.png}}
@@ -245,7 +245,7 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
         \caption{Suitable movement for case 2}
         \label{figure_2}
     \end{figure*}
-    \\ Therefore, it becomes the grid diagram and since the grid diagrams and arc presentations are in one-to-one correspondence, there always exists arc presentations for every $\theta$-curve and handcuff graph.
+    \\ Therefore, it becomes the grid diagram and since the grid diagrams and arc presentations are in one-to-one correspondence, there always exists arc presentations for every theta-curve and handcuff graph.
 \end{proof}
 
 \begin{defn}
@@ -311,7 +311,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 
 \begin{figure*}[h]
     \centerline{\includegraphics[width=0.5\textwidth]{figure/Hdeletion.png}}
-    \caption{H deletion of THC-matrix of $\theta$-curve $3_1$.}
+    \caption{H deletion of THC-matrix of theta-curve $3_1$.}
     \label{figure_1} 
 \end{figure*}
 
@@ -1211,7 +1211,9 @@ We used the bounds from theoretical background, and used the Python code to find
 
 
 \section{Further Researches}
-요약, 더 나아가서 어떻게 써먹을 수 있을지?
+    We want to fix every arc index of handcuff graph and theta-curve graph under $7$ crossings.
+    Also, we want to apply bounds of spatial graphs to knots.
+    Since we found the minimal diagram of some theta-curves and handcuff graphs up to $7$ crossings, it can be used as reference for other researches.
 
 \section*{References}
     \begin{enumerate}

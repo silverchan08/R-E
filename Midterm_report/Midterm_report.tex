@@ -287,13 +287,18 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %The \textit{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
 %\end{defn}
 
-\begin{theorem}
-Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
-\end{theorem}
+%\begin{theorem}
+%Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
+%\end{theorem}
 \begin{defn}
-    Let any THC matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ from the Matrix G\\
+    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ from the matrix G\\
 \end{defn}
 
+\begin{figure*}[h]
+    \centerline{\includegraphics[width=0.5\textwidth]{figure/Hdeletion.png}}
+    \caption{H deletion of THC-matrix of $\theta$-curve $3_1$.}
+    \label{figure_1} 
+\end{figure*}
 
 \subsubsection{Main Theorem}
 \begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
@@ -301,7 +306,7 @@ Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 
 \begin{proof}
 \begin{enumerate}
-    \item \textbf{Method of changing grid diagram of a knot to simple matrix}\\
+    \item \textbf{Determinant of the cromwell matrices of Knot}\\
     First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
 By applying row operation, we should make matrix such as
     $$\begin{pmatrix} 

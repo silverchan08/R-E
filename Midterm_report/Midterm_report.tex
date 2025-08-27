@@ -206,7 +206,7 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
     The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}.
 \end{defn}
 
-The polynomial of the knot is invariant. \textit{Yamada polynomial} is invariant when it is mulitplied $(-x)^n$ for some integer n. The \textit{span} of a knot, is substraction of maximal degree of minimal degree of the polynomial. It is a invariant since Yamada polynomial is invariant when mulitplied by $(-x)^n$.\\
+The polynomial of the knot is invariant. \textit{Yamada polynomial} is invariant when it is mulitplied $(-x)^n$ for some integer n. The \textit{spread} of a knot, is substraction of maximal degree of minimal degree of the polynomial. It is a invariant since Yamada polynomial is invariant when mulitplied by $(-x)^n$.\\
 
 Let 3 edges of theta-curve is $e_1, e_2, e_3$, then $e_1 \cup e_2$, $e_2 \cup e_3$, $e_3 \cup e_1$ becomes a knot on 3-sphere. This knots are \textit{consituent knot} of the theta-curve.
 
@@ -251,7 +251,7 @@ A \textit{reduced simple closure of a stacked tangle} is
 First, we made a Python Code to find the arc index and the cromwell matrix of the knots. Then we used the upper and lower bounds, and also found the smaller upper bounds and larger lower bounds. Finally we used the direct method to find the arc index by drawing the binding circle.
 
 \subsection{The Python Code}
-The Python Code generates the possible Cromwell matrices of theta-curves and handcuff graphs, and compares with the existing ones in the table which is less or equal to 7 crossings.
+The Python code generates the possible Cromwell matrices of theta-curves and handcuff graphs, and compares with the existing ones in the table which is less or equal to 7 crossings.
 It eventually returns the Cromwell matrix of the compared theta-curve and handcuff graph.
 To distinguish the Cromwell matrices from theta-curves and handcuff graphs, which is generated and removed by the rules from the above section, we should use the determinant of the Cromwell matrices.\\
 %\begin{defn}
@@ -375,9 +375,9 @@ Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matri
 \end{proof}
 
 \subsection{Bounds of Arc Index}
-We used the bounds from theoretical background, and used the Python code to find the arc index. If we could not find the arc index by the computer, we directly found the arc index by drawing the binding circle of the theta-curve.
+We found the bounds of arc index by the theoretical background, or we found the new bounds inspired by the theoretical background.
 
-\subsection{Bounds of Arc Index in case of Handcuff Graphs}
+
 \begin{theorem}
 Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
 \end{theorem}
@@ -479,7 +479,7 @@ Combining the above corollary and the corollary of Theorem 2, we have the follow
     \[ \alpha(H) = c(L)+3. \]
 \end{theorem}
 
-We now consider the Yamada polynomial(주석으로 야마다 달아주고) of the handcuff curve and investigate the relationship between the difference of its maximum and minimum degrees and the arc index.
+We now consider the Yamada polynomial of the handcuff curve and investigate the relationship between the difference of its maximum and minimum degrees and the arc index.
 
 \begin{defn}
     For a graph $G=(V, E)$, where $V$ is vertex set of $G$ and $E$ is edge set of $G$, let us define $2$-variable Laurent polynomial
@@ -517,7 +517,7 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
 \begin{theorem}
     Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Then,
     \[ \text{spr}(R(S_T)) \leq 2n+2 \]
-    where $n$ is the number of crossings in $S_T$ and $\mathrm{spr}(f)$ denotes the spread of $f$, the difference between the maximal and minimal degrees of $f$.
+    where $n$ is the number of crossings in $S_T$ and $\mathrm{spr}(f)$ denotes the spread of $f$.
 \end{theorem}
 
 \begin{corol}
@@ -566,10 +566,12 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
     \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
 \end{proof}
 
-Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
+%Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
 
 \section{Research Result}
-The Python Code did not work since the Topoly Library had error of the Yamada polynomial function. However, we were able to examine some of our answers by the Python Code. Also, we were able to found the bounds of the arc index of the handcuff graphs. The following result of the graphs with arc index is at below. The graphs with confirmed arc index is colored in green.\\
+The Python code did not work since the Topoly Library had error of the Yamada polynomial function. However, we were able to examine some of our answers by the Python code.
+We used the bounds from theoretical background, and used the Python code to find the arc index. If we could not find the arc index by the computer, we directly found the arc index by drawing the binding circle of the theta-curve.
+ Also, we were able to found the bounds of the arc index of the handcuff graphs. The following result of the graphs with arc index is at below. The graphs with confirmed arc index is colored in green.\\
   \begin{figure}[H]
     \begin{subfigure}{0.075\textwidth}
     \includegraphics[width=1.25cm]{../Midterm_Poster/grid_diagram/theta_3_1.png}

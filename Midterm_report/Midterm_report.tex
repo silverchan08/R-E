@@ -100,8 +100,8 @@ Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
 
 \newpage
 \section{Introduction}
-Knot theory is a field of mathematics that studies simple closed curves embedded in three-dimensional space. Study of theta-curves and handcuff graphs is included in knot theory. In this research, we tried to get the minimal grid diagrams of those graphs, which are up to 7 crossings.\\ 
-We first decided to use the Python code to examine the minimal grid diagrams of $\theta$-curves and handcuff graphs. For this, we found the method to classify theta-curve and handcuff graphs by their Cromwell matrices, which are called THC matrices. Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal grid diagram of the graph. \\
+Knot theory is a field of mathematics that studies simple closed curves embedded in three-dimensional space. Study of theta-curves and handcuff graphs is included in knot theory. In this research, we tried to get the minimal grid diagrams of those graphs, which are up to 7 crossings.\\ \\
+We first decided to use the Python code to examine the minimal grid diagrams of $\theta$-curves and handcuff graphs. For this, we found the method to classify theta-curve and handcuff graphs by their Cromwell matrices, which are called THC matrices. Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal grid diagram of the graph. \\ \\
 Also, we used some mathematical methods to found out the minimal grid diagrams by using the bounds of the arc index, and used the Python code to examine if we found the right grid diagrams. Then we tried to decrease the gap of upper and lower bounds, and found out arc indices of some graphs.
 
 \section{Theoretical Background}
@@ -130,7 +130,7 @@ The \textit{Generalized Reidemeister Moves} are used to transfrom a projection o
     \label{figure_1} 
 \end{figure*}
 
-A $\theta$-curve is said to be trivial if it can be embedded in a $2$-sphere in $S^3$. \\
+A $\theta$-curve is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
 In the similiar way, a handcuff graph is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
 
 \begin{figure*}[h]
@@ -182,7 +182,7 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
 \end{figure*}
 
 \begin{theorem}
-    There exists arc presentations for every $\theta$-curve and handcuff graph. 
+    Arc presentations exist for every $\theta$-curve and handcuff graph. 
 \end{theorem}
 \begin{proof}
     For any $\theta$-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
@@ -192,7 +192,7 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
         \caption{Cases for crossings}
         \label{figure_2}
     \end{figure*}
-    \\ For each crossings, if it is a first case, then it is over. \\
+    \\ For each crossings, if it is a first case, then it is over.
     However, if it is a second case, then we can make that crossing to first case using some suitable movement. \\
     \begin{figure*}[h]
         \centerline{\includegraphics[width=0.25\linewidth]{figure/move crossing.png}}
@@ -240,37 +240,6 @@ A \textit{reduced simple closure of a stacked tangle} is
     \item a simple closure of a stacked tangle without any nested caps
     \item any two arcs(including line segment) joining by caps have no intersection when view from above
 \end{itemize}
-
-\subsection{Lower bounds of Arc Index in Theta-Curve}
-
-\begin{theorem}
-Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
-\end{theorem}
-
-\begin{theorem}
-Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \frac{1}{2}\sum_{i=1}^3\alpha(K_i).$$
-\end{theorem}
-
-\begin{theorem}
-For any theta-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta))+36c(\theta)}}{3} \left(f(x) = \begin{cases} 
-		73 & x \equiv 0 \pmod 6\\ 
-		4 & x \equiv 1 \pmod 6\\ 
-		25 & x \equiv 2 \pmod 6\\ 
-		-8 & x \equiv 3 \pmod 6\\ 
-		49 & x \equiv 4 \pmod 6\\ 
-		20 & x \equiv 5 \pmod 6\\ 
-     \end{cases} \right).$$
-\end{theorem}
-
-\begin{theorem}
-Let T be any theta-curve. Then $$2+\sqrt{\max\deg_x R(S_T) - \min\deg_x R(S_T) + 4} \leq \alpha(T)$$ where $R(T)$ is a Yamada polynomial of the theta-curve T, and $S_{T}$ be a reduce simple closure of stacked tangle of a theta-curve T corresponding to minimal arc presentation of T.
-\end{theorem}
-
-\subsection{Upper bound of Arc Index in Theta-Curve}
-
-\begin{theorem}
-For theta-curve $\theta$, if $c(\theta)$ is the crossing number, then $$\alpha(\theta) \leq c(\theta) + 3.$$
-\end{theorem}
 
 %\begin{proof}
 %$$\alpha(\theta) \leq c(\theta) + e + b$$ when e is number of edges, b is number of bouquet cut-components. We have 3 edges, 0 bouquet cut-componentes for theta-curves. Therefore, $$\alpha(\theta) \leq c(\theta) + 3.$$
@@ -407,7 +376,32 @@ Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matri
 We used the bounds from theoretical background, and used the Python code to find the arc index. If we could not find the arc index by the computer, we directly found the arc index by drawing the binding circle of the theta-curve.
 
 \subsection{Bounds of Arc Index in case of Handcuff Graphs}
+\begin{theorem}
+Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
+\end{theorem}
 
+\begin{theorem}
+Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \frac{1}{2}\sum_{i=1}^3\alpha(K_i).$$
+\end{theorem}
+
+\begin{theorem}
+For any theta-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta))+36c(\theta)}}{3} \left(f(x) = \begin{cases} 
+		73 & x \equiv 0 \pmod 6\\ 
+		4 & x \equiv 1 \pmod 6\\ 
+		25 & x \equiv 2 \pmod 6\\ 
+		-8 & x \equiv 3 \pmod 6\\ 
+		49 & x \equiv 4 \pmod 6\\ 
+		20 & x \equiv 5 \pmod 6\\ 
+     \end{cases} \right).$$
+\end{theorem}
+
+\begin{theorem}
+For theta-curve $\theta$, if $c(\theta)$ is the crossing number, then $$\alpha(\theta) \leq c(\theta) + 3.$$
+\end{theorem}
+
+\begin{theorem}
+Let T be any theta-curve. Then $$2+\sqrt{\max\deg_x R(S_T) - \min\deg_x R(S_T) + 4} \leq \alpha(T)$$ where $R(T)$ is a Yamada polynomial of the theta-curve T, and $S_{T}$ be a reduce simple closure of stacked tangle of a theta-curve T corresponding to minimal arc presentation of T.
+\end{theorem}
 \begin{defn}
     The \textit{non-simple cap} is the cap that connects simple disk and non-simple disk or two non-simple disks.
 \end{defn}

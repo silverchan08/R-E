@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  27 AUG 2025 20:35
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  27 AUG 2025 22:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,6 +538,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--99
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <14.4> not available
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 102.
 
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
 
 LaTeX Font Warning: Font shape `TU/UnBatang.ttf(0)/m/it' undefined
 (Font)              using `TU/UnBatang.ttf(0)/m/n' instead on input line 110.
@@ -585,9 +594,6 @@ File: figure/crossings.png Graphic file (type bmp)
 File: figure/move crossing.png Graphic file (type bmp)
 <figure/move crossing.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 
 [3]
 
@@ -606,28 +612,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--237
  []
 
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 244.
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 251.
 
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 283--289
+Underfull \hbox (badness 10000) in paragraph at lines 252--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 File: figure/Hdeletion.png Graphic file (type bmp)
 <figure/Hdeletion.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 278--284
+
+ []
 
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 327--329
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:304: Misplaced alignment tab character &.
+l.304 ...is even, by subtracting bottom row with &
+                                                  2R_1, 2R_3, ... , 2R_{n-1}...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:304: Missing $ inserted.
+<inserted text> 
+                $
+l.304 ...even, by subtracting bottom row with &2R_
+                                                  1, 2R_3, ... , 2R_{n-1}$ W...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
 
  []
 
@@ -638,22 +665,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--329
 [8]
 
 [9]
+
+[10]
 File: image.png Graphic file (type bmp)
 <image.png>
 
 
-[10]
+[11]
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[11]
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:553: Undefined control sequence.
-l.553         \[ R \left( \Xslashfront
+[12]
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:571: Undefined control sequence.
+l.571         \[ R \left( \Xslashfront
                                        \right) - R \left( \Xslashback \right...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -661,8 +686,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:553: Undefined control sequence.
-l.553 ...slashfront \right) - R \left( \Xslashback
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:571: Undefined control sequence.
+l.571 ...slashfront \right) - R \left( \Xslashback
                                                    \right) = (x - x^{-1}) \l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -670,8 +695,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:553: Undefined control sequence.
-l.553 ...ht) = (x - x^{-1}) \left( R \left( \czero
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:571: Undefined control sequence.
+l.571 ...ht) = (x - x^{-1}) \left( R \left( \czero
                                                    \right) - R \left ( \cinf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -679,8 +704,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:553: Undefined control sequence.
-l.553 ...R \left( \czero \right) - R \left ( \cinf
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:571: Undefined control sequence.
+l.571 ...R \left( \czero \right) - R \left ( \cinf
                                                    \right) \right). \]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -688,10 +713,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:555: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:573: Undefined control sequence.
 <recently read> \Xslashfront 
                              
-l.555 ...s obtained by replacing the $\Xslashfront
+l.573 ...s obtained by replacing the $\Xslashfront
                                                   $ crossing with $\Xslashba...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -699,10 +724,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:555: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:573: Undefined control sequence.
 <recently read> \Xslashback 
                             
-l.555 ...$\Xslashfront$ crossing with $\Xslashback
+l.573 ...$\Xslashfront$ crossing with $\Xslashback
                                                   $, $\czero$ and $\cinf$, r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -710,10 +735,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:555: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:573: Undefined control sequence.
 <recently read> \czero 
                        
-l.555 ...ont$ crossing with $\Xslashback$, $\czero
+l.573 ...ont$ crossing with $\Xslashback$, $\czero
                                                   $ and $\cinf$, respectivel...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -721,10 +746,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:555: Undefined control sequence.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:573: Undefined control sequence.
 <recently read> \cinf 
                       
-l.555 ...g with $\Xslashback$, $\czero$ and $\cinf
+l.573 ...g with $\Xslashback$, $\czero$ and $\cinf
                                                   $, respectively. Since bot...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -733,20 +758,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--557
-
- []
-
-
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 558--561
+Underfull \hbox (badness 10000) in paragraph at lines 573--575
 
  []
 
 
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 576--579
+
+ []
+
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -928,10 +950,13 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--947
+Underfull \hbox (badness 10000) in paragraph at lines 602--965
 
  []
 
+
+
+[14]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -1030,9 +1055,9 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_36.png>
 
 
-[14]
+[15]
 
-[15] (./Midterm_report.aux)
+[16] (./Midterm_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1048,10 +1073,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  12760 strings out of 468527
  275696 string characters out of 5451377
- 668740 words of memory out of 5000000
+ 667740 words of memory out of 5000000
  40833 multiletter control sequences out of 15000+600000
  635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,9n,105p,1259b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (15 pages).
+Output written on Midterm_report.pdf (16 pages).

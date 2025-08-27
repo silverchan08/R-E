@@ -276,8 +276,16 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 \begin{proof}
 \begin{enumerate}
     \item \textbf{Determinant of the cromwell matrices of Knot}\\
-    First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
-By applying row operation, we should make matrix such as
+    The cromwell matrix of a knot is a $n\times n$ binary matrix which has exactly two 1s for each rows and columns
+    We are interested of the determinant of the cromwell matrix of knots, so we are going to use the row and column operations to get simpler matrix.
+    In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
+    Now we follow these steps : \\
+    \begin{enumerate}
+        \item Since there are always exactly two 1s in every row, there exists two columns that containing the 1s of the top row. Using column operations, interchange those two columns with the left most and secondary left most columns of the matrix.
+        \item Choose secondary column from the left. It should contain another 1 below the 1 which is from the top row, so interchange a row containing that below 1 with secondary top row by using row operations.
+        \item Cover the left most column and top row and repeat (a), (b) (What you need to careful is that when you interchange the row, you should also change the covered elements together.) until we get the following matrix.
+    \end{enumerate}
+    
     $$\begin{pmatrix} 
     1 & 1 & 0 & \cdots & 0\\
     0 & 1 & 1 &  &  \\
@@ -285,8 +293,7 @@ By applying row operation, we should make matrix such as
     \vdots & & & \ddots & \\
     1 & 0 & \cdots & 0 & 1
     \end{pmatrix}$$
-Let matrix is $n\times n$.
-Next, we apply the row operation. We add the upper rows to the most bottom row. Then,
+Next, we apply the row operation. We add each row above the bottom row to the bottom row.
     $$\begin{pmatrix} 
     1 & 1 & 0 & \cdots & 0\\
     0 & 1 & 1 &  &  \\
@@ -294,7 +301,24 @@ Next, we apply the row operation. We add the upper rows to the most bottom row. 
     \vdots & & & \ddots & \\
     2 & 2 & \cdots & 2 & 2
     \end{pmatrix}$$
-Lastly, by subtracting ($2i-1$)th row $(i \in \mathbb{N})$ with multiplying row by 2 and substract with most bottom row, if n is even, the most bottom row only contains 0. Since it is upper triangular matrix, we can obtain determinant by trace. Hence the last entry is 0, the determinant is 0. If n is odd, the last entry of most bottom row is 2 and other entry is all 0. Since it is upper triangular matrix, we can obtain determinant by trace too. Hence the other entry is all 1, the determinant is $\pm 2$.\\
+If n is even, by subtracting bottom row with &2R_1, 2R_3, ... , 2R_{n-1}$ We can get a matrix like
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    0 & 0 & \cdots & 0 & 0
+    \end{pmatrix}$$
+Since the last row is zero row, the determinant is 0. \\
+If n is odd, by subtracting bottom row with $2R_1, 2R_3, ... 2R_{n-2}$, we can get a following matrix. 
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    0 & 0 & \cdots & 0 & 2
+    \end{pmatrix}$$
+Since it is upper triangular matrix, we can obtain determinant by trace. Hence the other entry is all 1, the determinant is $\pm 2$.\\
 
 \item \textbf{Proof in the case of theta-curve}\\
 Do the H-deletion. Then, we can make the matrix of this grid diagram by previous section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.

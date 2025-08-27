@@ -12,7 +12,53 @@
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{subcaption} % Recommended package for subfigures
+\usepackage{multicol,layout,epsf,verbatim,array,tabularx,graphicx,kotex,amssymb,amsmath,setspace}
+\usepackage{tikz}
+\usetikzlibrary{
+  hobby,
+  intersections,
+  spath3,
+  decorations.markings,
+  arrows.meta,
+  }
 \captionsetup[subfigure]{labelformat=empty}
+
+
+\newcommand{\czero}{
+  \tikz[baseline=-0.6ex, scale=0.7]{
+    \path (0,0) coordinate (base);
+    \draw[line width=0.7pt] (0,0.4) .. controls (0.3,0.3) and (0.3,-0.3) .. (0,-0.4);
+    \draw[line width=0.7pt] (0.8,0.4) .. controls (0.5,0.3) and (0.5,-0.3) .. (0.8,-0.4);
+  }
+}
+\newcommand{\cinf}{
+  \tikz[baseline=1.2ex, scale=0.7]{
+    \path (0,0) coordinate (base);
+    \draw[line width=0.7pt] (0.4, 0) .. controls (0.2, 0.3) and (-0.2, 0.3) .. (-0.4, 0);
+    \draw[line width=0.7pt] (0.4, 0.8) .. controls (0.2, 0.5) and (-0.2, 0.5) .. (-0.4, 0.8);
+  }
+}
+
+\newcommand{\Xslashfront}{
+  \tikz[baseline=-0.6ex, scale=0.28]{
+    \draw[line width=0.7pt] (-1,1) -- (1,-1);
+    \draw[line width=4.0pt, white] (-0.5,-0.5) -- (0.5, 0.5);
+    \draw[line width=0.7pt] (-1,-1) -- (1,1);
+  }
+}
+
+\newcommand{\Xslashback}{
+  \tikz[baseline=-0.6ex, scale=0.28]{
+    \draw[line width=0.7pt] (-1,-1) -- (1,1);
+    \draw[line width=4.0pt, white] (-0.5,0.5) -- (0.5,-0.5);
+    \draw[line width=0.7pt] (-1,1) -- (1,-1);
+  }
+}
+
+\onehalfspacing
+
+\newcommand{\rarrow}{\rightarrow}
+\newcommand{\larrow}{\leftarrow}
 
 \newtheorem{thm}{Theorem}
 \theoremstyle{definition}

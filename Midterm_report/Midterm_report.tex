@@ -260,7 +260,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 %\end{theorem}
 \begin{defn}
-    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ from the matrix G\\
+    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ (which are called the \textit{edge-columns}) from the matrix G\\
 \end{defn}
 
 \begin{figure*}[h]
@@ -321,9 +321,10 @@ If n is odd, by subtracting bottom row with $2R_1, 2R_3, ... 2R_{n-2}$, we can g
 Since it is upper triangular matrix, we can obtain determinant by trace. Hence the other entry is all 1, the determinant is $\pm 2$.\\
 
 \item \textbf{Proof in the case of theta-curve}\\
-Do the H-deletion. Then, we can make the matrix of this grid diagram by previous section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix. 
+Now, we are going to count n, which is the number of times $1$s in edge-columns is included in Three-rows.
 \begin{enumerate}
-    \item \textbf{0}\\
+    \item \textbf{When $n = 0$}\\
     T-shaped figure is given.
     \item \textbf{1 (middle vertex)}\\
     Line-shaped figure is given.

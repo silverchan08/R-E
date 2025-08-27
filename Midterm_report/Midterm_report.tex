@@ -120,6 +120,7 @@ Also, we used some mathematical methods to found out the minimal grid diagrams b
 \end{figure*}
 
 In the projection of the handcuff graph and $\theta$-curve, the section where they meet themselves is named \textit{crossing}. 
+For each handcuff graphs and $\theta$-curves, the minimal number of crossings are called the \textit{crossing number}.
 If the one graph and other graph's continuous transform of the graph is same, these graphs are \textit{equivalent}. 
 The \textit{Generalized Reidemeister Moves} are used to transfrom a projection of handcuff graphs and $\theta$-curves.\\
 
@@ -134,8 +135,9 @@ In the similiar way, a handcuff graph is said to be trivial if it can be embedde
 
 \begin{figure*}[h]
     \centering
-    \subfloat{\includegraphics[width=0.08\textwidth]{figure/y6.png}}
-    \subfloat{\includegraphics[width=0.2\textwidth]{figure/y7.png}}
+    \subfloat{\includegraphics[width=0.1\textwidth]{figure/y6.png}}
+    \hspace{0.05\linewidth}
+    \subfloat{\includegraphics[width=0.25\textwidth]{figure/y7.png}}
     \caption{Trivial $\theta$-curve and handcuff graph.}
     \label{figure_1} 
 \end{figure*}
@@ -149,8 +151,8 @@ In knot theory, \textit{arc index}, is the minimal number of pages among all pos
 
 \begin{figure*}[h]
     \centering
-    \subfloat{\includegraphics[width=0.28\textwidth]{figure/openbook.png}}
-    \subfloat{\includegraphics[width=0.3\textwidth]{figure/handcuff_openbook.png}}
+    \subfloat{\includegraphics[width=0.33\textwidth]{figure/openbook.png}}
+    \subfloat{\includegraphics[width=0.37\textwidth]{figure/handcuff_openbook.png}}
     \caption{Arc presentation of $\theta$-curve $3_1$ and a trivial handcuff graph}
     \label{figure_1} 
 \end{figure*}
@@ -161,10 +163,10 @@ In knot theory, \textit{arc index}, is the minimal number of pages among all pos
 \end{defn}
 
 \begin{defn}
-   The \textit{Cromwell matrix} is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s. For theta‐curve and handcuff graph, its Cromwell matrix is an $n \times (n+1)$ binary matrix that exactly two rows (called \textit{Three‐rows}) has exactly three 1s and rest of the rows and each columns has exactly two 1s. 
-\end{defn}
+   The \textit{Cromwell matrix} is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s. 
+   For theta‐curve and handcuff graph, its Cromwell matrix is called the \textit{THC-Cromwell matrix} and it is described in definition 9.
 
-If the 1s are connected by horizontal and vertical lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes are $\alpha$ on minimal arc presentation, the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
+If the 1s are connected by horizontal and vertical lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes in arc presentation is $\alpha$, then the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
 
 \begin{figure*}[h]
     \centerline{\includegraphics[width=0.5\linewidth]{An arc presentation and a grid diagram of the knot.png}}
@@ -176,22 +178,34 @@ If the 1s are connected by horizontal and vertical lines, it leads to the grid d
     There exists arc presentations for every $\theta$-curve and handcuff graph. 
 \end{theorem}
 \begin{proof}
-    For any $\theta$-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy
+    For any $\theta$-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
+    Then for every crossing it has, there are only two following cases. \\
+    \begin{figure*}[h]
+        \centerline{\includegraphics[width=0.5\linewidth]{figure/crossings.png}}
+        \caption{Cases for crossings}
+        \label{figure_2}
+    \end{figure*}
+    \\ For each crossings, if it is a first case, then it is over. \\
+    However, if it is a second case, then we can make that crossing to first case using some suitable movement. \\
+    \begin{figure*}[h]
+        \centerline{\includegraphics[width=0.25\linewidth]{figure/move crossing.png}}
+        \caption{Suitable movement for case 2}
+        \label{figure_2}
+    \end{figure*}
+    \\ Therefore, it becomes the grid diagram and since the grid diagrams and arc presentations are in one-to-one correspondence, there always exists arc presentations for every $\theta$-curve and handcuff graph.
 \end{proof}
 
-The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}. The $\theta$-curve 아귀찮아 이건 나중에\\
+\begin{defn}
+    The \textit{link with $n$-components} is an embedding of the disjoint union of $n$ circles $S^1 \cup \cdots \cup S^1$ in $\mathbb{R}^3$. $1$-component link is called a \textit{knot}.
+\end{defn}
 
 The polynomial of the knot is invariant. \textit{Yamada polynomial} is invariant when it is mulitplied $(-x)^n$ for some integer n. The \textit{span} of a knot, is substraction of maximal degree of minimal degree of the polynomial. It is a invariant since Yamada polynomial is invariant when mulitplied by $(-x)^n$.\\
 
-\begin{figure*}[h]
-    \centerline{\includegraphics[width=0.75\linewidth]{yamada_property.png}}
-    \caption{Properties of Yamada polynomial.}
-    \label{figure_3}
-\end{figure*}
-
 Let 3 edges of theta-curve is $e_1, e_2, e_3$, then $e_1 \cup e_2$, $e_2 \cup e_3$, $e_3 \cup e_1$ becomes a knot on 3-sphere. This knots are \textit{consituent knot} of the theta-curve.
 
-\textit{Stacked tangle} of an theta-curve is stacked disks each with the frame as boundary with following properties:
+\begin{defn}
+    \textit{Stacked tangle} of an theta-curve and handcuff graph is stacked disks each with the frame as boundary with following properties:
+\end{defn}
 \begin{itemize}
 \item Only two disk called \textit{non-simple disks} contain one vertex and three line
 segments which joins the vertex and boundary point.
@@ -248,24 +262,24 @@ Let T be any theta-curve. Then $$2+\sqrt{\max\deg_x R(S_T) - \min\deg_x R(S_T) +
 \subsection{Upper bound of Arc Index in Theta-Curve}
 
 \begin{theorem}
-For theta-curve $\theta$, if $c(\theta)$ is the minimal crossing number, then $$\alpha(\theta) \leq c(\theta) + 3.$$
+For theta-curve $\theta$, if $c(\theta)$ is the crossing number, then $$\alpha(\theta) \leq c(\theta) + 3.$$
 \end{theorem}
 
-\begin{proof}
-$$\alpha(\theta) \leq c(\theta) + e + b$$ when e is number of edges, b is number of bouquet cut-components. We have 3 edges, 0 bouquet cut-componentes for theta-curves. Therefore, $$\alpha(\theta) \leq c(\theta) + 3.$$
-\end{proof}
+%\begin{proof}
+%$$\alpha(\theta) \leq c(\theta) + e + b$$ when e is number of edges, b is number of bouquet cut-components. We have 3 edges, 0 bouquet cut-componentes for theta-curves. Therefore, $$\alpha(\theta) \leq c(\theta) + 3.$$
+%\end{proof}
 
 \section{Research Methods and Procedure}
 First, we made a Python Code to find the arc index and the cromwell matrix of the knots. Then we used the upper and lower bounds, and also found the smaller upper bounds and larger lower bounds. Finally we used the direct method to find the arc index by drawing the binding circle.
 
-\subsection{The Python Code(가제)}
-The Python Code(가제) generates the possible Cromwell matrix of theta-curves, and compares with the existing knots in the table which is less or equal to 7 crossings.
-It eventually returns the Cromwell matrix of the compared theta-curve.
+\subsection{The Python Code}
+The Python Code generates the possible Cromwell matrices of theta-curves and handcuff graphs, and compares with the existing ones in the table which is less or equal to 7 crossings.
+It eventually returns the Cromwell matrix of the compared theta-curve and handcuff graph.
 To distinguish the Cromwell matrices from theta-curves and handcuff graphs, which is generated and removed by the rules from the above section, we should use the determinant of the Cromwell matrices.\\
+%\begin{defn}
+%The \textit{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
+%\end{defn}
 
-\begin{defn}
-The \textit{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
-\end{defn}
 \begin{defn}
 The \textit{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
 \end{defn}
@@ -389,7 +403,7 @@ Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matri
 \end{enumerate}
 \end{proof}
 
-\subsection{Bounds of Arc Index in case of Theta-Curves}
+\subsection{Bounds of Arc Index}
 We used the bounds from theoretical background, and used the Python code to find the arc index. If we could not find the arc index by the computer, we directly found the arc index by drawing the binding circle of the theta-curve.
 
 \subsection{Bounds of Arc Index in case of Handcuff Graphs}
@@ -495,9 +509,11 @@ It is known that, for some integer $n$, the product $(-x)^n R(G)$ (where $R(G)$ 
 
 \begin{theorem}
     For the Yamada polynomial, the following properties hold.
-    \begin{enumerate}
-        \item 그림 그려서 넣어야함 각 crossing 부근을 뭐시기뭐시기 한거 그림.
-    \end{enumerate}
+    \begin{figure*}[h]
+        \centerline{\includegraphics[width=0.75\linewidth]{yamada_property.png}}
+        \caption{Properties of Yamada polynomial.}
+        \label{figure_3}
+    \end{figure*}
 \end{theorem}
 
 Now, using the stacked tangle representation and the Yamada polynomial, we will prove the following theorem. The following theorem gives a lower bound for the arc index in terms of the Yamada polynomial.

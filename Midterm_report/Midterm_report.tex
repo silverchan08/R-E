@@ -241,8 +241,6 @@ A \textit{reduced simple closure of a stacked tangle} is
     \item any two arcs(including line segment) joining by caps have no intersection when view from above
 \end{itemize}
 
-
-
 %\begin{proof}
 %$$\alpha(\theta) \leq c(\theta) + e + b$$ when e is number of edges, b is number of bouquet cut-components. We have 3 edges, 0 bouquet cut-componentes for theta-curves. Therefore, $$\alpha(\theta) \leq c(\theta) + 3.$$
 %\end{proof}
@@ -258,10 +256,18 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %The \textit{grid diagram} of a knot is a projection that consists only of horizontal and vertical lines, and the vertical line always passes above the horizontal line. (However, in this case, there must be exactly two points (excluding the vertices) that are vertically bent for each horizontal line (row) and vertical line (column), and the two vertices must be on the horizontal line.)
 %\end{defn}
 
-\begin{theorem}
-Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
-\end{theorem}
-$\mathbf{Definition}$ Let any Three-row $i$ and its two outer `1's $j$, $k$. The \textit{H-deletion Matrix} of THC-Cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$.\\
+%\begin{theorem}
+%Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
+%\end{theorem}
+\begin{defn}
+    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ (which are called the \textit{edge-columns}) from the matrix G\\
+\end{defn}
+
+\begin{figure*}[h]
+    \centerline{\includegraphics[width=0.5\textwidth]{figure/Hdeletion.png}}
+    \caption{H deletion of THC-matrix of $\theta$-curve $3_1$.}
+    \label{figure_1} 
+\end{figure*}
 
 \subsubsection{Main Theorem}
 \begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
@@ -269,9 +275,17 @@ $\mathbf{Definition}$ Let any Three-row $i$ and its two outer `1's $j$, $k$. The
 
 \begin{proof}
 \begin{enumerate}
-    \item \textbf{Method of changing grid diagram of a knot to simple matrix}\\
-    First, we should change grid diagram of a knot into Cromwell matrix. However, we can apply row operation of interchanging the rows. In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
-By applying row operation, we should make matrix such as
+    \item \textbf{Determinant of the cromwell matrices of Knot}\\
+    The cromwell matrix of a knot is a $n\times n$ binary matrix which has exactly two 1s for each rows and columns
+    We are interested of the determinant of the cromwell matrix of knots, so we are going to use the row and column operations to get simpler matrix.
+    In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
+    Now we follow these steps : \\
+    \begin{enumerate}
+        \item Since there are always exactly two 1s in every row, there exists two columns that containing the 1s of the top row. Using column operations, interchange those two columns with the left most and secondary left most columns of the matrix.
+        \item Choose secondary column from the left. It should contain another 1 below the 1 which is from the top row, so interchange a row containing that below 1 with secondary top row by using row operations.
+        \item Cover the left most column and top row and repeat (a), (b) (What you need to careful is that when you interchange the row, you should also change the covered elements together.) until we get the following matrix.
+    \end{enumerate}
+    
     $$\begin{pmatrix} 
     1 & 1 & 0 & \cdots & 0\\
     0 & 1 & 1 &  &  \\
@@ -279,8 +293,7 @@ By applying row operation, we should make matrix such as
     \vdots & & & \ddots & \\
     1 & 0 & \cdots & 0 & 1
     \end{pmatrix}$$
-Let matrix is $n\times n$.
-Next, we apply the row operation. We add the upper rows to the most bottom row. Then,
+Next, we apply the row operation. We add each row above the bottom row to the bottom row.
     $$\begin{pmatrix} 
     1 & 1 & 0 & \cdots & 0\\
     0 & 1 & 1 &  &  \\
@@ -288,12 +301,30 @@ Next, we apply the row operation. We add the upper rows to the most bottom row. 
     \vdots & & & \ddots & \\
     2 & 2 & \cdots & 2 & 2
     \end{pmatrix}$$
-Lastly, by subtracting ($2i-1$)th row $(i \in \mathbb{N})$ with multiplying row by 2 and substract with most bottom row, if n is even, the most bottom row only contains 0. Since it is upper triangular matrix, we can obtain determinant by trace. Hence the last entry is 0, the determinant is 0. If n is odd, the last entry of most bottom row is 2 and other entry is all 0. Since it is upper triangular matrix, we can obtain determinant by trace too. Hence the other entry is all 1, the determinant is $\pm 2$.\\
+If n is even, by subtracting bottom row with &2R_1, 2R_3, ... , 2R_{n-1}$ We can get a matrix like
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    0 & 0 & \cdots & 0 & 0
+    \end{pmatrix}$$
+Since the last row is zero row, the determinant is 0. \\
+If n is odd, by subtracting bottom row with $2R_1, 2R_3, ... 2R_{n-2}$, we can get a following matrix. 
+    $$\begin{pmatrix} 
+    1 & 1 & 0 & \cdots & 0\\
+    0 & 1 & 1 &  &  \\
+    0 & 0 & 1 & & \vdots\\ 
+    \vdots & & & \ddots & \\
+    0 & 0 & \cdots & 0 & 2
+    \end{pmatrix}$$
+Since it is upper triangular matrix, we can obtain determinant by trace. Hence the other entry is all 1, the determinant is $\pm 2$.\\
 
 \item \textbf{Proof in the case of theta-curve}\\
-Do the H-deletion. Then, we can make the matrix of this grid diagram by previous section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix. 
+Now, we are going to count n, which is the number of times $1$s in edge-columns is included in Three-rows.
 \begin{enumerate}
-    \item \textbf{0}\\
+    \item \textbf{When $n = 0$}\\
     T-shaped figure is given.
     \item \textbf{1 (middle vertex)}\\
     Line-shaped figure is given.
@@ -1133,7 +1164,7 @@ We used the bounds from theoretical background, and used the Python code to find
   \end{figure}
 
 
-\section{Conclusion}
+\section{Further Researches}
 요약, 더 나아가서 어떻게 써먹을 수 있을지?
 
 \section*{References}

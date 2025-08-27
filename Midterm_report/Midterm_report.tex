@@ -372,18 +372,20 @@ Now, we are going to count n, which is the number of times $1$s in edge-columns 
 \begin{enumerate}
     \item \textbf{When $n = 0$}\\
     The grid diagram represents the graph consisted of a vertex and other three vertices with three edges connecting a vertex with the others.
-    \item \textbf{1 (middle vertex)}\\
-    Line-shaped figure is given.
-    \item \textbf{1 (end vertex)}\\
-    Line-shaped figure is given.
-    \item \textbf{2 (two end vertices)}\\
-    T-shaped figure is given.
-    \item \textbf{2 (middle and end vertices)}\\
-    Line-shaped figure is given.
+    We'll call it as the \textit{T-shape}.
+    \item \textbf{When $n = 1$ (middle vertex)}\\
+    The grid diagram represents the graph consisted of a vertex and other vertice with an edges connecting a vertex with the other vertex.
+    We'll call in as the \textit{Line-shape}
+    \item \textbf{When $n = 1$ (end vertex)}\\
+    Line-shape is given.
+    \item \textbf{When $n = 2$ (two end vertices)}\\
+    T-shape is given.
+    \item \textbf{When $n = 2$ (middle and end vertices)}\\
+    Line-shape is given.
 \end{enumerate}
 
 \begin{enumerate}[label={(\roman*)}]
-    \item \textbf{Line-shaped figure}\\
+    \item \textbf{Line-shape}\\
     Let the matrix is given.
     $$\begin{pmatrix}
         1 & 1 & 1 & 0\\
@@ -397,7 +399,7 @@ Now, we are going to count n, which is the number of times $1$s in edge-columns 
     \end{pmatrix}$$
     is given.\\
     If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
-    \item \textbf{T-shaped figure}\\
+    \item \textbf{T-shape}\\
     Let the matrix is given.
     $$\begin{pmatrix}
         1 & 1 & 1\\

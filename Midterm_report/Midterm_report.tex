@@ -18,11 +18,11 @@
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definition}
 \theoremstyle{theorem}
-\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}[thm]{Theorem}
 \theoremstyle{proposition}
 \newtheorem{prop}{Proposition}
 \theoremstyle{corollary}
-\newtheorem*{corol}{Corollary}
+\newtheorem{corol}[thm]{Corollary}
 
 
 
@@ -98,7 +98,7 @@ Yamada polynomial was used to prove bounds and programming the Python code.\\ \\
 \\
 \end{abstract}
 
-
+\newpage
 \section{Introduction}
 Knot theory is a field of mathematics that studies simple closed curves embedded in three-dimensional space. Study of theta-curves and handcuff graphs is included in knot theory. In this research, we tried to get the minimal grid diagrams of those graphs, which are up to 7 crossings.\\ 
 We first decided to use the Python code to examine the minimal grid diagrams of $\theta$-curves and handcuff graphs. For this, we found the method to classify theta-curve and handcuff graphs by their Cromwell matrices, which are called THC matrices. Finding all possible matrices for those graphs and finding out the Yamada polynomial of each graphs could give the minimal grid diagram of the graph. \\
@@ -547,7 +547,7 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
 
         \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right). \]
 
-        In $S_T$, let $S_T'$, $S_T^0$ and $S_T^\infty$ be the diagrams obtained by replacing the $\Xslashfront$ crossing with $\Xslashback$, $\czero$ and $\cinf$, respectively. Since both $R \left( S_T^0 \right)$ and $R \left ( S_T^\infty \right)$ have $c_s$ simple disks, $c_{ss}$ semi-simple disks, and $n-1$ crossings, their spread is at most $2(n-1)+2=2n$ by the induction hypothesis. Therefore, the spread of $(x - x^{-1}) \left( R \left( S_T^0 \right) - R \left ( S_T^\infty \right) \right)$ is at most $2n+2$. It is thus sufficient to prove that the spread of $R \left ( S_T' \right)$ is at most $2n+2$. Now, observe that $S_T'$ can be interpreted as the diagram obtained by swapping the positions of $D_s$ and $D$ in $S_T$. Therefore, in both cases, it is enough to prove that the inequality holds after this swapping. However, after each swap, the distance between the top disk and $D_s$ decreases. Hence, we can continue swapping $D_s$ with the disk directly above it until either the disk above $D_s$ is the top disk, or there is a cap between $D_s$ and the disk above it. Then it suffices to consider the case where there is a cap between $D_s$ and $D$. \\
+        In $S_T$, let $S_T'$, $S_T^0$ and $S_T^\infty$ be the diagrams obtained by replacing the $\Xslashfront$ crossing with $\Xslashback$, $\czero$ and $\cinf$, respectively. Since both $R \left( S_T^0 \right)$ and $R \left( S_T^\infty \right)$ have $c_s$ simple disks, $c_{ss}$ semi-simple disks, and $n-1$ crossings, their spread is at most $2(n-1)+2=2n$ by the induction hypothesis. Therefore, the spread of $(x - x^{-1}) \left( R \left( S_T^0 \right) - R \left( S_T^\infty \right) \right)$ is at most $2n+2$. It is thus sufficient to prove that the spread of $R \left( S_T' \right)$ is at most $2n+2$. Now, observe that $S_T'$ can be interpreted as the diagram obtained by swapping the positions of $D_s$ and $D$ in $S_T$. Therefore, in both cases, it is enough to prove that the inequality holds after this swapping. However, after each swap, the distance between the top disk and $D_s$ decreases. Hence, we can continue swapping $D_s$ with the disk directly above it until either the disk above $D_s$ is the top disk, or there is a cap between $D_s$ and the disk above it. Then it suffices to consider the case where there is a cap between $D_s$ and $D$. \\
         Now, consider the case where there is a cap between $D_s$ and $D$. There are two cases: either $D_s$ is simple or it is non-simple. If $D_s$ is simple, we can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. Its spread is at most $2n+2$ by the induction hypothesis. Therefore, the spread of $S_T$ is at most $2n+2$. If $D_s$ is non-simple, the number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
     \end{enumerate}
     Hence, by the base cases and the inductive step, the theorem follows by mathematical induction. \\ \\

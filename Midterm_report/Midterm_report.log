@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  28 AUG 2025 20:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  28 AUG 2025 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report
-(c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
+**c:/Users/choim/OneDrive/문서/GitHub/R-E/Midterm_report/Midterm_report
+(c:/Users/choim/OneDrive/문서/GitHub/R-E/Midterm_report/Midterm_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -888,7 +888,7 @@ LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <10> not availa
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 117.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:118: LaTeX Error: There's no line here to end.
+c:/Users/choim/OneDrive/문서/GitHub/R-E/Midterm_report/Midterm_report.tex:118: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1006,7 +1006,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--330
 
 
 [6]
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:350: Misplaced alignment tab character &.
+c:/Users/choim/OneDrive/문서/GitHub/R-E/Midterm_report/Midterm_report.tex:350: Misplaced alignment tab character &.
 l.350 ...is even, by subtracting bottom row with &
                                                   2R_1, 2R_3, ... , 2R_{n-1}...
 I can't figure out why you would want to use a tab mark
@@ -1016,7 +1016,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:350: Missing $ inserted.
+c:/Users/choim/OneDrive/문서/GitHub/R-E/Midterm_report/Midterm_report.tex:350: Missing $ inserted.
 <inserted text> 
                 $
 l.350 ...even, by subtracting bottom row with &2R_
@@ -1048,17 +1048,15 @@ File: yamada_property.png Graphic file (type bmp)
 
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 622--624
-
- []
-
-
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 625--628
+Underfull \hbox (badness 10000) in paragraph at lines 663--666
 
  []
 
+
+
+[14]
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -1240,13 +1238,13 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--1016
+Underfull \hbox (badness 10000) in paragraph at lines 689--1054
 
  []
 
 
 
-[14]
+[15]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -1345,9 +1343,9 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_36.png>
 
 
-[15]
+[16]
 
-[16] (./Midterm_report.aux)
+[17] (./Midterm_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1362,11 +1360,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  27076 strings out of 468527
- 601898 string characters out of 5451377
- 962726 words of memory out of 5000000
+ 601904 string characters out of 5451377
+ 968726 words of memory out of 5000000
  54871 multiletter control sequences out of 15000+600000
  635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,9n,105p,1277b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,9n,105p,928b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (16 pages).
+Output written on Midterm_report.pdf (17 pages).

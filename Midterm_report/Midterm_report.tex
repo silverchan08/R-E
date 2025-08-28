@@ -608,19 +608,57 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
 \begin{proof}
     Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Let $c_s, c_{ss}, c_n, n$ be the number of simple cap, semi-simple cap, non-simple cap and the number of crossings in $S_T$, respectively. We will prove the theorem using the mathematical induction on the pair $(c_s+c_{ss}, n)$, ordered lexicographically.
     \begin{enumerate}
-        \item Basis cases \\
-        First, suppose $c_s + c_{ss} = 0$. Then, since there are no simple disks, $S_T$ must be the trivial theta curve. In this case, the number of crossing is at least $1$. Since the spread of Yamada polynomial of trivial theta curve is $4$, $\mathrm{spr}(R(S_T)) = 4 \leq 2n+2$. \\
-        Second, suppose $n = 0$. Then, $S_T$ must be the disjoint union of trivial handcuff graph and possibly some circles(unlink). Since the Yamada polynomial of trivial handcuff is zero, $\mathrm{spr}(R(S_T)) = 0 \leq 2 = 2n+2$. \\
-        Hence, basis step is proven.
+        \item Basis cases
+        \begin{enumerate}
+            \item $c_s + c_{ss} = 0$ \\
+            Since there are no simple disks, $S_T$ is a trivial theta curve.
+            Then, there is at least $1$ crossing, and the spread of Yamada polynomial $4$.
+            Thus $\mathrm{spr}(R(S_T)) = 4 \leq 2n+2$.
+            \item $n = 0$ \\
+            Then, $S_T$ is a disjoint union of trivial handcuff graph and possibly some circles.
+            Thus, since the Yamada polynomial is $0$, $\mathrm{spr}(R(S_T)) = 0 \leq 2 = 2n+2$.
+        \end{enumerate}
+        Hence, basis cases hold.
         
         \item Inductive step \\
-        Assume that the theorem holds for all pairs $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and suppose $c_s+c_{ss} > 0$. Then the top disk must have a semi-simple cap. Let the disk connected to the top disk be denoted by $D_s$. (Note that if the top disk had only a non-simple cap, then there would be no simple or semi-simple cap at all.) Since $D_s$ is not top disk, there exists a disk $D$ directly above $D_s$. Now we consider two cases, depending on whether there exists a cap between $D_s$ and $D$. First, suppose that there is no cap between $D_s$ and $D$. Then, there are two possibilities: there is an intersection between $D_s$ and $D$, or there is not. \\
-        If there is no intersection between $D_s$ and $D$, we can swap the position of $D_s$ and $D$ without affecting the rest of the diagram. If there is an intersection between $D_s$ and $D$, we can use the relation
-
-        \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right). \]
-
-        In $S_T$, let $S_T'$, $S_T^0$ and $S_T^\infty$ be the diagrams obtained by replacing the $\Xslashfront$ crossing with $\Xslashback$, $\czero$ and $\cinf$, respectively. Since both $R \left( S_T^0 \right)$ and $R \left( S_T^\infty \right)$ have $c_s$ simple disks, $c_{ss}$ semi-simple disks, and $n-1$ crossings, their spread is at most $2(n-1)+2=2n$ by the induction hypothesis. Therefore, the spread of $(x - x^{-1}) \left( R \left( S_T^0 \right) - R \left( S_T^\infty \right) \right)$ is at most $2n+2$. It is thus sufficient to prove that the spread of $R \left( S_T' \right)$ is at most $2n+2$. Now, observe that $S_T'$ can be interpreted as the diagram obtained by swapping the positions of $D_s$ and $D$ in $S_T$. Therefore, in both cases, it is enough to prove that the inequality holds after this swapping. However, after each swap, the distance between the top disk and $D_s$ decreases. Hence, we can continue swapping $D_s$ with the disk directly above it until either the disk above $D_s$ is the top disk, or there is a cap between $D_s$ and the disk above it. Then it suffices to consider the case where there is a cap between $D_s$ and $D$. \\
-        Now, consider the case where there is a cap between $D_s$ and $D$. There are two cases: either $D_s$ is simple or it is non-simple. If $D_s$ is simple, we can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. Its spread is at most $2n+2$ by the induction hypothesis. Therefore, the spread of $S_T$ is at most $2n+2$. If $D_s$ is non-simple, the number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
+        Assume that the theorem holds for all pairs $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and suppose $c_s+c_{ss} > 0$.
+        If the top disk have only a non-simple cap, $c_s = c_{ss} = 0$. Thus the top disk have a semi-simple cap.
+        Let $D_s$ be the disk connected to the top disk, and $D$ be the disk directly above $D_s$.
+        Now we consider two cases.
+        \begin{enumerate}
+            \item There is no cap between $D_s$ and $D$. \\
+            Then, there are two possibilities: there is an intersection between $D_s$ and $D$, or there is not.
+            \begin{enumerate}
+                \item There is no intersection between $D_s$ and $D$. \\
+                We can swap the position of $D_s$ and $D$ without affecting the rest of the diagram.
+                Repeating it, we can assume that either the disk above $D_s$ is the top disk,
+                or there is a cap between $D_s$ and the disk above it.
+                \item There is an intersection between $D_s$ and $D$. \\
+                Using the relation
+                \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right), \]
+                we can replace the crossing between $D_s$ and $D$ with $\Xslashback$, $\czero$ and $\cinf$. \\
+                In right hand side, both $R \left( \czero \right)$ and $R \left ( \cinf \right)$ have $c_s$ simple disks,
+                $c_{ss}$ semi-simple disks, and $n-1$ crossings. \\
+                By the induction hypothesis, their spread is at most $2(n-1)+2=2n$. Thus, the spread of right hand side is at most $2n+2$. \\
+                Moreover, $R \left( \Xslashback \right)$ can be interpreted as the diagram obtained
+                by swapping the positions of $D_s$ and $D$ in $S_T$. \\
+                After each swap, the distance between the top disk and $D_s$ decreases. \\
+                Thus, if we continue swapping $D_s$ with the disk directly above, $D_s$ will be directly below the top disk,
+                or there will be a cap between $D_s$ and the disk above it.
+            \end{enumerate}
+            In both cases, we can assume that there is a cap between $D_s$ and $D$.
+            \item There is a cap between $D_s$ and $D$. \\
+            Then, there are two possibilities: $D_s$ is simple or non-simple.
+            \begin{enumerate}
+                \item $D_s$ is simple. \\
+                We can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. \\
+                Then its spread is at most $2n+2$ by the induction hypothesis. \\
+                Therefore, the spread of $S_T$ is at most $2n+2$.
+                \item $D_s$ is non-simple. \\
+                The number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
+                Then its spread is at most $2n+2$ by the induction hypothesis.
+            \end{enumerate}
+        \end{enumerate}
     \end{enumerate}
     Hence, by the base cases and the inductive step, the theorem follows by mathematical induction. \\ \\
     Corollary follows by bounding the number of crossings $n$ in terms of the arc index $\alpha(G)$. Suppose $G$ is a theta curve, let $RS_T$ be a reduced stacked tangle with no nested caps. Since the stacked tangle has $2$ non-simple disks and $\alpha(G)-3$ simple disks, the following holds.
@@ -645,7 +683,7 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
     \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
 \end{proof}
 
-%Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
+Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
 
 \section{Research Result}
 The Python code did not work since the Topoly Library had error of the Yamada polynomial function. However, we were able to examine some of our answers by the Python code.

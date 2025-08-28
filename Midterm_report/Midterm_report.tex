@@ -159,7 +159,7 @@ Also, we used some mathematical methods to found out the minimal grid diagrams b
     \textit{Handcuff graph} consists of $2$ loops and $1$ edge joining the loops.
 \end{defn}
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
     \centerline{\includegraphics[width=0.3\textwidth]{figure/theta and handcuff graph.png}}
     \caption{Examples of theta-curves and handcuff graphs.}
     \label{figure_1} 
@@ -170,7 +170,7 @@ For each handcuff graphs and theta-curves, the minimal number of crossings are c
 If the one graph and other graph's continuous transform of the graph is same, these graphs are \textit{equivalent}. 
 The \textit{Generalized Reidemeister Moves} are used to transfrom a projection of handcuff graphs and theta-curves.\\
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
     \centerline{\includegraphics[width=0.5\textwidth]{figure/reidemeister.png}}
     \caption{Generalized Reidemeister moves.}
     \label{figure_1} 
@@ -179,7 +179,7 @@ The \textit{Generalized Reidemeister Moves} are used to transfrom a projection o
 A theta-curve is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
 In the similiar way, a handcuff graph is said to be trivial if it can be embedded in a $2$-sphere in $S^3$.
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
     \centering
     \subfloat{\includegraphics[width=0.1\textwidth]{figure/y6.png}}
     \hspace{0.05\linewidth}
@@ -195,7 +195,7 @@ In the similiar way, a handcuff graph is said to be trivial if it can be embedde
 Every spatial graph $G$ can be embedded in an open-book decomposition with finitely many pages so that it meets each page in exactly one simple arc with two different end-points on the binding axis.
 In knot theory, \textit{arc index}, is the minimal number of pages among all possible arc presentations of graph. This arc presentation with the minimal number of pages is \textit{minimal arc presentation.} \textit{Prime knots} are knots that is not constructed by combining simpler knots. We are finding the arc index for the prime theta-curve and handcuff graph up to seven crossings.
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
     \centering
     \subfloat{\includegraphics[width=0.33\textwidth]{figure/openbook.png}}
     \subfloat{\includegraphics[width=0.37\textwidth]{figure/handcuff_openbook.png}}
@@ -221,7 +221,7 @@ In knot theory, \textit{arc index}, is the minimal number of pages among all pos
 
 If the 1s of the Cromwell matrix are connected by horizontal and vertical lines with vertical lines are always on the horizontal lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa. They are in one-to-one correspondence. Also, if the number of half planes in arc presentation is $\alpha$, then the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.\\
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
     \centerline{\includegraphics[width=0.5\linewidth]{An arc presentation and a grid diagram of the knot.png}}
     \caption{An arc presentation and a grid diagram of the knot}
     \label{figure_2}
@@ -233,14 +233,14 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
 \begin{proof}
     For any theta-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
     Then for every crossing it has, there are only two following cases. \\
-    \begin{figure*}[h]
+    \begin{figure*}[h!]
         \centerline{\includegraphics[width=0.5\linewidth]{figure/crossings.png}}
         \caption{Cases for crossings}
         \label{figure_2}
     \end{figure*}
     \\ For each crossings, if it is a first case, then it is over.
     However, if it is a second case, then we can make that crossing to first case using some suitable movement. \\
-    \begin{figure*}[h]
+    \begin{figure*}[h!]
         \centerline{\includegraphics[width=0.25\linewidth]{figure/move crossing.png}}
         \caption{Suitable movement for case 2}
         \label{figure_2}
@@ -309,7 +309,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
     Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ (which are called the \textit{edge-columns}) from the matrix G\\
 \end{defn}
 
-\begin{figure*}[h]
+\begin{figure*}[h!]
     \centerline{\includegraphics[width=0.5\textwidth]{figure/Hdeletion.png}}
     \caption{H deletion of THC-matrix of theta-curve $3_1$.}
     \label{figure_1} 
@@ -525,7 +525,7 @@ The number of the simple cap of the graph $G$ is invariant if least one of the e
     If $H$ is a handcuff curve, the number of the edge is $3$, and the number of the bouquet is at most $2$. Thus the first inequality holds since $e=3, b \leq 2$. If there is a bouquet, one of the loops can be pulled out without affecting the rest. (See figure 1.) Then, if we remove the vertex edge of $H$, the remaining link component is a split link. Thus there are no bouquet if the link component of $H$ is non-split, and we have second inequality since $e=3, b=0$.
 \end{proof}
 
-\begin{figure*}
+\begin{figure*}[h!]
     \centerline{\includegraphics[width=\textwidth]{image.png}}
     \caption{caption}
     \label{figure_4} 

@@ -307,7 +307,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %\end{theorem}
 \begin{defn}
     Let any THC-cromwell matrix G. Consider any Three-row $i$(called \textit{deleated-row}) and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$ and $j < k < l$. The \textit{H-deletion Matrix} of the THC-cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $l$ (which are called the \textit{edge-columns}) from the matrix G.
-    The 1s contained in both ith row and jth, lth columns are called the \textit{edge-ones}, and the 1 contained in both ith row and kth column is called the \textit{middle-one}.\\
+    The 1s contained in both ith row and jth, lth columns are called the \textit{edge-one}, and the 1 contained in both ith row and kth column is called the \textit{middle-one}.\\
 \end{defn}
 
 \begin{figure*}[h!]
@@ -372,19 +372,44 @@ Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletio
 Now, we are going to count n, which is the number of $1$s in edge-columns of Three-row i, which is also included in another Three-row j.
 \begin{enumerate}
     \item \textbf{When $n = 0$}\\
-    Actually, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
+    Actually, in the THC-cromwell matrix of $\theta$-curve, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
     Therefore, we can think H-delation matrix represents a grid diagram without three horizontal lines and three vertical lines. 
-    As we consider the non-deleated row's middle-one, it is not deleated since $n=0$.
-    The grid diagram represents the graph consisted of a vertex and other three vertices with three edges connecting a vertex with the others.
+    As we consider the non-deleated row's middle-one, it is not deleated since $n=0$. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and three edges that connect this vertex with another three vertices.
     We'll call it as the \textit{T-shape}.
-    \item \textbf{When $n = 1$ (middle vertex)}\\
-    The grid diagram represents the graph consisted of a vertex and other vertice with an edges connecting a vertex with the other vertex.
-    We'll call in as the \textit{Line-shape}
-    \item \textbf{When $n = 1$ (end vertex)}\\
+    \begin{figure*}[h!]
+        \centering
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/T-cromwell.png}}
+        \hspace{0.05\linewidth}
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/T-shape.png}}
+        \caption{Examples of T-shape (Red line is a deleated line and blue line is a T-shape)}
+        \label{figure_1} 
+    \end{figure*}
+    \item \textbf{When $n = 1$ (middle-one)}\\
+    As we consider the non-deleated row's middle-one, it is not deleated but a horixontal line that contains middle-one is deleated since $n=1$ at the middle-one. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and two edges that connect this vertex with another two vertices.
+    Since there are only horizontal lines connected to middle-one, we can say that this grid diagram represents a graph consisted of two vertices and an edge connecting them. 
+    We'll call it as the \textit{Line-shape}.
+    %$$\begin{pmatrix} 
+    %    0 & 1 & 1 & 0 & 0 & 0 & 1\\
+    %    1 & 0 & 1 & 0 & 0 & 1 & 0\\
+    %    0 & 0 & 0 & 1 & 0 & 0 & 1\\
+    %    0 & 1 & 0 & 0 & 1 & 0 & 0\\
+    %    0 & 0 & 0 & 1 & 0 & 1 & 0\\
+    %    1 & 0 & 0 & 0 & 1 & 0 & 0\\
+    %\end{pmatrix}$$
+    \begin{figure*}[h!]
+        \centering
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/L-shape.png}}
+        \hspace{0.05\linewidth}
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/Line-shape.png}}
+        \caption{Examples of Line-shape (Red line is a deleated line and blue line is a Line-shape)}
+        \label{figure_1} 
+    \end{figure*}
+    \item \textbf{When $n = 1$ (edge-one)}\\
     Line-shape is given.
-    \item \textbf{When $n = 2$ (two end vertices)}\\
-    T-shape is given.
-    \item \textbf{When $n = 2$ (middle and end vertices)}\\
+    \item \textbf{When $n = 2$ (edge-ones)}\\
+    If the two middle-ones are in the same column, then the result is $(1)$.
+    If not, then Line-shape is given.
+    \item \textbf{When $n = 2$ (middle-one and edge-one)}\\
     Line-shape is given.
 \end{enumerate}
 

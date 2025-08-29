@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  29 AUG 2025 15:29
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  29 AUG 2025 22:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -715,6 +715,12 @@ LaTeX Warning: Label `figure_2' multiply defined.
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
 )
 \openout1 = `Midterm_report.aux'.
 
@@ -1029,9 +1035,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
+File: figure/T-cromwell.png Graphic file (type bmp)
+<figure/T-cromwell.png>
+File: figure/T-shape.png Graphic file (type bmp)
+<figure/T-shape.png>
 
 
 [7]
+File: figure/L-shape.png Graphic file (type bmp)
+<figure/L-shape.png>
+File: figure/Line-shape.png Graphic file (type bmp)
+<figure/Line-shape.png>
+
 
 [8]
 
@@ -1042,23 +1057,30 @@ File: image.png Graphic file (type bmp)
 <image.png>
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 [11]
+
+[12]
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 626--628
-
- []
-
-
-
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 629--632
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--657
+
+ []
+
+
+
+[14]
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -1240,13 +1262,13 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--1020
+Underfull \hbox (badness 10000) in paragraph at lines 680--1045
 
  []
 
 
 
-[14]
+[15]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -1345,9 +1367,9 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_36.png>
 
 
-[15]
+[16]
 
-[16] (./Midterm_report.aux)
+[17] (./Midterm_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1361,12 +1383,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27076 strings out of 468527
- 601913 string characters out of 5451377
- 962726 words of memory out of 5000000
- 54871 multiletter control sequences out of 15000+600000
+ 27112 strings out of 468527
+ 602779 string characters out of 5451377
+ 968747 words of memory out of 5000000
+ 54903 multiletter control sequences out of 15000+600000
  635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,9n,105p,1284b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (16 pages).
+Output written on Midterm_report.pdf (17 pages).

@@ -306,7 +306,8 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 %\end{theorem}
 \begin{defn}
-    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ (which are called the \textit{edge-columns}) from the matrix G\\
+    Let any THC-cromwell matrix G. Consider any Three-row $i$(called \textit{deleated-row}) and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$ and $j < k < l$. The \textit{H-deletion Matrix} of the THC-cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $l$ (which are called the \textit{edge-columns}) from the matrix G.
+    The 1s contained in both ith row and jth, lth columns are called the \textit{edge-ones}, and the 1 contained in both ith row and kth column is called the \textit{middle-one}.\\
 \end{defn}
 
 \begin{figure*}[h!]
@@ -367,10 +368,13 @@ If n is odd, by subtracting bottom row with $2R_1, 2R_3, ... 2R_{n-2}$, we can g
 Since it is upper triangular matrix, we can obtain determinant by trace. Hence the other entry is all 1, the determinant is $\pm 2$.\\
 
 \item \textbf{Proof in the case of theta-curve}\\
-Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix. 
-Now, we are going to count n, which is the number of $1$s in edge-columns which is also included in Three-rows.
+Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix to get its determinant. 
+Now, we are going to count n, which is the number of $1$s in edge-columns of Three-row i, which is also included in another Three-row j.
 \begin{enumerate}
     \item \textbf{When $n = 0$}\\
+    Actually, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
+    Therefore, we can think H-delation matrix represents a grid diagram without three horizontal lines and three vertical lines. 
+    As we consider the non-deleated row's middle-one, it is not deleated since $n=0$.
     The grid diagram represents the graph consisted of a vertex and other three vertices with three edges connecting a vertex with the others.
     We'll call it as the \textit{T-shape}.
     \item \textbf{When $n = 1$ (middle vertex)}\\

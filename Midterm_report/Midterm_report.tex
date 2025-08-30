@@ -439,12 +439,13 @@ Now, we are going to count n, which is the number of $1$s in the middle column a
     \end{enumerate}
     Therefore, after applying \textit{H to D} steps, we can get a following matrix.
     $$\begin{pmatrix}
-        1 & 0 & 0 & \cdots & 0\\
-        1 & 1 & 0 & \cdots \\
-        0 & 1 & 1 & \cdots \\
-        
+        1 & 0 & 0 & \cdots & 0 & 0\\
+        1 & 1 & 0 & & & \vdots \\
+        0 & 1 & 1 & & & 1\\
+        \vdots & & & \ddots &1 & \vdots \\
+        0 & 0 & 0 & \cdots & 1 &0
     \end{pmatrix}$$
-    is given.\\
+    Also, 
     If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
     \item \textbf{T-shape}\\
     Let the matrix is given.

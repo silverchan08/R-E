@@ -428,12 +428,10 @@ Now, we are going to count n, which is the number of $1$s in the middle column a
         \item One and only one of the following is satisfied
         \begin{itemize}
             \item There exists only one row which contains exactly one 1, and another row which contains exactly three 1s. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(b))
-            \item There exists only one row which contains exactly one 1. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(c))
-            \item There exists exactly two rows which contains exactly one 1. Every other row and column contains exactly two 1s. (Type-(d))
-            \item There exists exactly two columns which contains exactly one 1. Every other column and row contains exactly two 1s. (Type-(e))
+            \item There exists only one row which contains exactly one 1. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(c),(d),(e))
         \end{itemize}
     \end{itemize}
-    In case the Line-shape is a type-(b), we use the \textit{H to D} steps, including following step before we start it :
+    In case the Line-shape is a type-(b), we use the \textit{H to D} steps, including following step instead of (a) step of first cycle:
     \begin{enumerate}
         \item Interchange a row and the column with exactly one 1 with the first row, and the last column. Interchange the rest row with exactly one 1 with the last row.
     \end{enumerate}
@@ -445,22 +443,45 @@ Now, we are going to count n, which is the number of $1$s in the middle column a
         \vdots & & & \ddots &1 & \vdots \\
         0 & 0 & 0 & \cdots & 1 &0
     \end{pmatrix}$$
-    Also, 
-    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+    Also, if we subtract each row with its upper row starting from the top, we can get a upper triangular matrix, which diagonal entries are $1$ or $-1$. Therefore, the determinant of the type-(b) H-deletion matrix is $\pm 1$.\\
+    In case the Line-shape is a type-(c),(d),(e), we use the \textit{H to D} steps, including following step instead of (a) step of first cycle:
+    \begin{enumerate}
+        \item Interchange a row with exactly 1 one with the top row.
+    \end{enumerate}
+    Therefore, after applying \textit{H to D steps}, we can get a following matrix.
+    $$\begin{pmatrix}
+        1 & 0 & 0 & \cdots & 0 & 0\\
+        1 & 1 & 0 & & &\\
+        0 & 1 & 1 & & & \vdots\\
+        \vdots & & & \ddots &1 \\
+        0 & 0 & 0 & \cdots & 1 &1
+    \end{pmatrix}$$
+    Then, if we subtract each row with its upper row starting from the top, we can get a diagonal matrix, which diagonal entries are all 1. Therefore, the determinant of the type-(c),(d),(e) H-deletion matrix is $\pm 1$. \\
+    As a result, the determinant of Line-shape H-deletion matrix is $\pm 1$.
+    
     \item \textbf{T-shape}\\
-    Let the matrix is given.
-    $$\begin{pmatrix}
-        1 & 1 & 1\\
-        1 & 1 & 1\\
-    \end{pmatrix}$$
-    If you work on deleting rows and columns here, you can get the T-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
-    $$\begin{pmatrix}
-        1 & 1 & 1\\
-        0 & 1 & 0\\
-        0 & 0 & 1
-    \end{pmatrix}$$
-    is given.\\
-    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+    The T-shape can be understood as the combination of two Line-shapes. To be specific, the H-deletion matrix of T-shape is $n\times n$ matrix with following properties :
+    \begin{itemize}
+        \item It is a bianry matrix.
+        \item There exists only one row with exactly three 1s, and two rows which contains exactly one 1. Also, there exists only one column which contains exactly one 1, and other columns contain exactly two 1s.
+    \end{itemize}
+    Using row and column operations, we can make two regions in the matrix. One is the intersection of the first to $k$th row and first to ($k-1$)th column. Another is the intersection of $k$th to $n$th row and $k$th to $n$th column. Each region represents a Line-shape. \\
+    \begin{figure*}[h!]
+        \centerline{\includegraphics[width=0.3\textwidth]{figure/region.png}}
+        \caption{Dividing Regions.}
+        \label{figure_1} 
+    \end{figure*}
+    \\
+    The red square region is a $(n+1)\times n$ matrix such that :
+    \begin{itemize}
+        \item It is a binary matrix.
+        \item There are only two rows contains exactly one 1, and every other rows and columns contain exactly two 1s.
+    \end{itemize}
+    The blue square region is a $n\times n$ binary matrix such that 
+
+
+
+    
 \end{enumerate}
 Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
 

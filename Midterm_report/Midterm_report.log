@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  30 AUG 2025 23:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  31 AUG 2025 02:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -721,6 +721,9 @@ LaTeX Warning: Label `figure_1' multiply defined.
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
 )
 \openout1 = `Midterm_report.aux'.
 
@@ -1051,6 +1054,9 @@ File: figure/Line-shape.png Graphic file (type bmp)
 [8]
 
 [9]
+File: figure/region.png Graphic file (type bmp)
+<figure/region.png>
+
 
 [10]
 
@@ -1059,23 +1065,25 @@ File: image.png Graphic file (type bmp)
 <image.png>
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 [12]
+
+[13]
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
-
- []
-
-
-
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 673--676
+Underfull \hbox (badness 10000) in paragraph at lines 732--735
 
  []
 
+
+
+[15]
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -1257,13 +1265,13 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--1064
+Underfull \hbox (badness 10000) in paragraph at lines 758--1123
 
  []
 
 
 
-[15]
+[16]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -1362,9 +1370,9 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_36.png>
 
 
-[16]
+[17]
 
-[17] (./Midterm_report.aux)
+[18] (./Midterm_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1378,12 +1386,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27112 strings out of 468527
- 602779 string characters out of 5451377
- 962730 words of memory out of 5000000
- 54903 multiletter control sequences out of 15000+600000
+ 27121 strings out of 468527
+ 602973 string characters out of 5451377
+ 961730 words of memory out of 5000000
+ 54911 multiletter control sequences out of 15000+600000
  635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,9n,105p,1284b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,9n,105p,933b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (17 pages).
+Output written on Midterm_report.pdf (18 pages).

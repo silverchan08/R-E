@@ -306,7 +306,8 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 %\end{theorem}
 \begin{defn}
-    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ (which are called the \textit{edge-columns}) from the matrix G\\
+    Let any THC-cromwell matrix G. Consider any Three-row $i$(called \textit{deleted-row}) and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$ and $j < k < l$. The \textit{H-deletion Matrix} of the THC-cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $l$ (which are called the \textit{edge-columns}) from the matrix G.
+    The 1s contained in both ith row and jth, lth columns are called the \textit{edge-one}, and the 1 contained in both ith row and kth column is called the \textit{middle-one}.\\
 \end{defn}
 
 \begin{figure*}[h!]
@@ -325,7 +326,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
     The cromwell matrix of a knot is a $n\times n$ binary matrix which has exactly two 1s for each rows and columns
     We are interested of the determinant of the cromwell matrix of knots, so we are going to use the row and column operations to get simpler matrix.
     In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
-    Now we follow these steps : \\
+    Now we follow these \textit{H to D} steps : \\
     \begin{enumerate}
         \item Since there are always exactly two 1s in every row, there exists two columns that containing the 1s of the top row. Using column operations, interchange those two columns with the left most and secondary left most columns of the matrix.
         \item Choose secondary column from the left. It should contain another 1 below the 1 which is from the top row, so interchange a row containing that below 1 with secondary top row by using row operations.
@@ -367,35 +368,81 @@ If n is odd, by subtracting bottom row with $2R_1, 2R_3, ... 2R_{n-2}$, we can g
 Since it is upper triangular matrix, we can obtain determinant by trace. Hence the other entry is all 1, the determinant is $\pm 2$.\\
 
 \item \textbf{Proof in the case of theta-curve}\\
-Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix. 
-Now, we are going to count n, which is the number of times $1$s in edge-columns is included in Three-rows.
+Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix to get its determinant.
+Actually, in the THC-cromwell matrix of $\theta$-curve, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
+Therefore, we can think H-delation matrix represents a grid diagram (here, we consider the more general version of grid diagram. It is a diagram consisted of vertical strands and horizontal strands with the properties that at every crossing, the vertical strand crosses over the horizontal strand, and no two horizontal segments and vertical segments are co-linear) without three horizontal lines and three vertical lines. 
+Now, we are going to count n, which is the number of $1$s in the middle column and edge-columns(deleted horizontal lines) of Three-row i, which is also included in another Three-row j.
 \begin{enumerate}
     \item \textbf{When $n = 0$}\\
-    The grid diagram represents the graph consisted of a vertex and other three vertices with three edges connecting a vertex with the others.
+    As we consider the non-deleted row's middle-one, the horizontal line and vertical lines that contain it is not deleted since $n=0$. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and three edges that connect this vertex with another three vertices.
     We'll call it as the \textit{T-shape}.
-    \item \textbf{When $n = 1$ (middle vertex)}\\
-    The grid diagram represents the graph consisted of a vertex and other vertice with an edges connecting a vertex with the other vertex.
-    We'll call in as the \textit{Line-shape}
-    \item \textbf{When $n = 1$ (end vertex)}\\
-    Line-shape is given.
-    \item \textbf{When $n = 2$ (two end vertices)}\\
-    T-shape is given.
-    \item \textbf{When $n = 2$ (middle and end vertices)}\\
-    Line-shape is given.
+    \begin{figure*}[h!]
+        \centering
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/T-cromwell.png}}
+        \hspace{0.05\linewidth}
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/T-shape.png}}
+        \caption{Examples of T-shape (Red line is a deleted line and blue line is a T-shape)}
+        \label{figure_1} 
+    \end{figure*}
+    \item \textbf{When $n = 1$ (middle-one)}\\
+    As we consider the non-deleted row's middle-one, a horixontal line that contains it is deleted since $n=1$ at the middle-one. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and two edges that connect this vertex with another two vertices.
+    Since there are only two lines connected to middle-one, we can say that this grid diagram represents a graph consisted of two vertices and an edge connecting them. 
+    We'll call it as the \textit{Line-shape}.
+    %$$\begin{pmatrix} 
+    %    0 & 1 & 1 & 0 & 0 & 0 & 1\\
+    %    1 & 0 & 1 & 0 & 0 & 1 & 0\\
+    %    0 & 0 & 0 & 1 & 0 & 0 & 1\\
+    %    0 & 1 & 0 & 0 & 1 & 0 & 0\\
+    %    0 & 0 & 0 & 1 & 0 & 1 & 0\\
+    %    1 & 0 & 0 & 0 & 1 & 0 & 0\\
+    %\end{pmatrix}$$
+    \begin{figure*}[h!]
+        \centering
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/L-shape.png}}
+        \hspace{0.05\linewidth}
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/Line-shape.png}}
+        \caption{Examples of Line-shape (Red line is a deleted line and blue line is a Line-shape)}
+        \label{figure_1} 
+    \end{figure*}
+    \item \textbf{When $n = 1$ (edge-one)}\\
+    As we consider the non-deleted row's middle-one, a vertical line that consisted of the middle-one and deleted edge-one is deleted. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and two edges that connect this vertex with another two vertices.
+    Since there are only two lines connected to middle-one, the grid diagram represents a Line-shape.
+    \item \textbf{When $n = 2$ (edge-ones)}\\
+    As we consider the non-deleted row's middle-one, the horizontal line connected to it is not deleted, but other lines are all deleted. Therefore, the grid diagram represents a Line-shape.
+    \item \textbf{When $n = 2$ (middle-one and edge-one)}\\
+    As we consider the non-deleted row's middle-one, the horizontal line and the vertical line(consisted of middle-one and deleted edge-one) are deleted. Hence, there is only one vertical line is connected to middle one.
+    Therefore, the grid diagram represents a Line-shape.
+    \item \textbf{When $n = 3$ (middle-one and edge-ones)}\\
+    Trivial $\theta$-curve is the only way satisfying this condition. Therefore, its H-deletion matrix is (1) hence the determinant of H-deletion matrix is 1.
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        1 & 1 & 1\\
+    \end{pmatrix}$$
 \end{enumerate}
 
 \begin{enumerate}[label={(\roman*)}]
     \item \textbf{Line-shape}\\
-    Let the matrix is given.
+    The Line-shape is consisted of two vertices and an edge connecting them, and the grid diagram of the Line-shape is consisted of horizontal and vertical segments. This means that the H-deletion matrix, which is a Line-shape, is a $n\times n$ matrix with following properties :
+    \begin{itemize}
+        \item It is a binary matrix.
+        \item One and only one of the following is satisfied
+        \begin{itemize}
+            \item There exists only one row which contains exactly one 1, and another row which contains exactly three 1s. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(b))
+            \item There exists only one row which contains exactly one 1. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(c))
+            \item There exists exactly two rows which contains exactly one 1. Every other row and column contains exactly two 1s. (Type-(d))
+            \item There exists exactly two columns which contains exactly one 1. Every other column and row contains exactly two 1s. (Type-(e))
+        \end{itemize}
+    \end{itemize}
+    In case the Line-shape is a type-(b), we use the \textit{H to D} steps, including following step before we start it :
+    \begin{enumerate}
+        \item Interchange a row and the column with exactly one 1 with the first row, and the last column. Interchange the rest row with exactly one 1 with the last row.
+    \end{enumerate}
+    Therefore, after applying \textit{H to D} steps, we can get a following matrix.
     $$\begin{pmatrix}
-        1 & 1 & 1 & 0\\
-        0 & 1 & 1 & 1\\
-        1 & 0 & 0 & 1
-    \end{pmatrix}$$
-    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
-    $$\begin{pmatrix}
-        1 & 1 \\
-        0 & 1
+        1 & 0 & 0 & \cdots & 0\\
+        1 & 1 & 0 & \cdots \\
+        0 & 1 & 1 & \cdots \\
+        
     \end{pmatrix}$$
     is given.\\
     If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.

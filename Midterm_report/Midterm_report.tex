@@ -317,7 +317,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 \end{figure*}
 
 \subsubsection{Main Theorem}
-\begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
+\begin{theorem} In case the given THC-cromwell matrix is $\theta$-curve or handcuff graph, then the given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$. Also, the given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.
 \end{theorem}
 
 \begin{proof}
@@ -369,7 +369,7 @@ Since it is upper triangular matrix, we can obtain determinant by trace. Hence t
 
 \item \textbf{Proof in the case of theta-curve}\\
 Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix to get its determinant.
-Actually, in the THC-cromwell matrix of $\theta$-curve, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
+Actually, in the THC-cromwell matrix, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
 Therefore, we can think H-delation matrix represents a grid diagram (here, we consider the more general version of grid diagram. It is a diagram consisted of vertical strands and horizontal strands with the properties that at every crossing, the vertical strand crosses over the horizontal strand, and no two horizontal segments and vertical segments are co-linear) without three horizontal lines and three vertical lines. 
 Now, we are going to count n, which is the number of $1$s in the middle column and edge-columns(deleted horizontal lines) of Three-row i, which is also included in another Three-row j.
 \begin{enumerate}
@@ -467,7 +467,7 @@ Now, we are going to count n, which is the number of $1$s in the middle column a
     \end{itemize}
     Using row and column operations, we can make two regions in the matrix. One is the intersection of the first to $k$th row and first to ($k-1$)th column. Another is the intersection of $k$th to $n$th row and $k$th to $n$th column. Each region represents a Line-shape. \\
     \begin{figure*}[h!]
-        \centerline{\includegraphics[width=0.3\textwidth]{figure/region.png}}
+        \centerline{\includegraphics[width=0.25\textwidth]{figure/region.png}}
         \caption{Dividing Regions.}
         \label{figure_1} 
     \end{figure*}
@@ -478,47 +478,69 @@ Now, we are going to count n, which is the number of $1$s in the middle column a
         \item There are only two rows contains exactly one 1, and every other rows and columns contain exactly two 1s.
     \end{itemize}
     The blue square region is a H-deletion matrix, which is a type-(c),(d),(e) Line-shape.
-
-
+    Using \textit{H to D} steps in the red square including 'Interchange a row with exactly one 1 with the top row.' instead of step (a) at the first time, and
+    using \textit{H to D} steps in the blue square including 'Interchange the columns with exactly one 1 with the fist column and last column.' instead of step (a) at the first time,
+    we can get a following matrix.
+    $$\begin{pmatrix}
+        1 & 0 & 0 & \cdots & 0 & 0 & 0\\
+        1 & 1 & 0 & & \vdots & 0 & 0\\
+        0 & 1 & 1 & & 1 & \vdots & \vdots\\
+        0 & 0 & 1 & \ddots & \vdots & 0 & 0 \\
+        \vdots & & &  &  & \vdots & \vdots \\
+        0 & 0 & 0 & \cdots & 1 &1 & 0\\
+        0 & 0 & 0 & \cdots & 0 &1 & 1
+    \end{pmatrix}$$
+    For a red square, we subtract each row with its upper row starting from the top row. For a blue square, we subtract each column with its right column starting from the last column.
+    As a result, we can get a upper triangular matrix, which diagnoal entries are all $1$. Hence the determinant of T-shape is also $\pm 1$.
 
     
 \end{enumerate}
 Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
 
 \item \textbf{Proof in the case of handcuff graph}\\
-    Do the H-deletion. Then, we can make the matrix of this grid diagram by upper section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+    Similiar with $\theta$-curve, we are going to count n of the THC-cromwell matrix, which is the number of $1$s in the middle column and edge-columns of Three-row i, which is also included in another Three-row j.
     \begin{enumerate}
-        \item \textbf{0}\\
-        Knot is given.
-        \item \textbf{1 (middle vertex)}\\
-        Line-shaped figure is given.
-        \item \textbf{1 (end vertex)}\\
-        It is not given since one column might have 3 vertices.
-        \item \textbf{2 (two end vertices)}\\
-        It is not given since rows which have 3 vertices is connected with 2 line.
-        \item \textbf{2 (middle and end vertices)}\\
-        It is not given since rows which have 3 vertices is connected with 2 line.
+        \item \textbf{When $n = 0$}\\
+        Considering non-deleted row's middle one, there exists three lines connected to it. We'll call it as the \textit{T-loop}. Therefore, the H-deletion matrix will be union of a T-loop and a Line-shape.
+        \begin{figure*}[h!]
+            \centerline{\includegraphics[width=0.25\textwidth]{figure/T-loop.png}}
+            \caption{Examples of union of T-loop and Line-shape.}
+            \label{figure_1} 
+        \end{figure*}
+        \item \textbf{When $n = 1$ (middle-one)}\\
+        Considering non-deleted row's middle one, the horizontal line connected to this middle-one is deleted. Therefore, the H-deletion matrix will be union of a knot and a Line-shape.
+        \item \textbf{When $n = 1$ (edge-one)}\\
+        Considering non-deleted row's middle one, a vertical line that consisted of the middle-one and deleted edge-one is deleted. Therefore, the H-deletion matrix will be union of a knot and a Line-shape.
+        \item \textbf{When $n = 2$ (edge-ones)}\\
+        This is not possible since if two different row's edge-ones are connected, then it becomes the $\theta$-curve.
+        \item \textbf{When $n = 2$ (middle-one and edge-one)}\\
+        Similiar with (d), This is not possible.
+        \item \textbf{When $n = 3$}\\
+        Similiar with (d), This is not possible.
     \end{enumerate}
     
     \begin{enumerate}[label={(\roman*)}]
-        \item \textbf{Knot}\\
-        By upper section, the determinant becomes 0 or $\pm 2$.
-        \item \textbf{Line-shaped figure}
-        Let the matrix is given.
-        $$\begin{pmatrix}
-            0 & 0 & 0 & 1 & 1\\
-            0 & 1 & 0 & 1 & 1\\
-            1 & 1 & 1 & 0 & 0\\
-            1 & 0 & 1 & 0 & 0
-        \end{pmatrix}$$
-        If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
-        $$\begin{pmatrix}
-            1 & 1 & 0 \\
-            0 & 1 & 1 \\
-            0 & 0 & 0 \\
-        \end{pmatrix}$$
-        Since it is upper triangular matrix, the determinant of the matrix is trace, so the determinant of this matrix is 0.
+        \item \textbf{T-loop}\\
+        T-loop can be understood as the combination of a knot and a Line-shape. Therefore, the H-deletion matrix is $n\time (n+1)$ matrix. If we delete the last column(we will call this matrix as \textit{deleted-T-loop}), we can get a form of
+        $\left(\begin{array}{c|c} Knot & *
+        \\ \hline 0 & Line-shape
+        \end{array}\right)$
+        , where knot and Line-shape is a $n\time n$ and $k\times k$ matrices. Hence
+        the determinant is $det(knot)det(Line-shape) = $ $0$ or $\pm 2$.
+        \item \textbf{Union of T-loop and Line-shape} \\
+        We knot that T-loop and Line-shape is independent, which means that there are no 1s in same rows or columns. Therefore, the H-deletion matrix is a form of
+        $\left(\begin{array}{c|c} deleted-T-loop & *
+        \\ \hline 0 & Line-shape
+        \end{array}\right)$
+        hence the determinant is $det(deleted-T-loop)det(Line-shape) =$ $0$ or $\pm 2$.
+        \item \textbf{Union of Knot and Line-shape} \\
+        Knot and Line-shape is also independent. Therefore, the H-deletion matrix is a form of 
+        $\left(\begin{array}{c|c} Knot & *
+        \\ \hline 0 & Line-shape
+        \end{array}\right)$
+        hence the determinant is $0$ or $\pm2$    
     \end{enumerate}
+Therefore, $0$ or $\pm 2$ will be the determinant of the handcuff graph's H-deletion matrix.
 \end{enumerate}
 \end{proof}
 
@@ -751,8 +773,6 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
     and we obtain the following inequality:
     \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
 \end{proof}
-
-Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
 
 \section{Research Result}
 The Python code did not work since the Topoly Library had error of the Yamada polynomial function. However, we were able to examine some of our answers by the Python code.
@@ -1320,7 +1340,7 @@ We used the bounds from theoretical background, and used the Python code to find
 
 
 \section{Further Researches}
-    We want to fix every arc index of handcuff graph and theta-curve graph under $7$ crossings.
+    We want to fix every arc index of handcuff graph and theta-curve graph up to $7$ crossings.
     Also, we want to apply bounds of spatial graphs to knots.
     Since we found the minimal diagram of some theta-curves and handcuff graphs up to $7$ crossings, it can be used as reference for other researches.
 

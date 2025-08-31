@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  31 AUG 2025 02:48
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  31 AUG 2025 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -724,6 +724,9 @@ LaTeX Warning: Label `figure_1' multiply defined.
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
 )
 \openout1 = `Midterm_report.aux'.
 
@@ -1059,31 +1062,60 @@ File: figure/region.png Graphic file (type bmp)
 
 
 [10]
+File: figure/T-loop.png Graphic file (type bmp)
+<figure/T-loop.png>
+
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:524: Missing number, treated as zero.
+<to be read again> 
+                   (
+l.524 ...efore, the H-deletion matrix is $n\time (
+                                                  n+1)$ matrix. If we delete...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:528: Missing number, treated as zero.
+<to be read again> 
+                   n
+l.528 ... where knot and Line-shape is a $n\time n
+                                                  $ and $k\times k$ matrices...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \hbox (36.42435pt too wide) in paragraph at lines 536--542
+\TU/lmr/m/n/10 Knot and Line-shape is also independent. Therefore, the H-deletion matrix is a form of $[]$
+ []
+
+
 
 [11]
+
+[12]
 File: image.png Graphic file (type bmp)
 <image.png>
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[12]
 
 [13]
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 732--735
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
 
  []
 
 
 
-[15]
+[16]
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -1265,13 +1297,13 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--1123
+Underfull \hbox (badness 10000) in paragraph at lines 778--1143
 
  []
 
 
 
-[16]
+[17]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -1370,9 +1402,9 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_36.png>
 
 
-[17]
+[18]
 
-[18] (./Midterm_report.aux)
+[19] (./Midterm_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1386,12 +1418,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27121 strings out of 468527
- 602973 string characters out of 5451377
- 961730 words of memory out of 5000000
- 54911 multiletter control sequences out of 15000+600000
+ 27132 strings out of 468527
+ 603221 string characters out of 5451377
+ 968854 words of memory out of 5000000
+ 54921 multiletter control sequences out of 15000+600000
  635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,9n,105p,933b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (18 pages).
+Output written on Midterm_report.pdf (19 pages).

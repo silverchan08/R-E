@@ -1,0 +1,126 @@
+% !TeX program = lualatex
+\documentclass[10pt,
+	american,
+	sections numbered,
+	usenames,
+	xcolor=dvipsnames,
+	aspectratio=169,
+]{beamer}
+
+\mode<presentation>
+
+\usepackage{babel}
+\usepackage[babel]{microtype}
+\usepackage[babel]{csquotes}
+\usepackage[american]{isodate}
+
+\usepackage[T1]{fontenc}
+\usepackage{FiraMono}
+
+\usetheme[progressbar=frametitle]{metropolis}
+
+%%% GRAPHICS %%%
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+%%% MATH & SCIENCE %%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{siunitx}
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage{mathtools}
+
+%%% FLOATS %%%
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tabu}
+
+%\usepackage{biblatex}
+%\bibliography{literature.bib}
+
+\usepackage{tabu}
+
+\long\def\term#1{%
+ \ifmmode\ensuremath{\color{MidnightBlue}\boldmath#1}%
+ \else
+ {\bfseries\color{MidnightBlue}\boldmath#1}%
+ \fi%
+}
+
+\def\myem#1{
+ \ifmmode\ensuremath{\color{BrickRed}\boldmath#1}%
+ \else
+ {\sffamily\bfseries\color{BrickRed}\boldmath#1}%
+ \fi
+}
+
+\def\mybf#1{
+\ifmmode\ensuremath{\color{RoyalBlue}\boldmath#1}%
+\else
+{\sffamily\bfseries\color{RoyalBlue}\boldmath#1}%
+\fi
+}
+
+\def\mybff#1{
+ \ifmmode\ensuremath{\color{PineGreen}\hspace*{-12pt}\boldmath#1}%
+ \else
+ {\sffamily\bfseries\color{PineGreen}\hspace*{-12pt}\boldmath#1}%
+ \fi
+}
+
+\def\mybfff#1{
+ \ifmmode\ensuremath{\color{Violet}\boldmath#1}%
+ \else
+ {\sffamily\bfseries\color{Violet}\boldmath#1}%
+ \fi
+}
+
+\newcommand*{\mypf}{{\par\color{bgcolorAlt!90!fgcolor}\mybf{\textsc{Proof}}\hrulefill\par}}
+
+
+\graphicspath{{figs/}}  
+
+\input{setup-colors.tex}
+\input{setup-beamer.tex}
+\input{setup-math.tex}
+\input{setup-plots.tex}
+
+
+\title{Arc Index of a Theta Curve}
+\author{\centerline{\large Yoonsang Lee\inst{1} and Hun Kim\inst{2}}}
+\institute[]{%
+	\inst{1} KAIST, Former Students of KSA of KAIST\\
+	\inst{2} Korea Science Academy of KAIST
+}
+\date{
+	\begin{flushright}
+		NOV 5, 2024\\
+		Knots and Spatial Graphs 2024\\
+		United Arab Emirates University
+	\end{flushright}
+	}
+
+\titlegraphic{\hfill\includegraphics[height=.1\textheight]{ksa_왼쪽로고3}}
+
+
+\begin{document}
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\input{content.tex}
+
+\begin{frame}[standout,plain]
+	\TINY
+	\bibliographystyle{apalike}
+	\nocite{*}
+	\bibliography{KnSG2024}
+\end{frame}
+
+\end{document}

@@ -306,7 +306,8 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 %Every theta-curve and handcuff graph has its corresponding THC-Cromwell matrix.
 %\end{theorem}
 \begin{defn}
-    Let any THC-cromwell matrix G. Consider any Three-row $i$ and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$. The \textit{H-deletion Matrix} of the THC-cromwell matrix G is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $k$ (which are called the \textit{edge-columns}) from the matrix G\\
+    Let any THC-cromwell matrix G. Consider any Three-row $i$(called \textit{deleted-row}) and its three 1s, $a_{ij}, a_{ik}, a_{il}$, which means that $a_{ij} = a_{ik} = a_{il} = 1$ and $j < k < l$. The \textit{H-deletion Matrix} of the THC-cromwell matrix is $(n-1)\times(n-1)$ matrix which deleted row $i$ and column $j$, $l$ (which are called the \textit{edge-columns}) from the matrix G.
+    The 1s contained in both ith row and jth, lth columns are called the \textit{edge-one}, and the 1 contained in both ith row and kth column is called the \textit{middle-one}.\\
 \end{defn}
 
 \begin{figure*}[h!]
@@ -316,7 +317,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
 \end{figure*}
 
 \subsubsection{Main Theorem}
-\begin{theorem}The given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$.The given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is 0 or $\pm 2$.
+\begin{theorem} In case the given THC-cromwell matrix is $\theta$-curve or handcuff graph, then the given THC-Cromwell matrix is theta-curve if and only if determinant of the H-deletion matrix is $\pm 1$. Also, the given THC-Cromwell matrix is handcuff graph if and only if determinant of the H-deletion matrix is $0$ or $\pm 2$.
 \end{theorem}
 
 \begin{proof}
@@ -325,7 +326,7 @@ To distinguish the Cromwell matrices from theta-curves and handcuff graphs, whic
     The cromwell matrix of a knot is a $n\times n$ binary matrix which has exactly two 1s for each rows and columns
     We are interested of the determinant of the cromwell matrix of knots, so we are going to use the row and column operations to get simpler matrix.
     In this way, determinant of the Cromwell matrix would change only by multiplying $\pm 1$.\\
-    Now we follow these steps : \\
+    Now we follow these \textit{H to D} steps : \\
     \begin{enumerate}
         \item Since there are always exactly two 1s in every row, there exists two columns that containing the 1s of the top row. Using column operations, interchange those two columns with the left most and secondary left most columns of the matrix.
         \item Choose secondary column from the left. It should contain another 1 below the 1 which is from the top row, so interchange a row containing that below 1 with secondary top row by using row operations.
@@ -367,89 +368,179 @@ If n is odd, by subtracting bottom row with $2R_1, 2R_3, ... 2R_{n-2}$, we can g
 Since it is upper triangular matrix, we can obtain determinant by trace. Hence the other entry is all 1, the determinant is $\pm 2$.\\
 
 \item \textbf{Proof in the case of theta-curve}\\
-Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix. 
-Now, we are going to count n, which is the number of times $1$s in edge-columns is included in Three-rows.
+Since the THC-cromwell matrix is not a $n\times n$ matrix, we consider H-deletion matrix of THC-cromwell matrix to get its determinant.
+Actually, in the THC-cromwell matrix, the 1s in same column represents the vertical line of the grid diagram, and the 1s in same row represents the horizontal line of the grid diagram.
+Therefore, we can think H-delation matrix represents a grid diagram (here, we consider the more general version of grid diagram. It is a diagram consisted of vertical strands and horizontal strands with the properties that at every crossing, the vertical strand crosses over the horizontal strand, and no two horizontal segments and vertical segments are co-linear) without three horizontal lines and three vertical lines. 
+Now, we are going to count n, which is the number of $1$s in the middle column and edge-columns(deleted horizontal lines) of Three-row i, which is also included in another Three-row j.
 \begin{enumerate}
     \item \textbf{When $n = 0$}\\
-    The grid diagram represents the graph consisted of a vertex and other three vertices with three edges connecting a vertex with the others.
+    As we consider the non-deleted row's middle-one, the horizontal line and vertical lines that contain it is not deleted since $n=0$. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and three edges that connect this vertex with another three vertices.
     We'll call it as the \textit{T-shape}.
-    \item \textbf{When $n = 1$ (middle vertex)}\\
-    The grid diagram represents the graph consisted of a vertex and other vertice with an edges connecting a vertex with the other vertex.
-    We'll call in as the \textit{Line-shape}
-    \item \textbf{When $n = 1$ (end vertex)}\\
-    Line-shape is given.
-    \item \textbf{When $n = 2$ (two end vertices)}\\
-    T-shape is given.
-    \item \textbf{When $n = 2$ (middle and end vertices)}\\
-    Line-shape is given.
+    \begin{figure*}[h!]
+        \centering
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/T-cromwell.png}}
+        \hspace{0.05\linewidth}
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/T-shape.png}}
+        \caption{Examples of T-shape (Red line is a deleted line and blue line is a T-shape)}
+        \label{figure_1} 
+    \end{figure*}
+    \item \textbf{When $n = 1$ (middle-one)}\\
+    As we consider the non-deleted row's middle-one, a horixontal line that contains it is deleted since $n=1$ at the middle-one. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and two edges that connect this vertex with another two vertices.
+    Since there are only two lines connected to middle-one, we can say that this grid diagram represents a graph consisted of two vertices and an edge connecting them. 
+    We'll call it as the \textit{Line-shape}.
+    %$$\begin{pmatrix} 
+    %    0 & 1 & 1 & 0 & 0 & 0 & 1\\
+    %    1 & 0 & 1 & 0 & 0 & 1 & 0\\
+    %    0 & 0 & 0 & 1 & 0 & 0 & 1\\
+    %    0 & 1 & 0 & 0 & 1 & 0 & 0\\
+    %    0 & 0 & 0 & 1 & 0 & 1 & 0\\
+    %    1 & 0 & 0 & 0 & 1 & 0 & 0\\
+    %\end{pmatrix}$$
+    \begin{figure*}[h!]
+        \centering
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/L-shape.png}}
+        \hspace{0.05\linewidth}
+        \subfloat{\includegraphics[width=0.2\textwidth]{figure/Line-shape.png}}
+        \caption{Examples of Line-shape (Red line is a deleted line and blue line is a Line-shape)}
+        \label{figure_1} 
+    \end{figure*}
+    \item \textbf{When $n = 1$ (edge-one)}\\
+    As we consider the non-deleted row's middle-one, a vertical line that consisted of the middle-one and deleted edge-one is deleted. Therefore, the grid diagram represents a graph consisted a vertex (which is corressponding to middle-one) and two edges that connect this vertex with another two vertices.
+    Since there are only two lines connected to middle-one, the grid diagram represents a Line-shape.
+    \item \textbf{When $n = 2$ (edge-ones)}\\
+    As we consider the non-deleted row's middle-one, the horizontal line connected to it is not deleted, but other lines are all deleted. Therefore, the grid diagram represents a Line-shape.
+    \item \textbf{When $n = 2$ (middle-one and edge-one)}\\
+    As we consider the non-deleted row's middle-one, the horizontal line and the vertical line(consisted of middle-one and deleted edge-one) are deleted. Hence, there is only one vertical line is connected to middle one.
+    Therefore, the grid diagram represents a Line-shape.
+    \item \textbf{When $n = 3$ (middle-one and edge-ones)}\\
+    Trivial $\theta$-curve is the only way satisfying this condition. Therefore, its H-deletion matrix is (1) hence the determinant of H-deletion matrix is 1.
+    $$\begin{pmatrix}
+        1 & 1 & 1\\
+        1 & 1 & 1\\
+    \end{pmatrix}$$
 \end{enumerate}
 
 \begin{enumerate}[label={(\roman*)}]
     \item \textbf{Line-shape}\\
-    Let the matrix is given.
+    The Line-shape is consisted of two vertices and an edge connecting them, and the grid diagram of the Line-shape is consisted of horizontal and vertical segments. This means that the H-deletion matrix, which is a Line-shape, is a $n\times n$ matrix with following properties :
+    \begin{itemize}
+        \item It is a binary matrix.
+        \item One and only one of the following is satisfied
+        \begin{itemize}
+            \item There exists only one row which contains exactly one 1, and another row which contains exactly three 1s. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(b))
+            \item There exists only one row which contains exactly one 1. Every other row contains exactly two 1s. Also, there exists only one column which contains exactly one 1. Every other column contains exactly two 1s. (Type-(c),(d),(e))
+        \end{itemize}
+    \end{itemize}
+    In case the Line-shape is a type-(b), we use the \textit{H to D} steps, including following step instead of (a) step of first cycle:
+    \begin{enumerate}
+        \item Interchange a row and the column with exactly one 1 with the first row, and the last column. Interchange the rest row with exactly one 1 with the last row.
+    \end{enumerate}
+    Therefore, after applying \textit{H to D} steps, we can get a following matrix.
     $$\begin{pmatrix}
-        1 & 1 & 1 & 0\\
-        0 & 1 & 1 & 1\\
-        1 & 0 & 0 & 1
+        1 & 0 & 0 & \cdots & 0 & 0\\
+        1 & 1 & 0 & & & \vdots \\
+        0 & 1 & 1 & & & 1\\
+        \vdots & & & \ddots &1 & \vdots \\
+        0 & 0 & 0 & \cdots & 1 &0
     \end{pmatrix}$$
-    If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
+    Also, if we subtract each row with its upper row starting from the top, we can get a upper triangular matrix, which diagonal entries are $1$ or $-1$. Therefore, the determinant of the type-(b) H-deletion matrix is $\pm 1$.\\
+    In case the Line-shape is a type-(c),(d),(e), we use the \textit{H to D} steps, including following step instead of (a) step of first cycle:
+    \begin{enumerate}
+        \item Interchange a row with exactly 1 one with the top row.
+    \end{enumerate}
+    Therefore, after applying \textit{H to D steps}, we can get a following matrix.
     $$\begin{pmatrix}
-        1 & 1 \\
-        0 & 1
+        1 & 0 & 0 & \cdots & 0 & 0\\
+        1 & 1 & 0 & & &\\
+        0 & 1 & 1 & & & \vdots\\
+        \vdots & & & \ddots &1 \\
+        0 & 0 & 0 & \cdots & 1 &1
     \end{pmatrix}$$
-    is given.\\
-    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+    Then, if we subtract each row with its upper row starting from the top, we can get a diagonal matrix, which diagonal entries are all 1. Therefore, the determinant of the type-(c),(d),(e) H-deletion matrix is $\pm 1$. \\
+    As a result, the determinant of Line-shape H-deletion matrix is $\pm 1$.
+    
     \item \textbf{T-shape}\\
-    Let the matrix is given.
+    The T-shape can be understood as the combination of two Line-shapes. To be specific, the H-deletion matrix of T-shape is $n\times n$ matrix with following properties :
+    \begin{itemize}
+        \item It is a bianry matrix.
+        \item There exists only one row with exactly three 1s, and two rows which contains exactly one 1. Also, there exists only one column which contains exactly one 1, and other columns contain exactly two 1s.
+    \end{itemize}
+    Using row and column operations, we can make two regions in the matrix. One is the intersection of the first to $k$th row and first to ($k-1$)th column. Another is the intersection of $k$th to $n$th row and $k$th to $n$th column. Each region represents a Line-shape. \\
+    \begin{figure*}[h!]
+        \centerline{\includegraphics[width=0.25\textwidth]{figure/region.png}}
+        \caption{Dividing Regions.}
+        \label{figure_1} 
+    \end{figure*}
+    \\
+    The red square region is a $(n+1)\times n$ matrix such that :
+    \begin{itemize}
+        \item It is a binary matrix.
+        \item There are only two rows contains exactly one 1, and every other rows and columns contain exactly two 1s.
+    \end{itemize}
+    The blue square region is a H-deletion matrix, which is a type-(c),(d),(e) Line-shape.
+    Using \textit{H to D} steps in the red square including 'Interchange a row with exactly one 1 with the top row.' instead of step (a) at the first time, and
+    using \textit{H to D} steps in the blue square including 'Interchange the columns with exactly one 1 with the fist column and last column.' instead of step (a) at the first time,
+    we can get a following matrix.
     $$\begin{pmatrix}
-        1 & 1 & 1\\
-        1 & 1 & 1\\
+        1 & 0 & 0 & \cdots & 0 & 0 & 0\\
+        1 & 1 & 0 & & \vdots & 0 & 0\\
+        0 & 1 & 1 & & 1 & \vdots & \vdots\\
+        0 & 0 & 1 & \ddots & \vdots & 0 & 0 \\
+        \vdots & & &  &  & \vdots & \vdots \\
+        0 & 0 & 0 & \cdots & 1 &1 & 0\\
+        0 & 0 & 0 & \cdots & 0 &1 & 1
     \end{pmatrix}$$
-    If you work on deleting rows and columns here, you can get the T-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
-    $$\begin{pmatrix}
-        1 & 1 & 1\\
-        0 & 1 & 0\\
-        0 & 0 & 1
-    \end{pmatrix}$$
-    is given.\\
-    If we appropriately perform adding multiple of one row to another row and replacing the second row with the result, the determinant changes only by $\pm 1$, and the resulting matrix will be identity matrix. If we appropriately transform other theta-curves, we can get the same result.
+    For a red square, we subtract each row with its upper row starting from the top row. For a blue square, we subtract each column with its right column starting from the last column.
+    As a result, we can get a upper triangular matrix, which diagnoal entries are all $1$. Hence the determinant of T-shape is also $\pm 1$.
+
+    
 \end{enumerate}
 Therefore, $\pm 1$ will be the determinant of the theta-curve's H-deletion matrix.
 
 \item \textbf{Proof in the case of handcuff graph}\\
-    Do the H-deletion. Then, we can make the matrix of this grid diagram by upper section. If end vertices is erased when we delete the row, then by what vertices is erased in the other three vertices row in the grid diagram can make different matrix.
+    Similiar with $\theta$-curve, we are going to count n of the THC-cromwell matrix, which is the number of $1$s in the middle column and edge-columns of Three-row i, which is also included in another Three-row j.
     \begin{enumerate}
-        \item \textbf{0}\\
-        Knot is given.
-        \item \textbf{1 (middle vertex)}\\
-        Line-shaped figure is given.
-        \item \textbf{1 (end vertex)}\\
-        It is not given since one column might have 3 vertices.
-        \item \textbf{2 (two end vertices)}\\
-        It is not given since rows which have 3 vertices is connected with 2 line.
-        \item \textbf{2 (middle and end vertices)}\\
-        It is not given since rows which have 3 vertices is connected with 2 line.
+        \item \textbf{When $n = 0$}\\
+        Considering non-deleted row's middle one, there exists three lines connected to it. We'll call it as the \textit{T-loop}. Therefore, the H-deletion matrix will be union of a T-loop and a Line-shape.
+        \begin{figure*}[h!]
+            \centerline{\includegraphics[width=0.25\textwidth]{figure/T-loop.png}}
+            \caption{Examples of union of T-loop and Line-shape.}
+            \label{figure_1} 
+        \end{figure*}
+        \item \textbf{When $n = 1$ (middle-one)}\\
+        Considering non-deleted row's middle one, the horizontal line connected to this middle-one is deleted. Therefore, the H-deletion matrix will be union of a knot and a Line-shape.
+        \item \textbf{When $n = 1$ (edge-one)}\\
+        Considering non-deleted row's middle one, a vertical line that consisted of the middle-one and deleted edge-one is deleted. Therefore, the H-deletion matrix will be union of a knot and a Line-shape.
+        \item \textbf{When $n = 2$ (edge-ones)}\\
+        This is not possible since if two different row's edge-ones are connected, then it becomes the $\theta$-curve.
+        \item \textbf{When $n = 2$ (middle-one and edge-one)}\\
+        Similiar with (d), This is not possible.
+        \item \textbf{When $n = 3$}\\
+        Similiar with (d), This is not possible.
     \end{enumerate}
     
     \begin{enumerate}[label={(\roman*)}]
-        \item \textbf{Knot}\\
-        By upper section, the determinant becomes 0 or $\pm 2$.
-        \item \textbf{Line-shaped figure}
-        Let the matrix is given.
-        $$\begin{pmatrix}
-            0 & 0 & 0 & 1 & 1\\
-            0 & 1 & 0 & 1 & 1\\
-            1 & 1 & 1 & 0 & 0\\
-            1 & 0 & 1 & 0 & 0
-        \end{pmatrix}$$
-        If you work on deleting rows and columns here, you can get the line-shaped figure of the following figure. If you convert this into a matrix according to the previous section,
-        $$\begin{pmatrix}
-            1 & 1 & 0 \\
-            0 & 1 & 1 \\
-            0 & 0 & 0 \\
-        \end{pmatrix}$$
-        Since it is upper triangular matrix, the determinant of the matrix is trace, so the determinant of this matrix is 0.
+        \item \textbf{T-loop}\\
+        T-loop can be understood as the combination of a knot and a Line-shape. Therefore, the H-deletion matrix is $n\time (n+1)$ matrix. If we delete the last column(we will call this matrix as \textit{deleted-T-loop}), we can get a form of
+        $\left(\begin{array}{c|c} Knot & *
+        \\ \hline 0 & Line-shape
+        \end{array}\right)$
+        , where knot and Line-shape is a $n\times n$ and $k\times k$ matrices. Hence
+        the determinant is det(knot)det(Line-shape) = $0$ or $\pm 2$.
+        \item \textbf{Union of T-loop and Line-shape} \\
+        We knot that T-loop and Line-shape is independent, which means that there are no 1s in same rows or columns. Therefore, the H-deletion matrix is a form of
+        $\left(\begin{array}{c|c} deleted-T-loop & *
+        \\ \hline 0 & Line-shape
+        \end{array}\right)$ \\
+        hence the determinant is det(deleted-T-loop)det(Line-shape) = $0$ or $\pm 2$.
+        \item \textbf{Union of Knot and Line-shape} \\
+        Knot and Line-shape is also independent. Therefore, the H-deletion matrix is a form of 
+        $\left(\begin{array}{c|c} Knot & *
+        \\ \hline 0 & Line-shape
+        \end{array}\right)$
+        hence the determinant is $0$ or $\pm2$    
     \end{enumerate}
+Therefore, $0$ or $\pm 2$ will be the determinant of the handcuff graph's H-deletion matrix.
 \end{enumerate}
 \end{proof}
 
@@ -608,19 +699,57 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
 \begin{proof}
     Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Let $c_s, c_{ss}, c_n, n$ be the number of simple cap, semi-simple cap, non-simple cap and the number of crossings in $S_T$, respectively. We will prove the theorem using the mathematical induction on the pair $(c_s+c_{ss}, n)$, ordered lexicographically.
     \begin{enumerate}
-        \item Basis cases \\
-        First, suppose $c_s + c_{ss} = 0$. Then, since there are no simple disks, $S_T$ must be the trivial theta curve. In this case, the number of crossing is at least $1$. Since the spread of Yamada polynomial of trivial theta curve is $4$, $\mathrm{spr}(R(S_T)) = 4 \leq 2n+2$. \\
-        Second, suppose $n = 0$. Then, $S_T$ must be the disjoint union of trivial handcuff graph and possibly some circles(unlink). Since the Yamada polynomial of trivial handcuff is zero, $\mathrm{spr}(R(S_T)) = 0 \leq 2 = 2n+2$. \\
-        Hence, basis step is proven.
+        \item Basis cases
+        \begin{enumerate}
+            \item $c_s + c_{ss} = 0$ \\
+            Since there are no simple disks, $S_T$ is a trivial theta curve.
+            Then, there is at least $1$ crossing, and the spread of Yamada polynomial $4$.
+            Thus $\mathrm{spr}(R(S_T)) = 4 \leq 2n+2$.
+            \item $n = 0$ \\
+            Then, $S_T$ is a disjoint union of trivial handcuff graph and possibly some circles.
+            Thus, since the Yamada polynomial is $0$, $\mathrm{spr}(R(S_T)) = 0 \leq 2 = 2n+2$.
+        \end{enumerate}
+        Hence, basis cases hold.
         
         \item Inductive step \\
-        Assume that the theorem holds for all pairs $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and suppose $c_s+c_{ss} > 0$. Then the top disk must have a semi-simple cap. Let the disk connected to the top disk be denoted by $D_s$. (Note that if the top disk had only a non-simple cap, then there would be no simple or semi-simple cap at all.) Since $D_s$ is not top disk, there exists a disk $D$ directly above $D_s$. Now we consider two cases, depending on whether there exists a cap between $D_s$ and $D$. First, suppose that there is no cap between $D_s$ and $D$. Then, there are two possibilities: there is an intersection between $D_s$ and $D$, or there is not. \\
-        If there is no intersection between $D_s$ and $D$, we can swap the position of $D_s$ and $D$ without affecting the rest of the diagram. If there is an intersection between $D_s$ and $D$, we can use the relation
-
-        \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right). \]
-
-        In $S_T$, let $S_T'$, $S_T^0$ and $S_T^\infty$ be the diagrams obtained by replacing the $\Xslashfront$ crossing with $\Xslashback$, $\czero$ and $\cinf$, respectively. Since both $R \left( S_T^0 \right)$ and $R \left( S_T^\infty \right)$ have $c_s$ simple disks, $c_{ss}$ semi-simple disks, and $n-1$ crossings, their spread is at most $2(n-1)+2=2n$ by the induction hypothesis. Therefore, the spread of $(x - x^{-1}) \left( R \left( S_T^0 \right) - R \left( S_T^\infty \right) \right)$ is at most $2n+2$. It is thus sufficient to prove that the spread of $R \left( S_T' \right)$ is at most $2n+2$. Now, observe that $S_T'$ can be interpreted as the diagram obtained by swapping the positions of $D_s$ and $D$ in $S_T$. Therefore, in both cases, it is enough to prove that the inequality holds after this swapping. However, after each swap, the distance between the top disk and $D_s$ decreases. Hence, we can continue swapping $D_s$ with the disk directly above it until either the disk above $D_s$ is the top disk, or there is a cap between $D_s$ and the disk above it. Then it suffices to consider the case where there is a cap between $D_s$ and $D$. \\
-        Now, consider the case where there is a cap between $D_s$ and $D$. There are two cases: either $D_s$ is simple or it is non-simple. If $D_s$ is simple, we can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. Its spread is at most $2n+2$ by the induction hypothesis. Therefore, the spread of $S_T$ is at most $2n+2$. If $D_s$ is non-simple, the number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
+        Assume that the theorem holds for all pairs $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and suppose $c_s+c_{ss} > 0$.
+        If the top disk have only a non-simple cap, $c_s = c_{ss} = 0$. Thus the top disk have a semi-simple cap.
+        Let $D_s$ be the disk connected to the top disk, and $D$ be the disk directly above $D_s$.
+        Now we consider two cases.
+        \begin{enumerate}
+            \item There is no cap between $D_s$ and $D$. \\
+            Then, there are two possibilities: there is an intersection between $D_s$ and $D$, or there is not.
+            \begin{enumerate}
+                \item There is no intersection between $D_s$ and $D$. \\
+                We can swap the position of $D_s$ and $D$ without affecting the rest of the diagram.
+                Repeating it, we can assume that either the disk above $D_s$ is the top disk,
+                or there is a cap between $D_s$ and the disk above it.
+                \item There is an intersection between $D_s$ and $D$. \\
+                Using the relation
+                \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right), \]
+                we can replace the crossing between $D_s$ and $D$ with $\Xslashback$, $\czero$ and $\cinf$. \\
+                In right hand side, both $R \left( \czero \right)$ and $R \left ( \cinf \right)$ have $c_s$ simple disks,
+                $c_{ss}$ semi-simple disks, and $n-1$ crossings. \\
+                By the induction hypothesis, their spread is at most $2(n-1)+2=2n$. Thus, the spread of right hand side is at most $2n+2$. \\
+                Moreover, $R \left( \Xslashback \right)$ can be interpreted as the diagram obtained
+                by swapping the positions of $D_s$ and $D$ in $S_T$. \\
+                After each swap, the distance between the top disk and $D_s$ decreases. \\
+                Thus, if we continue swapping $D_s$ with the disk directly above, $D_s$ will be directly below the top disk,
+                or there will be a cap between $D_s$ and the disk above it.
+            \end{enumerate}
+            In both cases, we can assume that there is a cap between $D_s$ and $D$.
+            \item There is a cap between $D_s$ and $D$. \\
+            Then, there are two possibilities: $D_s$ is simple or non-simple.
+            \begin{enumerate}
+                \item $D_s$ is simple. \\
+                We can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. \\
+                Then its spread is at most $2n+2$ by the induction hypothesis. \\
+                Therefore, the spread of $S_T$ is at most $2n+2$.
+                \item $D_s$ is non-simple. \\
+                The number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
+                Then its spread is at most $2n+2$ by the induction hypothesis.
+            \end{enumerate}
+        \end{enumerate}
     \end{enumerate}
     Hence, by the base cases and the inductive step, the theorem follows by mathematical induction. \\ \\
     Corollary follows by bounding the number of crossings $n$ in terms of the arc index $\alpha(G)$. Suppose $G$ is a theta curve, let $RS_T$ be a reduced stacked tangle with no nested caps. Since the stacked tangle has $2$ non-simple disks and $\alpha(G)-3$ simple disks, the following holds.
@@ -644,8 +773,6 @@ Now, using the stacked tangle representation and the Yamada polynomial, we will 
     and we obtain the following inequality:
     \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
 \end{proof}
-
-%Figure 2, 3에 각각 푸는 모습 보여줘야함. 아직 더 필요
 
 \section{Research Result}
 The Python code did not work since the Topoly Library had error of the Yamada polynomial function. However, we were able to examine some of our answers by the Python code.
@@ -1213,7 +1340,7 @@ We used the bounds from theoretical background, and used the Python code to find
 
 
 \section{Further Researches}
-    We want to fix every arc index of handcuff graph and theta-curve graph under $7$ crossings.
+    We want to fix every arc index of handcuff graph and theta-curve graph up to $7$ crossings.
     Also, we want to apply bounds of spatial graphs to knots.
     Since we found the minimal diagram of some theta-curves and handcuff graphs up to $7$ crossings, it can be used as reference for other researches.
 

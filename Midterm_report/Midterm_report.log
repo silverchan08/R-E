@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.8.3)  28 AUG 2025 20:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.8.3)  6 SEP 2025 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,6 +913,18 @@ LaTeX Warning: Label `figure_2' multiply defined.
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
+
+LaTeX Warning: Label `figure_1' multiply defined.
+
 )
 \openout1 = `Midterm_report.aux'.
 
@@ -1215,21 +1227,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--304
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
 
 File: figure/Hdeletion.png Graphic file (type bmp)
 <figure/Hdeletion.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--330
+Underfull \hbox (badness 10000) in paragraph at lines 325--331
 
  []
 
 [6]
-c:/Users/norma/OneDrive/문서/GitHub/g/R-E/Midterm_report/Midterm_report.tex:350: 
+c:/Users/norma/OneDrive/문서/GitHub/g/R-E/Midterm_report/Midterm_report.tex:351: 
 Misplaced alignment tab character &.
-l.350 ...is even, by subtracting bottom row with &
+l.351 ...is even, by subtracting bottom row with &
                                                   2R_1, 2R_3, ... , 2R_{n-1}...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1238,36 +1250,68 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/norma/OneDrive/문서/GitHub/g/R-E/Midterm_report/Midterm_report.tex:350: 
+c:/Users/norma/OneDrive/문서/GitHub/g/R-E/Midterm_report/Midterm_report.tex:351: 
 Missing $ inserted.
 <inserted text> 
                 $
-l.350 ...even, by subtracting bottom row with &2R_
+l.351 ...even, by subtracting bottom row with &2R_
                                                   1, 2R_3, ... , 2R_{n-1}$ W...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--368
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
-[7] [8] [9] [10]
+File: figure/T-cromwell.png Graphic file (type bmp)
+<figure/T-cromwell.png>
+File: figure/T-shape.png Graphic file (type bmp)
+<figure/T-shape.png>
+[7]
+File: figure/L-shape.png Graphic file (type bmp)
+<figure/L-shape.png>
+File: figure/Line-shape.png Graphic file (type bmp)
+<figure/Line-shape.png>
+ [8] [9]
+File: figure/region.png Graphic file (type bmp)
+<figure/region.png>
+ [10]
+File: figure/T-loop.png Graphic file (type bmp)
+<figure/T-loop.png>
+
+c:/Users/norma/OneDrive/문서/GitHub/g/R-E/Midterm_report/Midterm_report.tex:524: 
+Missing number, treated as zero.
+<to be read again> 
+                   (
+l.524 ...efore, the H-deletion matrix is $n\time (
+                                                  n+1)$ matrix. If we delete...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \hbox (36.42435pt too wide) in paragraph at lines 536--542
+\TU/lmr/m/n/10 Knot and Line-shape is also independent. Therefore, the H-deleti
+on matrix is a form of $[]$
+ []
+
+[11] [12]
 File: image.png Graphic file (type bmp)
 <image.png>
- [11]
+ [13]
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 622--624
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 625--628
-
- []
-
+[16]
 File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_3_1.png>
 File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
@@ -1449,11 +1493,11 @@ File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--1016
+Underfull \hbox (badness 10000) in paragraph at lines 778--1143
 
  []
 
-[14]
+[17]
 File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_2_1.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
@@ -1550,7 +1594,7 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_35.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_35.png>
 File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <../Midterm_Poster/grid_diagram/handcuff_7_36.png>
- [15] [16] (Midterm_report.aux)
+ [18] [19] (Midterm_report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1564,12 +1608,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27005 strings out of 409617
- 595648 string characters out of 5774014
- 1965191 words of memory out of 5000000
- 48547 multiletter control sequences out of 15000+600000
+ 27061 strings out of 409617
+ 596956 string characters out of 5774014
+ 1971191 words of memory out of 5000000
+ 48597 multiletter control sequences out of 15000+600000
  566278 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,9n,121p,1285b,2744s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,9n,121p,934b,2744s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (16 pages).
+Output written on Midterm_report.pdf (19 pages).

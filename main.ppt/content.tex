@@ -183,7 +183,7 @@
 
 \begin{frame}{Determinant of the cromwell matrices of Knot}
 	\begin{thm}
-		Let $K$ be any knot then its determinant of the cromwell matrix is $0$ or $2$.
+		Let $K$ be any knot then its determinant of the cromwell matrix is $0$ or $\pm2$.
 	\end{thm}
 	\mypf
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
@@ -210,7 +210,33 @@
 	\begin{enumerate}
 		\item[\mybf{CASE 1.}] \mybf{When $n$ is an even number.}
 	\end{enumerate}
-	\vspace*{-10pt}
+	%\vspace*{-10pt}
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+		$\begin{bmatrix}
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 \\
+			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+			\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}
+		\end{bmatrix}$ &
+		$\longmapsto$ &
+		$\begin{bmatrix}
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 \\
+			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+			\textcolor{PineGreen}{2} & \textcolor{PineGreen}{2} & \textcolor{PineGreen}{2} & \textcolor{PineGreen}{2}
+		\end{bmatrix}$ &
+		$\longmapsto$ &
+		$\begin{bmatrix}
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 \\
+			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+			\textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0}
+		\end{bmatrix}$ &
+	\end{tabu}
+	So the determinant of $K$ is $0$.
+	\begin{enumerate}
+		\item[\mybf{CASE 2.}] \mybf{When $n$ is an odd number.}
+	\end{enumerate}
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
 		$\begin{bmatrix}
 			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
@@ -221,13 +247,23 @@
 		\end{bmatrix}$ &
 		$\longmapsto$ &
 		$\begin{bmatrix}
-			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0 \\
 			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
 			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
 			0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
-			\textcolor{red}{1} & 0 & 0 & 0 & \textcolor{red}{1}
-		\end{bmatrix}$
+			\textcolor{PineGreen}{2} & \textcolor{PineGreen}{2} & \textcolor{PineGreen}{2} & \textcolor{PineGreen}{2} & \textcolor{PineGreen}{2}
+		\end{bmatrix}$ &
+		$\longmapsto$ &
+		$\begin{bmatrix}
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0 \\
+			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+			0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+			\textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{Cyan}{2}
+		\end{bmatrix}$ &
 	\end{tabu}
+	So the determinant of $K$ is $\pm 2$.
+	\hfill\qed
 \end{frame}
 
 

@@ -266,7 +266,42 @@
 	So the determinant of $K$ is $\pm 2$.
 	\hfill\qed
 \end{frame}
+\begin{frame}{H-deletion of THC-cromwell matricies}
+	\begin{definition}
+		The H-deletion Matrix of the THC-cromwell
+ 		matrix G is $(n-1)\times(n-1)$ matrix which deleted vertex-row and its two side-rows from the 
+ 		matrix G.
+	\end{definition}
+	
+\end{frame}
 
+\begin{frame}{Determinant of the THC-cromwell matrices}
+	\begin{thm}
+		Let $K$ be any THC-cromwell matrice of $\theta$-curve or handcuff graph. \\
+		Then, its determinant is $\pm1$ iff the THC-cromwell matrix represents $\theta$-curve, \\
+		and $0$ or $\pm2$ iff the THC-cromwell matrix represents handcuff graph.
+	\end{thm}
+	\mypf
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/Trefoilimage.png}} &
+			$\longmapsto$ &
+			$\begin{bmatrix}
+				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0\\
+				0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
+				0 & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1}\\
+				\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & 0\\
+				0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}
+			\end{bmatrix}$&
+			$\longmapsto$ &
+			$\begin{bmatrix}
+				\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
+				0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
+				0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+				0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+				\textcolor{red}{1} & 0 & 0 & 0 & \textcolor{red}{1}
+			\end{bmatrix}$
+	\end{tabu}
+\end{frame}
 
 \section{Lower Bounds of Arc Index}
 

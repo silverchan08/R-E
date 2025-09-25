@@ -27,8 +27,7 @@
 	$$\includegraphics[width=.8\linewidth]{handcufflist.png}$$
 	\seprule
 	\hfill\tiny{Figure from \cite{handcufflist}}
-	% 모리우치 A table of 0-curves and handcuff graphs
-with up to seven crossings
+	% 모리우치 A table of 0-curves and handcuff graphs with up to seven crossings
 \end{frame}
 
 \begin{frame}{Reidemaister Moves for $\theta$-Curves and Handcuff Graphs}
@@ -72,6 +71,48 @@ with up to seven crossings
 \end{figure}
 \end{frame}
 
+\begin{frame}{Cromwell Matrix}
+	\begin{itemize}
+		\item The \term{Cromwell matrix} is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s. 
+   For theta‐curve and handcuff graph, its Cromwell matrix is called the 
+   the \textit{THC-Cromwell matrix} is the matrix that satisfies the following conditions.
+   	\begin{enumerate}
+		\item It is a binary $n\times(n+1)$ matrix.
+		\item It has exactly two 1s in every column.
+		\item There are only three 1s in two distinct rows (which are called the \textit{Three-row}) and every other rows has exactly two 1s.
+	\end{enumerate}
+		\item If the 1s of the Cromwell matrix are connected by horizontal and vertical lines with vertical lines are always on the horizontal lines, it leads to the grid diagram. The arc presentation can be expressed by grid diagram and vice versa.
+		\item If the number of half planes in arc presentation is $\alpha$, then the size of corresponding grid diagram is $(\alpha - 1) \times \alpha$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Cromwell Matrix}
+	$$\includegraphics[width=0.5\linewidth]{figure/cromwell.png}$$
+\end{frame}
+
+\begin{frame}{Arc Presentation of the Theta-Curve and Handcuff Graph}
+	\begin{thm}
+    Arc presentations exist for every theta-curve and handcuff graph. 
+	\end{thm}
+	\mypf
+    For any theta-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
+    Then for every crossing it has, there are only two following cases.
+    \begin{figure}
+        \centerline{\includegraphics[width=0.25\linewidth]{figure/crossings.png}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Arc Presentation of the Theta-Curve and Handcuff Graph}
+	\mypf
+	For each crossings, if it is a first case, then it is over.
+    However, if it is a second case, then we can make that crossing to first case using some suitable movement.
+    \begin{figure}
+        \centerline{\includegraphics[width=0.125\linewidth]{figure/move crossing.png}}
+    \end{figure}
+    Therefore, it becomes the grid diagram and since the grid diagrams and arc presentations are in one-to-one correspondence, there always exists arc presentations for every theta-curve and handcuff graph.
+	\hfill\qed
+\end{frame}
+
 \begin{frame}{Binding Circle Method}
 	Let $D_T$ be a diagram of an $\theta$-curve $T$.
 	A \term{binding circle} of $D_T$ is a simple closed curve $C$ meeting $D_T$
@@ -101,6 +142,10 @@ with up to seven crossings
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
 		\includegraphics[width=.95\linewidth]{theta52c.png} & \raisebox{1.5cm}{$\longrightarrow$} & \includegraphics[width=.95\linewidth]{algorithm_binding.png} & \raisebox{1.5cm}{$\longleftrightarrow$} & \includegraphics[width=.95\linewidth]{openbook.png}
 	\end{tabu}
+\end{frame}
+
+\begin{frame}{Arc Index of Spatial Graphs}
+	$$\includegraphics[height=0.8\textheight]{../figure/arcindexfigure.jpg}$$
 \end{frame}
 
 
@@ -633,10 +678,6 @@ with up to seven crossings
 
 \begin{frame}{Bounds of Arc Index}
 	\includegraphics[width=\linewidth]{graph.png}
-\end{frame}
-
-\begin{frame}{Arc Index of Some $\theta$-Curves}
-	$$\includegraphics[height=\textheight]{further.jpeg}$$
 \end{frame}
 
 

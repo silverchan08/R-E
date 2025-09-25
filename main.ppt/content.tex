@@ -141,8 +141,50 @@ with up to seven crossings
 		Let $K$ be any knot then its determinant of the cromwell matrix is $0$ or $2$.
 	\end{thm}
 	\mypf
-
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/Trefoilimage.png}} &
+			$\longmapsto$ &
+			$\begin{bmatrix}
+				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0\\
+				0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
+				0 & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1}\\
+				\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & 0\\
+				0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}
+			\end{bmatrix}$&
+			$\longmapsto$ &
+			$\begin{bmatrix}
+				\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
+				0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
+				0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+				0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+				\textcolor{red}{1} & 0 & 0 & 0 & \textcolor{red}{1}
+			\end{bmatrix}$
+	\end{tabu}
 \end{frame}
+\begin{frame}
+	\begin{enumerate}
+		\item[\mybf{CASE 1.}] \mybf{When $n$ is an even number.}
+	\end{enumerate}
+	\vspace*{-10pt}
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+		$\begin{bmatrix}
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
+			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+			0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+			\textcolor{red}{1} & 0 & 0 & 0 & \textcolor{red}{1}
+		\end{bmatrix}$ &
+		$\longmapsto$ &
+		$\begin{bmatrix}
+			\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
+			0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
+			0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
+			\textcolor{red}{1} & 0 & 0 & 0 & \textcolor{red}{1}
+		\end{bmatrix}$
+	\end{tabu}
+\end{frame}
+
 
 \section{Lower Bounds of Arc Index}
 

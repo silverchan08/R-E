@@ -1,15 +1,15 @@
 \section{Classifying by Determinant}
 \begin{frame}{THC-cromwell matrix}
 	\begin{itemize}
-		\item The \term{cromwell matrix} of a knot is an $n \times n$ binary matrix such that each row and column has exactly two $1$s.
-		\item The \term{THC-cromwell matrix} is an expansion of cromwell matrix into $\theta$-curves and handcuff graphs that satisfies the following conditions :
-		\begin{enumerate}
-			\item It is a $(n+1)\times n$ bianry matrix.
-			\item It contains exactly two $1$s in every column.
-			\item There exists two distinct rows which contains exactly three $1$s, which is called the \term{three-row}. Every other row contains exactly two $1$s.
-		\end{enumerate}
-		$$\includegraphics[width=.4\linewidth]{figure/cromwell.png}$$
+		\item The \term{THC-cromwell matrix} is an expansion of cromwell matrix into $\theta$-curves and handcuff graphs
 	\end{itemize}
+	\vspace{1cm}
+	\begin{tabu}{X[5c]X[c]X[5c]}
+		\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/excromwell.png}} &			
+		$\longmapsto$ &
+		\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/cromwell.png}} &
+	\end{tabu}
+	
 \end{frame}
 
 \begin{frame}{Determinant of the cromwell matrices of Knot}
@@ -17,9 +17,15 @@
 		Let $K$ be any knot then its determinant of the cromwell matrix is $0$ or $\pm2$.
 	\end{thm}
 	\mypf
-	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+	\begin{tabu}{X[5c]X[2c]X[5c]X[c]X[2c]}
 			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/Trefoilimage.png}} &
-			$\longmapsto$ &
+			$\xmapsto{\text{grid diagram}}$ &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/gridtheta.png}} &
+			$\xmapsto{THC-cromwell}$ &
+	\end{tabu}
+	\begin{tabu}{X[c]X[1.5c]X[5c]X[c]X[5c]}
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/white.png}} &
+			$\xmapsto{THC-cromwell}$ &
 			$\begin{bmatrix}
 				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0\\
 				0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
@@ -27,7 +33,7 @@
 				\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & 0\\
 				0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}
 			\end{bmatrix}$&
-			$\longmapsto$ &
+			$\xmapsto[operations]{row/column}$ &
 			$\begin{bmatrix}
 				\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
 				0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
@@ -102,34 +108,90 @@
  		matrix G is $(n-1)\times(n-1)$ matrix which deleted vertex-row and its two side-rows from the 
  		matrix G.
 	\end{definition}
+	\vspace{1cm}
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+			$\begin{bmatrix}
+				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}\\
+				0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0\\
+				0 & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
+				\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & 0 & 0\\
+				0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}
+			\end{bmatrix}$&
+			$\longmapsto$ &
+			$\begin{bmatrix}
+			\textcolor{PineGreen}{1} & \textcolor{Aquamarine}{0} & \textcolor{PineGreen}{1} & \textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{PineGreen}{1}\\
+				\textcolor{Aquamarine}{0} & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & \textcolor{Aquamarine}{0}\\
+				\textcolor{Aquamarine}{0} & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & \textcolor{Aquamarine}{0}\\
+				\textcolor{PineGreen}{1} & 0 & 0 & \textcolor{red}{1} & 0 & \textcolor{Aquamarine}{0}\\
+				\textcolor{Aquamarine}{0} & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & \textcolor{PineGreen}{1}
+			\end{bmatrix}$&
+			$\longmapsto$ &
+			$\begin{bmatrix}
+				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
+				0 & \textcolor{red}{1} & 0 & \textcolor{red}{1}\\
+				0 & 0 & \textcolor{red}{1} & 0\\
+				\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}
+			\end{bmatrix}$
+	\end{tabu}
 	
 \end{frame}
 
 \begin{frame}{Determinant of the THC-cromwell matrices}
 	\begin{thm}
-		Let $K$ be any THC-cromwell matrice of $\theta$-curve or handcuff graph. \\
-		Then, its determinant is $\pm1$ iff the THC-cromwell matrix represents $\theta$-curve, \\
-		and $0$ or $\pm2$ iff the THC-cromwell matrix represents handcuff graph.
+		Let $M$ be any THC-cromwell matrice of $\theta$-curve or handcuff graph. \\
+		\begin{itemize}
+			\item det($M$) = $\pm1$ $\iff$ $M$ represents $\theta$-curve
+			\item det($M$) = $0$ or $\pm2$ $\iff$ $M$ represents handcuff graph
+		\end{itemize}
+		*det($M$) = determinant of H-deletion matrix of $M$
 	\end{thm}
 	\mypf
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
-			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/Trefoilimage.png}} &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/T-cromwell.png}} &
 			$\longmapsto$ &
-			$\begin{bmatrix}
-				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0\\
-				0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
-				0 & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1}\\
-				\textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & 0\\
-				0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}
-			\end{bmatrix}$&
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/exT-shape.png}} &
 			$\longmapsto$ &
-			$\begin{bmatrix}
-				\textcolor{red}{1} & \textcolor{red}{1} & 0 & 0 & 0\\
-				0 & \textcolor{red}{1} & \textcolor{red}{1} & 0 & 0\\
-				0 & 0 & \textcolor{red}{1} & \textcolor{red}{1} & 0\\
-				0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
-				\textcolor{red}{1} & 0 & 0 & 0 & \textcolor{red}{1}
-			\end{bmatrix}$
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/T-shape.png}} 
 	\end{tabu}
+\end{frame}
+
+\begin{frame}
+	\begin{enumerate}
+		\item[\mybf{CASE 1.}] \mybf{When $M$ represents $\theta$-curve}
+	\end{enumerate}
+	\mybfff{\circled{i} Line-shape} \\
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/L-shape.png}}&
+			$\longmapsto$ &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/Line-shape.png}} &
+			$\xmapsto{H-deletion}$ &
+			$\begin{bmatrix}
+			\textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} \\
+			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0\\
+			0 & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} \\
+			\textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\
+		\end{bmatrix}$ &
+	\end{tabu}
+	\begin{tabu}{X[5c]x[c]X[5c]X[c]X[5c]}
+		$\xmapsto[operations]{row/column}$ &
+		\raisebox{-1.5cm}{\includegraphics[height=0.1cm]{figure/white.png}}&
+		$\begin{bmatrix}
+			\textcolor{RoyalBlue}{1} & 0 & 0 & 0 & 0\\
+			\textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0 & 0 & 0\\
+			0 & \textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1}\\
+			0 & 0 & \textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0\\
+			0 & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\
+		\end{bmatrix}$ &
+		$\xmapsto{subtracting}$ &
+	$\begin{bmatrix}
+			\textcolor{red}{1} & 0& 0 & 0 & 0 \\
+			0 & \textcolor{red}{1} & 0 & 0 & 0\\
+			0 & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1}\\
+			0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{-1}\\
+			0 & 0 & 0 & 0 & \textcolor{red}{1}\\
+		\end{bmatrix}$ 
+	\end{tabu}
+	So det($M$) = $\pm1$
 \end{frame}
 

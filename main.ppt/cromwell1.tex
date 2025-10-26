@@ -103,11 +103,11 @@
 	\hfill\qed
 \end{frame}
 \begin{frame}{H-deletion of THC-cromwell matricies}
-	\begin{definition}
-		The H-deletion Matrix of the THC-cromwell
- 		matrix G is $(n-1)\times(n-1)$ matrix which deleted vertex-row and its two side-rows from the 
+	\begin{itemize}
+		\item The \term{H-deletion} Matrix of the THC-cromwell
+ 		matrix G is $(n-1)\times(n-1)$ matrix\\ which deleted vertex-row and its two side-rows from the 
  		matrix G.
-	\end{definition}
+	\end{itemize}
 	\vspace{1cm}
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
 			$\begin{bmatrix}
@@ -147,7 +147,14 @@
 	\end{thm}
 	\mypf
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
-			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/T-cromwell.png}} &
+			$\begin{bmatrix}
+			\textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & 0\\
+			0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1}\\
+			\textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0\\
+			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\ 
+			0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1}\\
+			0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			\end{bmatrix}$&
 			$\longmapsto$ &
 			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/exT-shape.png}} &
 			$\longmapsto$ &
@@ -173,6 +180,7 @@
 			\textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\
 		\end{bmatrix}$ &
 	\end{tabu} \\
+	and simplify with
 	\begin{tabu}{X[c]X[5c]X[c]X[5c]}
 		$\xmapsto[operations]{row/column}$ &
 		$\begin{bmatrix}
@@ -190,6 +198,47 @@
 			0 & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{-1}\\
 			0 & 0 & 0 & 0 & \textcolor{red}{1}\\
 		\end{bmatrix}$ 
+	\end{tabu}
+	So det($M$) = $\pm1$
+\end{frame}
+
+\begin{frame}
+	\begin{enumerate}
+		\item[\mybf{CASE 1.}] \mybf{When $M$ represents $\theta$-curve}
+	\end{enumerate}
+	\mybfff{\circled{ii} T-shape} \\
+	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
+			$\begin{bmatrix}
+			\textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & 0\\
+			0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1}\\
+			\textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0\\
+			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\ 
+			0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1}\\
+			0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			\end{bmatrix}$&
+			$\longmapsto$ &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/T-shape.png}} &
+			$\xmapsto{H-deletion}$ &
+			$\begin{bmatrix}
+			\textcolor{RoyalBlue}{1} & 0 & 0 & 0 & \textcolor{RoyalBlue}{1} \\
+			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0\\
+			0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1} \\
+			\textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0\\
+		\end{bmatrix}$ &
+	\end{tabu} \\
+	and simplify with
+	\begin{tabu}{X[c]X[5c]X[c]X[5c]}
+		$\xmapsto[operations]{row/column}$ &
+		$\begin{bmatrix}
+			\textcolor{RoyalBlue}{1} & 0 & 0 & 0 & 0\\
+			\textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			0 & \textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1} & 0 & 0\\
+			0 & 0 & 0 & \textcolor{RoyalBlue}{1} & \textcolor{RoyalBlue}{1}\\
+			0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1}\\
+		\end{bmatrix}$ &
+		$\xmapsto{regioning}$ &
+		\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/regioning.png}}
 	\end{tabu}
 	So det($M$) = $\pm1$
 \end{frame}

@@ -18,7 +18,10 @@
 
 \begin{frame}{Handcuff Graphs}
 	\begin{itemize}
-		\item \term{Handcuff graph} is the graph which consists of two loops and an edge jointing the vertices of each loop.
+		\item \term{Handcuff graph} H is the graph which consists of two loops and an edge jointing the vertices of each loop.
+		\item A \term{constituent link $H_{12}$}, is a subgraph of $H$
+		that consists of two vertices $v_1$, $v_2$ and two edges $e_1$, $e_2$.
+
 	\end{itemize}
 
 	$$\includegraphics[width=.8\linewidth]{handcufflist.png}$$
@@ -35,52 +38,57 @@
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}{Arc Index}
+\begin{frame}{Arc Presentation}
     \begin{itemize}
-        \item \term{Arc presentation} is an open-book decomposition of $\mathbb{R}^3$ which has open half-planes as pages and the standard z-axis as the binding axis.
+        \item \term{Arc presentation} of a theta-curve or handcuff graph is an embedding of them.
+        \item It is contained in the union of finitely many half planes (called \term{pages}).
+        \item The embedding is with the common boundary line (called \term{axis}).
+        \item Each vertex lies in the axis.
+        \item Each page contains a properly embedded single arc.
         \item \term{Arc index}, is the minimal number of pages among all possible arc presentations of graph.
         \item This arc presentation with the minimal number of pages is \term{minimal arc presentation}.
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Arc Index}
+\begin{frame}{Arc Presentation}
     \centering
     \begin{tabu}{X[c]X[c]X[c]}
-        \raisebox{-1cm}{\includegraphics[height=2cm]{Trefoilimage.png}} &
-        \raisebox{-1.8cm}{\includegraphics[height=3.6cm]{trefoil arc presentation.png}} &
-        \raisebox{-1cm}{\includegraphics[height=2cm]{trefoil_grid.png}} \\
+        \raisebox{-1cm}{\includegraphics[height=1cm]{Trefoilimage.png}} &
+        \raisebox{-1cm}{\includegraphics[height=1.75cm]{trefoil arc presentation.png}} &
+        \raisebox{-1cm}{\includegraphics[height=1cm]{trefoil_grid.png}} \\
         Trefoil & Open Book & Grid Diagram
     \end{tabu}
-
-\end{frame}
-
-
-\begin{frame}{Arc Index}
     \centering
     \begin{tabu}{X[c]X[c]X[c]}
-        \raisebox{-1cm}{\includegraphics[height=2cm]{theta52.png}} &
-        \raisebox{-1.8cm}{\includegraphics[height=3.6cm]{openbook.png}} &
-        \raisebox{-1cm}{\includegraphics[height=2cm]{grid.png}} \\
+        \raisebox{-1cm}{\includegraphics[height=1cm]{theta52.png}} &
+        \raisebox{-1cm}{\includegraphics[height=1.75cm]{openbook.png}} &
+        \raisebox{-1cm}{\includegraphics[height=1cm]{grid.png}} \\
         $\theta_{5,2}$ & Open Book & Grid Diagram
     \end{tabu}
-\end{frame}
-
-
-\begin{frame}{Arc Index}
     \centering
     \begin{tabu}{X[c]X[c]X[c]}
         \raisebox{-1cm}{\includegraphics[height=2cm]{handcuff.png}} &
-        \raisebox{-1.8cm}{\includegraphics[height=3.6cm]{handcuff_openbook.png}} &
-        \raisebox{-1cm}{\includegraphics[height=2cm]{handcuff grid diagram.png}} \\
+        \raisebox{-1cm}{\includegraphics[height=1.75cm]{handcuff_openbook.png}} &
+        \raisebox{-1cm}{\includegraphics[height=1cm]{handcuff grid diagram.png}} \\
         $\Phi_{2,1}$ & Open Book & Grid Diagram
     \end{tabu}
 \end{frame}
 
+
 \begin{frame}{Grid Diagram}
 	\begin{itemize}
-		\item The \term{grid diagram} of a theta-curve or handcuff graph is a diagram of vertical strands and one less number of horizontal strands.
-		\item At every crossing the vertical strand crosses over the horizontal strand and no two horizontal segments are co‐linear and no two vertical segments are co‐linear.
-	\end{itemize}
+        \item The \term{grid diagram} of theta-curve or handcuff graph is a diagram with only vertical strand and horizontal strands.
+        \item (number of vertical strands) + 1 = (number of horizontal strands)
+        \item At every crossing, the vertical strand crosses over the horizontal strand.
+        \item No two horizontal strands are in the same row.
+        \item No two vertical strands are in same strand.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grid Diagram}
+    \begin{itemize}
+        \item A grid diagram gives rise to an arc presentation and vice versa.
+    \end{itemize}
     \centering
     \begin{tabu}{X[c]X[c]}
         \raisebox{-1cm}{\includegraphics[height=4cm]{grid_diagram_1.png}} &
@@ -88,40 +96,22 @@
     \end{tabu}
 \end{frame}
 
-\begin{frame}{Cromwell Matrix}
-	\begin{itemize}
-		\item The \term{Cromwell matrix} of a knot is an $n \times n$ binary matrix each of whose rows and columns has exactly two 1s.
-    \end{itemize}
-    \centering
-    \begin{tabu}{X[c]X[c]X[c]}
-        \raisebox{-1cm}{\includegraphics[height=2cm]{Trefoilimage.png}} &
-        \raisebox{-1.8cm}{\includegraphics[height=3.6cm]{trefoil_grid.png}} &
-        \raisebox{-1cm}{\includegraphics[height=2cm]{trefoil_cromwell.png}} \\
-        Trefoil & Grid Diagram & Cromwell Matrix
-    \end{tabu}
-\end{frame}
-
 \begin{frame}{Arc Presentation of the Theta-Curve and Handcuff Graph}
 	\begin{thm}
-    Arc presentations exist for every theta-curve and handcuff graph. 
-	\end{thm}
+    Every theta-curve and handcuff graph admit a grid diagram.
+    \end{thm}
 	\mypf
     \begin{center}
     \begin{tabu}{c c c}
-        \includegraphics[width=0.4\linewidth]{figure/crossings.png} &
-        \raisebox{1cm}{$\xmapsto{}$} &
-        \includegraphics[width=0.2\linewidth]{changed_crossing.jpg}
+        \includegraphics[width=0.2\linewidth]{figure/crossings.png} &
+        \raisebox{0.5cm}{$\xmapsto{}$} &
+        \includegraphics[width=0.1\linewidth]{changed_crossing.jpg}
     \end{tabu}
-    \end{center}
-\end{frame}
-
-\begin{frame}{Arc Presentation of the Theta-Curve and Handcuff Graph}
-	\mypf
-    \begin{center}
     \begin{tabu}{c}
-        \includegraphics[width=0.8\linewidth]{crossing_change_example.jpg}
+        \includegraphics[width=0.5\linewidth]{crossing_change_example.jpg}
     \end{tabu}
     \end{center}
+    \begin{corollary}
+    Every theta-curve and handcuff graph admit a arc presentation.
+    \end{corollary}
 \end{frame}
-
-

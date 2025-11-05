@@ -1,4 +1,5 @@
-\section{Classifying by Determinant}
+\section{Determinant of $\theta$-curve
+and Handcuff graph}
 \begin{frame}{THC-cromwell matrix}
 	\begin{itemize}
 		\item The \term{Cromwell Matrix} of a knot is an $n\times n$ binary matrix each of whose rows and columns has exactly two 1s.
@@ -22,7 +23,7 @@
 
 \begin{frame}{Determinant of the cromwell matrices of Knot}
 	\begin{thm}
-		Let $K$ be a knot. Then a cromwell matrix of $K$ has determinant $0$ or $\pm2$.
+		Let $K$ be a knot. Then the determinant of a cromwell matrix of $K$ is $0$ or $\pm 2$.
 	\end{thm}
 	\mypf
 	\begin{tabu}{X[5c]X[2c]X[5c]X[c]X[2c]}
@@ -113,12 +114,11 @@
 \begin{frame}{H-deletion of THC-cromwell matricies}
 	\begin{itemize}
 		\item The \term{vertex-row} of THC-cromwell matrix $M$ is a row which contains three 1s, $M_{ia},M_{ib},M_{ic}$, where $a<b<c$, as its elements.
-		\item The \term{side-row} of THC-cromwell matrix $M$ is a column which contains the leftmost 1 of vertex-row $(M_{ia})$ or the rightmost 1 of vertex row $(M_{ic})$.
+		\item The \term{side-column} of THC-cromwell matrix $M$ is a column which contains the leftmost 1 of vertex-row $(M_{ia})$ or the rightmost 1 of vertex row $(M_{ic})$.
 		\item The \term{H-deletion} Matrix of the THC-cromwell
- 		matrix G is $(n-1)\times(n-1)$ matrix\\ which deleted vertex-row and its two side-rows from the 
+ 		matrix G is $(n-1)\times(n-1)$ matrix\\ which deleted vertex-row and its two side-columns from the 
  		matrix G.
 	\end{itemize}
-	\vspace{1cm}
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
 			$\begin{bmatrix}
 				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1}\\
@@ -128,13 +128,7 @@
 				0 & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}
 			\end{bmatrix}$&
 			$\longmapsto$ &
-			$\begin{bmatrix}
-			\textcolor{PineGreen}{1} & \textcolor{Aquamarine}{0} & \textcolor{PineGreen}{1} & \textcolor{Aquamarine}{0} & \textcolor{Aquamarine}{0} & \textcolor{PineGreen}{1}\\
-				\textcolor{Aquamarine}{0} & \textcolor{red}{1} & 0 & \textcolor{red}{1} & 0 & \textcolor{Aquamarine}{0}\\
-				\textcolor{Aquamarine}{0} & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{1} & \textcolor{Aquamarine}{0}\\
-				\textcolor{PineGreen}{1} & 0 & 0 & \textcolor{red}{1} & 0 & \textcolor{Aquamarine}{0}\\
-				\textcolor{Aquamarine}{0} & \textcolor{red}{1} & 0 & 0 & \textcolor{red}{1} & \textcolor{PineGreen}{1}
-			\end{bmatrix}$&
+			\raisebox{-1.9cm}{\includegraphics[height=4cm]{figure/vertexside.png}} &
 			$\longmapsto$ &
 			$\begin{bmatrix}
 				\textcolor{red}{1} & 0 & \textcolor{red}{1} & 0\\
@@ -158,12 +152,12 @@
 	\mypf
 	\begin{tabu}{X[5c]X[c]X[5c]X[2c]X[5c]}
 			$\begin{bmatrix}
-			\textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & 0\\
-			0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1}\\
-			\textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0\\
-			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\ 
-			0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1}\\
-			0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			\textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{red}{0}\\
+			\textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{red}{0} & 0 & \textcolor{RoyalBlue}{1}\\
+			\textcolor{purple}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & \textcolor{red}{0} & 0 & 0\\
+			\textcolor{red}{0} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0\\ 
+			\textcolor{red}{0} & 0 & 0 & 0 & \textcolor{purple}{1} & 0 & \textcolor{RoyalBlue}{1}\\
+			\textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & \textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0\\
 			\end{bmatrix}$&
 			$\longleftrightarrow$ &
 			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/exT-shape.png}} &
@@ -193,7 +187,14 @@
 	\end{enumerate}
 	\mybfff{\circled{i} Line-shape} \\
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
-			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/L-shape.png}}&
+			$\begin{bmatrix}
+			\textcolor{red}{0} & \textcolor{purple}{1} & \textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{red}{0} & \textcolor{red}{0} & \textcolor{purple}{1}\\
+			\textcolor{RoyalBlue}{1} & \textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & \textcolor{red}{0}\\
+			0 & \textcolor{red}{0} & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{purple}{1}\\
+			0 & \textcolor{purple}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{red}{0}\\ 
+			0 & \textcolor{red}{0} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & \textcolor{red}{0}\\
+			\textcolor{RoyalBlue}{1} & \textcolor{red}{0} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{red}{0}\\
+			\end{bmatrix}$ &
 			$\longmapsto$ &
 			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/Line-shape.png}} &
 			$\xmapsto{H-deletion}$ &
@@ -234,12 +235,12 @@
 	\mybfff{\circled{ii} T-shape} \\
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
 			$\begin{bmatrix}
-			\textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & 0\\
-			0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1}\\
-			\textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & 0\\
-			0 & 0 & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & 0\\ 
-			0 & 0 & 0 & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1}\\
-			0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & 0\\
+			\textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{purple}{1} & \textcolor{red}{0} & \textcolor{red}{0}\\
+			\textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0 & 0 & \textcolor{red}{0} & 0 & \textcolor{RoyalBlue}{1}\\
+			\textcolor{purple}{1} & 0 & 0 & \textcolor{RoyalBlue}{1} & \textcolor{red}{0} & 0 & 0\\
+			\textcolor{red}{0} & 0 & \textcolor{RoyalBlue}{1} & 0 & \textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0\\ 
+			\textcolor{red}{0} & 0 & 0 & 0 & \textcolor{purple}{1} & 0 & \textcolor{RoyalBlue}{1}\\
+			\textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0 & \textcolor{RoyalBlue}{1} & \textcolor{red}{0} & \textcolor{RoyalBlue}{1} & 0\\
 			\end{bmatrix}$&
 			$\longmapsto$ &
 			\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/T-shape.png}} &

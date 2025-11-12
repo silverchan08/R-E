@@ -60,7 +60,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Stacked Tangle of an $\theta$-Curve}
 	\term{Stacked tangle} of an $\theta$-curve is stacked disks each with the frame as boundary with following properties:
 	\begin{columns}
 		\begin{column}{0.8\textwidth}
@@ -83,7 +83,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Stacked Tangle of an $\theta$-Curve}
 	\term{Simple closure} of stacked tangle is a \term{stacked tangle} with \term{caps} satisfying following properties:
 	\vspace*{-10pt}
 	\begin{columns}
@@ -107,7 +107,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Stacked Tangle of an $\theta$-Curve}
 	\begin{prop}
 		A reduced simple closure of a stacked tangle
 		can be obtained a simple closure of a stacked tangle without any nested caps by applying Reidemaister Moves.
@@ -152,7 +152,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Lower Bounds from Yamada Polynomial}
 	\begin{prop}
 		Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$ \myem{without nested caps}.
 		Then
@@ -171,7 +171,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\textbf{Basis Step:}
 	\begin{itemize}
 		\item If $c_s + c_{ss} = 0$, then $S_T$ has no simple disks and is equivalent to the result of applying $\myem{Y14}$ to \raisebox{-3pt}{\includegraphics[height=12pt]{y6}}. \\
@@ -183,7 +183,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\textbf{Inductive Step:}
 	
     Assume that it holds for any $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and $c_s + c_{ss} > 0$.
@@ -195,7 +195,7 @@
 	$$\includegraphics[width=.3\linewidth]{induction_disks.png}$$
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\begin{enumerate}
 		\item[\mybf{CASE 1.}] \mybf{Suppose that there is no cap between $D_s$ and $D$.}
 	\end{enumerate}
@@ -222,7 +222,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\begin{enumerate}
 		\item[\mybf{CASE 2.}] \mybf{Suppose that there is a cap between $D_s$ and $D$.}
 	\end{enumerate}
@@ -241,7 +241,7 @@
 		\end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\begin{itemize}
 		\item By induction hypothesis,
 		\begin{align*}
@@ -256,7 +256,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\mybff{\circled{2} $D$ is not a simple disk.}
 
 	\begin{itemize}
@@ -271,7 +271,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\begin{itemize}
 		\item By induction hypothesis, in the first case,
 		\begin{align*}
@@ -310,7 +310,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\begin{itemize}
 		\item Take a cap and add a positive or negative curl
 			$$\raisebox{-1cm}{\includegraphics[height=2cm]{ST1_new}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST2_new}}$$
@@ -347,7 +347,7 @@
 % 	\hfill\qed		
 % \end{frame}
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	$$
 	\begin{tabu} to .6\linewidth {X[2,l]|X[c]|X[c]} \hline
 	 & $S_T^{neg}$ & $S_T^{pos}$\\\hline
@@ -394,7 +394,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\mybff{\circled{1} Let $T$ be any $\theta$-curve.}
 
 	Consider the maximum number of crossings in $S_T$.
@@ -418,12 +418,12 @@
 	\end{align*}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Proof of Theorem}
 	\mybff{\circled{2} Let $T$ be any handcuff graph.}
 
 	Consider the maximum number of crossings in $S_T$.
 
-	\begin{itemize}
+	\begin{itemize}{Proof of Theorem}
 		\item number of crossings by two simple disks : $\binom{\alpha(T)-3}{2}	 = \frac12\left(\alpha(T)-3\right)\left(\alpha(T)-4\right)$
 		\item number of crossings by a simple disk and non-simple disk : $2\left(\alpha(T)-3\right)$
 		\item number of crossings by two non-simple disks : $1$

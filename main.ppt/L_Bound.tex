@@ -1,0 +1,444 @@
+\section{Lower Bounds of Arc Index}
+
+\begin{frame}{Lower Bounds from Constituent Knots}
+	\begin{thm}
+		Let $T$ be any $\theta$-curve
+		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
+		Then
+		\[
+			\alpha(T) \ge \max_{i\in\{1,2,3\}} \alpha(K_i) + 1
+		\]
+	\end{thm}
+	
+
+	\mypf
+
+	\begin{tabu}{X[c]X[c]X[c]X[c]}
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{openbook.png}} &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{openbook_k1.png}} &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{openbook_k2.png}} &
+			\raisebox{-1.5cm}{\includegraphics[height=3cm]{openbook_k3.png}}
+	\end{tabu}
+	\hfill\qed
+\end{frame}
+
+
+\begin{frame}
+	\bigskip
+	\begin{thm}
+		Let $T$ be any $\theta$-curve
+		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
+		Then
+		\[
+			\centerline{$\displaystyle\alpha(T) \ge \frac12 \sum_{i=1}^3\alpha(K_i)$}
+		\]
+	\end{thm}
+	
+	\mypf
+
+	\begin{itemize}
+		\item A minimal arc presentation of $T$ is given.
+		\item $K_1 = e_1\cup e_2$, $K_2 = e_2\cup e_3$, and $K_3 = e_3\cup e_1$.
+		\item $S_i$ be the set of half plane corresponding the edge $e_i$.
+		\item $S_i\cup S_{i+1}$ form an arc presentation of the knot $K_i$.
+		\item $\alpha(K_i) \le |S_i| + |S_{i+1}|$
+	\end{itemize}
+	\[
+		\sum_{i=1}^3 \alpha(K_i) \le 2\sum_{i=1}^3|S_i| = 2 \alpha(T)
+	\]
+	\hfill\qed
+\end{frame}
+
+
+\begin{frame}{Stacked Tangle of an $\theta$-Curve}
+	\begin{tabu}{X[c,8]X[c,8]X[c,10]X[c,10]}
+		\includegraphics[width=\linewidth]{stacked_tangle.png} & \includegraphics[width=\linewidth]{stacked_tangle2.png} & \includegraphics[width=\linewidth]{stacked.png} & \includegraphics[width=\linewidth]{stacked_theta.png}\\
+		\multicolumn{2}{c}{Stacked Tangle of a Link} & \multicolumn{2}{c}{Stacked Tangle of a $\theta$-Curve}
+	\end{tabu}
+	\seprule
+	\tiny{Figure from \cite{arc_kauffman}}
+\end{frame}
+
+
+\begin{frame}
+	\term{Stacked tangle} of an $\theta$-curve is stacked disks each with the frame as boundary with following properties:
+	\begin{columns}
+		\begin{column}{0.8\textwidth}
+			\begin{itemize}
+				\item Only two disk called \term{non-simple disks} contain one vertex and three line segments which joins the vertex and boundary point.
+				\item One of the non-simple discs is at the top.
+				\item Other disks called \term{simple disks} contain simple arc which joins two points on the boundary.
+				\item When view from above
+				\begin{itemize}
+					\item two arcs in different simple disks intersect at most one point(by RII)
+					\item arc in simple disk and tree in non-simple disk intersect at most one point(by RV)
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{0.2\textwidth}
+			$$\includegraphics[width=\linewidth]{stacked.png}$$
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}
+	\term{Simple closure} of stacked tangle is a \term{stacked tangle} with \term{caps} satisfying following properties:
+	\vspace*{-10pt}
+	\begin{columns}
+		\begin{column}{.8\textwidth}
+			\begin{itemize}
+				\item A \term{cap} is a simple arc in outside of stacked tangle joining end points of arcs or line segments.
+				\item When view from above any tow caps have no intersection.
+			\end{itemize}					
+			Then a simple closure of a stacked tangle \myem{without any nested caps} is corresponding to an arc presentation.
+		\end{column}
+
+	\begin{column}{.2\textwidth}
+		$$\includegraphics[width=\linewidth]{stacked_theta.png}$$
+	\end{column}
+	\end{columns}
+	A \term{reduced simple closure of a stacked tangle} is 
+	\begin{itemize}
+		\item a simple closure of a stacked tangle \myem{without any nested caps}
+		\item any two arcs(including line segment) joining by caps have \myem{no intersection} when view from above
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\begin{prop}
+		A reduced simple closure of a stacked tangle
+		can be obtained a simple closure of a stacked tangle without any nested caps by applying Reidemaister Moves.
+	\end{prop}
+	\mypf
+	\vspace*{-12pt}
+	$$\raisebox{-.13\textheight}{\includegraphics[height=.26\textheight]{reduced_stacked1.png}}\qquad\raisebox{-.3\textheight}{\includegraphics[height=.6\textheight]{reduced_stacked2.png}}\qquad\raisebox{-.2\textheight}{\includegraphics[height=.4\textheight]{reduced_stacked3.png}}$$
+	\hfill\qed
+\end{frame}
+
+
+\begin{frame}{Yamada Polynomials}
+	Let $D_T$ be a diagram of an $\theta$-curve $T$.
+	Then, the \term{Yamada Polynomial $R(D_T)\in \mathbf{Z}\left[x^{\pm1}\right]$} is calculated by the following properties:
+	\begin{itemize}
+		\item \myem{Y6:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y6}}\right)= - (x+1+x^{-1})(x + x^{-1}) = -x^2 - x - 2 - x^{-1} - x^{-2}$\hfill \myem{Y7:} $R\left(\raisebox{-1.5pt}{\includegraphics[height=8pt]{y7}}\right)=0$
+		\item \myem{Y8:} $R(T'\cup\bigcirc) = (x+1+x^{-1})R(T')$ for an arbitrary $\theta$-curve diagram $T'$
+		\item \myem{Y9:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y91}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y92}}\right)=(x-x^{-1})\left[R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y93}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y94}}\right)\right]$
+		\item \myem{Y10:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y101}}\right) = x^2 R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y103}}\right)$,\quad
+		$R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y102}}\right) = x^{-2} R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y103}}\right)$
+		\item \myem{Y11:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y111}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y93}}\right)$\hfill
+		\myem{Y12:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y121}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y122}}\right)$
+		\item \myem{Y13:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y131}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y132}}\right)$,\quad $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y133}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y134}}\right)$
+		\item \myem{Y14:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y141}}\right) = -x R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y143}}\right)$,\quad $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y142}}\right) = -x^{-1}R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y143}}\right)$
+	\end{itemize}
+
+	\begin{prop}[\cite{yamada}]
+		$R(D_T)$ is an ambient isotopy invariant of $T$ up to multiplying $(-x)^n$ for some integer $n$.
+	\end{prop}
+\end{frame}
+
+
+\begin{frame}{Lower Bounds from Yamada Polynomial}
+	\begin{thm}
+	Let $T$ be any $\theta$-curve.
+	Then
+	\[
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) + 4} \le \alpha(T)
+	\]
+	where $R(T)$ is a Yamada Polynomial of the $\theta$-curve $T$.
+	\end{thm}	
+\end{frame}
+
+
+\begin{frame}
+	\begin{prop}
+		Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$ \myem{without nested caps}.
+		Then
+		\[
+			\max\deg_x R(S_T) \le c + n, \quad
+			\min\deg_x R(S_T) \ge -(c + n),
+		\]
+		where \myem{$c, n$} is the number of caps and crossings in $S_T$, respectively.
+	\end{prop}
+
+	\mypf
+	\begin{itemize}
+		\item Use double mathematical induction of $(c_s + c_{ss}, n)$.
+        $$\includegraphics[width=.4\linewidth]{simplecap.png}$$
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\textbf{Basis Step:}
+	\begin{itemize}
+		\item If $c_s + c_{ss} = 0$, then $S_T$ has no simple disks and is equivalent to the result of applying $\myem{Y14}$ to \raisebox{-3pt}{\includegraphics[height=12pt]{y6}}. \\
+		      $\therefore R(S_T) = -x^{\pm 3} \left[ -x^2 - x - 2 - x^{-1} - x^{-2} \right] \implies 5 \le c + n$.
+		\item If $n = 0$, then $S_T$ is equivalent to $\raisebox{-1.5pt}{\includegraphics[height=8pt]{y7}}\cup\bigcirc\cup\cdots\cup\bigcirc$. \\
+		      $\therefore R(S_T) = 0 \implies 0 < 2 \le c + n$.
+	\end{itemize}
+	All base cases satisfy the inequality.
+\end{frame}
+
+
+\begin{frame}
+	\textbf{Inductive Step:}
+	
+    Assume that it holds for any $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and $c_s + c_{ss} > 0$.
+
+	Let \myem{$S_T$} be a \myem{simple closure of stacked tangle} of a $\theta$-curve or handcuff graph \myem{$T$} such that
+	the number of simple caps, semi-simple caps, and crossings are \myem{$c_s$, $c_{ss}$, $n$}, respectively.
+
+	Take the topmost \myem{simple disk $D_s$} connected to the top disk, and a \myem{disk $D$} directly above $D_s$.
+	$$\includegraphics[width=.3\linewidth]{induction_disks.png}$$
+\end{frame}
+
+\begin{frame}
+	\begin{enumerate}
+		\item[\mybf{CASE 1.}] \mybf{Suppose that there is no cap between $D_s$ and $D$.}
+	\end{enumerate}
+	
+	\mybff{\circled{1} Suppose that there is no intersection between $D_s$ and $D$ in $S_T$.}
+	\begin{itemize}
+		\item $D_s$ and $D$ do not affect each other.
+		\item We can swap the position of $D_s$ and $D$ without affecting the rest of the diagram.
+	\end{itemize}
+
+	\mybff{\circled{2} Suppose that there is an intersection between $D_s$ and $D$ in $S_T$.}
+	\begin{itemize}
+		\item Let $S_T^-$, $S_T^0$ and $S_T^\infty$ be the simple closure of stacked tangle which is obtained by replacing \raisebox{-3pt}{\includegraphics[height=12pt]{y91}} with \raisebox{-3pt}{\includegraphics[height=12pt]{y92}}, \raisebox{-3pt}{\includegraphics[height=12pt]{y93}} and \raisebox{-3pt}{\includegraphics[height=12pt]{y94}}, respectively.
+		\item The simple caps, semi-simple caps, and crossings of the both are \myem{$c_{s}, c_{ss}, n-1$}.
+		\item Applying $\myem{Y9}$
+		\[ R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y91}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y92}}\right)=(x-x^{-1})\left[R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y93}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y94}}\right)\right], \]
+		then
+		\[ R(S_T)-R(S_T^-) = (x-x^{-1})(R(S_T^0) - R(S_T^\infty)). \]
+		\item Then, it is sufficient to show that the interchanged one holds.
+		% 여기에서 induction hypothesis에 의해 교차 바꾼것도 성립한다고 언급.
+		% 이후 circled{1}, {2}에 의해 계속 디스크의 위치를 올려나갈 수 있고, 그러다 보면 언젠가 cap이 생기거나 top disk를 만나는데,
+		% 후자의 경우도 어차피 top disk가 D_s와 cap을 갖는다는 가정에 의해 cap이 있음.
+		% 따라서 D_s와 D가 cap을 갖는 경우만 살펴봐도 충분하다고 언급.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{enumerate}
+		\item[\mybf{CASE 2.}] \mybf{Suppose that there is a cap between $D_s$ and $D$.}
+	\end{enumerate}
+		\mybff{\circled{1} Suppose that $D$ is a simple disk.}
+		\begin{itemize}
+			\item When view from above, there are three cases:
+			$$\includegraphics[width=.5\linewidth]{three_cases.png}$$
+			\item After applying \myem{Y10}, the second and third cases can be regarded as the first case, and the cap can be reduced.
+			% 이거 사용법 뭐임??
+			$$\begin{tabu}to .8\linewidth {X[3,c]X[c]X[2,c]}
+			$\includegraphics[width=1.8cm]{simple_simple1.png}$ \raisebox{.4cm}{or} $\includegraphics[width=1.8cm]{simple_simple2.png}$ &
+			\raisebox{.4cm}{$\longrightarrow$} & $\raisebox{-.1cm}{\includegraphics[width=1.8cm]{simple_simple.png}}$ \\
+			$S_T$ &  & $S_T'$
+			\end{tabu}$$
+			\item $S_T'$ has $c-1$ caps, $c_s-1$ simple caps, $c_{ss}$ semi-simple caps and $n-1$ crossings.
+		\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item By induction hypothesis,
+		\begin{align*}
+			\max\deg_xR(S_T) &= \max\deg_xR(S_T') \pm 2 \\
+			&\le \left[ (c-1) + (n-1) \right] \pm 2 \\
+			&\le c + n, \\
+			\min\deg_xR(S_T) &= \min\deg_xR(S_T') \pm 2 \\
+			&\ge -\left[ (c-1) + (n-1) \right] \pm 2 \\
+			&\ge -(c + n).
+		\end{align*}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\mybff{\circled{2} $D$ is not a simple disk.}
+
+	\begin{itemize}
+		\item When viewed from above, all the cases can be reduced as follows.
+		$$\begin{tabu}to .8\linewidth {X[7,c]X[c]X[2,c]X[c]X[7,c]X[c]X[2,c]}
+		$\includegraphics[width=1.1cm]{DDQ11.png}$ \raisebox{.4cm}{or} $\raisebox{-.2cm}{\includegraphics[width=1cm]{DDQ12.png}}$ & \raisebox{.4cm}{$\longrightarrow$} & $\includegraphics[width=1cm]{DDQ15.png}$ & & $\includegraphics[height=1cm]{DDQ13.png}$ \raisebox{.4cm}{or} $\raisebox{-.2cm}{\includegraphics[width=1cm]{DDQ14.png}}$ & \raisebox{.4cm}{$\longrightarrow$} & $\includegraphics[width=1cm]{DDQ15.png}$\\
+		$S_T$ &  & $S_T'$ &  & $S_T$ &  & $S_T''$
+		\end{tabu}$$
+		\item $R(S_T) = -x^{\pm1} R(S_T')$ and $R(S_T) = x^{\pm2}R(S_T'')$ by \myem{Y14} and \myem{Y10}, respectively.
+		\item Both of $S_T'$ and $S_T''$ have $c-1$ caps, $c_s$ simple caps, $c_{ss}-1$ semi-simple caps, and $n-1$ crossing.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\begin{itemize}
+		\item By induction hypothesis, in the first case,
+		\begin{align*}
+		\max\deg_x R(S_T) & = \max\deg_x R(S_T') \pm 1\\
+		 & \le \left[(c-1) + (n-1)\right] \pm 1\\
+		 & \le c + n.
+		\end{align*}
+		\item Similarly, in the second case,
+		\begin{align*}
+		 \max\deg_x R(S_T) & = \max\deg_x R(S_T'') \pm 2\\
+		 & \le \left[(c-1) + (n-1)\right] \pm 2\\
+		 & \le c + n.
+		\end{align*}
+		\item It holds for $\min\deg_x R(S_T)$ in the same way.
+	\end{itemize}
+\hfill\qed
+\end{frame}
+
+\begin{frame}
+	\begin{prop}
+		Let $S_T$ be a reduced simple closure of stacked tangle of a $\theta$-curve $T$
+		corresponding to minimal arc presentation of $T$.
+		Then
+		\[
+			\max\deg_xR(S_T) - \min\deg_xR(S_T) - 2n \le \alpha(T)
+			% \max\deg_xR(S_T) - \min\deg_xR(S_T) -2n + 4 \le 3\alpha(T)
+		\]
+		where $n$ is the number of crossings in $S_T$.
+	\end{prop}
+	\mypf
+
+	\begin{itemize}
+		\item $S_T$ is a reduced simple closure of stacked tangle corresponding to minimal arc presentation.
+		\item The number of caps $c$ in $S_T$ is exactly arc index of $T$, $\alpha(T)$.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\begin{itemize}
+		\item Take a cap and add a positive or negative curl
+			$$\raisebox{-1cm}{\includegraphics[height=2cm]{ST1_new}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST2_new}}$$
+			% $$\raisebox{-1cm}{\includegraphics[height=2cm]{ST1}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST2}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST3}}$$
+		\item After modification of diagram as above, resulting diagram is also a simple closure of stacked tangle.
+		% \item The number of caps is increased by $2$ and then number of crossings is increased by $1$. 
+		\item The number of crossings is increased by $1$. 
+		\item $p$ of the caps yield a negative curl, and the remaining $c-p$ yield a positive curl.
+		\item $S_T^{neg}$($S_T^{pos}$) is the diagram obtained by inserting the $p$ negative($c-p$ positive) curls.
+	\end{itemize}
+\end{frame}
+
+
+% \begin{frame}
+% 	$$
+% 	\begin{tabu} to .6\linewidth {X[2,l]|X[c]|X[c]} \hline
+% 	 & $S_T^{neg}$ & $S_T^{pos}$\\\hline
+% 	 Number of Caps & $c+2p$ & $c+2(c-p)$\\\hline
+% 	 Number of Crossings & $n+p$ & $n+(c-p)$ \\\hline
+% 	\end{tabu}
+% 	$$
+% 	\begin{itemize}
+% 		\item $R\left(S_T^{neg}\right) = x^{-2p}R(S_T)$ and $R\left(S_T^{pos}\right) = x^{2(c-p)}R(S_T)$
+% 	\end{itemize}
+% 	\begin{align*}
+% 		\min\deg_xR(S_T) - 2p & = \min\deg_xR\left(S_T^{neg}\right)\\
+% 		& \ge -(c+2p) - (n+p) + 2\\
+% 		\max\deg_xR(S_T) + 2(c-p) & = \max\deg_xR\left(S_T^{pos}\right)\\
+% 		& \le \left[c+2(c-p)\right] + \left[n+(c-p)\right] - 2\\
+% 		\min\deg_xR(S_T) & \ge -c - n - p + 2 \\
+% 		\max\deg_xR(S_T) & \le 2c + n - p - 2 \\
+% 		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le 3c + 2n -4 
+% 	\end{align*}
+% 	\hfill\qed		
+% \end{frame}
+
+\begin{frame}
+	$$
+	\begin{tabu} to .6\linewidth {X[2,l]|X[c]|X[c]} \hline
+	 & $S_T^{neg}$ & $S_T^{pos}$\\\hline
+	 Number of Caps & $c$ & $c$\\\hline
+	 Number of Crossings & $n+p$ & $n+(c-p)$ \\\hline
+	\end{tabu}
+	$$
+	\begin{itemize}
+		\item $R\left(S_T^{neg}\right) = x^{-2p}R(S_T)$ and $R\left(S_T^{pos}\right) = x^{2(c-p)}R(S_T)$
+	\end{itemize}
+	\begin{align*}
+		\min\deg_xR(S_T) - 2p & = \min\deg_xR\left(S_T^{neg}\right)\\
+		& \ge -c + - (n+p)\\
+		\max\deg_xR(S_T) + 2(c-p) & = \max\deg_xR\left(S_T^{pos}\right)\\
+		& \le c + \left[n+(c-p)\right]\\
+		\min\deg_xR(S_T) & \ge -c - n + p \\
+		\max\deg_xR(S_T) & \le n + p \\
+		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le c + 2n
+	\end{align*}
+	\hfill\qed		
+\end{frame}
+
+
+\begin{frame}{Proof of Theorem}
+	\begin{thm}
+	Let $T$ be any $\theta$-curve or handcuff graph.
+	Then
+	\[
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} \le \alpha(T)
+	\]
+	where $R(T)$ is a Yamada Polynomial of $T$.
+	\end{thm}	
+
+	\mypf
+
+	Let $S_T$ be a reduce simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$
+	corresponding to minimal arc presentation of $T$.
+
+	\begin{itemize}
+		\item The number of caps : $\alpha(T)$
+		\item The number of non-simple disks : $2$
+		\item The number of simple disks : $\alpha(T)-3$
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\mybff{\circled{1} Let $T$ be any $\theta$-curve.}
+
+	Consider the maximum number of crossings in $S_T$.
+
+	\begin{itemize}
+		\item number of crossings by two simple disks : $\binom{\alpha(T)-3}{2}	 = \frac12\left(\alpha(T)-3\right)\left(\alpha(T)-4\right)$
+		\item number of crossings by a simple disk and non-simple disk : $2\left(\alpha(T)-3\right)$
+		\item number of crossings by two non-simple disks : $2$
+		\item number of crossings counted by disks joined by cap : $\alpha(T)-2$
+	\end{itemize}
+
+	Thus
+	\begin{align*}
+		n & \le \frac12\left(\alpha(T)-3\right)\left(\alpha(T)-4\right) + 2\left(\alpha(T)-3\right) + 2 - (\alpha(T)-2)\\
+		& = \frac12\left[(\alpha(T))^2 - 5\alpha(T) + 8\right]
+	\end{align*}
+	By Lemma,
+	\begin{align*}
+		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le 2n + \alpha(T) \le \alpha(T)^2 - 4\alpha(T) + 8 \\
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} & \le \alpha(T)
+	\end{align*}
+\end{frame}
+
+\begin{frame}
+	\mybff{\circled{2} Let $T$ be any handcuff graph.}
+
+	Consider the maximum number of crossings in $S_T$.
+
+	\begin{itemize}
+		\item number of crossings by two simple disks : $\binom{\alpha(T)-3}{2}	 = \frac12\left(\alpha(T)-3\right)\left(\alpha(T)-4\right)$
+		\item number of crossings by a simple disk and non-simple disk : $2\left(\alpha(T)-3\right)$
+		\item number of crossings by two non-simple disks : $1$
+		\item number of crossings counted by disks joined by cap : $\alpha(T)-1-2 = \alpha(T)-3$
+	\end{itemize}
+
+	Thus
+	\begin{align*}
+		n & \le \frac12\left(\alpha(T)-3\right)\left(\alpha(T)-4\right) + 2\left(\alpha(T)-3\right) + 1 - (\alpha(T)-3)\\
+		& = \frac12\left[(\alpha(T))^2 - 5\alpha(T) + 8\right]
+	\end{align*}
+	By Lemma,
+	\begin{align*}
+		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le 2n + \alpha(T) \le \alpha(T)^2 - 4\alpha(T) + 8 \\
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} & \le \alpha(T)
+	\end{align*}
+	\hfill\qed
+\end{frame}

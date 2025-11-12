@@ -124,7 +124,7 @@
     %\textbf{Knot} is an embedding of a circle in 3-dimensional Euclidean space.
     %In \textbf{Knot Theory}, people classify each knot using their \textbf{Knot Invariant}. \\
     \begin{itemize}
-      \item \textbf{Theta-curve}
+      \item \textbf{$\theta$-curve}
       \begin{figure}[h]
       \centering
       \includegraphics[width=0.8\textwidth]{figure/theta_exe.png}
@@ -134,7 +134,7 @@
       \begin{figure}[h]
       \centering
       \includegraphics[width=0.8\textwidth]{figure/handcufflist.png}
-      \caption{$\theta$-Curves}
+      \caption{Handcuff graphs}
       \end{figure}
     \end{itemize}
   \end{block}
@@ -160,16 +160,19 @@
 
 
   \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
-  \textbf{H-deletion matrix}
-  \vspace{0.33em}
-  
-  $\mathbf{Theorem\ 1.}$ Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
-  $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
+  \begin{itemize}
+    \item \textbf{Cromwell matrix}
+    \item \textbf{H-deletion matrix}
+  \end{itemize}
+
   \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
     \caption{H-deletion of $\theta$-curve graph $3_1$}
   \end{figure}
+
+  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a cromwell matrix of $K$ is $0$ or $\pm 2$.
+  
   \end{block}
   \column{0.33\textwidth}
 
@@ -200,14 +203,20 @@
   %   %\item \textbf{Simple closure}: The planar projection of the stacked tangle without any nested caps
   %   \end{itemize}
   % \end{block}
+  \begin{block}
+  $$\mathbf{Theorem\ 2.}$
+  Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
+  $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
+  \end{block}
+  
   \begin{block}{Bounds of Arc Index}
-  $\mathbf{Theorem\ 2.}$ $[$3$]$ For any spatial graph $G$, 
+  $\mathbf{Theorem\ 3.}$ $[$3$]$ For any spatial graph $G$, 
   \begin{equation*}
     \alpha(H) \leq c(H) + e + b
   \end{equation*}
   where $\alpha (G)$, $c(G)$ are each arc index, crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
   
-  $\mathbf{Corollary\ 1.}$ For non-trivial handcuff graph $H$,
+  $\mathbf{Corollary\ 4.}$ For non-trivial handcuff graph $H$,
   \begin{equation*}
     \alpha(H) \leq c(H) + 3
   \end{equation*}

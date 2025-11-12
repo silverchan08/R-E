@@ -1,6 +1,6 @@
 \section{Lower and Upper Bounds of Arc Index}
 
-\begin{frame}{Lower Bounds from Constituent Knots}
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
 	\begin{thm}
 		Let $T$ be any $\theta$-curve
 		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
@@ -22,8 +22,24 @@
 	\hfill\qed
 \end{frame}
 
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
+	\begin{thm}
+		Let $H$ be any handcuff graph
+		and $L$ be constituent link of $H$.
+		Then
+		\[
+			\alpha(H) \ge \alpha(L) + 1
+		\]
+	\end{thm}
+	
 
-\begin{frame}
+	\mypf
+	It is similar to the previous proof.
+	\hfill\qed
+\end{frame}
+
+
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
 	\bigskip
 	\begin{thm}
 		Let $T$ be any $\theta$-curve
@@ -41,14 +57,53 @@
 		\item $K_1 = e_1\cup e_2$, $K_2 = e_2\cup e_3$, and $K_3 = e_3\cup e_1$.
 		\item $S_i$ be the set of half plane corresponding the edge $e_i$.
 		\item $S_i\cup S_{i+1}$ form an arc presentation of the knot $K_i$.
-		\item $\alpha(K_i) \le |S_i| + |S_{i+1}|$
 	\end{itemize}
 	\[
-		\sum_{i=1}^3 \alpha(K_i) \le 2\sum_{i=1}^3|S_i| = 2 \alpha(T)
+		\alpha(K_i) \le |S_i| + |S_{i+1}| \implies \sum_{i=1}^3 \alpha(K_i) \le 2\sum_{i=1}^3|S_i| = 2 \alpha(T)
 	\]
 	\hfill\qed
 \end{frame}
 
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
+	\bigskip
+	\begin{thm}
+		If $L$ is an alternating and non-split link, then
+		\[
+			\alpha(L) = c(L) + 2.
+		\]
+	\end{thm}
+	
+	$$\includegraphics[width=0.3\linewidth]{hopf.png}$$
+\end{frame}
+
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
+	\bigskip
+	\begin{thm}
+		Let $H$ be any handcuff graph, and $L$ be the constituent link of $H$.
+		If $L$ is an alternating and non-split link, then
+		\[
+			\alpha(H) \ge c(L) + 3.
+		\]
+	\end{thm}
+	
+	\mypf
+	\begin{itemize}
+		\item We know $\alpha(H) \ge \alpha(L) + 1$.
+		\item By the previous theorem, $\alpha(L) = c(L) + 2$.
+		\item Thus, $\alpha(H) \ge c(L) + 3$.
+	\end{itemize}
+	\hfill\qed
+\end{frame}
+
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
+	\bigskip
+	\begin{corollary}
+		Let $H$ be any handcuff graph, and $L$ be a constituent link of $T$. If $L$ is alternating and non-split,
+		\[
+			\alpha(H) = c(L) + 3.
+		\]
+	\end{corollary}
+\end{frame}
 
 \begin{frame}{Stacked Tangle of an $\theta$-Curve}
 	\begin{tabu}{X[c,8]X[c,8]X[c,10]X[c,10]}
@@ -192,7 +247,7 @@
 	the number of simple caps, semi-simple caps, and crossings are \myem{$c_s$, $c_{ss}$, $n$}, respectively.
 
 	Take the topmost \myem{simple disk $D_s$} connected to the top disk, and a \myem{disk $D$} directly above $D_s$.
-	$$\includegraphics[width=.3\linewidth]{induction_disks.png}$$
+	$$\includegraphics[width=.25\linewidth]{induction_disks.png}$$
 \end{frame}
 
 \begin{frame}{Proof of Theorem}
@@ -229,7 +284,7 @@
 		\mybff{\circled{1} Suppose that $D$ is a simple disk.}
 		\begin{itemize}
 			\item When view from above, there are three cases:
-			$$\includegraphics[width=.5\linewidth]{three_cases.png}$$
+			$$\includegraphics[width=.4\linewidth]{three_cases.png}$$
 			\item After applying \myem{Y10}, the second and third cases can be regarded as the first case, and the cap can be reduced.
 			% 이거 사용법 뭐임??
 			$$\begin{tabu}to .8\linewidth {X[3,c]X[c]X[2,c]}
@@ -365,9 +420,8 @@
 		& \le c + \left[n+(c-p)\right]\\
 		\min\deg_xR(S_T) & \ge -c - n + p \\
 		\max\deg_xR(S_T) & \le n + p \\
-		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le c + 2n
-	\end{align*}
-	\hfill\qed		
+		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le c + 2n \quad \quad \quad \quad \quad \quad \quad \qed
+	\end{align*}	
 \end{frame}
 
 
@@ -423,7 +477,7 @@
 
 	Consider the maximum number of crossings in $S_T$.
 
-	\begin{itemize}{Proof of Theorem}
+	\begin{itemize}
 		\item number of crossings by two simple disks : $\binom{\alpha(T)-3}{2}	 = \frac12\left(\alpha(T)-3\right)\left(\alpha(T)-4\right)$
 		\item number of crossings by a simple disk and non-simple disk : $2\left(\alpha(T)-3\right)$
 		\item number of crossings by two non-simple disks : $1$
@@ -438,7 +492,6 @@
 	By Lemma,
 	\begin{align*}
 		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le 2n + \alpha(T) \le \alpha(T)^2 - 4\alpha(T) + 8 \\
-		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} & \le \alpha(T)
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} & \le \alpha(T) \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \qed
 	\end{align*}
-	\hfill\qed
 \end{frame}

@@ -165,6 +165,7 @@
 
 	\mypf
 	\begin{itemize}
+		\item Let \myem{$c_s, c_{ss}$} be the number of \myem{simlpe caps} and \myem{semi-simple caps}, repectively.
 		\item Use double mathematical induction of $(c_s + c_{ss}, n)$.
         $$\includegraphics[width=.4\linewidth]{simplecap.png}$$
 	\end{itemize}
@@ -172,13 +173,18 @@
 
 
 \begin{frame}
-	\textbf{Basis Step:}
-	\begin{itemize}
-		\item If $c_s + c_{ss} = 0$, then $S_T$ has no simple disks and is equivalent to the result of applying $\myem{Y14}$ to \raisebox{-3pt}{\includegraphics[height=12pt]{y6}}. \\
-		      $\therefore R(S_T) = -x^{\pm 3} \left[ -x^2 - x - 2 - x^{-1} - x^{-2} \right] \implies 5 \le c + n$.
-		\item If $n = 0$, then $S_T$ is equivalent to $\raisebox{-1.5pt}{\includegraphics[height=8pt]{y7}}\cup\bigcirc\cup\cdots\cup\bigcirc$. \\
-		      $\therefore R(S_T) = 0 \implies 0 < 2 \le c + n$.
-	\end{itemize}
+	\textbf{Basis Step:} \\
+	When $c_s + c_{ss} = 0$,
+		\begin{itemize}
+			\item $S_T$ has no simple disks.
+			\item $S_T$ is equivalent to the result of applying $\myem{Y14}$ to \raisebox{-3pt}{\includegraphics[height=12pt]{y6}}.
+			\item Thus, $R(S_T) = -x^{\pm 3} \left[ -x^2 - x - 2 - x^{-1} - x^{-2} \right] \implies 5 \le c + n$.
+		\end{itemize}
+	When $n = 0$,
+		\begin{itemize}
+			\item $S_T$ is equivalent to $\raisebox{-1.5pt}{\includegraphics[height=8pt]{y7}}\cup\bigcirc\cup\cdots\cup\bigcirc$.
+			\item Thus, $R(S_T) = 0 \implies 0 < 2 \le c + n$.
+		\end{itemize}
 	All base cases satisfy the inequality.
 \end{frame}
 

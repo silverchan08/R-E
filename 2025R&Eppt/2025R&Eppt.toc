@@ -1,4 +1,7 @@
 \babel@toc {american}{}\relax 
 \babel@toc {american}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Determinant of $\theta $-curve and Handcuff graph}{10}{0}{2}
+\beamer@sectionintoc {2}{Determinant of $\theta $-curve and Handcuff graph}{9}{0}{2}
+\beamer@sectionintoc {3}{Lower and Upper Bounds of Arc Index}{17}{0}{3}
+\beamer@sectionintoc {4}{Result}{20}{0}{4}
+\beamer@sectionintoc {5}{Further Research}{23}{0}{5}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 21:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1712,14 +1712,14 @@ Package microtype Info: Character `\guilsinglright ' is missing
 File: figure/theta_exe.png Graphic file (type bmp)
 <figure/theta_exe.png>
 
-Overfull \hbox (5.47012pt too wide) in paragraph at lines 30--30
+Overfull \hbox (5.47012pt too wide) in paragraph at lines 31--31
  [][]| 
  []
 
 File: figure/handcufflist.png Graphic file (type bmp)
 <figure/handcufflist.png>
 
-Overfull \hbox (28.79037pt too wide) in paragraph at lines 30--30
+Overfull \hbox (28.79037pt too wide) in paragraph at lines 31--31
  [][]| 
  []
 
@@ -1736,9 +1736,13 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <12> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 30.
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 31.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <8> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 30.
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 31.
+
+Overfull \vbox (12.16373pt too high) detected at line 31
+ []
+
 
 
 Package microtype Info: Character `\quotesinglbase ' is missing
@@ -1779,7 +1783,7 @@ File: figure/handcuff_openbook.png Graphic file (type bmp)
 File: figure/handcuff grid diagram.png Graphic file (type bmp)
 <figure/handcuff grid diagram.png>
 
-Overfull \vbox (13.09885pt too high) detected at line 78
+Overfull \vbox (13.09885pt too high) detected at line 79
  []
 
 
@@ -1794,7 +1798,7 @@ Overfull \vbox (13.09885pt too high) detected at line 78
 File: figure/grid_diagram_1.png Graphic file (type bmp)
 <figure/grid_diagram_1.png>
 
-Overfull \hbox (81.17671pt too wide) in paragraph at lines 106--106
+Overfull \hbox (81.17671pt too wide) in paragraph at lines 107--107
  [][]| 
  []
 
@@ -1802,7 +1806,7 @@ File: figure/grid_diagram_2.png Graphic file (type bmp)
 <figure/grid_diagram_2.png>
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 106.
+(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 107.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
@@ -1817,7 +1821,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \vbox (12.32135pt too high) detected at line 106
+Overfull \vbox (12.32135pt too high) detected at line 107
  []
 
 

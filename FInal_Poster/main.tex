@@ -210,65 +210,71 @@
   \end{block}
   
   \begin{block}{Bounds of Arc Index}
-  $\mathbf{Theorem\ 3.}$ $[$3$]$ For any spatial graph $G$, 
-  \begin{equation*}
-    \alpha(H) \leq c(H) + e + b
-  \end{equation*}
-  where $\alpha (G)$, $c(G)$ are each arc index, crossing number of $G$, $e$ is the number of edges, and $b$ is the number of bouquet cut-components.
-  
-  $\mathbf{Corollary\ 4.}$ For non-trivial handcuff graph $H$,
-  \begin{equation*}
-    \alpha(H) \leq c(H) + 3
-  \end{equation*}
+  $\mathbf{Theorem\ 3.}$
+  	Let $T$ be any $\theta$-curve. Then,
+      \[ \alpha(T) \le c(T) + 3. \]
 
- % $\mathbf{Theorem.}$ If H is handcuff, then 
- % \begin{equation*}
-  %  \alpha(H) \geq \frac{1+\sqrt{f(\alpha(H)) + 36c(H)}}{3}
- % \end{equation*}
-  %where
- % \begin{equation*}
-  %  f(x) =
-   % \begin{cases}
-  %  73 & (x \equiv 0 \pmod{6}) \\
- %   4 & (x \equiv 1 \pmod{6}) \\
- %   25 & (x \equiv 2 \pmod{6}) \\
- %   -8 & (x \equiv 3 \pmod{6}) \\
- %   49 & (x \equiv 4 \pmod{6}) \\
-  %  -20 & (x \equiv 5 \pmod{6})
- %   \end{cases}
- % \end{equation*}
+  $\mathbf{Theorem\ 4.}$
+    Let $H$ be any handcuff graph. Then,
+      \[ \alpha(H) \le c(H) + 5. \]
+      Especially, if the constituent link of $H$ is non-split,
+      \[ \alpha(H) \le c(H) + 3. \]
 
-  %$\mathbf{Theorem.}$ If $L$ is non-split alternating link, then 
-  %\begin{equation*}
-   % \alpha(L) = c(L)+2
-  %\end{equation*}
+  $\mathbf{Theorem\ 5.}$
+    Let $T$ be any non-trivial prime $\theta$-curve or handcuff graph. Then,
+      \[ \alpha(T) \le c(T) + 3. \]
 
+  $\mathbf{Theorem\ 6.}$ 		If $L$ is an alternating and non-split link, then
+		Let $T$ be any $\theta$-curve
+		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
+		Then
+		\[
+			\alpha(T) \ge \max_{i\in\{1,2,3\}} \alpha(K_i) + 1
+		\]
+ 
+  $\mathbf{Theorem\ 7.}$ 		If $L$ is an alternating and non-split link, then
+    Let $H$ be any handcuff graph
+		and $L$ be constituent link of $H$.
+		Then
+		\[
+			\alpha(H) \ge \alpha(L) + 1
+		\]
 
-  $\mathbf{Theorem\ 3.}$ Let $H$ be a handcuff graph and $L$ is link that connecting edge is deleted from $H$. If $L$ is non-split alternating, then 
-  \begin{equation*}
-    \alpha(H) \geq c(L) + 3
-  \end{equation*}
+  $\mathbf{Theorem\ 8.}$
+    Let $T$ be any $\theta$-curve
+		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
+		Then
+		\[
+			\centerline{$\displaystyle\alpha(T) \ge \frac12 \sum_{i=1}^3\alpha(K_i)$}
+		\]
 
-    $\mathbf{Definition\ 1.}$ $[$5$]$ For a graph $G$, let
-    \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)} \]
-    where $\mu(G)$, $\beta(G)$, and $E$ are the number of connected components, the first Betti number, and the edge set of $G$ each. Therefore, the \\
-    \textbf{Yamada polynomial} of $G$, $R(G)$, is defined by
-    \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
+  $\mathbf{Theorem\ 9.}$
+		If $L$ is an alternating and non-split link, then
+		\[
+			\alpha(L) = c(L) + 2.
+		\]
 
-    %\vspace{1em}
+  $\mathbf{Theorem\ 10.}$
+		Let $H$ be any handcuff graph, and $L$ be the constituent link of $H$.
+		If $L$ is an alternating and non-split link, then
+		\[
+			\alpha(H) \ge c(L) + 3.
+		\]
 
-    %$\mathbf{Theorem.}$ $[$5$]$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
+  $\mathbf{Corollary\ 1.}$
+		Let $H$ be any handcuff graph, and $L$ be a constituent link of $T$. If $L$ is alternating and non-split,
+		\[
+			\alpha(H) = c(L) + 3.
+		\]
 
-    %\vspace{1em}
-    
-    $\mathbf{Theorem\ 4.}$ $[$1$]$ Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph, and let $c, n$ be the number of caps and crossings in $S_T$, respectively. Then,
-     \[ \mathrm{spr}(R(S_T)) \leq c+2n \]
-     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. \\
+  $\mathbf{Theorem\ 11.}$
+	Let $T$ be any $\theta$-curve or handcuff graph.
+	Then
+	\[
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} \le \alpha(T)
+	\]
+	where $R(T)$ is a Yamada Polynomial of $T$.
 
-    %\vspace{1em}
-
-    $\mathbf{Corollary\ 2.}$ Let $G$ be a $\theta$-curve or handcuff graph. Then, the arc index of $G$ is bounded by
-      \[ \alpha(G) \geq 2 + \sqrt{\mathrm{spr}(R(G)) - 4}. \]
   \end{block}
 
   
@@ -281,7 +287,7 @@
     \end{itemize}
   \end{block}
 
-  \begin{block}{Refernces}
+  \begin{block}{References}
     \begin{enumerate}
       \item Yoonsang Lee. (2023). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
       \item Lee, H. J., Hong, K., Lee, H., \& Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.

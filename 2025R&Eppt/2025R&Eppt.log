@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  12 NOV 2025 21:23
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt
-(c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
+**c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt
+(c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1276,7 +1276,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 (c:/texlive/2025/texmf-dist/tex/latex/beamertheme-metropolis/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON technical note
-) (./2025R&Eppt.aux (./intro.aux))
+) (./2025R&Eppt.aux (./U_Bound.aux) (./L_Bound.aux))
 \openout1 = `2025R&Eppt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -1578,7 +1578,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:117: LaTeX Error: File `ksa_왼쪽로고3' not found.
+c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:117: LaTeX Error: File `ksa_왼쪽로고3' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1689,14 +1689,30 @@ Package microtype Info: Character `\guilsinglright ' is missing
 [1
 
 ]
-\openout2 = `intro.aux'.
+\openout2 = `U_Bound.aux'.
 
- (./intro.tex
+ (./U_Bound.tex
 
 [2
 
 
 ]
+
+LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
+(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 8.
+
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1709,8 +1725,6 @@ Package microtype Info: Character `\guilsinglleft ' is missing
 Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-File: figure/theta_exe.png Graphic file (type bmp)
-<figure/theta_exe.png>
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1723,10 +1737,6 @@ Package microtype Info: Character `\guilsinglleft ' is missing
 Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <12> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 17.
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <8> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 17.
 
 
 Package microtype Info: Character `\quotesinglbase ' is missing
@@ -1743,39 +1753,101 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 [3
 
-]
-File: figure/handcufflist.png Graphic file (type bmp)
-<figure/handcufflist.png>
+])
+\openout2 = `L_Bound.aux'.
 
+ (./L_Bound.tex
 
 [4
 
+
+
+
 ]
+File: figs/stacked_tangle.png Graphic file (type bmp)
+<figs/stacked_tangle.png>
+File: figs/stacked_tangle2.png Graphic file (type bmp)
+<figs/stacked_tangle2.png>
+File: figs/stacked.png Graphic file (type bmp)
+<figs/stacked.png>
+File: figs/stacked_theta.png Graphic file (type bmp)
+<figs/stacked_theta.png>
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+
+
+LaTeX Warning: Citation `arc_kauffman' on page 5 undefined on input line 10.
+
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <12> not available
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 10.
+LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <8> not available
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 10.
+
+Overfull \vbox (16.23721pt too high) detected at line 10
+ []
+
+
 
 [5
 
 ]
-File: figure/Trefoilimage.png Graphic file (type bmp)
-<figure/Trefoilimage.png>
-File: figure/trefoil arc presentation.png Graphic file (type bmp)
-<figure/trefoil arc presentation.png>
-File: figure/trefoil_grid.png Graphic file (type bmp)
-<figure/trefoil_grid.png>
-File: figure/theta52.png Graphic file (type bmp)
-<figure/theta52.png>
-File: figure/openbook.png Graphic file (type bmp)
-<figure/openbook.png>
-File: figure/grid.png Graphic file (type bmp)
-<figure/grid.png>
-File: figure/handcuff.png Graphic file (type bmp)
-<figure/handcuff.png>
-File: figure/handcuff_openbook.png Graphic file (type bmp)
-<figure/handcuff_openbook.png>
-File: figure/handcuff grid diagram.png Graphic file (type bmp)
-<figure/handcuff grid diagram.png>
+File: figs/y6.png Graphic file (type bmp)
+<figs/y6.png>
+File: figs/y7.png Graphic file (type bmp)
+<figs/y7.png>
+File: figs/y91.png Graphic file (type bmp)
+<figs/y91.png>
+File: figs/y92.png Graphic file (type bmp)
+<figs/y92.png>
+File: figs/y93.png Graphic file (type bmp)
+<figs/y93.png>
+File: figs/y94.png Graphic file (type bmp)
+<figs/y94.png>
+File: figs/y101.png Graphic file (type bmp)
+<figs/y101.png>
+File: figs/y103.png Graphic file (type bmp)
+<figs/y103.png>
+File: figs/y102.png Graphic file (type bmp)
+<figs/y102.png>
+File: figs/y103.png Graphic file (type bmp)
+<figs/y103.png>
+File: figs/y111.png Graphic file (type bmp)
+<figs/y111.png>
+File: figs/y93.png Graphic file (type bmp)
+<figs/y93.png>
+File: figs/y121.png Graphic file (type bmp)
+<figs/y121.png>
+File: figs/y122.png Graphic file (type bmp)
+<figs/y122.png>
+File: figs/y131.png Graphic file (type bmp)
+<figs/y131.png>
+File: figs/y132.png Graphic file (type bmp)
+<figs/y132.png>
+File: figs/y133.png Graphic file (type bmp)
+<figs/y133.png>
+File: figs/y134.png Graphic file (type bmp)
+<figs/y134.png>
+File: figs/y141.png Graphic file (type bmp)
+<figs/y141.png>
+File: figs/y143.png Graphic file (type bmp)
+<figs/y143.png>
+File: figs/y142.png Graphic file (type bmp)
+<figs/y142.png>
+File: figs/y143.png Graphic file (type bmp)
+<figs/y143.png>
 
-Overfull \vbox (13.09883pt too high) detected at line 75
- []
+
+LaTeX Warning: Citation `yamada' on page 6 undefined on input line 31.
 
 
 
@@ -1786,61 +1858,72 @@ Overfull \vbox (13.09883pt too high) detected at line 75
 [7
 
 ]
-File: figure/grid_diagram_1.png Graphic file (type bmp)
-<figure/grid_diagram_1.png>
 
-Overfull \hbox (81.17671pt too wide) in paragraph at lines 97--97
- [][]| 
+LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/it' undefined
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 63.
+
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/sc' undefined
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 63.
+
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+File: figs/simplecap.png Graphic file (type bmp)
+<figs/simplecap.png>
+
+Overfull \vbox (23.25111pt too high) detected at line 63
  []
 
-File: figure/grid_diagram_2.png Graphic file (type bmp)
-<figure/grid_diagram_2.png>
 
 
 [8
 
 ]
 
-LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 117.
-
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
-(microtype)             Ignoring protrusion settings for this character.
-
-LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/sc' undefined
-(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 117.
-
-Package microtype Info: Character `\quotesinglbase ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\quotedblbase ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglleft ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `\guilsinglright ' is missing
-(microtype)             in font `\TU/UnDotum.ttf(0)/b/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-File: figure/crossings.png Graphic file (type bmp)
-<figure/crossings.png>
-File: figure/changed_crossing.jpg Graphic file (type bmp)
-<figure/changed_crossing.jpg>
-File: figure/crossing_change_example.jpg Graphic file (type bmp)
-<figure/crossing_change_example.jpg>
-
-
 [9
+
+]
+File: figs/ST1_new.png Graphic file (type bmp)
+<figs/ST1_new.png>
+File: figs/ST2_new.png Graphic file (type bmp)
+<figs/ST2_new.png>
+
+Overfull \vbox (9.1527pt too high) detected at line 110
+ []
+
+
+
+[10
+
+]
+Overfull \vbox (1.61853pt too high) detected at line 135
+ []
+
+
+
+[11
 
 ])
 \tf@nav=\write6
@@ -1852,7 +1935,7 @@ File: figure/crossing_change_example.jpg Graphic file (type bmp)
 \tf@snm=\write8
 \openout8 = `2025R&Eppt.snm'.
 
- (./2025R&Eppt.aux (./intro.aux))
+ (./2025R&Eppt.aux (./U_Bound.aux) (./L_Bound.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1861,16 +1944,19 @@ L3 programming layer <2025-05-26>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
-(rerunfilecheck)             Checksum: 47949AC7C3DCEDDDEEFE3CD50587DDA1;103.
+(rerunfilecheck)             Checksum: 2354A1098AD00C65D1FF8305503261B6;360.
  ) 
 Here is how much of TeX's memory you used:
- 52454 strings out of 468527
- 1233277 string characters out of 5451377
- 1723546 words of memory out of 5000000
- 79807 multiletter control sequences out of 15000+600000
- 647500 words of font info for 197 fonts, out of 8000000 for 9000
+ 52780 strings out of 468527
+ 1237213 string characters out of 5451377
+ 1730544 words of memory out of 5000000
+ 80137 multiletter control sequences out of 15000+600000
+ 647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,23n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,142p,1946b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2025R&Eppt.pdf (9 pages).
+Output written on 2025R&Eppt.pdf (11 pages).

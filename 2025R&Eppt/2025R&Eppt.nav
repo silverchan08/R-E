@@ -15,54 +15,52 @@
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\slideentry {1}{0}{6}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{0}{7}{8/8}{}{0}}
+\headcommand {\beamer@sectionpages {2}{7}}
+\headcommand {\beamer@subsectionpages {2}{7}}
+\headcommand {\sectionentry {2}{Determinant of $\theta $-curve and Handcuff graph}{8}{Determinant of $\theta $-curve and Handcuff graph}{0}}
+\headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@sectionpages {2}{8}}
-\headcommand {\beamer@subsectionpages {2}{8}}
-\headcommand {\sectionentry {2}{Determinant of $\theta $-curve and Handcuff graph}{9}{Determinant of $\theta $-curve and Handcuff graph}{0}}
-\headcommand {\slideentry {2}{0}{1}{9/9}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{0}{2}{10/10}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{0}{3}{11/11}{}{0}}
+\headcommand {\slideentry {2}{0}{4}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{0}{4}{12/12}{}{0}}
+\headcommand {\slideentry {2}{0}{5}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{0}{5}{13/13}{}{0}}
+\headcommand {\slideentry {2}{0}{6}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{0}{6}{14/14}{}{0}}
+\headcommand {\slideentry {2}{0}{7}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{0}{7}{15/15}{}{0}}
+\headcommand {\slideentry {2}{0}{8}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{0}{8}{16/16}{}{0}}
+\headcommand {\beamer@sectionpages {8}{15}}
+\headcommand {\beamer@subsectionpages {8}{15}}
+\headcommand {\sectionentry {3}{Lower and Upper Bounds of Arc Index}{16}{Lower and Upper Bounds of Arc Index}{0}}
+\headcommand {\slideentry {3}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@sectionpages {9}{16}}
-\headcommand {\beamer@subsectionpages {9}{16}}
-\headcommand {\sectionentry {3}{Lower and Upper Bounds of Arc Index}{17}{Lower and Upper Bounds of Arc Index}{0}}
-\headcommand {\slideentry {3}{0}{1}{17/17}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{0}{2}{18/18}{}{0}}
+\headcommand {\slideentry {3}{0}{3}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{0}{3}{19/19}{}{0}}
+\headcommand {\beamer@sectionpages {16}{18}}
+\headcommand {\beamer@subsectionpages {16}{18}}
+\headcommand {\sectionentry {4}{Result}{19}{Result}{0}}
+\headcommand {\slideentry {4}{0}{1}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@sectionpages {17}{19}}
-\headcommand {\beamer@subsectionpages {17}{19}}
-\headcommand {\sectionentry {4}{Result}{20}{Result}{0}}
-\headcommand {\slideentry {4}{0}{1}{20/20}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {4}{0}{2}{21/21}{}{0}}
+\headcommand {\slideentry {4}{0}{3}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {4}{0}{3}{22/22}{}{0}}
+\headcommand {\beamer@sectionpages {19}{21}}
+\headcommand {\beamer@subsectionpages {19}{21}}
+\headcommand {\sectionentry {5}{Further Research}{22}{Further Research}{0}}
+\headcommand {\slideentry {5}{0}{1}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@sectionpages {20}{22}}
-\headcommand {\beamer@subsectionpages {20}{22}}
-\headcommand {\sectionentry {5}{Further Research}{23}{Further Research}{0}}
-\headcommand {\slideentry {5}{0}{1}{23/23}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{23/23}{}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {5}{0}{2}{24/24}{}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\beamer@partpages {1}{24}}
-\headcommand {\beamer@subsectionpages {23}{24}}
-\headcommand {\beamer@sectionpages {23}{24}}
-\headcommand {\beamer@documentpages {24}}
-\headcommand {\gdef \inserttotalframenumber {19}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\beamer@sectionpages {22}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\gdef \inserttotalframenumber {18}}

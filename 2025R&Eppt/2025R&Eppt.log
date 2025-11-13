@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 21:06
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 21:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1711,6 +1711,18 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 File: figure/theta_exe.png Graphic file (type bmp)
 <figure/theta_exe.png>
+
+Overfull \hbox (5.47012pt too wide) in paragraph at lines 30--30
+ [][]| 
+ []
+
+File: figure/handcufflist.png Graphic file (type bmp)
+<figure/handcufflist.png>
+
+Overfull \hbox (28.79037pt too wide) in paragraph at lines 30--30
+ [][]| 
+ []
+
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1724,9 +1736,9 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <12> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 17.
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 30.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <8> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 17.
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 30.
 
 
 Package microtype Info: Character `\quotesinglbase ' is missing
@@ -1744,15 +1756,8 @@ Package microtype Info: Character `\guilsinglright ' is missing
 [3
 
 ]
-File: figure/handcufflist.png Graphic file (type bmp)
-<figure/handcufflist.png>
-
 
 [4
-
-]
-
-[5
 
 ]
 File: figure/Trefoilimage.png Graphic file (type bmp)
@@ -1774,22 +1779,22 @@ File: figure/handcuff_openbook.png Graphic file (type bmp)
 File: figure/handcuff grid diagram.png Graphic file (type bmp)
 <figure/handcuff grid diagram.png>
 
-Overfull \vbox (13.09883pt too high) detected at line 75
+Overfull \vbox (13.09885pt too high) detected at line 78
  []
 
 
 
-[6
+[5
 
 ]
 
-[7
+[6
 
 ]
 File: figure/grid_diagram_1.png Graphic file (type bmp)
 <figure/grid_diagram_1.png>
 
-Overfull \hbox (81.17671pt too wide) in paragraph at lines 103--103
+Overfull \hbox (81.17671pt too wide) in paragraph at lines 106--106
  [][]| 
  []
 
@@ -1797,7 +1802,7 @@ File: figure/grid_diagram_2.png Graphic file (type bmp)
 <figure/grid_diagram_2.png>
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 103.
+(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 106.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
@@ -1812,12 +1817,12 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \vbox (12.22336pt too high) detected at line 103
+Overfull \vbox (12.32135pt too high) detected at line 106
  []
 
 
 
-[8
+[7
 
 ])
 \openout2 = `cromwell1.aux'.
@@ -1837,7 +1842,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[9
+[8
 
 
 
@@ -4556,7 +4561,7 @@ So I'll assume that you meant to type \cr instead.
 
 
 
-[10
+[9
 
 ]
 
@@ -12625,12 +12630,12 @@ Overfull \hbox (15.89168pt too wide) in paragraph at lines 60--60
  []
 
 
-Overfull \vbox (19.2669pt too high) detected at line 60
+Overfull \vbox (19.2109pt too high) detected at line 60
  []
 
 
 
-[11
+[10
 
 ]
 ./cromwell1.tex:63: Too many }'s.
@@ -17566,12 +17571,12 @@ you left one out. Proceed, with fingers crossed.
 File: figure/vertexside.png Graphic file (type bmp)
 <figure/vertexside.png>
 
-Overfull \vbox (6.00653pt too high) detected at line 91
+Overfull \vbox (6.06253pt too high) detected at line 91
  []
 
 
 
-[12
+[11
 
 ]
 ./cromwell1.tex:117: Improper \prevdepth.
@@ -22093,12 +22098,12 @@ Overfull \hbox (5.91087pt too wide) in paragraph at lines 117--117
  []
 
 
-Overfull \vbox (0.67775pt too high) detected at line 117
+Overfull \vbox (0.83173pt too high) detected at line 117
  []
 
 
 
-[13
+[12
 
 ]
 ./cromwell1.tex:163: Extra alignment tab has been changed to \cr.
@@ -34688,12 +34693,12 @@ Overfull \hbox (12.90656pt too wide) in paragraph at lines 163--163
  []
 
 
-Overfull \vbox (10.65723pt too high) detected at line 163
+Overfull \vbox (10.58023pt too high) detected at line 163
  []
 
 
 
-[14
+[13
 
 ])
 \openout2 = `cromwell2.aux'.
@@ -43126,7 +43131,7 @@ So I'll assume that you meant to type \cr instead.
 
 
 
-[15
+[14
 
 
 
@@ -45065,25 +45070,25 @@ or  <return>  to continue without it.
 
 
 
-[16
+[15
 
 ])
 \openout2 = `U_Bound.aux'.
 
  (./U_Bound.tex
 
+[16
+
+
+
+
+]
+
 [17
-
-
-
 
 ]
 
 [18
-
-]
-
-[19
 
 ])
 \openout2 = `L_Bound.aux'.
@@ -45094,7 +45099,7 @@ No file L_Bound.tex.
 
 (./Result.tex
 
-[20
+[19
 
 
 
@@ -45284,12 +45289,12 @@ File: figure/../grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: figure/../grid_diagram/theta_7_65.png Graphic file (type bmp)
 <figure/../grid_diagram/theta_7_65.png>
 
-Overfull \vbox (17.02731pt too high) detected at line 368
+Overfull \vbox (17.1253pt too high) detected at line 368
  []
 
 
 
-[21
+[20
 
 ]
 File: figure/../grid_diagram/handcuff_2_1.png Graphic file (type bmp)
@@ -45391,26 +45396,26 @@ File: figure/../grid_diagram/handcuff_7_35.png Graphic file (type bmp)
 File: figure/../grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 <figure/../grid_diagram/handcuff_7_36.png>
 
-Overfull \vbox (27.52402pt too high) detected at line 571
+Overfull \vbox (27.42603pt too high) detected at line 571
  []
 
 
 
-[22
+[21
 
 ])
 \openout2 = `"Further Research.aux"'.
 
  (./Further Research.tex
 
-[23
+[22
 
 
 
 
 ]
 
-[24
+[23
 
 ])
 \tf@nav=\write6
@@ -45435,12 +45440,12 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 (rerunfilecheck)             Checksum: 880E92D4EDDBE4099756755B563D6FB0;796.
  ) 
 Here is how much of TeX's memory you used:
- 54270 strings out of 468527
- 1300041 string characters out of 5451377
- 1787766 words of memory out of 5000000
- 81439 multiletter control sequences out of 15000+600000
+ 54268 strings out of 468527
+ 1300025 string characters out of 5451377
+ 1787703 words of memory out of 5000000
+ 81437 multiletter control sequences out of 15000+600000
  647500 words of font info for 197 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2025R&Eppt.pdf (24 pages).
+Output written on 2025R&Eppt.pdf (23 pages).

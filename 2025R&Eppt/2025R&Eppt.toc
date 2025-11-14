@@ -1,12 +1,10 @@
 \babel@toc {american}{}\relax 
 \babel@toc {american}{}\relax 
-<<<<<<< HEAD
-\beamer@sectionintoc {1}{Upper Bounds of Arc Index}{2}{0}{1}
-\beamer@sectionintoc {2}{Lower Bounds of Arc Index}{4}{0}{2}
-=======
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Determinant of $\theta $-curve and Handcuff graph}{8}{0}{2}
-\beamer@sectionintoc {3}{Lower and Upper Bounds of Arc Index}{16}{0}{3}
-\beamer@sectionintoc {4}{Result}{19}{0}{4}
-\beamer@sectionintoc {5}{Further Research}{22}{0}{5}
->>>>>>> 61a1779948eae5c733a3355592b3caddfaeac2fa
+\beamer@sectionintoc {5}{Upper Bounds of Arc Index}{30}{0}{5}
+\beamer@sectionintoc {6}{Lower Bounds of Arc Index}{32}{0}{6}
+\beamer@sectionintoc {3}{Introduction}{16}{0}{3}
+\beamer@sectionintoc {4}{Determinant of $\theta $-curve and Handcuff graph}{22}{0}{4}
+\beamer@sectionintoc {5}{Upper Bounds of Arc Index}{30}{0}{5}
+\beamer@sectionintoc {6}{Lower Bounds of Arc Index}{32}{0}{6}
+\beamer@sectionintoc {7}{Result}{42}{0}{7}
+\beamer@sectionintoc {8}{Further Research}{45}{0}{8}

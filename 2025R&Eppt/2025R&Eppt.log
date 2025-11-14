@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 21:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt
-(c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1578,7 +1578,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:117: LaTeX Error: File `ksa_왼쪽로고3' not found.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:117: LaTeX Error: File `ksa_왼쪽로고3' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1709,15 +1709,15 @@ Package microtype Info: Character `\guilsinglleft ' is missing
 Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-File: figure/theta_exe.png Graphic file (type bmp)
-<figure/theta_exe.png>
+File: figs/theta_exe.png Graphic file (type bmp)
+<figs/theta_exe.png>
 
 Overfull \hbox (5.47012pt too wide) in paragraph at lines 31--31
  [][]| 
  []
 
-File: figure/handcufflist.png Graphic file (type bmp)
-<figure/handcufflist.png>
+File: figs/handcufflist.png Graphic file (type bmp)
+<figs/handcufflist.png>
 
 Overfull \hbox (28.79037pt too wide) in paragraph at lines 31--31
  [][]| 
@@ -1764,24 +1764,24 @@ Package microtype Info: Character `\guilsinglright ' is missing
 [4
 
 ]
-File: figure/Trefoilimage.png Graphic file (type bmp)
-<figure/Trefoilimage.png>
-File: figure/trefoil arc presentation.png Graphic file (type bmp)
-<figure/trefoil arc presentation.png>
-File: figure/trefoil_grid.png Graphic file (type bmp)
-<figure/trefoil_grid.png>
-File: figure/theta52.png Graphic file (type bmp)
-<figure/theta52.png>
-File: figure/openbook.png Graphic file (type bmp)
-<figure/openbook.png>
-File: figure/grid.png Graphic file (type bmp)
-<figure/grid.png>
-File: figure/handcuff.png Graphic file (type bmp)
-<figure/handcuff.png>
-File: figure/handcuff_openbook.png Graphic file (type bmp)
-<figure/handcuff_openbook.png>
-File: figure/handcuff grid diagram.png Graphic file (type bmp)
-<figure/handcuff grid diagram.png>
+File: figs/Trefoilimage.png Graphic file (type bmp)
+<figs/Trefoilimage.png>
+File: figs/trefoil arc presentation.png Graphic file (type bmp)
+<figs/trefoil arc presentation.png>
+File: figs/trefoil_grid.png Graphic file (type bmp)
+<figs/trefoil_grid.png>
+File: figs/theta52.png Graphic file (type bmp)
+<figs/theta52.png>
+File: figs/openbook.png Graphic file (type bmp)
+<figs/openbook.png>
+File: figs/grid.png Graphic file (type bmp)
+<figs/grid.png>
+File: figs/handcuff.png Graphic file (type bmp)
+<figs/handcuff.png>
+File: figs/handcuff_openbook.png Graphic file (type bmp)
+<figs/handcuff_openbook.png>
+File: figs/handcuff grid diagram.png Graphic file (type bmp)
+<figs/handcuff grid diagram.png>
 
 Overfull \vbox (13.09885pt too high) detected at line 79
  []
@@ -1795,15 +1795,15 @@ Overfull \vbox (13.09885pt too high) detected at line 79
 [6
 
 ]
-File: figure/grid_diagram_1.png Graphic file (type bmp)
-<figure/grid_diagram_1.png>
+File: figs/grid_diagram_1.png Graphic file (type bmp)
+<figs/grid_diagram_1.png>
 
 Overfull \hbox (81.17671pt too wide) in paragraph at lines 107--107
  [][]| 
  []
 
-File: figure/grid_diagram_2.png Graphic file (type bmp)
-<figure/grid_diagram_2.png>
+File: figs/grid_diagram_2.png Graphic file (type bmp)
+<figs/grid_diagram_2.png>
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
 (Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 107.
@@ -7259,8 +7259,8 @@ l.60 \end{frame}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-File: figure/trefoilimage.png Graphic file (type bmp)
-<figure/trefoilimage.png>
+File: figs/trefoilimage.png Graphic file (type bmp)
+<figs/trefoilimage.png>
 
 Overfull \hbox (12.75616pt too wide) in paragraph at lines 60--60
  []$[]$| 
@@ -45090,336 +45090,477 @@ or  <return>  to continue without it.
 
 [17
 
-]
-
-[18
-
 ])
 \openout2 = `L_Bound.aux'.
 
+ (./L_Bound.tex
 
-No file L_Bound.tex.
-\openout2 = `Result.aux'.
-
-(./Result.tex
-
-[19
-
-
-
+[18
 
 
 
 
 ]
-File: figure/../grid_diagram/theta_3_1.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_3_1.png>
-File: figure/../grid_diagram/theta_4_1.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_4_1.png>
-File: figure/../grid_diagram/theta_5_1.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_1.png>
-File: figure/../grid_diagram/theta_5_2.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_2.png>
-File: figure/../grid_diagram/theta_5_3.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_3.png>
-File: figure/../grid_diagram/theta_5_4.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_4.png>
-File: figure/../grid_diagram/theta_5_5.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_5.png>
-File: figure/../grid_diagram/theta_5_6.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_6.png>
-File: figure/../grid_diagram/theta_5_7.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_5_7.png>
-File: figure/../grid_diagram/theta_6_1.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_1.png>
-File: figure/../grid_diagram/theta_6_2.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_2.png>
-File: figure/../grid_diagram/theta_6_3.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_3.png>
-File: figure/../grid_diagram/theta_6_4.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_4.png>
-File: figure/../grid_diagram/theta_6_5.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_5.png>
-File: figure/../grid_diagram/theta_6_6.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_6.png>
-File: figure/../grid_diagram/theta_6_7.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_7.png>
-File: figure/../grid_diagram/theta_6_8.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_8.png>
-File: figure/../grid_diagram/theta_6_9.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_9.png>
-File: figure/../grid_diagram/theta_6_10.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_10.png>
-File: figure/../grid_diagram/theta_6_11.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_11.png>
-File: figure/../grid_diagram/theta_6_12.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_12.png>
-File: figure/../grid_diagram/theta_6_13.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_13.png>
-File: figure/../grid_diagram/theta_6_14.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_14.png>
-File: figure/../grid_diagram/theta_6_15.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_15.png>
-File: figure/../grid_diagram/theta_6_16.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_6_16.png>
-File: figure/../grid_diagram/theta_7_1.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_1.png>
-File: figure/../grid_diagram/theta_7_2.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_2.png>
-File: figure/../grid_diagram/theta_7_3.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_3.png>
-File: figure/../grid_diagram/theta_7_4.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_4.png>
-File: figure/../grid_diagram/theta_7_5.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_5.png>
-File: figure/../grid_diagram/theta_7_6.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_6.png>
-File: figure/../grid_diagram/theta_7_7.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_7.png>
-File: figure/../grid_diagram/theta_7_8.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_8.png>
-File: figure/../grid_diagram/theta_7_9.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_9.png>
-File: figure/../grid_diagram/theta_7_10.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_10.png>
-File: figure/../grid_diagram/theta_7_11.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_11.png>
-File: figure/../grid_diagram/theta_7_12.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_12.png>
-File: figure/../grid_diagram/theta_7_13.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_13.png>
-File: figure/../grid_diagram/theta_7_14.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_14.png>
-File: figure/../grid_diagram/theta_7_15.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_15.png>
-File: figure/../grid_diagram/theta_7_16.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_16.png>
-File: figure/../grid_diagram/theta_7_17.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_17.png>
-File: figure/../grid_diagram/theta_7_18.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_18.png>
-File: figure/../grid_diagram/theta_7_19.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_19.png>
-File: figure/../grid_diagram/theta_7_20.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_20.png>
-File: figure/../grid_diagram/theta_7_21.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_21.png>
-File: figure/../grid_diagram/theta_7_22.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_22.png>
-File: figure/../grid_diagram/theta_7_23.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_23.png>
-File: figure/../grid_diagram/theta_7_24.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_24.png>
-File: figure/../grid_diagram/theta_7_25.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_25.png>
-File: figure/../grid_diagram/theta_7_26.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_26.png>
-File: figure/../grid_diagram/theta_7_27.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_27.png>
-File: figure/../grid_diagram/theta_7_28.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_28.png>
-File: figure/../grid_diagram/theta_7_29.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_29.png>
-File: figure/../grid_diagram/theta_7_30.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_30.png>
-File: figure/../grid_diagram/theta_7_31.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_31.png>
-File: figure/../grid_diagram/theta_7_32.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_32.png>
-File: figure/../grid_diagram/theta_7_33.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_33.png>
-File: figure/../grid_diagram/theta_7_34.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_34.png>
-File: figure/../grid_diagram/theta_7_35.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_35.png>
-File: figure/../grid_diagram/theta_7_36.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_36.png>
-File: figure/../grid_diagram/theta_7_37.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_37.png>
-File: figure/../grid_diagram/theta_7_38.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_38.png>
-File: figure/../grid_diagram/theta_7_39.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_39.png>
-File: figure/../grid_diagram/theta_7_40.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_40.png>
-File: figure/../grid_diagram/theta_7_41.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_41.png>
-File: figure/../grid_diagram/theta_7_42.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_42.png>
-File: figure/../grid_diagram/theta_7_43.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_43.png>
-File: figure/../grid_diagram/theta_7_44.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_44.png>
-File: figure/../grid_diagram/theta_7_45.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_45.png>
-File: figure/../grid_diagram/theta_7_46.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_46.png>
-File: figure/../grid_diagram/theta_7_47.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_47.png>
-File: figure/../grid_diagram/theta_7_48.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_48.png>
-File: figure/../grid_diagram/theta_7_49.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_49.png>
-File: figure/../grid_diagram/theta_7_50.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_50.png>
-File: figure/../grid_diagram/theta_7_51.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_51.png>
-File: figure/../grid_diagram/theta_7_52.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_52.png>
-File: figure/../grid_diagram/theta_7_53.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_53.png>
-File: figure/../grid_diagram/theta_7_54.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_54.png>
-File: figure/../grid_diagram/theta_7_55.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_55.png>
-File: figure/../grid_diagram/theta_7_56.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_56.png>
-File: figure/../grid_diagram/theta_7_57.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_57.png>
-File: figure/../grid_diagram/theta_7_58.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_58.png>
-File: figure/../grid_diagram/theta_7_59.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_59.png>
-File: figure/../grid_diagram/theta_7_60.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_60.png>
-File: figure/../grid_diagram/theta_7_61.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_61.png>
-File: figure/../grid_diagram/theta_7_62.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_62.png>
-File: figure/../grid_diagram/theta_7_63.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_63.png>
-File: figure/../grid_diagram/theta_7_64.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_64.png>
-File: figure/../grid_diagram/theta_7_65.png Graphic file (type bmp)
-<figure/../grid_diagram/theta_7_65.png>
+File: figs/stacked_tangle.png Graphic file (type bmp)
+<figs/stacked_tangle.png>
+File: figs/stacked_tangle2.png Graphic file (type bmp)
+<figs/stacked_tangle2.png>
+File: figs/stacked.png Graphic file (type bmp)
+<figs/stacked.png>
+File: figs/stacked_theta.png Graphic file (type bmp)
+<figs/stacked_theta.png>
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
 
-Overfull \vbox (17.1253pt too high) detected at line 368
+
+LaTeX Warning: Citation `arc_kauffman' on page 19 undefined on input line 10.
+
+
+Overfull \vbox (16.16022pt too high) detected at line 10
  []
+
+
+
+[19
+
+]
+File: figs/y6.png Graphic file (type bmp)
+<figs/y6.png>
+File: figs/y7.png Graphic file (type bmp)
+<figs/y7.png>
+File: figs/y91.png Graphic file (type bmp)
+<figs/y91.png>
+File: figs/y92.png Graphic file (type bmp)
+<figs/y92.png>
+File: figs/y93.png Graphic file (type bmp)
+<figs/y93.png>
+File: figs/y94.png Graphic file (type bmp)
+<figs/y94.png>
+File: figs/y101.png Graphic file (type bmp)
+<figs/y101.png>
+File: figs/y103.png Graphic file (type bmp)
+<figs/y103.png>
+File: figs/y102.png Graphic file (type bmp)
+<figs/y102.png>
+File: figs/y103.png Graphic file (type bmp)
+<figs/y103.png>
+File: figs/y111.png Graphic file (type bmp)
+<figs/y111.png>
+File: figs/y93.png Graphic file (type bmp)
+<figs/y93.png>
+File: figs/y121.png Graphic file (type bmp)
+<figs/y121.png>
+File: figs/y122.png Graphic file (type bmp)
+<figs/y122.png>
+File: figs/y131.png Graphic file (type bmp)
+<figs/y131.png>
+File: figs/y132.png Graphic file (type bmp)
+<figs/y132.png>
+File: figs/y133.png Graphic file (type bmp)
+<figs/y133.png>
+File: figs/y134.png Graphic file (type bmp)
+<figs/y134.png>
+File: figs/y141.png Graphic file (type bmp)
+<figs/y141.png>
+File: figs/y143.png Graphic file (type bmp)
+<figs/y143.png>
+File: figs/y142.png Graphic file (type bmp)
+<figs/y142.png>
+File: figs/y143.png Graphic file (type bmp)
+<figs/y143.png>
+
+
+LaTeX Warning: Citation `yamada' on page 20 undefined on input line 31.
 
 
 
 [20
 
 ]
-File: figure/../grid_diagram/handcuff_2_1.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_2_1.png>
-File: figure/../grid_diagram/handcuff_4_1.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_4_1.png>
-File: figure/../grid_diagram/handcuff_5_1.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_5_1.png>
-File: figure/../grid_diagram/handcuff_6_1.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_1.png>
-File: figure/../grid_diagram/handcuff_6_2.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_2.png>
-File: figure/../grid_diagram/handcuff_6_3.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_3.png>
-File: figure/../grid_diagram/handcuff_6_4.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_4.png>
-File: figure/../grid_diagram/handcuff_6_5.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_5.png>
-File: figure/../grid_diagram/handcuff_6_6.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_6.png>
-File: figure/../grid_diagram/handcuff_6_7.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_7.png>
-File: figure/../grid_diagram/handcuff_6_8.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_8.png>
-File: figure/../grid_diagram/handcuff_6_9.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_6_9.png>
-File: figure/../grid_diagram/handcuff_7_1.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_1.png>
-File: figure/../grid_diagram/handcuff_7_1.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_1.png>
-File: figure/../grid_diagram/handcuff_7_2.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_2.png>
-File: figure/../grid_diagram/handcuff_7_3.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_3.png>
-File: figure/../grid_diagram/handcuff_7_4.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_4.png>
-File: figure/../grid_diagram/handcuff_7_5.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_5.png>
-File: figure/../grid_diagram/handcuff_7_6.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_6.png>
-File: figure/../grid_diagram/handcuff_7_7.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_7.png>
-File: figure/../grid_diagram/handcuff_7_8.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_8.png>
-File: figure/../grid_diagram/handcuff_7_9.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_9.png>
-File: figure/../grid_diagram/handcuff_7_10.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_10.png>
-File: figure/../grid_diagram/handcuff_7_11.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_11.png>
-File: figure/../grid_diagram/handcuff_7_12.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_12.png>
-File: figure/../grid_diagram/handcuff_7_13.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_13.png>
-File: figure/../grid_diagram/handcuff_7_14.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_14.png>
-File: figure/../grid_diagram/handcuff_7_15.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_15.png>
-File: figure/../grid_diagram/handcuff_7_16.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_16.png>
-File: figure/../grid_diagram/handcuff_7_17.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_17.png>
-File: figure/../grid_diagram/handcuff_7_18.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_18.png>
-File: figure/../grid_diagram/handcuff_7_19.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_19.png>
-File: figure/../grid_diagram/handcuff_7_20.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_20.png>
-File: figure/../grid_diagram/handcuff_7_21.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_21.png>
-File: figure/../grid_diagram/handcuff_7_22.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_22.png>
-File: figure/../grid_diagram/handcuff_7_23.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_23.png>
-File: figure/../grid_diagram/handcuff_7_24.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_24.png>
-File: figure/../grid_diagram/handcuff_7_25.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_25.png>
-File: figure/../grid_diagram/handcuff_7_26.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_26.png>
-File: figure/../grid_diagram/handcuff_7_27.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_27.png>
-File: figure/../grid_diagram/handcuff_7_28.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_28.png>
-File: figure/../grid_diagram/handcuff_7_29.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_29.png>
-File: figure/../grid_diagram/handcuff_7_30.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_30.png>
-File: figure/../grid_diagram/handcuff_7_31.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_31.png>
-File: figure/../grid_diagram/handcuff_7_32.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_32.png>
-File: figure/../grid_diagram/handcuff_7_33.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_33.png>
-File: figure/../grid_diagram/handcuff_7_34.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_34.png>
-File: figure/../grid_diagram/handcuff_7_35.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_35.png>
-File: figure/../grid_diagram/handcuff_7_36.png Graphic file (type bmp)
-<figure/../grid_diagram/handcuff_7_36.png>
 
-Overfull \vbox (27.42603pt too high) detected at line 571
+[21
+
+]
+
+LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/it' undefined
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 63.
+
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
+(microtype)             Ignoring protrusion settings for this character.
+File: figs/simplecap.png Graphic file (type bmp)
+<figs/simplecap.png>
+
+Overfull \vbox (23.25111pt too high) detected at line 63
  []
 
 
 
-[21
+[22
+
+]
+
+[23
+
+]
+File: figs/ST1_new.png Graphic file (type bmp)
+<figs/ST1_new.png>
+File: figs/ST2_new.png Graphic file (type bmp)
+<figs/ST2_new.png>
+
+Overfull \vbox (9.1527pt too high) detected at line 110
+ []
+
+
+
+[24
+
+]
+Overfull \vbox (1.48555pt too high) detected at line 135
+ []
+
+
+
+[25
+
+])
+\openout2 = `Result.aux'.
+
+ (./Result.tex
+
+[26
+
+
+
+
+]
+File: figs/../grid_diagram/theta_3_1.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_3_1.png>
+File: figs/../grid_diagram/theta_4_1.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_4_1.png>
+File: figs/../grid_diagram/theta_5_1.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_1.png>
+File: figs/../grid_diagram/theta_5_2.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_2.png>
+File: figs/../grid_diagram/theta_5_3.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_3.png>
+File: figs/../grid_diagram/theta_5_4.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_4.png>
+File: figs/../grid_diagram/theta_5_5.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_5.png>
+File: figs/../grid_diagram/theta_5_6.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_6.png>
+File: figs/../grid_diagram/theta_5_7.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_5_7.png>
+File: figs/../grid_diagram/theta_6_1.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_1.png>
+File: figs/../grid_diagram/theta_6_2.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_2.png>
+File: figs/../grid_diagram/theta_6_3.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_3.png>
+File: figs/../grid_diagram/theta_6_4.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_4.png>
+File: figs/../grid_diagram/theta_6_5.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_5.png>
+File: figs/../grid_diagram/theta_6_6.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_6.png>
+File: figs/../grid_diagram/theta_6_7.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_7.png>
+File: figs/../grid_diagram/theta_6_8.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_8.png>
+File: figs/../grid_diagram/theta_6_9.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_9.png>
+File: figs/../grid_diagram/theta_6_10.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_10.png>
+File: figs/../grid_diagram/theta_6_11.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_11.png>
+File: figs/../grid_diagram/theta_6_12.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_12.png>
+File: figs/../grid_diagram/theta_6_13.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_13.png>
+File: figs/../grid_diagram/theta_6_14.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_14.png>
+File: figs/../grid_diagram/theta_6_15.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_15.png>
+File: figs/../grid_diagram/theta_6_16.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_6_16.png>
+File: figs/../grid_diagram/theta_7_1.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_1.png>
+File: figs/../grid_diagram/theta_7_2.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_2.png>
+File: figs/../grid_diagram/theta_7_3.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_3.png>
+File: figs/../grid_diagram/theta_7_4.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_4.png>
+File: figs/../grid_diagram/theta_7_5.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_5.png>
+File: figs/../grid_diagram/theta_7_6.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_6.png>
+File: figs/../grid_diagram/theta_7_7.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_7.png>
+File: figs/../grid_diagram/theta_7_8.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_8.png>
+File: figs/../grid_diagram/theta_7_9.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_9.png>
+File: figs/../grid_diagram/theta_7_10.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_10.png>
+File: figs/../grid_diagram/theta_7_11.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_11.png>
+File: figs/../grid_diagram/theta_7_12.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_12.png>
+File: figs/../grid_diagram/theta_7_13.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_13.png>
+File: figs/../grid_diagram/theta_7_14.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_14.png>
+File: figs/../grid_diagram/theta_7_15.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_15.png>
+File: figs/../grid_diagram/theta_7_16.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_16.png>
+File: figs/../grid_diagram/theta_7_17.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_17.png>
+File: figs/../grid_diagram/theta_7_18.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_18.png>
+File: figs/../grid_diagram/theta_7_19.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_19.png>
+File: figs/../grid_diagram/theta_7_20.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_20.png>
+File: figs/../grid_diagram/theta_7_21.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_21.png>
+File: figs/../grid_diagram/theta_7_22.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_22.png>
+File: figs/../grid_diagram/theta_7_23.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_23.png>
+File: figs/../grid_diagram/theta_7_24.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_24.png>
+File: figs/../grid_diagram/theta_7_25.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_25.png>
+File: figs/../grid_diagram/theta_7_26.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_26.png>
+File: figs/../grid_diagram/theta_7_27.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_27.png>
+File: figs/../grid_diagram/theta_7_28.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_28.png>
+File: figs/../grid_diagram/theta_7_29.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_29.png>
+File: figs/../grid_diagram/theta_7_30.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_30.png>
+File: figs/../grid_diagram/theta_7_31.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_31.png>
+File: figs/../grid_diagram/theta_7_32.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_32.png>
+File: figs/../grid_diagram/theta_7_33.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_33.png>
+File: figs/../grid_diagram/theta_7_34.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_34.png>
+File: figs/../grid_diagram/theta_7_35.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_35.png>
+File: figs/../grid_diagram/theta_7_36.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_36.png>
+File: figs/../grid_diagram/theta_7_37.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_37.png>
+File: figs/../grid_diagram/theta_7_38.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_38.png>
+File: figs/../grid_diagram/theta_7_39.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_39.png>
+File: figs/../grid_diagram/theta_7_40.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_40.png>
+File: figs/../grid_diagram/theta_7_41.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_41.png>
+File: figs/../grid_diagram/theta_7_42.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_42.png>
+File: figs/../grid_diagram/theta_7_43.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_43.png>
+File: figs/../grid_diagram/theta_7_44.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_44.png>
+File: figs/../grid_diagram/theta_7_45.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_45.png>
+File: figs/../grid_diagram/theta_7_46.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_46.png>
+File: figs/../grid_diagram/theta_7_47.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_47.png>
+File: figs/../grid_diagram/theta_7_48.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_48.png>
+File: figs/../grid_diagram/theta_7_49.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_49.png>
+File: figs/../grid_diagram/theta_7_50.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_50.png>
+File: figs/../grid_diagram/theta_7_51.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_51.png>
+File: figs/../grid_diagram/theta_7_52.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_52.png>
+File: figs/../grid_diagram/theta_7_53.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_53.png>
+File: figs/../grid_diagram/theta_7_54.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_54.png>
+File: figs/../grid_diagram/theta_7_55.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_55.png>
+File: figs/../grid_diagram/theta_7_56.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_56.png>
+File: figs/../grid_diagram/theta_7_57.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_57.png>
+File: figs/../grid_diagram/theta_7_58.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_58.png>
+File: figs/../grid_diagram/theta_7_59.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_59.png>
+File: figs/../grid_diagram/theta_7_60.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_60.png>
+File: figs/../grid_diagram/theta_7_61.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_61.png>
+File: figs/../grid_diagram/theta_7_62.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_62.png>
+File: figs/../grid_diagram/theta_7_63.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_63.png>
+File: figs/../grid_diagram/theta_7_64.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_64.png>
+File: figs/../grid_diagram/theta_7_65.png Graphic file (type bmp)
+<figs/../grid_diagram/theta_7_65.png>
+
+Overfull \vbox (17.04832pt too high) detected at line 368
+ []
+
+
+
+[27
+
+]
+File: figs/../grid_diagram/handcuff_2_1.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_2_1.png>
+File: figs/../grid_diagram/handcuff_4_1.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_4_1.png>
+File: figs/../grid_diagram/handcuff_5_1.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_5_1.png>
+File: figs/../grid_diagram/handcuff_6_1.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_1.png>
+File: figs/../grid_diagram/handcuff_6_2.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_2.png>
+File: figs/../grid_diagram/handcuff_6_3.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_3.png>
+File: figs/../grid_diagram/handcuff_6_4.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_4.png>
+File: figs/../grid_diagram/handcuff_6_5.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_5.png>
+File: figs/../grid_diagram/handcuff_6_6.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_6.png>
+File: figs/../grid_diagram/handcuff_6_7.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_7.png>
+File: figs/../grid_diagram/handcuff_6_8.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_8.png>
+File: figs/../grid_diagram/handcuff_6_9.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_6_9.png>
+File: figs/../grid_diagram/handcuff_7_1.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_1.png>
+File: figs/../grid_diagram/handcuff_7_1.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_1.png>
+File: figs/../grid_diagram/handcuff_7_2.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_2.png>
+File: figs/../grid_diagram/handcuff_7_3.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_3.png>
+File: figs/../grid_diagram/handcuff_7_4.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_4.png>
+File: figs/../grid_diagram/handcuff_7_5.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_5.png>
+File: figs/../grid_diagram/handcuff_7_6.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_6.png>
+File: figs/../grid_diagram/handcuff_7_7.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_7.png>
+File: figs/../grid_diagram/handcuff_7_8.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_8.png>
+File: figs/../grid_diagram/handcuff_7_9.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_9.png>
+File: figs/../grid_diagram/handcuff_7_10.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_10.png>
+File: figs/../grid_diagram/handcuff_7_11.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_11.png>
+File: figs/../grid_diagram/handcuff_7_12.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_12.png>
+File: figs/../grid_diagram/handcuff_7_13.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_13.png>
+File: figs/../grid_diagram/handcuff_7_14.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_14.png>
+File: figs/../grid_diagram/handcuff_7_15.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_15.png>
+File: figs/../grid_diagram/handcuff_7_16.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_16.png>
+File: figs/../grid_diagram/handcuff_7_17.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_17.png>
+File: figs/../grid_diagram/handcuff_7_18.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_18.png>
+File: figs/../grid_diagram/handcuff_7_19.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_19.png>
+File: figs/../grid_diagram/handcuff_7_20.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_20.png>
+File: figs/../grid_diagram/handcuff_7_21.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_21.png>
+File: figs/../grid_diagram/handcuff_7_22.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_22.png>
+File: figs/../grid_diagram/handcuff_7_23.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_23.png>
+File: figs/../grid_diagram/handcuff_7_24.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_24.png>
+File: figs/../grid_diagram/handcuff_7_25.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_25.png>
+File: figs/../grid_diagram/handcuff_7_26.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_26.png>
+File: figs/../grid_diagram/handcuff_7_27.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_27.png>
+File: figs/../grid_diagram/handcuff_7_28.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_28.png>
+File: figs/../grid_diagram/handcuff_7_29.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_29.png>
+File: figs/../grid_diagram/handcuff_7_30.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_30.png>
+File: figs/../grid_diagram/handcuff_7_31.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_31.png>
+File: figs/../grid_diagram/handcuff_7_32.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_32.png>
+File: figs/../grid_diagram/handcuff_7_33.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_33.png>
+File: figs/../grid_diagram/handcuff_7_34.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_34.png>
+File: figs/../grid_diagram/handcuff_7_35.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_35.png>
+File: figs/../grid_diagram/handcuff_7_36.png Graphic file (type bmp)
+<figs/../grid_diagram/handcuff_7_36.png>
+
+Overfull \vbox (27.52402pt too high) detected at line 571
+ []
+
+
+
+[28
 
 ])
 \openout2 = `"Further Research.aux"'.
 
  (./Further Research.tex
 
-[22
+[29
 
 
 
 
 ]
 
-[23
+[30
 
 ])
 \tf@nav=\write6
@@ -45440,16 +45581,19 @@ L3 programming layer <2025-05-26>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
-(rerunfilecheck)             Checksum: 880E92D4EDDBE4099756755B563D6FB0;796.
+(rerunfilecheck)             Checksum: A5E85D86B31ACC26C6E83180C4525C2D;920.
  ) 
 Here is how much of TeX's memory you used:
- 54268 strings out of 468527
- 1300025 string characters out of 5451377
- 1787703 words of memory out of 5000000
- 81437 multiletter control sequences out of 15000+600000
- 647500 words of font info for 197 fonts, out of 8000000 for 9000
+ 54766 strings out of 468527
+ 1306082 string characters out of 5451377
+ 1789663 words of memory out of 5000000
+ 81926 multiletter control sequences out of 15000+600000
+ 647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,26n,142p,1951b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2025R&Eppt.pdf (23 pages).
+Output written on 2025R&Eppt.pdf (30 pages).

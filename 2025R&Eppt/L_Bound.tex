@@ -1,0 +1,173 @@
+\section{Lower Bounds of Arc Index}
+
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
+	\begin{thm}
+		Let $T$ be any $\theta$-curve
+		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
+		Then
+		\[
+			\alpha(T) \ge \max_{i\in\{1,2,3\}} \alpha(K_i) + 1
+		\]
+	\end{thm}
+	
+	\begin{thm}
+		Let $T$ be any $\theta$-curve
+		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
+		Then
+		\[
+			\centerline{$\displaystyle\alpha(T) \ge \frac12 \sum_{i=1}^3\alpha(K_i)$}
+		\]
+	\end{thm}
+\end{frame}
+
+\begin{frame}{Lower Bounds from Constituent Knots/Links}
+	\bigskip
+	\begin{thm}
+		Let $H$ be any handcuff graph, and $L$ be the constituent link of $H$.
+		If $L$ is an alternating and non-split link, then
+		\[
+			\alpha(H) \ge c(L) + 3.
+		\]
+	\end{thm}
+
+	\begin{corollary}
+		Let $H$ be any handcuff graph, and $L$ be a constituent link of $T$. If $L$ is alternating and non-split,
+		\[
+			\alpha(H) = c(L) + 3.
+		\]
+	\end{corollary}
+\end{frame}
+
+\begin{frame}{Stacked Tangle of an $\theta$-Curve}
+	\begin{tabu}{X[c,8]X[c,8]X[c,10]X[c,10]}
+		\includegraphics[width=\linewidth]{stacked_tangle.png} & \includegraphics[width=\linewidth]{stacked_tangle2.png} & \includegraphics[width=\linewidth]{stacked.png} & \includegraphics[width=\linewidth]{stacked_theta.png}\\
+		\multicolumn{2}{c}{Stacked Tangle of a Link} & \multicolumn{2}{c}{Stacked Tangle of a $\theta$-Curve}
+	\end{tabu}
+	\seprule
+	\tiny{Figure from \cite{arc_kauffman}}
+\end{frame}
+
+
+\begin{frame}{Yamada Polynomials}
+	Let $D_T$ be a diagram of an $\theta$-curve $T$.
+	Then, the \term{Yamada Polynomial $R(D_T)\in \mathbf{Z}\left[x^{\pm1}\right]$} is calculated by the following properties:
+	\begin{itemize}
+		\item \myem{Y6:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y6}}\right)= - (x+1+x^{-1})(x + x^{-1}) = -x^2 - x - 2 - x^{-1} - x^{-2}$\hfill \myem{Y7:} $R\left(\raisebox{-1.5pt}{\includegraphics[height=8pt]{y7}}\right)=0$
+		\item \myem{Y8:} $R(T'\cup\bigcirc) = (x+1+x^{-1})R(T')$ for an arbitrary $\theta$-curve diagram $T'$
+		\item \myem{Y9:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y91}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y92}}\right)=(x-x^{-1})\left[R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y93}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y94}}\right)\right]$
+		\item \myem{Y10:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y101}}\right) = x^2 R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y103}}\right)$,\quad
+		$R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y102}}\right) = x^{-2} R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y103}}\right)$
+		\item \myem{Y11:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y111}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y93}}\right)$\hfill
+		\myem{Y12:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y121}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y122}}\right)$
+		\item \myem{Y13:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y131}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y132}}\right)$,\quad $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y133}}\right) = R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y134}}\right)$
+		\item \myem{Y14:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y141}}\right) = -x R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y143}}\right)$,\quad $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y142}}\right) = -x^{-1}R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y143}}\right)$
+	\end{itemize}
+
+	\begin{prop}[\cite{yamada}]
+		$R(D_T)$ is an ambient isotopy invariant of $T$ up to multiplying $(-x)^n$ for some integer $n$.
+	\end{prop}
+\end{frame}
+
+
+\begin{frame}{Lower Bounds from Yamada Polynomial}
+	\begin{thm}
+	Let $T$ be any $\theta$-curve or handcuff graph.
+	Then
+	\[
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} \le \alpha(T)
+	\]
+	where $R(T)$ is a Yamada Polynomial of $T$.
+	\end{thm}	
+\end{frame}
+
+
+\begin{frame}{Lower Bounds from Yamada Polynomial}
+	\begin{prop}
+		Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$ \myem{without nested caps}.
+		Then
+		\[
+			\max\deg_x R(S_T) \le c + n, \quad
+			\min\deg_x R(S_T) \ge -(c + n),
+		\]
+		where \myem{$c, n$} is the number of caps and crossings in $S_T$, respectively.
+	\end{prop}
+
+	\mypf
+	\begin{itemize}
+		\item Let \myem{$c_s, c_{ss}$} be the number of \myem{simlpe caps} or \myem{semi-simple caps}, repectively.
+		\item Use double mathematical induction of $(c_s + c_{ss}, n)$.
+        $$\includegraphics[width=.35\linewidth]{simplecap.png}$$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{prop}
+		Let $S_T$ be a reduced simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$
+		corresponding to minimal arc presentation of $T$.
+		Then
+		\[
+			\max\deg_xR(S_T) - \min\deg_xR(S_T) - 2n \le \alpha(T)
+			% \max\deg_xR(S_T) - \min\deg_xR(S_T) -2n + 4 \le 3\alpha(T)
+		\]
+		where $n$ is the number of crossings in $S_T$.
+	\end{prop}
+	\mypf
+
+	\begin{itemize}
+		\item $S_T$ is a reduced simple closure of stacked tangle corresponding to minimal arc presentation.
+		\item The number of caps $c$ in $S_T$ is exactly arc index of $T$, $\alpha(T)$.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Proof of Theorem}
+	\begin{itemize}
+		\item Take a cap and add a positive or negative curl
+		$$\raisebox{-1cm}{\includegraphics[height=2cm]{ST1_new}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST2_new}}$$
+		% $$\raisebox{-1cm}{\includegraphics[height=2cm]{ST1}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST2}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST3}}$$
+
+	\vspace{0.3cm}
+
+	$$
+	\begin{tabu} to .6\linewidth {X[2,l]|X[c]|X[c]} \hline
+	 & $S_T^{neg}$ & $S_T^{pos}$\\\hline
+	 Number of Caps & $c$ & $c$\\\hline
+	 Number of Crossings & $n+p$ & $n+(c-p)$ \\\hline
+	\end{tabu}
+	$$
+
+	\vspace{0.3cm}
+
+	\begin{align*}
+		\min\deg_xR(S_T) - 2p = \min\deg_xR\left(S_T^{neg}\right) &\ge -c + - (n+p)\\
+		\max\deg_xR(S_T) + 2(c-p) = \max\deg_xR\left(S_T^{pos}\right) &\le c + \left[n+(c-p)\right]\\
+		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le c + 2n \quad \quad \quad \quad \quad \quad \quad \qed
+	\end{align*}
+
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Proof of Theorem}
+	\begin{thm}
+	Let $T$ be any $\theta$-curve or handcuff graph.
+	Then
+	\[
+		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} \le \alpha(T)
+	\]
+	where $R(T)$ is a Yamada Polynomial of $T$.
+	\end{thm}	
+
+	\mypf
+
+	Let $S_T$ be a reduce simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$
+	corresponding to minimal arc presentation of $T$.
+
+	\begin{itemize}
+		\item The number of caps : $\alpha(T)$
+		\item The number of non-simple disks : $2$
+		\item The number of simple disks : $\alpha(T)-3$
+	\end{itemize}
+
+	Consider the maximum number of crossings in $S_T$, and use the previous theorem.
+\end{frame}

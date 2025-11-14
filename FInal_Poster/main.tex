@@ -204,9 +204,52 @@
   % \end{block}
   \begin{block}{}
   $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a cromwell matrix of $K$ is $0$ or $\pm 2$.
-  $\mathbf{Theorem\ 2.}$
-  Let $G$ be a $\theta$-curve or handcuff graph, and the $H$ be a H-deletion matrix. Then,
-  $G$ is a $\theta$-curve if and only if $\det{H} = \pm 1$, and $G$ is a handcuff graph if and only if $\det{H} = 0 \text{ or } \pm2$.
+  \begin{figure}[h]
+    \centering
+    \begin{tabular}{cccc}
+      \includegraphics[width=0.2\textwidth]{figure/trefoilimage.png} &
+      \includegraphics[width=0.2\textwidth]{figure/gridtheta.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
+    \end{tabular}        
+    \caption{Determinant of a cromwell matrix of Trefoil}
+  \end{figure}
+  $\mathbf{Theorem\ 2.}$ Let $M$ be a THC-cromwell matrice of $\theta$-curve or handcuff graph, and let det*($M$) be the determinant of H-deletion matrix of $M$. Then, \\
+		\begin{itemize}
+			\item det*($M$) = $\pm1$ $\iff$ $M$ represents $\theta$-curve
+			\item det*($M$) = $0$ or $\pm2$ $\iff$ $M$ represents handcuff graph
+		\end{itemize}
+  %\begin{figure}
+   % \centering
+    %\includegraphics[height=8.5cm]{figure/table.png}
+  %\end{figure}
+  
+  \begin{figure}[h]
+  \centering
+	\begin{tabular}{cccc}
+    \includegraphics[width=0.25\textwidth]{figure/Line-shape.png} &
+    \includegraphics[width=0.25\textwidth]{figure/matrix4.png} &
+    \includegraphics[width=0.21\textwidth]{figure/matrix5.png} &
+    \includegraphics[width=0.23\textwidth]{figure/matrix6.png} \\
+    \includegraphics[width=0.25\textwidth]{figure/T-shape.png} &
+    \includegraphics[width=0.25\textwidth]{figure/matrix7.png} &
+    \includegraphics[width=0.21\textwidth]{figure/matrix8.png} &
+    \includegraphics[width=0.22\textwidth]{figure/matrix9.png} \\
+  \end{tabular}
+  \caption{Determinant of a $\thata$-curve : Line-shap and T-shape}
+  \end{figure}
+
+  \begin{figure}[h]
+  \centering
+	\begin{tabular}{cccc}
+    \includegraphics[width=0.25\textwidth]{figure/Line-shape.png} &
+    \includegraphics[width=0.25\textwidth]{figure/matrix4.png} &
+    \includegraphics[width=0.21\textwidth]{figure/matrix5.png} &
+    \includegraphics[width=0.23\textwidth]{figure/matrix6.png} \\
+  \end{tabular}
+  \caption{Determinant of a Handcuff graph}
+  \end{figure}
+
   \end{block}
   
   \begin{block}{Bounds of Arc Index}
@@ -243,8 +286,13 @@
    % \alpha(L) = c(L)+2
   %\end{equation*}
 
+  \end{block}
 
-  $\mathbf{Theorem\ 3.}$ Let $H$ be a handcuff graph and $L$ is link that connecting edge is deleted from $H$. If $L$ is non-split alternating, then 
+  
+  \column{0.33\textwidth}
+  \begin{block}
+    
+    $\mathbf{Theorem\ 3.}$ Let $H$ be a handcuff graph and $L$ is link that connecting edge is deleted from $H$. If $L$ is non-split alternating, then 
   \begin{equation*}
     \alpha(H) \geq c(L) + 3
   \end{equation*}
@@ -254,23 +302,12 @@
     where $\mu(G)$, $\beta(G)$, and $E$ are the number of connected components, the first Betti number, and the edge set of $G$ each. Therefore, the \\
     \textbf{Yamada polynomial} of $G$, $R(G)$, is defined by
     \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
-
-    %\vspace{1em}
-
-    %$\mathbf{Theorem.}$ $[$5$]$ For a spatial graph $G$, $(-x)^n R(G)$ is an ambient isotopy invariant for some integer $n$.
-
-    %\vspace{1em}
     
     $\mathbf{Theorem\ 4.}$ $[$1$]$ Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph, and let $c, n$ be the number of caps and crossings in $S_T$, respectively. Then,
      \[ \mathrm{spr}(R(S_T)) \leq c+2n \]
-     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. \\
-
-    %\vspace{1em}
+     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. 
 
   \end{block}
-
-  
-  \column{0.33\textwidth}
 
   \begin{block}{Further Studies}
     \begin{itemize}
@@ -282,7 +319,7 @@
   \begin{block}{References}
     \begin{enumerate}
       \item Yoonsang Lee. (2023). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
-      \item Lee, H. J., Hong, K., Lee, H., \& Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.
+      %\item Lee, H. J., Hong, K., Lee, H., \& Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.
       \item (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
       \item Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.
       \item Yamada, S. (1989). An invariant of spatial graphs. \textit{Journal of Graph Theory, 13}(5), 537–551.

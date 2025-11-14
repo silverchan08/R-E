@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  13 NOV 2025 22:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  14 NOV 2025 23:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt"
-(c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
+**c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt
+(c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1578,7 +1578,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:117: LaTeX Error: File `ksa_왼쪽로고3' not found.
+c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:117: LaTeX Error: File `ksa_왼쪽로고3' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -45101,6 +45101,14 @@ or  <return>  to continue without it.
 
 
 ]
+
+[19
+
+]
+
+[20
+
+]
 File: figs/stacked_tangle.png Graphic file (type bmp)
 <figs/stacked_tangle.png>
 File: figs/stacked_tangle2.png Graphic file (type bmp)
@@ -45123,15 +45131,15 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-LaTeX Warning: Citation `arc_kauffman' on page 19 undefined on input line 10.
+LaTeX Warning: Citation `arc_kauffman' on page 21 undefined on input line 48.
 
 
-Overfull \vbox (16.16022pt too high) detected at line 10
+Overfull \vbox (16.13922pt too high) detected at line 48
  []
 
 
 
-[19
+[21
 
 ]
 File: figs/y6.png Graphic file (type bmp)
@@ -45180,20 +45188,20 @@ File: figs/y143.png Graphic file (type bmp)
 <figs/y143.png>
 
 
-LaTeX Warning: Citation `yamada' on page 20 undefined on input line 31.
+LaTeX Warning: Citation `yamada' on page 22 undefined on input line 69.
 
 
 
-[20
+[22
 
 ]
 
-[21
+[23
 
 ]
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 63.
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 101.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
@@ -45210,24 +45218,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 File: figs/simplecap.png Graphic file (type bmp)
 <figs/simplecap.png>
 
-Overfull \vbox (23.25111pt too high) detected at line 63
- []
-
-
-
-[22
-
-]
-
-[23
-
-]
-File: figs/ST1_new.png Graphic file (type bmp)
-<figs/ST1_new.png>
-File: figs/ST2_new.png Graphic file (type bmp)
-<figs/ST2_new.png>
-
-Overfull \vbox (9.1527pt too high) detected at line 110
+Overfull \vbox (23.25111pt too high) detected at line 101
  []
 
 
@@ -45235,19 +45226,36 @@ Overfull \vbox (9.1527pt too high) detected at line 110
 [24
 
 ]
-Overfull \vbox (1.48555pt too high) detected at line 135
+
+[25
+
+]
+File: figs/ST1_new.png Graphic file (type bmp)
+<figs/ST1_new.png>
+File: figs/ST2_new.png Graphic file (type bmp)
+<figs/ST2_new.png>
+
+Overfull \vbox (9.07571pt too high) detected at line 148
  []
 
 
 
-[25
+[26
+
+]
+Overfull \vbox (1.56253pt too high) detected at line 173
+ []
+
+
+
+[27
 
 ])
 \openout2 = `Result.aux'.
 
  (./Result.tex
 
-[26
+[28
 
 
 
@@ -45439,7 +45447,7 @@ Overfull \vbox (17.04832pt too high) detected at line 368
 
 
 
-[27
+[29
 
 ]
 File: figs/../grid_diagram/handcuff_2_1.png Graphic file (type bmp)
@@ -45546,23 +45554,44 @@ Overfull \vbox (27.52402pt too high) detected at line 571
 
 
 
-[28
+[30
 
 ])
 \openout2 = `"Further Research.aux"'.
 
  (./Further Research.tex
 
-[29
+[31
 
 
 
 
 ]
 
-[30
+[32
 
 ])
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/3'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/3'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/3'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/3'.
+(microtype)             Ignoring protrusion settings for this character.
+
+No file 2025R&Eppt.bbl.
+
+
+[33
+
+
+
+]
 \tf@nav=\write6
 \openout6 = `2025R&Eppt.nav'.
 
@@ -45588,12 +45617,12 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 (rerunfilecheck)             Checksum: A5E85D86B31ACC26C6E83180C4525C2D;920.
  ) 
 Here is how much of TeX's memory you used:
- 54766 strings out of 468527
- 1306082 string characters out of 5451377
- 1789663 words of memory out of 5000000
- 81926 multiletter control sequences out of 15000+600000
- 647508 words of font info for 198 fonts, out of 8000000 for 9000
+ 54782 strings out of 468527
+ 1306439 string characters out of 5451377
+ 1789821 words of memory out of 5000000
+ 81940 multiletter control sequences out of 15000+600000
+ 647524 words of font info for 200 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,26n,142p,1951b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2025R&Eppt.pdf (30 pages).
+Output written on 2025R&Eppt.pdf (33 pages).

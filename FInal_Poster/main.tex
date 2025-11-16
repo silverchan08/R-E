@@ -136,7 +136,7 @@
       \includegraphics[width=0.8\textwidth]{figure/handcufflist.png}
       \end{figure}
     \end{itemize}
-    \vspace*{-1.5cm}
+    \vspace*{-1cm}
   \end{block}
 
   \begin{block}{Diagrams}
@@ -158,9 +158,9 @@
     
 
 
-  \begin{block}{Classifying $\theta$-Curves and Handcuff Graphs}
+  \begin{block}{Matrices of $\theta$-Curves and Handcuff Graphs}
   \begin{itemize}
-    \item \textbf{Cromwell matrix}
+    \item \textbf{Cromwell matrix} : an $n\times n$ binary matrix each of whose rows and columns has exactly two 1s
     \item \textbf{THC-Cromwell matrix} : expansion of Cromwell matrix into $\theta$-curves and handcuff graphs
     \item \textbf{H-deletion matrix}
   \end{itemize}
@@ -171,7 +171,18 @@
     \caption{H-deletion of $\theta$-curve graph $3_1$}
   \end{figure}
 
-  
+  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a Cromwell matrix of $K$ is $0$ or $\pm 2$.
+  \begin{figure}[h]
+    \centering
+    \begin{tabular}{cccc}
+      \includegraphics[width=0.2\textwidth]{figure/trefoilimage.png} &
+      \includegraphics[width=0.2\textwidth]{figure/gridtheta.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
+    \end{tabular}  
+    \caption{Determinant of a Cromwell matrix of Trefoil}
+  \end{figure}
+
   \end{block}
   \column{0.33\textwidth}
 
@@ -203,22 +214,12 @@
   %   \end{itemize}
   % \end{block}
   \begin{block}{}
-  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a Cromwell matrix of $K$ is $0$ or $\pm 2$.
-  \begin{figure}[h]
-    \centering
-    \begin{tabular}{cccc}
-      \includegraphics[width=0.2\textwidth]{figure/trefoilimage.png} &
-      \includegraphics[width=0.2\textwidth]{figure/gridtheta.png} &
-      \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
-      \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
-    \end{tabular}        
-    \caption{Determinant of a Cromwell matrix of Trefoil}
-  \end{figure}
   $\mathbf{Theorem\ 2.}$ Let $M$ be a THC-Cromwell matrix of $\theta$-curve or handcuff graph, and let det*($M$) be the determinant of H-deletion matrix of $M$. Then, \\
 		\begin{itemize}
 			\item det*($M$) = $\pm1$ $\iff$ $M$ represents $\theta$-curve
 			\item det*($M$) = $0$ or $\pm2$ $\iff$ $M$ represents handcuff graph
 		\end{itemize}
+    \vspace*{-2cm}
   %\begin{figure}
    % \centering
     %\includegraphics[height=8.5cm]{figure/table.png}
@@ -235,8 +236,10 @@
     \includegraphics[width=0.21\textwidth]{figure/matrix8.png} &
     \includegraphics[width=0.22\textwidth]{figure/matrix9.png} \\
   \end{tabular}
+  \vspace*{-0.5cm}
   \caption{Determinant of a $\theta$-curve : Line-shape and T-shape}
   \end{figure}
+  \vspace*{-2cm}
   \begin{figure}[h]
   \centering
 	\begin{tabular}{cccc}
@@ -245,7 +248,9 @@
     \includegraphics[width=0.24\textwidth]{figure/matrix11.png} &
     \includegraphics[width=0.23\textwidth]{figure/matrix12.png} \\
   \end{tabular}
+  \vspace*{-0.5cm}
   \caption{Determinant of a Handcuff graph}
+  \vspace*{-1.5cm}
   \end{figure}
 
   \end{block}

@@ -203,7 +203,7 @@
   %   \end{itemize}
   % \end{block}
   \begin{block}{}
-  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a cromwell matrix of $K$ is $0$ or $\pm 2$.
+  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a Cromwell matrix of $K$ is $0$ or $\pm 2$.
   \begin{figure}[h]
     \centering
     \begin{tabular}{cccc}
@@ -212,9 +212,9 @@
       \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
       \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
     \end{tabular}        
-    \caption{Determinant of a cromwell matrix of Trefoil}
+    \caption{Determinant of a Cromwell matrix of Trefoil}
   \end{figure}
-  $\mathbf{Theorem\ 2.}$ Let $M$ be a THC-cromwell matrice of $\theta$-curve or handcuff graph, and let det*($M$) be the determinant of H-deletion matrix of $M$. Then, \\
+  $\mathbf{Theorem\ 2.}$ Let $M$ be a THC-Cromwell matrix of $\theta$-curve or handcuff graph, and let det*($M$) be the determinant of H-deletion matrix of $M$. Then, \\
 		\begin{itemize}
 			\item det*($M$) = $\pm1$ $\iff$ $M$ represents $\theta$-curve
 			\item det*($M$) = $0$ or $\pm2$ $\iff$ $M$ represents handcuff graph
@@ -236,7 +236,7 @@
     \includegraphics[width=0.21\textwidth]{figure/matrix8.png} &
     \includegraphics[width=0.22\textwidth]{figure/matrix9.png} \\
   \end{tabular}
-  \caption{Determinant of a $\thata$-curve : Line-shap and T-shape}
+  \caption{Determinant of a $\theta$-curve : Line-shape and T-shape}
   \end{figure}
   \vspace*(-1cm)
   \begin{figure}[h]
@@ -253,7 +253,7 @@
   \end{block}
   
   \begin{block}{Bounds of Arc Index}
-  $\mathbf{Theorem\ 3.}$ $[$2$]$ For any spatial graph $G$, 
+  $\mathbf{Theorem\ 3.}$ $[$3$]$ For any spatial graph $G$, 
   \begin{equation*}
     \alpha(H) \leq c(H) + e + b
   \end{equation*}
@@ -292,22 +292,22 @@
   \column{0.33\textwidth}
   \begin{block}
     
-    $\mathbf{Theorem\ 3.}$ Let $H$ be a handcuff graph and $L$ is link that connecting edge is deleted from $H$. If $L$ is non-split alternating, then 
+    $\mathbf{Theorem\ 5.}$ Let $H$ be a handcuff graph and $L$ is link that connecting edge is deleted from $H$. If $L$ is non-split alternating, then 
   \begin{equation*}
     \alpha(H) \geq c(L) + 3
   \end{equation*}
 
-    $\mathbf{Definition\ 1.}$ $[$5$]$ For a graph $G$, let
+    $\mathbf{Definition\ 6.}$ $[$4$]$ For a graph $G$, let
     \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)} \]
     where $\mu(G)$, $\beta(G)$, and $E$ are the number of connected components, the first Betti number, and the edge set of $G$ each. Therefore, the \\
     \textbf{Yamada polynomial} of $G$, $R(G)$, is defined by
     \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
     
-    $\mathbf{Theorem\ 4.}$ $[$1$]$ Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph, and let $c, n$ be the number of caps and crossings in $S_T$, respectively. Then,
+    $\mathbf{Theorem\ 7.}$ Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph, and let $c, n$ be the number of caps and crossings in $S_T$, respectively. Then,
      \[ \mathrm{spr}(R(S_T)) \leq c+2n \]
      where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. 
 
-    $\mathbf{Theorem\ 5.}$ Let $T$ be a $\theta$-curve or handcuff graph. Then,
+    $\mathbf{Theorem\ 8.}$ Let $T$ be a $\theta$-curve or handcuff graph. Then,
      \[ \alpha(T) \ge 2 + \sqrt{\mathrm{spr}(R(S_T)) - 4}. \]
 
   \end{block}
@@ -322,10 +322,10 @@
   \begin{block}{References}
 {\small
     \begin{enumerate}
-      \item[[1]] Yoonsang Lee. (2023). A Study on Arc Index of Theta-Curves. Korea Science Academy of KAIST
-      \item[[2]] Minjung Lee, Sungjong No, and Seungsang Oh. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
-      \item[[3]] Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.
-      \item[[4]] Yamada, S. (1989). An invariant of spatial graphs. \textit{Journal of Graph Theory, 13}(5), 537–551.      
+      \item[1] Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.
+      \item[2] Yoonsang Lee. (2023). A Study on Arc Index of Theta-Curves. Korea Science Academy of KAIST
+      \item[3] Minjung Lee, Sungjong No, and Seungsang Oh. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
+      \item[4] Yamada, S. (1989). An invariant of spatial graphs. \textit{Journal of Graph Theory, 13}(5), 537–551.      
     \end{enumerate}
 }
 	% \TINY

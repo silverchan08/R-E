@@ -79,25 +79,24 @@
 
 \begin{frame}{Lower Bound from Yamada Polynomial}
 	\begin{thm}
-	Let $T$ be any $\theta$-curve or handcuff graph.
+	Let $G$ be any $\theta$-curve or handcuff graph.
 	Then
 	\[
-		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} \le \alpha(T)
+		2 + \sqrt{\max\deg_xR(S_G) - \min\deg_xR(S_G) - 4} \le \alpha(G).
 	\]
-	where $R(T)$ is a Yamada Polynomial of $T$.
 	\end{thm}	
 \end{frame}
 
 
 \begin{frame}{Lower Bound from Yamada Polynomial}
 	\begin{prop}
-		Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$ \myem{without nested caps}.
+		Let $S_G$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$ \myem{without nested caps}.
 		Then
 		\[
-			\max\deg_x R(S_T) \le c + n, \quad
-			\min\deg_x R(S_T) \ge -(c + n),
+			\max\deg_x R(S_G) \le c + n, \quad
+			\min\deg_x R(S_G) \ge -(c + n),
 		\]
-		where \myem{$c, n$} is the number of caps and crossings in $S_T$, respectively.
+		where \myem{$c, n$} is the number of caps and crossings in $S_G$, respectively.
 	\end{prop}
 
 	\mypf
@@ -110,20 +109,20 @@
 
 \begin{frame}
 	\begin{prop}
-		Let $S_T$ be a reduced simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$
-		corresponding to minimal arc presentation of $T$.
+		Let $S_G$ be a reduced simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$
+		corresponding to minimal arc presentation of $G$.
 		Then
 		\[
-			\max\deg_xR(S_T) - \min\deg_xR(S_T) - 2n \le \alpha(T)
+			\max\deg_xR(S_G) - \min\deg_xR(S_G) - 2n \le \alpha(G)
 			% \max\deg_xR(S_T) - \min\deg_xR(S_T) -2n + 4 \le 3\alpha(T)
 		\]
-		where $n$ is the number of crossings in $S_T$.
+		where $n$ is the number of crossings in $S_G$.
 	\end{prop}
 	\mypf
 
 	\begin{itemize}
-		\item $S_T$ is a reduced simple closure of stacked tangle corresponding to minimal arc presentation.
-		\item The number of caps $c$ in $S_T$ is exactly arc index of $T$, $\alpha(T)$.
+		\item $S_G$ is a reduced simple closure of stacked tangle corresponding to minimal arc presentation.
+		\item The number of caps $c$ in $S_G$ is exactly arc index of $G$, $\alpha(G)$.
 	\end{itemize}
 \end{frame}
 
@@ -138,7 +137,7 @@
 
 	$$
 	\begin{tabu} to .6\linewidth {X[2,l]|X[c]|X[c]} \hline
-	 & $S_T^{neg}$ & $S_T^{pos}$\\\hline
+	 & $S_G^{neg}$ & $S_G^{pos}$\\\hline
 	 Number of Caps & $c$ & $c$\\\hline
 	 Number of Crossings & $n+p$ & $n+(c-p)$ \\\hline
 	\end{tabu}
@@ -147,9 +146,9 @@
 	\vspace{0.3cm}
 
 	\begin{align*}
-		\min\deg_xR(S_T) - 2p = \min\deg_xR\left(S_T^{neg}\right) &\ge -c + - (n+p)\\
-		\max\deg_xR(S_T) + 2(c-p) = \max\deg_xR\left(S_T^{pos}\right) &\le c + \left[n+(c-p)\right]\\
-		\max\deg_xR(S_T) - \min\deg_xR(S_T) & \le c + 2n \quad \quad \quad \quad \quad \quad \quad \qed
+		\min\deg_xR(S_G) - 2p = \min\deg_xR\left(S_G^{neg}\right) &\ge -c + - (n+p)\\
+		\max\deg_xR(S_G) + 2(c-p) = \max\deg_xR\left(S_G^{pos}\right) &\le c + \left[n+(c-p)\right]\\
+		\max\deg_xR(S_G) - \min\deg_xR(S_G) & \le c + 2n \quad \quad \quad \quad \quad \quad \quad \qed
 	\end{align*}
 
 	\end{itemize}
@@ -158,23 +157,23 @@
 
 \begin{frame}{Proof of Theorem}
 	\begin{thm}
-	Let $T$ be any $\theta$-curve or handcuff graph.
+	Let $G$ be any $\theta$-curve or handcuff graph.
 	Then
 	\[
-		2 + \sqrt{\max\deg_xR(S_T) - \min\deg_xR(S_T) - 4} \le \alpha(T).
+		2 + \sqrt{\max\deg_xR(S_G) - \min\deg_xR(S_G) - 4} \le \alpha(G).
 	\]
 	\end{thm}	
 
 	\mypf
 
-	Let $S_T$ be a reduce simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$
-	corresponding to minimal arc presentation of $T$.
+	Let $S_G$ be a reduce simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$
+	corresponding to minimal arc presentation of $G$.
 
 	\begin{itemize}
-		\item The number of caps : $\alpha(T)$
+		\item The number of caps : $\alpha(G)$
 		\item The number of non-simple disks : $2$
-		\item The number of simple disks : $\alpha(T)-3$
+		\item The number of simple disks : $\alpha(G)-3$
 	\end{itemize}
 
-	Consider the maximum number of crossings in $S_T$, and use the previous theorem.
+	Consider the maximum number of crossings in $S_G$, and use the previous theorem.
 \end{frame}

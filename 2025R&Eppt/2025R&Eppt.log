@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 00:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 00:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt
-(c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
+**c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt
+(c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1598,7 +1598,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: File `ksa_왼쪽로고3' not found.
+c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: File `ksa_왼쪽로고3' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1706,7 +1706,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: There's no line here to end.
+c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -45245,7 +45245,7 @@ File: figs/y143.png Graphic file (type bmp)
 ]
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 109.
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 108.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
@@ -45262,7 +45262,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 File: figs/simplecap.png Graphic file (type bmp)
 <figs/simplecap.png>
 
-Overfull \vbox (23.25111pt too high) detected at line 109
+Overfull \vbox (23.25111pt too high) detected at line 108
  []
 
 
@@ -45279,7 +45279,7 @@ File: figs/ST1_new.png Graphic file (type bmp)
 File: figs/ST2_new.png Graphic file (type bmp)
 <figs/ST2_new.png>
 
-Overfull \vbox (9.07571pt too high) detected at line 156
+Overfull \vbox (9.07571pt too high) detected at line 155
  []
 
 
@@ -45651,11 +45651,11 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  54835 strings out of 468527
- 1307726 string characters out of 5451377
+ 1307732 string characters out of 5451377
  1791346 words of memory out of 5000000
  81987 multiletter control sequences out of 15000+600000
  647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,26n,142p,1946b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 2025R&Eppt.pdf (34 pages).

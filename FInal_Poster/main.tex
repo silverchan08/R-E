@@ -54,7 +54,7 @@
 % ====================
 
 %\title{Arc Indices of Theta-Curves and Handcuff Graphs}
-\title{The Determinant and Arc Indices of $\theta$-Curves and Handcuff-Graphs}
+\title{The Determinant and Arc Indices of $\theta$-Curves and Handcuff Graphs}
 
 
 \author{Cho, Eunchan \inst{1} \and  Shin, Jeongwon \inst{1} \and  Seo, Boyeon \inst{1} \and  Choi, Minho \inst{1} \and Kim, Hun \inst{2} \and Jin, GyoTaek \inst{3}}
@@ -118,6 +118,10 @@
 % \separatorcolumn
 
 \begin{frame}[t]
+
+  \include{grid}
+  \vspace*{-2cm}
+
 % \begin{column}{\colwidth}
 \begin{columns}[t]
   \column{0.33\textwidth}
@@ -126,16 +130,18 @@
     %In \textbf{Knot Theory}, people classify each knot using their \textbf{Knot Invariant}. \\
     \begin{itemize}
       \item \textbf{$\theta$-curve}
-      \begin{figure}[h]
-      \centering
-      \includegraphics[width=0.8\textwidth]{figure/theta_exe.png}
-      \end{figure}
-      \item \textbf{Handcuff graph}
-      \begin{figure}[h]
-      \centering
-      \includegraphics[width=0.8\textwidth]{figure/handcufflist.png}
-      \end{figure}
     \end{itemize}
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{figure/theta_exe.png}
+      \end{figure}
+    \begin{itemize}
+      \item \textbf{Handcuff graph}
+    \end{itemize}
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{figure/handcufflist.png}
+      \end{figure}
     \vspace*{-1cm}
   \end{block}
 
@@ -143,25 +149,28 @@
     %\caption{An algorithm with caption}\label{alg:cap}
     \begin{itemize} 
       \item \textbf{Grid diagram and Arc presentation}
+    \end{itemize}
       \vspace*{-2cm}
       \begin{figure}[h]
         \centering
         \begin{tabular}{cc}
-          \includegraphics[width=0.7\textwidth]{figure/grid_diagram_1.png} &
-          \includegraphics[width=0.25\textwidth]{figure/grid_diagram_2.png} \\
+          \includegraphics[width=0.6\textwidth]{figure/grid_diagram_1.png} &
+          \includegraphics[width=0.2\textwidth]{figure/grid_diagram_2.png} \\
         \end{tabular}        
       \end{figure}
-      \item \textbf{Arc index} : The minimal number of pages among all possible arc presentations of K.
     \vspace*{-1cm}
+    \begin{itemize}
+      \item \textbf{Arc index} : The minimal number of pages among all possible arc presentations of K
     \end{itemize}
+    \vspace*{-1cm}
   \end{block}
     
 
 
   \begin{block}{Matrices of $\theta$-Curves and Handcuff Graphs}
   \begin{itemize}
-    \item \textbf{Cromwell matrix} : an $n\times n$ binary matrix each of whose rows and columns has exactly two 1s
-    \item \textbf{THC-Cromwell matrix} : expansion of Cromwell matrix into $\theta$-curves and handcuff graphs
+    \item \textbf{Cromwell matrix} :\\an $n\times n$ binary matrix each of whose rows and columns has exactly two 1s
+    \item \textbf{THC-Cromwell matrix} :\\expansion of Cromwell matrix into $\theta$-curves and handcuff graphs
     \item \textbf{H-deletion matrix}
   \end{itemize}
 
@@ -171,17 +180,6 @@
     \caption{H-deletion of $\theta$-curve graph $3_1$}
   \end{figure}
 
-  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a Cromwell matrix of $K$ is $0$ or $\pm 2$.
-  \begin{figure}[h]
-    \centering
-    \begin{tabular}{cccc}
-      \includegraphics[width=0.2\textwidth]{figure/trefoilimage.png} &
-      \includegraphics[width=0.2\textwidth]{figure/gridtheta.png} &
-      \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
-      \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
-    \end{tabular}  
-    \caption{Determinant of a Cromwell matrix of Trefoil}
-  \end{figure}
 
   \end{block}
   \column{0.33\textwidth}
@@ -213,7 +211,20 @@
   %   %\item \textbf{Simple closure}: The planar projection of the stacked tangle without any nested caps
   %   \end{itemize}
   % \end{block}
-  \begin{block}{}
+  \begin{block}{Determinants}
+
+  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a Cromwell matrix of $K$ is $0$ or $\pm 2$.
+  \begin{figure}[h]
+    \centering
+    \begin{tabular}{cccc}
+      \includegraphics[width=0.2\textwidth]{figure/trefoilimage.png} &
+      \includegraphics[width=0.2\textwidth]{figure/gridtheta.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
+    \end{tabular}  
+    \caption{Determinant of a Cromwell matrix of Trefoil}
+  \end{figure}
+
   $\mathbf{Theorem\ 2.}$ Let $M$ be a THC-Cromwell matrix of $\theta$-curve or handcuff graph, and let det*($M$) be the determinant of H-deletion matrix of $M$. Then, \\
 		\begin{itemize}
 			\item det*($M$) = $\pm1$ $\iff$ $M$ represents $\theta$-curve
@@ -255,7 +266,7 @@
 
   \end{block}
   
-  \begin{block}{Bounds of Arc Index}
+  \begin{block}{Upper Bounds of Arc Index}
   $\mathbf{Theorem\ 3.}$ $[$3$]$ For any spatial graph $G$, 
   \begin{equation*}
     \alpha(G) \leq c(G) + e + b
@@ -293,7 +304,7 @@
 
   
   \column{0.33\textwidth}
-  \begin{block}
+  \begin{block}{Lower Bounds of Arc Index}
     
     $\mathbf{Theorem\ 5.}$ Let $H$ be a handcuff graph and $L$ is a constituent link. If $L$ is non-split and alternating, then 
   \begin{equation*}
@@ -340,7 +351,6 @@
 
 \end{columns}
 
-\include{grid}
 
 \end{frame}
 \end{document}

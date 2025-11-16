@@ -251,11 +251,19 @@
   \end{block}
   
   \begin{block}{Bounds of Arc Index}
-  $\mathbf{Theorem\ 3.}$ $[$3$]$ For any spatial graph $G$, 
+  $\mathbf{Notation.}$
+  \vspace{-0.7cm}
+  For a spatial graph $G$,
+  \begin{itemize}
+    \item $c(G)$: the number of crossing of $G$
+    \item $\alpha(G)$: arc index of $G$
+  \end{itemize}
+
+  $\mathbf{Theorem\ 3.}$ $[$3$]$ For a spatial graph $G$, 
   \begin{equation*}
     \alpha(G) \leq c(G) + e + b
   \end{equation*}
-  where $\alpha(G)$, $c(G)$ are arc index and crossing number of $G$, and $e, b$ are the number of edges and bouquet cut-components, repsectively.
+  where $e$ and $b$ are the number of edges and bouquet cut-components, repsectively.
   
   $\mathbf{Corollary\ 4.}$ For non-split handcuff graph $H$,
   \begin{equation*}
@@ -295,18 +303,16 @@
     \alpha(H) \geq c(L) + 3.
   \end{equation*}
 
-    $\mathbf{Definition\ 6.}$ $[$4$]$ For a graph $G$, let
-    \[ h(G)(x, y) = \sum_{F \subset E} (-x)^{-|F|} x^{\mu(G-F)} y^{\beta(G-F)} \]
-    where $\mu(G)$, $\beta(G)$, $E$ are the number of connected components, the first Betti number, and the edge set of $G$ respectively. \\
-    \textbf{Yamada polynomial} of $G$, $R(G)$, is defined by
-    \[ R(G)(x) = h(G)(-1, -x-2-x^{-1}). \]
+    $\mathbf{Definition\ 6.}$ $[$4$]$ Let $D_G$ be a diagram of a $\theta$-curve of handcuff-graph $G$. The \textbf{Yamada poplynomial} $R(G) \in \mathbb{Z}[x^{\pm{1}}]$ is calculated by \\
+    \includegraphics[width=\textwidth]{figure/yamada.png} \\
+    \includegraphics[width=\textwidth]{figure/stackeds.png}
     
-    $\mathbf{Theorem\ 7.}$ Let $S_T$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $T$, and $c, n$ be the number of caps and crossings in $S_T$, respectively. Then,
+    $\mathbf{Theorem\ 7.}$ Let $S_G$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$. For $c$ and $n$ be the number of caps and crossings in $S_T$, respectively. Then,
      \[ \mathrm{spr}(R(S_T)) \leq c+2n \]
-     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$. 
+     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$.
 
-    $\mathbf{Theorem\ 8.}$ Let $T$ be a $\theta$-curve or handcuff graph. Then,
-     \[ \alpha(T) \ge 2 + \sqrt{\mathrm{spr}(R(S_T)) - 4}. \]
+    $\mathbf{Theorem\ 8.}$ Let $G$ be a $\theta$-curve or handcuff graph. Then,
+     \[ \alpha(G) \ge 2 + \sqrt{\mathrm{spr}(R(S_G)) - 4}. \]
 
   \end{block}
 

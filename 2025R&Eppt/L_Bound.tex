@@ -1,7 +1,7 @@
 \section{Lower Bounds of Arc Index}
 
 \begin{frame}{Lower Bound from Constituent Knots/Links}
-	\begin{thm}
+	\begin{thm}[Lee, 2023]
 		Let $T$ be any $\theta$-curve
 		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
 		Then
@@ -10,7 +10,7 @@
 		\]
 	\end{thm}
 	
-	\begin{thm}
+	\begin{thm}[Lee, 2023]
 		Let $T$ be any $\theta$-curve
 		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
 		Then
@@ -38,7 +38,7 @@
 	\end{corollary}
 \end{frame}
 
-\begin{frame}{Stacked Tangle of an $\theta$-Curve and Handcuff-Graph}
+\begin{frame}{Stacked Tangle of an $\theta$-Curve and Handcuff Graph}
 	\begin{tabu}{X[c,8]X[c,8]X[c,10]X[c,10],X[c,10]}
 		\includegraphics[width=\linewidth]{stacked_tangle.png}
 		& \includegraphics[width=\linewidth]{stacked_tangle2.png}
@@ -47,7 +47,7 @@
 		& \includegraphics[width=.3\linewidth]{stacked_handcuff.png} \\
 		\multicolumn{2}{c}{Stacked Tangle of a Link}
 		& \multicolumn{2}{c}{$\theta$-Curve}
-		& Handcuff-Graph
+		& Handcuff Graph
 	\end{tabu}
 
 	\seprule
@@ -57,11 +57,11 @@
 
 
 \begin{frame}{Yamada Polynomials}
-	Let $D_G$ be a diagram of an $\theta$-curve or handcuff-graph $G$.
+	Let $D_G$ be a diagram of an $\theta$-curve or handcuff graph $G$.
 	Then, the \term{Yamada Polynomial $R(D_G)\in \mathbf{Z}\left[x^{\pm1}\right]$} is calculated by the following properties:
 	\begin{itemize}
 		\item \myem{Y6:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y6}}\right)= - (x+1+x^{-1})(x + x^{-1}) = -x^2 - x - 2 - x^{-1} - x^{-2}$\hfill \myem{Y7:} $R\left(\raisebox{-1.5pt}{\includegraphics[height=8pt]{y7}}\right)=0$
-		\item \myem{Y8:} $R(G\cup\bigcirc) = (x+1+x^{-1})R(G)$ for an arbitrary $\theta$-curve or handcuff-graph diagram $G$
+		\item \myem{Y8:} $R(G\cup\bigcirc) = (x+1+x^{-1})R(G)$ for an arbitrary $\theta$-curve or handcuff graph diagram $G$
 		\item \myem{Y9:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y91}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y92}}\right)=(x-x^{-1})\left[R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y93}}\right)-R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y94}}\right)\right]$
 		\item \myem{Y10:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y101}}\right) = x^2 R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y103}}\right)$,\quad
 		$R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y102}}\right) = x^{-2} R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y103}}\right)$
@@ -71,7 +71,7 @@
 		\item \myem{Y14:} $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y141}}\right) = -x R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y143}}\right)$,\quad $R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y142}}\right) = -x^{-1}R\left(\raisebox{-3pt}{\includegraphics[height=12pt]{y143}}\right)$
 	\end{itemize}
 
-	\begin{prop}[\cite{yamada}]
+	\begin{prop}[Yamada, 1989]
 		$R(D_G)$ is an ambient isotopy invariant of $G$ up to multiplying $(-x)^n$ for some integer $n$.
 	\end{prop}
 \end{frame}

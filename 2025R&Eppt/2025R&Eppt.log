@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 19:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 20:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt
-(c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1598,7 +1598,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: File `ksa_왼쪽로고3' not found.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: File `ksa_왼쪽로고3' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1706,7 +1706,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1794,53 +1794,12 @@ Package microtype Info: Character `\guilsinglright ' is missing
 [4
 
 ]
-
-./intro.tex:76: Package array Error:  Illegal pream-token (x): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 \end{frame}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./intro.tex:76: Package array Error:  Illegal pream-token ([): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 \end{frame}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./intro.tex:76: Package array Error:  Illegal pream-token (]): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 \end{frame}
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 File: figs/Trefoilimage.png Graphic file (type bmp)
 <figs/Trefoilimage.png>
 File: figs/trefoil arc presentation.png Graphic file (type bmp)
 <figs/trefoil arc presentation.png>
 File: figs/trefoil_grid.png Graphic file (type bmp)
 <figs/trefoil_grid.png>
-
-Overfull \hbox (16158.6948pt too wide) in paragraph at lines 76--76
- [][] 
- []
-
 File: figs/theta52.png Graphic file (type bmp)
 <figs/theta52.png>
 File: figs/openbook.png Graphic file (type bmp)
@@ -1854,7 +1813,7 @@ File: figs/handcuff_openbook.png Graphic file (type bmp)
 File: figs/handcuff grid diagram.png Graphic file (type bmp)
 <figs/handcuff grid diagram.png>
 
-Overfull \vbox (13.09885pt too high) detected at line 76
+Overfull \vbox (3.09885pt too high) detected at line 81
  []
 
 
@@ -1869,7 +1828,7 @@ Overfull \vbox (13.09885pt too high) detected at line 76
 File: figs/grid_diagram_1.png Graphic file (type bmp)
 <figs/grid_diagram_1.png>
 
-Overfull \hbox (81.17671pt too wide) in paragraph at lines 104--104
+Overfull \hbox (81.17671pt too wide) in paragraph at lines 109--109
  [][]| 
  []
 
@@ -1877,7 +1836,7 @@ File: figs/grid_diagram_2.png Graphic file (type bmp)
 <figs/grid_diagram_2.png>
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 104.
+(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 109.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
@@ -1892,7 +1851,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \vbox (12.32135pt too high) detected at line 104
+Overfull \vbox (12.32135pt too high) detected at line 109
  []
 
 
@@ -45687,12 +45646,12 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 (rerunfilecheck)             Checksum: 29706981E6B46B8AAEA7E43607EAB5DF;1104.
  ) 
 Here is how much of TeX's memory you used:
- 54838 strings out of 468527
- 1307753 string characters out of 5451377
- 1791387 words of memory out of 5000000
- 81990 multiletter control sequences out of 15000+600000
+ 54835 strings out of 468527
+ 1307741 string characters out of 5451377
+ 1791348 words of memory out of 5000000
+ 81987 multiletter control sequences out of 15000+600000
  647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,26n,142p,1951b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 2025R&Eppt.pdf (34 pages).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 09:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 19:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1746,14 +1746,14 @@ Package microtype Info: Character `\guilsinglright ' is missing
 File: figs/theta_exe.png Graphic file (type bmp)
 <figs/theta_exe.png>
 
-Overfull \hbox (5.47012pt too wide) in paragraph at lines 31--31
+Overfull \hbox (5.47012pt too wide) in paragraph at lines 25--25
  [][]| 
  []
 
 File: figs/handcufflist.png Graphic file (type bmp)
 <figs/handcufflist.png>
 
-Overfull \hbox (28.79037pt too wide) in paragraph at lines 31--31
+Overfull \hbox (28.79037pt too wide) in paragraph at lines 25--25
  [][]| 
  []
 
@@ -1770,13 +1770,9 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <12> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 31.
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 25.
 LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/bx/it' in size <8> not available
-(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 31.
-
-Overfull \vbox (12.16373pt too high) detected at line 31
- []
-
+(Font)              Font shape `TU/FiraSansLight(0)/b/it' tried instead on input line 25.
 
 
 Package microtype Info: Character `\quotesinglbase ' is missing
@@ -1798,12 +1794,53 @@ Package microtype Info: Character `\guilsinglright ' is missing
 [4
 
 ]
+
+./intro.tex:76: Package array Error:  Illegal pream-token (x): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./intro.tex:76: Package array Error:  Illegal pream-token ([): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./intro.tex:76: Package array Error:  Illegal pream-token (]): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: figs/Trefoilimage.png Graphic file (type bmp)
 <figs/Trefoilimage.png>
 File: figs/trefoil arc presentation.png Graphic file (type bmp)
 <figs/trefoil arc presentation.png>
 File: figs/trefoil_grid.png Graphic file (type bmp)
 <figs/trefoil_grid.png>
+
+Overfull \hbox (16158.6948pt too wide) in paragraph at lines 76--76
+ [][] 
+ []
+
 File: figs/theta52.png Graphic file (type bmp)
 <figs/theta52.png>
 File: figs/openbook.png Graphic file (type bmp)
@@ -1817,7 +1854,7 @@ File: figs/handcuff_openbook.png Graphic file (type bmp)
 File: figs/handcuff grid diagram.png Graphic file (type bmp)
 <figs/handcuff grid diagram.png>
 
-Overfull \vbox (13.09885pt too high) detected at line 79
+Overfull \vbox (13.09885pt too high) detected at line 76
  []
 
 
@@ -1832,7 +1869,7 @@ Overfull \vbox (13.09885pt too high) detected at line 79
 File: figs/grid_diagram_1.png Graphic file (type bmp)
 <figs/grid_diagram_1.png>
 
-Overfull \hbox (81.17671pt too wide) in paragraph at lines 107--107
+Overfull \hbox (81.17671pt too wide) in paragraph at lines 104--104
  [][]| 
  []
 
@@ -1840,7 +1877,7 @@ File: figs/grid_diagram_2.png Graphic file (type bmp)
 <figs/grid_diagram_2.png>
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 107.
+(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 104.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
@@ -1855,7 +1892,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \vbox (12.32135pt too high) detected at line 107
+Overfull \vbox (12.32135pt too high) detected at line 104
  []
 
 
@@ -45650,10 +45687,10 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 (rerunfilecheck)             Checksum: 29706981E6B46B8AAEA7E43607EAB5DF;1104.
  ) 
 Here is how much of TeX's memory you used:
- 54835 strings out of 468527
- 1307726 string characters out of 5451377
- 1791348 words of memory out of 5000000
- 81987 multiletter control sequences out of 15000+600000
+ 54838 strings out of 468527
+ 1307753 string characters out of 5451377
+ 1791387 words of memory out of 5000000
+ 81990 multiletter control sequences out of 15000+600000
  647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s

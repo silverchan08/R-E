@@ -1,17 +1,11 @@
 \section{Introduction}
 \begin{frame}{$\theta$-Curves and Handcuff Graphs}
 	\begin{itemize}
-		\item A \term{$\theta$-curve} $T$ is a graph embedded in $S^3$,
+        \item A \term{$\theta$-curve} $T$ is a graph embedded in $S^3$,
 		which consists of two vertices $v_1$, $v_2$
 		and three edges $e_1$, $e_2$, $e_3$,
 		such that each edge joins the vertices.
-		\item A \term{constituent knot $T_{ij}$}, $1 \le i < j \le 3$, is a subgraph of $T$
-		that consists of two vertices $v_1$, $v_2$ and two edges $e_i$, $e_j$.
-    \end{itemize}
-    \begin{itemize}
         \item A \term{handcuff graph} H is a graph embedded in $S^3$ consisting of two vertices ($v_1$, $v_2$) and three edges ($e_1$, $e_2$, $e_3$), where $e_3$ has distinct endpoints $v_1$ and $v_2$, and $e_1$ and $e_2$ are loops based at $v_1$ and $v_2$.
-        \item A \term{constituent link $H_{12}$}, is a subgraph of $H$
-		that consists of two vertices $v_1$, $v_2$ and two edges $e_1$, $e_2$.
 	\end{itemize}
 
 		
@@ -43,24 +37,27 @@
 % \end{frame}
 
 \begin{frame}{Arc Presentation}
+    \term{Arc presentation} of a $\theta$-curve or handcuff graph is an embedding of them.
     \begin{itemize}
-        \item \term{Arc presentation} of a $\theta$-curve or handcuff graph is an embedding of them.
         \item It is contained in the union of finitely many half planes (called \term{pages}).
         \item The embedding is with the common boundary line (called \term{axis}).
         \item Each vertex lies in the axis.
         \item Each page contains a properly embedded single arc.
-        \item \term{Arc index}, is the minimal number of pages among all possible arc presentations of graph.
+    \end{itemize}
+    \term{Arc index}, is the minimal number of pages among all possible arc presentations of graph.
+    \begin{itemize}
         \item This arc presentation with the minimal number of pages is \term{minimal arc presentation}.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Arc Presentation}
     \centering
-    \begin{tabu}{X[c]X[c]X[c]}
+    \begin{tabu}{X[c]x[c]X[c]X[c]}
         \raisebox{-1cm}{\includegraphics[height=1cm]{Trefoilimage.png}} &
+        $\Longleftrightarrow$ &
         \raisebox{-1cm}{\includegraphics[height=1.75cm]{trefoil arc presentation.png}} &
         \raisebox{-1cm}{\includegraphics[height=1cm]{trefoil_grid.png}} \\
-        Trefoil & Open Book & Grid Diagram
+        Trefoil & & Open Book & Grid Diagram
     \end{tabu}
     \centering
     \begin{tabu}{X[c]X[c]X[c]}

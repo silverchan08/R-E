@@ -1,8 +1,30 @@
 \section{Lower Bounds of Arc Index}
 
 \begin{frame}{Lower Bound from Constituent Knots/Links}
+	\bigskip
+	\begin{itemize}
+      	\item A \term{constituent knot $T_{ij}$}, $1 \le i < j \le 3$, is a subgraph of $\theta$-curve $T$
+      that consists of two vertices $v_1$, $v_2$ and two edges $e_i$, $e_j$.
+		\begin{tabu}{X[c,8]X[c,8]X[c,8]X[c,8]}
+			\includegraphics[width=0.8\linewidth]{theta.png}
+			& \includegraphics[width=0.8\linewidth]{theta1.jpg}
+			& \includegraphics[width=0.8\linewidth]{theta2.jpg}
+			& \includegraphics[width=0.8\linewidth]{theta3.jpg}
+		\end{tabu}
+
+        \item A \term{constituent link $H_{12}$}, is a subgraph of handcuff graph $H$
+      that consists of two vertices $v_1$, $v_2$ and two edges $e_1$, $e_2$.
+		\begin{tabu}{X[c,8]X[c,8]}
+			\includegraphics[width=0.5\linewidth]{hand.jpg}
+			& \includegraphics[width=0.5\linewidth]{hand1.jpg}
+		\end{tabu}
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Lower Bound from Constituent Knots/Links}
 	\begin{thm}[Lee, 2023]
-		Let $T$ be any $\theta$-curve
+		Let $T$ be a $\theta$-curve
 		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
 		Then
 		\[
@@ -11,7 +33,7 @@
 	\end{thm}
 	
 	\begin{thm}[Lee, 2023]
-		Let $T$ be any $\theta$-curve
+		Let $T$ be a $\theta$-curve
 		and $K_1$, $K_2$, $K_3$ be three constituent knots of $T$.
 		Then
 		\[
@@ -23,7 +45,7 @@
 \begin{frame}{Lower Bound from Constituent Knots/Links}
 	\bigskip
 	\begin{thm}
-		Let $H$ be any handcuff graph, and $L$ be the constituent link of $H$.
+		Let $H$ be a handcuff graph, and $L$ be the constituent link of $H$.
 		If $L$ is an alternating and non-split link, then
 		\[
 			\alpha(H) \ge c(L) + 3.
@@ -31,11 +53,14 @@
 	\end{thm}
 
 	\begin{corollary}
-		Let $H$ be any handcuff graph, and $L$ be a constituent link of $T$. If $L$ is alternating and non-split,
+		Let $H$ be a handcuff graph, and $L$ be the constituent link of $H$. If $L$ is alternating and non-split, then
 		\[
 			\alpha(H) = c(L) + 3.
 		\]
 	\end{corollary}
+
+	\center
+	\includegraphics[width=0.2\linewidth]{hopf.png}
 \end{frame}
 
 \begin{frame}{Stacked Tangle of an $\theta$-Curve and Handcuff Graph}
@@ -51,7 +76,6 @@
 	\end{tabu}
 
 	\seprule
-	\tiny{Figure from \cite{arc_kauffman}}
 \end{frame}
 
 
@@ -79,7 +103,7 @@
 
 \begin{frame}{Lower Bound from Yamada Polynomial}
 	\begin{thm}
-	Let $G$ be any $\theta$-curve or handcuff graph.
+	Let $G$ be a $\theta$-curve or handcuff graph.
 	Then
 	\[
 		2 + \sqrt{\max\deg_xR(S_G) - \min\deg_xR(S_G) - 4} \le \alpha(G).
@@ -101,7 +125,7 @@
 
 	\mypf
 	\begin{itemize}
-		\item Let \myem{$c_s$} and \myem{$c_{ss}$} be the number of \myem{simlpe caps} or \myem{semi-simple caps}, repectively.
+		\item Let \myem{$c_s$} and \myem{$c_{ss}$} be the number of \myem{simlpe caps} and \myem{semi-simple caps}, repectively.
 		\item Use double mathematical induction of $(c_s + c_{ss}, n)$.
         $$\includegraphics[width=.35\linewidth]{simplecap.png}$$
 	\end{itemize}
@@ -157,7 +181,7 @@
 
 \begin{frame}{Proof of Theorem}
 	\begin{thm}
-	Let $G$ be any $\theta$-curve or handcuff graph.
+	Let $G$ be a $\theta$-curve or handcuff graph.
 	Then
 	\[
 		2 + \sqrt{\max\deg_xR(S_G) - \min\deg_xR(S_G) - 4} \le \alpha(G).
@@ -175,5 +199,5 @@
 		\item The number of simple disks : $\alpha(G)-3$
 	\end{itemize}
 
-	Consider the maximum number of crossings in $S_G$, and use the previous theorem.
+	The theorem is followed by considering the maximum of crossings in $S_G$ and applying previous theorems.
 \end{frame}

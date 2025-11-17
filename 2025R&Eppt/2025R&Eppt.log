@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 21:09
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 21:14
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -34712,6 +34716,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 <inserted text> 
                 $
 l.162 \end{frame}
+<<<<<<< Updated upstream
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -45669,3 +45674,6 @@ Here is how much of TeX's memory you used:
  128i,26n,142p,1946b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 2025R&Eppt.pdf (35 pages).
+=======
+        
+>>>>>>> Stashed changes

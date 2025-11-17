@@ -1,14 +1,10 @@
-<<<<<<< Updated upstream
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 21:09
-=======
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 21:14
->>>>>>> Stashed changes
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 21:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt
-(c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1602,7 +1598,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: File `ksa_왼쪽로고3' not found.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: File `ksa_왼쪽로고3' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1710,7 +1706,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-c:/Users/choim/OneDrive/문서/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/2025R&Eppt/2025R&Eppt.tex:127: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -34716,7 +34712,6 @@ two letters. (See Chapter 27 of The TeXbook.)
 <inserted text> 
                 $
 l.162 \end{frame}
-<<<<<<< Updated upstream
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -45107,6 +45102,14 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 
 [15
@@ -45666,14 +45669,11 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  54912 strings out of 468527
- 1309061 string characters out of 5451377
+ 1309070 string characters out of 5451377
  1791705 words of memory out of 5000000
  82058 multiletter control sequences out of 15000+600000
  647500 words of font info for 197 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,26n,142p,1946b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,26n,142p,1951b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 2025R&Eppt.pdf (35 pages).
-=======
-        
->>>>>>> Stashed changes

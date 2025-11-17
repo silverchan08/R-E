@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 00:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  17 NOV 2025 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -45245,7 +45245,7 @@ File: figs/y143.png Graphic file (type bmp)
 ]
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 109.
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 108.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
@@ -45262,7 +45262,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 File: figs/simplecap.png Graphic file (type bmp)
 <figs/simplecap.png>
 
-Overfull \vbox (23.25111pt too high) detected at line 109
+Overfull \vbox (23.25111pt too high) detected at line 108
  []
 
 
@@ -45279,7 +45279,7 @@ File: figs/ST1_new.png Graphic file (type bmp)
 File: figs/ST2_new.png Graphic file (type bmp)
 <figs/ST2_new.png>
 
-Overfull \vbox (9.07571pt too high) detected at line 156
+Overfull \vbox (9.07571pt too high) detected at line 155
  []
 
 
@@ -45652,7 +45652,7 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 Here is how much of TeX's memory you used:
  54835 strings out of 468527
  1307726 string characters out of 5451377
- 1791346 words of memory out of 5000000
+ 1791348 words of memory out of 5000000
  81987 multiletter control sequences out of 15000+600000
  647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

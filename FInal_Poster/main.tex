@@ -120,7 +120,7 @@
 \begin{frame}[t]
 
   \include{grid}
-  \vspace*{-2cm}
+  \vspace*{-2.5cm}
 
 % \begin{column}{\colwidth}
 \begin{columns}[t]
@@ -313,30 +313,35 @@
   \column{0.33\textwidth}
   \begin{block}{Lower Bounds of Arc Index}
     
-    $\mathbf{Theorem\ 5.}$ Let $H$ be a handcuff graph and $L$ is a constituent link. If $L$ is non-split and alternating, then 
+    $\mathbf{Theorem\ 5.}$ Let $H$ be a handcuff graph and $L$ be a constituent link of $H$. If $L$ is non-split and alternating, then 
   \begin{equation*}
     \alpha(H) \geq c(L) + 3.
   \end{equation*}
 
     $\mathbf{Definition\ 6.}$ $[$4$]$ Let $D_G$ be a diagram of a $\theta$-curve of handcuff-graph $G$. The \textbf{Yamada poplynomial} $R(G) \in \mathbb{Z}[x^{\pm{1}}]$ is calculated by \\
+    \vspace*{0.5cm}
     \includegraphics[width=\textwidth]{figure/yamada.png} \\
-    \includegraphics[width=\textwidth]{figure/stackeds.png}
-    
-    $\mathbf{Theorem\ 7.}$ Let $S_G$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$. For $c$ and $n$ be the number of caps and crossings in $S_T$, respectively. Then,
+    \vspace*{0.5cm}
+    \begin{center}
+    \includegraphics[width=0.9\textwidth]{figure/stackeds.png}
+    \end{center}
+
+    $\mathbf{Theorem\ 7.}$ Let $S_G$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$. And let $c$ and $n$ be the number of caps and crossings in $S_T$, respectively. Then,
      \[ \mathrm{spr}(R(S_T)) \leq c+2n \]
      where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$.
 
-    $\mathbf{Theorem\ 8.}$ Let $G$ be a $\theta$-curve or handcuff graph. Then,
+    $\mathbf{Theorem\ 8.}$ Let $G$ be a $\theta$-curve or handcuff graph. Then the arc index of G is given by
      \[ \alpha(G) \ge 2 + \sqrt{\mathrm{spr}(R(S_G)) - 4}. \]
-
+    \vspace*{-1.5cm}
   \end{block}
 
-  % \begin{block}{Further Studies}
-  %   \begin{itemize}
-  %     \item Using another tool to completely determine the arc indices of $\theta$-curves and handcuff graphs, such as Yamada package.
-  %     \item Applying the result of our research to $\theta$-curves or handcuff graphs of higher crossings or to other spatial graphs.
-  %   \end{itemize}
-  % \end{block}
+  \begin{block}{Further Studies}
+    \begin{itemize}
+      \item Completely determine the arc indices.
+      \item Applying the result to other objects.
+    \end{itemize}
+    \vspace*{-1cm}
+  \end{block}
 
   \begin{block}{References}
 {\small

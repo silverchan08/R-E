@@ -43150,4 +43150,2031 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./cromwell2.tex:39: Extra alignment tab has been changed to \cr.
-<recently 
+<recently read> \endtemplate 
+                             
+l.39 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:39: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.39 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+
+[14
+
+
+
+
+]
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+./cromwell2.tex:76: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Improper \prevdepth.
+\tabu@verticalspacing ...tempdimc \the \prevdepth 
+                                                  \@tempdima \dimexpr \ht \t...
+l.76 \end{frame}
+                
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+./cromwell2.tex:76: You can't use `\dimexpr' in math mode.
+\tabu@verticalspacing ...epth \@tempdima \dimexpr 
+                                                  \ht \tabu@box +\abovetabul...
+l.76 \end{frame}
+                
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: You can't use `\hrule' here except with leaders.
+<recently read> \hrule 
+                       
+l.76 \end{frame}
+                
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   d
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   w
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./cromwell2.tex:76: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.76 \end{frame}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./cromwell2.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Overfull \hbox (21.37074pt too wide) in paragraph at lines 76--76
+ []$[]$| 
+ []
+
+./cromwell2.tex:76: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.76 \end{frame}
+                
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+./cromwell2.tex:76: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{frame}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[15
+
+])
+\openout2 = `U_Bound.aux'.
+
+ (./U_Bound.tex
+
+[16
+
+
+
+
+]
+
+[17
+
+])
+\openout2 = `L_Bound.aux'.
+
+ (./L_Bound.tex
+
+[18
+
+
+
+
+]
+
+[19
+
+]
+
+[20
+
+]
+
+./L_Bound.tex:55: Package array Error:  Illegal pream-token (,): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: figs/stacked_tangle.png Graphic file (type bmp)
+<figs/stacked_tangle.png>
+File: figs/stacked_tangle2.png Graphic file (type bmp)
+<figs/stacked_tangle2.png>
+File: figs/stacked.png Graphic file (type bmp)
+<figs/stacked.png>
+File: figs/stacked_theta.png Graphic file (type bmp)
+<figs/stacked_theta.png>
+File: figs/stacked_handcuff.png Graphic file (type bmp)
+<figs/stacked_handcuff.png>
+
+Overfull \hbox (20.97981pt too wide) in paragraph at lines 55--55
+[][]  
+ []
+
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)           

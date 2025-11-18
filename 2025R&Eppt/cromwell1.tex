@@ -91,12 +91,12 @@
 
 \begin{frame}{Determinants of the THC-Cromwell matrices}
 	\begin{thm}
-		Let $G$ be a THC-Cromwell matrice of $\theta$-curve or handcuff graph. \\
+		Let $M_G$ be a THC-Cromwell matrice of $\theta$-curve or handcuff graph $G$. \\
 		\begin{itemize}
-			\item det*($G$) = $\pm1$ $\iff$ $G$ represents $\theta$-curve
-			\item det*($G$) = $0$ or $\pm2$ $\iff$ $G$ represents handcuff graph
+			\item det*($M_G$) = $\pm1$ $\iff$ $M_G$ represents $\theta$-curve
+			\item det*($M_G$) = $0$ or $\pm2$ $\iff$ $M_G$ represents handcuff graph
 		\end{itemize}
-		 where det*($G$) = determinant of H-deletion matrix of $G$
+		 where det*($M_G$) = determinant of H-deletion matrix of $M_G$
 	\end{thm}
 	\mypf
 	\begin{tabu}{X[5c]X[c]X[5c]X[2c]X[5c]}
@@ -117,7 +117,7 @@
 
 \begin{frame}{Proof of Theorem}
 	\begin{enumerate}
-		\item[\mybf{CASE 1.}] \mybf{When $G$ represents $\theta$-curve}
+		\item[\mybf{CASE 1.}] \mybf{When $M_G$ represents $\theta$-curve}
 	\end{enumerate}
 	\mybfff{Line-shape} \\
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
@@ -158,5 +158,5 @@
 			0 & 0 & 0 & 0 & \textcolor{red}{1}\\
 		\end{bmatrix}$ 
 	\end{tabu}
-	So det*($G$) = $\pm1$
+	So det*($M_G$) = $\pm1$
 \end{frame}

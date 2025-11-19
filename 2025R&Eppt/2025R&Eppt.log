@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  18 NOV 2025 19:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  19 NOV 2025 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1790,10 +1790,6 @@ Package microtype Info: Character `\guilsinglright ' is missing
 [3
 
 ]
-
-[4
-
-]
 File: figs/Trefoilimage.png Graphic file (type bmp)
 <figs/Trefoilimage.png>
 File: figs/trefoil arc presentation.png Graphic file (type bmp)
@@ -1813,10 +1809,14 @@ File: figs/handcuff_openbook.png Graphic file (type bmp)
 File: figs/handcuff grid diagram.png Graphic file (type bmp)
 <figs/handcuff grid diagram.png>
 
-Overfull \vbox (3.09885pt too high) detected at line 81
+Overfull \vbox (3.17583pt too high) detected at line 67
  []
 
 
+
+[4
+
+]
 
 [5
 
@@ -1828,7 +1828,7 @@ Overfull \vbox (3.09885pt too high) detected at line 81
 File: figs/grid_diagram_1.png Graphic file (type bmp)
 <figs/grid_diagram_1.png>
 
-Overfull \hbox (81.17671pt too wide) in paragraph at lines 109--109
+Overfull \hbox (81.17671pt too wide) in paragraph at lines 108--108
  [][]| 
  []
 
@@ -1836,7 +1836,7 @@ File: figs/grid_diagram_2.png Graphic file (type bmp)
 <figs/grid_diagram_2.png>
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/m/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 109.
+(Font)              using `TU/UnDotum.ttf(0)/m/n' instead on input line 108.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
@@ -1851,7 +1851,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \vbox (12.32135pt too high) detected at line 109
+Overfull \vbox (12.32135pt too high) detected at line 108
  []
 
 
@@ -45164,13 +45164,13 @@ File: figs/hopf.png Graphic file (type bmp)
 
 ]
 
-./L_Bound.tex:79: Package array Error:  Illegal pream-token (,): `c' used.
+./L_Bound.tex:80: Package array Error:  Illegal pream-token (,): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \end{frame}
+l.80 \end{frame}
                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -45186,7 +45186,7 @@ File: figs/stacked_theta.png Graphic file (type bmp)
 File: figs/stacked_handcuff.png Graphic file (type bmp)
 <figs/stacked_handcuff.png>
 
-Overfull \hbox (20.97981pt too wide) in paragraph at lines 79--79
+Overfull \hbox (20.97981pt too wide) in paragraph at lines 80--80
 [][]  
  []
 
@@ -45250,7 +45250,7 @@ File: figs/y143.png Graphic file (type bmp)
 ]
 
 LaTeX Font Warning: Font shape `TU/UnDotum.ttf(0)/b/it' undefined
-(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 132.
+(Font)              using `TU/UnDotum.ttf(0)/b/n' instead on input line 133.
 
 Package microtype Info: Character `\quotesinglbase ' is missing
 (microtype)             in font `\TU/UnDotum.ttf(0)/b/it/10'.
@@ -45267,7 +45267,7 @@ Package microtype Info: Character `\guilsinglright ' is missing
 File: figs/simplecap.png Graphic file (type bmp)
 <figs/simplecap.png>
 
-Overfull \vbox (23.17413pt too high) detected at line 132
+Overfull \vbox (23.17413pt too high) detected at line 133
  []
 
 
@@ -45284,7 +45284,7 @@ File: figs/ST1_new.png Graphic file (type bmp)
 File: figs/ST2_new.png Graphic file (type bmp)
 <figs/ST2_new.png>
 
-Overfull \vbox (9.1527pt too high) detected at line 179
+Overfull \vbox (9.1527pt too high) detected at line 180
  []
 
 
@@ -45292,7 +45292,7 @@ Overfull \vbox (9.1527pt too high) detected at line 179
 [27
 
 ]
-Overfull \vbox (1.57742pt too high) detected at line 203
+Overfull \vbox (1.57742pt too high) detected at line 204
  []
 
 
@@ -45647,14 +45647,14 @@ L3 programming layer <2025-05-26>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
-(rerunfilecheck)             Checksum: 29706981E6B46B8AAEA7E43607EAB5DF;1104.
+(rerunfilecheck)             Checksum: DDF2728A20E436E05149A7107CF10713;1120.
  ) 
 Here is how much of TeX's memory you used:
- 54912 strings out of 468527
- 1309055 string characters out of 5451377
- 1791705 words of memory out of 5000000
- 82058 multiletter control sequences out of 15000+600000
- 647500 words of font info for 197 fonts, out of 8000000 for 9000
+ 54915 strings out of 468527
+ 1309158 string characters out of 5451377
+ 1791719 words of memory out of 5000000
+ 82060 multiletter control sequences out of 15000+600000
+ 647508 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

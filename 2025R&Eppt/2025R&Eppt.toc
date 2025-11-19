@@ -1,7 +1,7 @@
 \babel@toc {american}{}\relax 
 \babel@toc {american}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Determinants of $\theta $-Curves and Handcuff Graphs}{8}{0}{2}
+\beamer@sectionintoc {2}{Determinants of \\ $\theta $-Curves and Handcuff Graphs}{8}{0}{2}
 \beamer@sectionintoc {3}{Upper Bounds of Arc Index}{16}{0}{3}
 \beamer@sectionintoc {4}{Lower Bounds of Arc Index}{18}{0}{4}
 \beamer@sectionintoc {5}{Minimal Grid Diagrams}{29}{0}{5}

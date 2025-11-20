@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  20 NOV 2025 20:46
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  20 NOV 2025 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -45252,6 +45252,22 @@ l.43 \end{frame}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+./L_Bound.tex:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./L_Bound.tex:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 
 [21
@@ -45393,15 +45409,6 @@ Overfull \vbox (9.07571pt too high) detected at line 180
 [28
 
 ]
-./L_Bound.tex:204: Missing $ inserted.
-<inserted text> 
-                $
-l.204 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Overfull \vbox (1.6544pt too high) detected at line 204
  []
 
@@ -45601,7 +45608,7 @@ File: figs/../grid_diagram/theta_7_64.png Graphic file (type bmp)
 File: figs/../grid_diagram/theta_7_65.png Graphic file (type bmp)
 <figs/../grid_diagram/theta_7_65.png>
 
-Overfull \vbox (17.1253pt too high) detected at line 368
+Overfull \vbox (15.93094pt too high) detected at line 368
  []
 
 
@@ -45762,7 +45769,7 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 Here is how much of TeX's memory you used:
  54931 strings out of 468527
  1309526 string characters out of 5451377
- 1791835 words of memory out of 5000000
+ 1791809 words of memory out of 5000000
  82075 multiletter control sequences out of 15000+600000
  647516 words of font info for 199 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

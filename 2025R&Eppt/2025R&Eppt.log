@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  19 NOV 2025 21:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  20 NOV 2025 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -17657,6 +17657,32 @@ Overfull \vbox (6.00653pt too high) detected at line 92
 [12
 
 ]
+
+./cromwell1.tex:118: LaTeX Error: Environment newthm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./cromwell1.tex:118: LaTeX Error: \begin{beamer@framepauses} on input line 118 ended by \end{newthm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ./cromwell1.tex:118: Improper \prevdepth.
 \tabu@verticalspacing ...tempdimc \the \prevdepth 
                                                   \@tempdima \dimexpr \ht \t...
@@ -22173,10 +22199,6 @@ File: figure/T-shape.png Graphic file (type bmp)
 
 Overfull \hbox (5.91087pt too wide) in paragraph at lines 118--118
  [][]| 
- []
-
-
-Overfull \vbox (0.67775pt too high) detected at line 118
  []
 
 
@@ -45166,6 +45188,19 @@ or  <return>  to continue without it.
 
 
 ]
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/UnDotum.ttf(0)/b/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
 
 [18
 
@@ -45201,6 +45236,23 @@ Overfull \vbox (15.13408pt too high) detected at line 23
 [20
 
 ]
+./L_Bound.tex:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./L_Bound.tex:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
 
 [21
 
@@ -45341,6 +45393,15 @@ Overfull \vbox (9.07571pt too high) detected at line 180
 [28
 
 ]
+./L_Bound.tex:204: Missing $ inserted.
+<inserted text> 
+                $
+l.204 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
 Overfull \vbox (1.6544pt too high) detected at line 204
  []
 
@@ -45699,11 +45760,11 @@ Package rerunfilecheck Info: File `2025R&Eppt.out' has not changed.
 (rerunfilecheck)             Checksum: DDF2728A20E436E05149A7107CF10713;1120.
  ) 
 Here is how much of TeX's memory you used:
- 54925 strings out of 468527
- 1309354 string characters out of 5451377
- 1791833 words of memory out of 5000000
- 82070 multiletter control sequences out of 15000+600000
- 647508 words of font info for 198 fonts, out of 8000000 for 9000
+ 54931 strings out of 468527
+ 1309526 string characters out of 5451377
+ 1791835 words of memory out of 5000000
+ 82075 multiletter control sequences out of 15000+600000
+ 647516 words of font info for 199 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,26n,142p,1944b,2782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

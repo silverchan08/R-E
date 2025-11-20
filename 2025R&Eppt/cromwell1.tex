@@ -1,21 +1,23 @@
-\section{Determinants of $\theta$-Curves and Handcuff Graphs}
+\section{Determinants of \\ $\theta$-Curves and Handcuff Graphs}
 \begin{frame}{THC-Cromwell matrix}
 	\begin{itemize}
 		\item The \term{Cromwell Matrix} of a knot is an $n\times n$ binary matrix each of whose rows and columns has exactly two 1s.
 		\item The \term{THC-Cromwell matrix} is an expansion of Cromwell matrix into $\theta$-curves and handcuff graphs.
 	\end{itemize}
 	\vspace{1cm}
-	\begin{tabu}{X[5c]X[5c]X[c]X[5c]}
+	\begin{tabu}{X[3c]X[c]X[3c]X[3c]X[c]X[3c]}
+		\raisebox{-1.25cm}{\includegraphics[height=2.5cm]{figure/theta.png}} &
+		$\longmapsto$ &
 		$\begin{bmatrix}
 			1 & 0 & 1 & 0 & 0\\
 			0 & 1 & 0 & 1 & 0\\
 			0 & 0 & 1 & 0 & 1\\
 		    1 & 0 & 0 & 1 & 0\\
 			0 & 1 & 0 & 0 & 1
-		\end{bmatrix}$&
-		\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/excromwell.png}} &			
+		\end{bmatrix}$ &
+		\raisebox{-1.15cm}{\includegraphics[height=2.3cm]{figure/excromwell.png}} &			
 		$\longmapsto$ &
-		\raisebox{-1.5cm}{\includegraphics[height=3cm]{figure/cromwell.png}} &
+		\raisebox{-1.25cm}{\includegraphics[height=2.5cm]{figure/cromwell.png}} &
 	\end{tabu}
 	
 \end{frame}
@@ -91,12 +93,12 @@
 
 \begin{frame}{Determinants of the THC-Cromwell matrices}
 	\begin{thm}
-		Let $G$ be a THC-Cromwell matrice of $\theta$-curve or handcuff graph. \\
+		Let $M_G$ be a THC-Cromwell matrice of $\theta$-curve or handcuff graph $G$. \\
 		\begin{itemize}
-			\item det*($G$) = $\pm1$ $\iff$ $G$ represents $\theta$-curve
-			\item det*($G$) = $0$ or $\pm2$ $\iff$ $G$ represents handcuff graph
+			\item det*($M_G$) = $\pm1$ $\iff$ $M_G$ represents $\theta$-curve
+			\item det*($M_G$) = $0$ or $\pm2$ $\iff$ $M_G$ represents handcuff graph
 		\end{itemize}
-		 where det*($G$) = determinant of H-deletion matrix of $G$
+		 where det*($M_G$) = determinant of H-deletion matrix of $M_G$
 	\end{thm}
 	\mypf
 	\begin{tabu}{X[5c]X[c]X[5c]X[2c]X[5c]}
@@ -117,7 +119,7 @@
 
 \begin{frame}{Proof of Theorem}
 	\begin{enumerate}
-		\item[\mybf{CASE 1.}] \mybf{When $G$ represents $\theta$-curve}
+		\item[\mybf{CASE 1.}] \mybf{When $M_G$ represents $\theta$-curve}
 	\end{enumerate}
 	\mybfff{Line-shape} \\
 	\begin{tabu}{X[5c]X[c]X[5c]X[c]X[5c]}
@@ -158,5 +160,5 @@
 			0 & 0 & 0 & 0 & \textcolor{red}{1}\\
 		\end{bmatrix}$ 
 	\end{tabu}
-	So det*($G$) = $\pm1$
+	So det*($M_G$) = $\pm1$
 \end{frame}

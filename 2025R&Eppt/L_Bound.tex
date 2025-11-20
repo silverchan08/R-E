@@ -48,19 +48,20 @@
 		Let $H$ be a handcuff graph, and $L$ be the constituent link of $H$.
 		If $L$ is an alternating and non-split link, then
 		\[
-			\alpha(H) \ge c(L) + 3.
+			\alpha(H) \ge c(L) + 3,
 		\]
+		where $c(L)$ is the crossing number of $L$.
 	\end{thm}
 
-	\begin{corollary}
-		Let $H$ be a handcuff graph, and $L$ be the constituent link of $H$. If $L$ is alternating and non-split, then
-		\[
-			\alpha(H) = c(L) + 3.
-		\]
-	\end{corollary}
+	%\begin{corollary}
+	%	Let $H$ be a handcuff graph, and $L$ be the constituent link of $H$. If $L$ is alternating and non-split, then
+	%	\[
+	%		\alpha(H) = c(L) + 3.
+	%	\]
+	%\end{corollary}
 
 	\center
-	\includegraphics[width=0.2\linewidth]{hopf.png}
+	\includegraphics[width=0.3\linewidth]{hopf.png}
 \end{frame}
 
 \begin{frame}{Stacked Tangle of an $\theta$-Curve and Handcuff Graph}
@@ -75,7 +76,7 @@
 		& Handcuff Graph
 	\end{tabu}
 
-	\seprule
+	%\seprule
 \end{frame}
 
 
@@ -103,7 +104,7 @@
 
 \begin{frame}{Lower Bound from Yamada Polynomial}
 	\begin{thm}
-	Let $G$ be a non-trivial $\theta$-curve or handcuff graph.
+	Let $G$ be a $\theta$-curve or handcuff graph.
 	Then
 	\[
 		2 + \sqrt{\max\deg_xR(S_G) - \min\deg_xR(S_G) - 4} \le \alpha(G).
@@ -112,7 +113,7 @@
 \end{frame}
 
 
-\begin{frame}{Lower Bound from Yamada Polynomial}
+\begin{frame}{Sketch of Proof}
 	\begin{prop}
 		Let $S_G$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$ \myem{without nested caps}.
 		Then
@@ -125,13 +126,13 @@
 
 	\mypf
 	\begin{itemize}
-		\item Let \myem{$c_s$} and \myem{$c_{ss}$} be the number of \myem{simlpe caps} and \myem{semi-simple caps}, respectively.
+		\item Let \myem{$c_s$} and \myem{$c_{ss}$} be the number of \myem{simple caps} and \myem{semi-simple caps}, repectively.
 		\item Use double mathematical induction of $(c_s + c_{ss}, n)$.
         $$\includegraphics[width=.35\linewidth]{simplecap.png}$$
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Sketch of Proof}
 	\begin{prop}
 		Let $S_G$ be a reduced simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$
 		corresponding to minimal arc presentation of $G$.
@@ -145,13 +146,13 @@
 	\mypf
 
 	\begin{itemize}
-		\item $S_G$ is a reduced simple closure of stacked tangle corresponding to a minimal arc presentation.
-		\item The number of caps $c$ in $S_G$ is exactly the arc index of $G$, $\alpha(G)$.
+		\item $S_G$ is a reduced simple closure of stacked tangle corresponding to minimal arc presentation.
+		\item The number of caps $c$ in $S_G$ is exactly arc index of $G$, $\alpha(G)$.
 	\end{itemize}
 \end{frame}
 
 
-\begin{frame}{Proof of Theorem}
+\begin{frame}{Sketch of Proof}
 	\begin{itemize}
 		\item Take a cap and add a positive or negative curl
 		$$\raisebox{-1cm}{\includegraphics[height=2cm]{ST1_new}} \quad \longrightarrow \quad \raisebox{-1cm}{\includegraphics[height=2cm]{ST2_new}}$$
@@ -179,9 +180,9 @@
 \end{frame}
 
 
-\begin{frame}{Proof of Theorem}
+\begin{frame}{Sketch of Proof}
 	\begin{thm}
-	Let $G$ be a non-trivial $\theta$-curve or handcuff graph.
+	Let $G$ be a $\theta$-curve or handcuff graph.
 	Then
 	\[
 		2 + \sqrt{\max\deg_xR(S_G) - \min\deg_xR(S_G) - 4} \le \alpha(G).
@@ -190,7 +191,7 @@
 
 	\mypf
 
-	Let $S_G$ be a reduced simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$
+	Let $S_G$ be a reduce simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$
 	corresponding to minimal arc presentation of $G$.
 
 	\begin{itemize}

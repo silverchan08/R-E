@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  19 NOV 2025 20:48
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  19 NOV 2025 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -45120,7 +45120,12 @@ in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
-Overfull \hbox (21.37074pt too wide) in paragraph at lines 76--76
+Overfull \hbox (3.00293pt too wide) in paragraph at lines 76--76
+ []$[]$| 
+ []
+
+
+Overfull \hbox (19.83981pt too wide) in paragraph at lines 76--76
  []$[]$| 
  []
 

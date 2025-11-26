@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  25 OCT 2025 11:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  26 NOV 2025 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report
-(c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -696,7 +696,7 @@ Package amsthm Warning: Unknown theoremstyle `proposition' on input line 68.
 
 Package amsthm Warning: Unknown theoremstyle `corollary' on input line 70.
 
-(./Midterm_report.aux
+(./Final_report.aux
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
@@ -728,7 +728,7 @@ LaTeX Warning: Label `figure_1' multiply defined.
 LaTeX Warning: Label `figure_1' multiply defined.
 
 )
-\openout1 = `Midterm_report.aux'.
+\openout1 = `Final_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
@@ -900,7 +900,7 @@ LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <10> not availa
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 117.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:118: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:118: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1018,7 +1018,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--331
 
 
 [6]
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:351: Misplaced alignment tab character &.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:351: Misplaced alignment tab character &.
 l.351 ...is even, by subtracting bottom row with &
                                                   2R_1, 2R_3, ... , 2R_{n-1}...
 I can't figure out why you would want to use a tab mark
@@ -1028,7 +1028,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:351: Missing $ inserted.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:351: Missing $ inserted.
 <inserted text> 
                 $
 l.351 ...even, by subtracting bottom row with &2R_
@@ -1041,15 +1041,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
-File: figure/T-cromwell.png Graphic file (type bmp)
-<figure/T-cromwell.png>
+File: figure/matrix7.png Graphic file (type bmp)
+<figure/matrix7.png>
 File: figure/T-shape.png Graphic file (type bmp)
 <figure/T-shape.png>
 
 
 [7]
-File: figure/L-shape.png Graphic file (type bmp)
-<figure/L-shape.png>
+File: figure/matrix4.png Graphic file (type bmp)
+<figure/matrix4.png>
 File: figure/Line-shape.png Graphic file (type bmp)
 <figure/Line-shape.png>
 
@@ -1065,7 +1065,7 @@ File: figure/region.png Graphic file (type bmp)
 File: figure/T-loop.png Graphic file (type bmp)
 <figure/T-loop.png>
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:524: Missing number, treated as zero.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:524: Missing number, treated as zero.
 <to be read again> 
                    (
 l.524 ...efore, the H-deletion matrix is $n\time (
@@ -1395,7 +1395,7 @@ File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
 
 [18]
 
-[19] (./Midterm_report.aux)
+[19] (./Final_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1410,11 +1410,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  27132 strings out of 468527
- 603206 string characters out of 5451377
- 968854 words of memory out of 5000000
+ 603164 string characters out of 5451377
+ 968849 words of memory out of 5000000
  54921 multiletter control sequences out of 15000+600000
  635034 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,9n,105p,926b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,9n,105p,929b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (19 pages).
+Output written on Final_report.pdf (19 pages).

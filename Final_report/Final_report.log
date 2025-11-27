@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  25 OCT 2025 11:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  28 NOV 2025 00:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report
-(c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex
+**c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report
+(c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -696,7 +696,7 @@ Package amsthm Warning: Unknown theoremstyle `proposition' on input line 68.
 
 Package amsthm Warning: Unknown theoremstyle `corollary' on input line 70.
 
-(./Midterm_report.aux
+(./Final_report.aux
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
@@ -727,8 +727,8 @@ LaTeX Warning: Label `figure_1' multiply defined.
 
 LaTeX Warning: Label `figure_1' multiply defined.
 
-)
-\openout1 = `Midterm_report.aux'.
+(./result.aux))
+\openout1 = `Final_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
@@ -899,20 +899,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <10> not available
 (Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 117.
 
-
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:118: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 ...ial)에 기반한 파이썬 프로그램을 작성하여 이를 확인해 보았다.\\ \\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 138--145
 
  []
@@ -1018,7 +1004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--331
 
 
 [6]
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:351: Misplaced alignment tab character &.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:351: Misplaced alignment tab character &.
 l.351 ...is even, by subtracting bottom row with &
                                                   2R_1, 2R_3, ... , 2R_{n-1}...
 I can't figure out why you would want to use a tab mark
@@ -1028,7 +1014,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:351: Missing $ inserted.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:351: Missing $ inserted.
 <inserted text> 
                 $
 l.351 ...even, by subtracting bottom row with &2R_
@@ -1065,7 +1051,7 @@ File: figure/region.png Graphic file (type bmp)
 File: figure/T-loop.png Graphic file (type bmp)
 <figure/T-loop.png>
 
-c:/Users/io25j/Documents/GitHub/R-E/Midterm_report/Midterm_report.tex:524: Missing number, treated as zero.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:524: Missing number, treated as zero.
 <to be read again> 
                    (
 l.524 ...efore, the H-deletion matrix is $n\time (
@@ -1107,295 +1093,304 @@ Underfull \hbox (badness 10000) in paragraph at lines 754--757
 
 
 [16]
-File: ../Midterm_Poster/grid_diagram/theta_3_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_3_1.png>
-File: ../Midterm_Poster/grid_diagram/theta_4_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_4_1.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_1.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_2.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_2.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_3.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_3.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_4.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_4.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_5.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_5.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_6.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_6.png>
-File: ../Midterm_Poster/grid_diagram/theta_5_7.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_5_7.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_1.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_2.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_2.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_3.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_3.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_4.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_4.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_5.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_5.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_6.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_6.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_7.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_7.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_8.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_8.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_9.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_9.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_10.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_10.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_11.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_11.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_12.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_12.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_13.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_13.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_14.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_14.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_15.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_15.png>
-File: ../Midterm_Poster/grid_diagram/theta_6_16.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_6_16.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_1.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_2.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_2.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_3.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_3.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_4.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_4.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_5.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_5.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_6.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_6.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_7.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_7.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_8.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_8.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_9.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_9.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_10.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_10.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_11.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_11.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_12.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_12.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_13.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_13.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_14.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_14.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_15.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_15.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_16.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_16.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_17.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_17.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_18.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_18.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_19.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_19.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_20.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_20.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_21.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_21.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_22.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_22.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_23.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_23.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_24.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_24.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_25.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_25.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_26.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_26.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_27.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_27.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_28.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_28.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_29.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_29.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_30.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_30.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_31.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_31.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_32.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_32.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_33.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_33.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_34.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_34.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_35.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_35.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_36.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_36.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_37.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_37.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_38.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_38.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_39.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_39.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_40.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_40.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_41.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_41.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_42.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_42.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_43.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_43.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_44.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_44.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_45.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_45.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_46.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_46.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_47.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_47.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_48.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_48.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_49.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_49.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_50.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_50.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_51.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_51.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_52.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_52.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_53.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_53.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_54.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_54.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_55.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_55.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_56.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_56.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_57.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_57.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_58.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_58.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_59.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_59.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_60.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_60.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_61.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_61.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_62.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_62.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_63.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_63.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_64.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_64.png>
-File: ../Midterm_Poster/grid_diagram/theta_7_65.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/theta_7_65.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--1143
+[17]
+\openout2 = `result.aux'.
+
+ (./result.tex
+File: grid_diagram/theta_3_1.png Graphic file (type bmp)
+<grid_diagram/theta_3_1.png>
+File: grid_diagram/theta_4_1.png Graphic file (type bmp)
+<grid_diagram/theta_4_1.png>
+File: grid_diagram/theta_5_1.png Graphic file (type bmp)
+<grid_diagram/theta_5_1.png>
+File: grid_diagram/theta_5_2.png Graphic file (type bmp)
+<grid_diagram/theta_5_2.png>
+File: grid_diagram/theta_5_3.png Graphic file (type bmp)
+<grid_diagram/theta_5_3.png>
+File: grid_diagram/theta_5_4.png Graphic file (type bmp)
+<grid_diagram/theta_5_4.png>
+File: grid_diagram/theta_5_5.png Graphic file (type bmp)
+<grid_diagram/theta_5_5.png>
+File: grid_diagram/theta_5_6.png Graphic file (type bmp)
+<grid_diagram/theta_5_6.png>
+File: grid_diagram/theta_5_7.png Graphic file (type bmp)
+<grid_diagram/theta_5_7.png>
+File: grid_diagram/theta_6_1.png Graphic file (type bmp)
+<grid_diagram/theta_6_1.png>
+File: grid_diagram/theta_6_2.png Graphic file (type bmp)
+<grid_diagram/theta_6_2.png>
+File: grid_diagram/theta_6_3.png Graphic file (type bmp)
+<grid_diagram/theta_6_3.png>
+File: grid_diagram/theta_6_4.png Graphic file (type bmp)
+<grid_diagram/theta_6_4.png>
+File: grid_diagram/theta_6_5.png Graphic file (type bmp)
+<grid_diagram/theta_6_5.png>
+File: grid_diagram/theta_6_6.png Graphic file (type bmp)
+<grid_diagram/theta_6_6.png>
+File: grid_diagram/theta_6_7.png Graphic file (type bmp)
+<grid_diagram/theta_6_7.png>
+File: grid_diagram/theta_6_8.png Graphic file (type bmp)
+<grid_diagram/theta_6_8.png>
+File: grid_diagram/theta_6_9.png Graphic file (type bmp)
+<grid_diagram/theta_6_9.png>
+File: grid_diagram/theta_6_10.png Graphic file (type bmp)
+<grid_diagram/theta_6_10.png>
+File: grid_diagram/theta_6_11.png Graphic file (type bmp)
+<grid_diagram/theta_6_11.png>
+File: grid_diagram/theta_6_12.png Graphic file (type bmp)
+<grid_diagram/theta_6_12.png>
+File: grid_diagram/theta_6_13.png Graphic file (type bmp)
+<grid_diagram/theta_6_13.png>
+File: grid_diagram/theta_6_14.png Graphic file (type bmp)
+<grid_diagram/theta_6_14.png>
+File: grid_diagram/theta_6_15.png Graphic file (type bmp)
+<grid_diagram/theta_6_15.png>
+File: grid_diagram/theta_6_16.png Graphic file (type bmp)
+<grid_diagram/theta_6_16.png>
+File: grid_diagram/theta_7_1.png Graphic file (type bmp)
+<grid_diagram/theta_7_1.png>
+File: grid_diagram/theta_7_2.png Graphic file (type bmp)
+<grid_diagram/theta_7_2.png>
+File: grid_diagram/theta_7_3.png Graphic file (type bmp)
+<grid_diagram/theta_7_3.png>
+File: grid_diagram/theta_7_4.png Graphic file (type bmp)
+<grid_diagram/theta_7_4.png>
+File: grid_diagram/theta_7_5.png Graphic file (type bmp)
+<grid_diagram/theta_7_5.png>
+File: grid_diagram/theta_7_6.png Graphic file (type bmp)
+<grid_diagram/theta_7_6.png>
+File: grid_diagram/theta_7_7.png Graphic file (type bmp)
+<grid_diagram/theta_7_7.png>
+File: grid_diagram/theta_7_8.png Graphic file (type bmp)
+<grid_diagram/theta_7_8.png>
+File: grid_diagram/theta_7_9.png Graphic file (type bmp)
+<grid_diagram/theta_7_9.png>
+File: grid_diagram/theta_7_10.png Graphic file (type bmp)
+<grid_diagram/theta_7_10.png>
+File: grid_diagram/theta_7_11.png Graphic file (type bmp)
+<grid_diagram/theta_7_11.png>
+File: grid_diagram/theta_7_12.png Graphic file (type bmp)
+<grid_diagram/theta_7_12.png>
+File: grid_diagram/theta_7_13.png Graphic file (type bmp)
+<grid_diagram/theta_7_13.png>
+File: grid_diagram/theta_7_14.png Graphic file (type bmp)
+<grid_diagram/theta_7_14.png>
+File: grid_diagram/theta_7_15.png Graphic file (type bmp)
+<grid_diagram/theta_7_15.png>
+File: grid_diagram/theta_7_16.png Graphic file (type bmp)
+<grid_diagram/theta_7_16.png>
+File: grid_diagram/theta_7_17.png Graphic file (type bmp)
+<grid_diagram/theta_7_17.png>
+File: grid_diagram/theta_7_18.png Graphic file (type bmp)
+<grid_diagram/theta_7_18.png>
+File: grid_diagram/theta_7_19.png Graphic file (type bmp)
+<grid_diagram/theta_7_19.png>
+File: grid_diagram/theta_7_20.png Graphic file (type bmp)
+<grid_diagram/theta_7_20.png>
+File: grid_diagram/theta_7_21.png Graphic file (type bmp)
+<grid_diagram/theta_7_21.png>
+File: grid_diagram/theta_7_22.png Graphic file (type bmp)
+<grid_diagram/theta_7_22.png>
+File: grid_diagram/theta_7_23.png Graphic file (type bmp)
+<grid_diagram/theta_7_23.png>
+File: grid_diagram/theta_7_24.png Graphic file (type bmp)
+<grid_diagram/theta_7_24.png>
+File: grid_diagram/theta_7_25.png Graphic file (type bmp)
+<grid_diagram/theta_7_25.png>
+File: grid_diagram/theta_7_26.png Graphic file (type bmp)
+<grid_diagram/theta_7_26.png>
+File: grid_diagram/theta_7_27.png Graphic file (type bmp)
+<grid_diagram/theta_7_27.png>
+File: grid_diagram/theta_7_28.png Graphic file (type bmp)
+<grid_diagram/theta_7_28.png>
+File: grid_diagram/theta_7_29.png Graphic file (type bmp)
+<grid_diagram/theta_7_29.png>
+File: grid_diagram/theta_7_30.png Graphic file (type bmp)
+<grid_diagram/theta_7_30.png>
+File: grid_diagram/theta_7_31.png Graphic file (type bmp)
+<grid_diagram/theta_7_31.png>
+File: grid_diagram/theta_7_32.png Graphic file (type bmp)
+<grid_diagram/theta_7_32.png>
+File: grid_diagram/theta_7_33.png Graphic file (type bmp)
+<grid_diagram/theta_7_33.png>
+File: grid_diagram/theta_7_34.png Graphic file (type bmp)
+<grid_diagram/theta_7_34.png>
+File: grid_diagram/theta_7_35.png Graphic file (type bmp)
+<grid_diagram/theta_7_35.png>
+File: grid_diagram/theta_7_36.png Graphic file (type bmp)
+<grid_diagram/theta_7_36.png>
+File: grid_diagram/theta_7_37.png Graphic file (type bmp)
+<grid_diagram/theta_7_37.png>
+File: grid_diagram/theta_7_38.png Graphic file (type bmp)
+<grid_diagram/theta_7_38.png>
+File: grid_diagram/theta_7_39.png Graphic file (type bmp)
+<grid_diagram/theta_7_39.png>
+File: grid_diagram/theta_7_40.png Graphic file (type bmp)
+<grid_diagram/theta_7_40.png>
+File: grid_diagram/theta_7_41.png Graphic file (type bmp)
+<grid_diagram/theta_7_41.png>
+File: grid_diagram/theta_7_42.png Graphic file (type bmp)
+<grid_diagram/theta_7_42.png>
+File: grid_diagram/theta_7_43.png Graphic file (type bmp)
+<grid_diagram/theta_7_43.png>
+File: grid_diagram/theta_7_44.png Graphic file (type bmp)
+<grid_diagram/theta_7_44.png>
+File: grid_diagram/theta_7_45.png Graphic file (type bmp)
+<grid_diagram/theta_7_45.png>
+File: grid_diagram/theta_7_46.png Graphic file (type bmp)
+<grid_diagram/theta_7_46.png>
+File: grid_diagram/theta_7_47.png Graphic file (type bmp)
+<grid_diagram/theta_7_47.png>
+File: grid_diagram/theta_7_48.png Graphic file (type bmp)
+<grid_diagram/theta_7_48.png>
+File: grid_diagram/theta_7_49.png Graphic file (type bmp)
+<grid_diagram/theta_7_49.png>
+File: grid_diagram/theta_7_50.png Graphic file (type bmp)
+<grid_diagram/theta_7_50.png>
+File: grid_diagram/theta_7_51.png Graphic file (type bmp)
+<grid_diagram/theta_7_51.png>
+File: grid_diagram/theta_7_52.png Graphic file (type bmp)
+<grid_diagram/theta_7_52.png>
+File: grid_diagram/theta_7_53.png Graphic file (type bmp)
+<grid_diagram/theta_7_53.png>
+File: grid_diagram/theta_7_54.png Graphic file (type bmp)
+<grid_diagram/theta_7_54.png>
+File: grid_diagram/theta_7_55.png Graphic file (type bmp)
+<grid_diagram/theta_7_55.png>
+File: grid_diagram/theta_7_56.png Graphic file (type bmp)
+<grid_diagram/theta_7_56.png>
+File: grid_diagram/theta_7_57.png Graphic file (type bmp)
+<grid_diagram/theta_7_57.png>
+File: grid_diagram/theta_7_58.png Graphic file (type bmp)
+<grid_diagram/theta_7_58.png>
+File: grid_diagram/theta_7_59.png Graphic file (type bmp)
+<grid_diagram/theta_7_59.png>
+File: grid_diagram/theta_7_60.png Graphic file (type bmp)
+<grid_diagram/theta_7_60.png>
+File: grid_diagram/theta_7_61.png Graphic file (type bmp)
+<grid_diagram/theta_7_61.png>
+File: grid_diagram/theta_7_62.png Graphic file (type bmp)
+<grid_diagram/theta_7_62.png>
+File: grid_diagram/theta_7_63.png Graphic file (type bmp)
+<grid_diagram/theta_7_63.png>
+File: grid_diagram/theta_7_64.png Graphic file (type bmp)
+<grid_diagram/theta_7_64.png>
+File: grid_diagram/theta_7_65.png Graphic file (type bmp)
+<grid_diagram/theta_7_65.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--367
 
  []
 
+File: grid_diagram/handcuff_2_1.png Graphic file (type bmp)
+<grid_diagram/handcuff_2_1.png>
+File: grid_diagram/handcuff_4_1.png Graphic file (type bmp)
+<grid_diagram/handcuff_4_1.png>
+File: grid_diagram/handcuff_5_1.png Graphic file (type bmp)
+<grid_diagram/handcuff_5_1.png>
+File: grid_diagram/handcuff_6_1.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_1.png>
+File: grid_diagram/handcuff_6_2.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_2.png>
+File: grid_diagram/handcuff_6_3.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_3.png>
+File: grid_diagram/handcuff_6_4.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_4.png>
+File: grid_diagram/handcuff_6_5.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_5.png>
+File: grid_diagram/handcuff_6_6.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_6.png>
+File: grid_diagram/handcuff_6_7.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_7.png>
+File: grid_diagram/handcuff_6_8.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_8.png>
+File: grid_diagram/handcuff_6_9.png Graphic file (type bmp)
+<grid_diagram/handcuff_6_9.png>
+File: grid_diagram/handcuff_7_1.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_1.png>
+File: grid_diagram/handcuff_7_2.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_2.png>
+File: grid_diagram/handcuff_7_3.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_3.png>
+File: grid_diagram/handcuff_7_4.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_4.png>
+File: grid_diagram/handcuff_7_5.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_5.png>
+File: grid_diagram/handcuff_7_6.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_6.png>
+File: grid_diagram/handcuff_7_7.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_7.png>
+File: grid_diagram/handcuff_7_8.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_8.png>
+File: grid_diagram/handcuff_7_9.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_9.png>
+File: grid_diagram/handcuff_7_10.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_10.png>
+File: grid_diagram/handcuff_7_11.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_11.png>
+File: grid_diagram/handcuff_7_12.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_12.png>
+File: grid_diagram/handcuff_7_13.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_13.png>
+File: grid_diagram/handcuff_7_14.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_14.png>
+File: grid_diagram/handcuff_7_15.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_15.png>
+File: grid_diagram/handcuff_7_16.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_16.png>
+File: grid_diagram/handcuff_7_17.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_17.png>
+File: grid_diagram/handcuff_7_18.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_18.png>
+File: grid_diagram/handcuff_7_19.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_19.png>
+File: grid_diagram/handcuff_7_20.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_20.png>
+File: grid_diagram/handcuff_7_21.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_21.png>
+File: grid_diagram/handcuff_7_22.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_22.png>
+File: grid_diagram/handcuff_7_23.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_23.png>
+File: grid_diagram/handcuff_7_24.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_24.png>
+File: grid_diagram/handcuff_7_25.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_25.png>
+File: grid_diagram/handcuff_7_26.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_26.png>
+File: grid_diagram/handcuff_7_27.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_27.png>
+File: grid_diagram/handcuff_7_28.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_28.png>
+File: grid_diagram/handcuff_7_29.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_29.png>
+File: grid_diagram/handcuff_7_30.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_30.png>
+File: grid_diagram/handcuff_7_31.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_31.png>
+File: grid_diagram/handcuff_7_32.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_32.png>
+File: grid_diagram/handcuff_7_33.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_33.png>
+File: grid_diagram/handcuff_7_34.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_34.png>
+File: grid_diagram/handcuff_7_35.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_35.png>
+File: grid_diagram/handcuff_7_36.png Graphic file (type bmp)
+<grid_diagram/handcuff_7_36.png>
+)
+
+[18
+
+]
+
+[19]
+
+[20
 
 
-[17]
-File: ../Midterm_Poster/grid_diagram/handcuff_2_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_2_1.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_4_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_4_1.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_5_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_5_1.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_1.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_2.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_2.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_3.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_3.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_4.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_4.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_5.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_5.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_6.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_6.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_7.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_7.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_8.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_8.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_6_9.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_6_9.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_1.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_1.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_2.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_2.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_3.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_3.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_4.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_4.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_5.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_5.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_6.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_6.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_7.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_7.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_8.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_8.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_9.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_9.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_10.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_10.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_11.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_11.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_12.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_12.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_13.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_13.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_14.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_14.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_15.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_15.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_16.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_16.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_17.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_17.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_18.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_18.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_19.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_19.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_20.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_20.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_21.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_21.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_22.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_22.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_23.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_23.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_24.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_24.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_25.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_25.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_26.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_26.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_27.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_27.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_28.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_28.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_29.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_29.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_30.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_30.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_31.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_31.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_32.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_32.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_33.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_33.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_34.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_34.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_35.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_35.png>
-File: ../Midterm_Poster/grid_diagram/handcuff_7_36.png Graphic file (type bmp)
-<../Midterm_Poster/grid_diagram/handcuff_7_36.png>
-
-
-[18]
-
-[19] (./Midterm_report.aux)
+] (./Final_report.aux (./result.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -1409,12 +1404,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27132 strings out of 468527
- 603206 string characters out of 5451377
- 968854 words of memory out of 5000000
- 54921 multiletter control sequences out of 15000+600000
- 635034 words of font info for 112 fonts, out of 8000000 for 9000
+ 27164 strings out of 468527
+ 583914 string characters out of 5451377
+ 963128 words of memory out of 5000000
+ 54945 multiletter control sequences out of 15000+600000
+ 636580 words of font info for 118 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,9n,105p,926b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,9n,105p,922b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Midterm_report.pdf (19 pages).
+Output written on Final_report.pdf (20 pages).

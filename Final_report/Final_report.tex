@@ -14,6 +14,7 @@
 \usepackage{subcaption} % Recommended package for subfigures
 \usepackage{multicol,layout,epsf,verbatim,array,tabularx,graphicx,kotex,amssymb,amsmath,setspace}
 \usepackage{tikz}
+\usepackage{tabu}
 \usetikzlibrary{
   hobby,
   intersections,
@@ -66,7 +67,7 @@
 \theoremstyle{theorem}
 \newtheorem{theorem}[thm]{Theorem}
 \theoremstyle{proposition}
-\newtheorem{prop}{Proposition}
+\newtheorem{prop}[thm]{Proposition}
 \theoremstyle{corollary}
 \newtheorem{corol}[thm]{Corollary}
 
@@ -116,7 +117,7 @@
 
     \begin{abstract}
         본 연구에서는 공간 그래프(spatial graph), 특히 엇갈림 수(crossing number) 7까지의 세타 커브 (theta-curve)와 수갑 그래프(handcuff graph)에서의 최소 그물 그림(minimal grid diagram)과 그 후보군을 구해 정리함으로써 그들의 호 지수(arc index)를 확정하고자 하였다. 이 과정에서 세타 커브와 수갑 그래프의 행렬식을 정의하고 이를 이용하여 두 커브를 구분하는 결과를 얻었다. 또한 세타 커브와 수갑 그래프에 대한 호 지수의 상한과 하한의 결과를 정립하고, 하한에 대한 정리를 쌓인 얽힘 표현(stacked tangle representation)을 통해 완전히 증명하여 호 지수를 추정할 수 있었다. 더 나아가 야마다 다항식(Yamada polynomial)에 기반한 파이선 프로그램을 작성하여 이를 확인해 보았다.
-        \textbf{중심어 : 세타 커브, 수갑 그래프, 호 지수, 최소 그물 그림}
+        \\ \textbf{중심어 : 세타 커브, 수갑 그래프, 호 지수, 최소 그물 그림}
         \\
     \end{abstract}
 
@@ -348,7 +349,7 @@ Next, we apply the row operation. We add each row above the bottom row to the bo
     \vdots & & & \ddots & \\
     2 & 2 & \cdots & 2 & 2
     \end{pmatrix}$$
-If n is even, by subtracting bottom row with &2R_1, 2R_3, ... , 2R_{n-1}$ We can get a matrix like
+If n is even, by subtracting bottom row with $2R_1, 2R_3, ... , 2R_{n-1}$ We can get a matrix like
     $$\begin{pmatrix} 
     1 & 1 & 0 & \cdots & 0\\
     0 & 1 & 1 &  &  \\
@@ -546,18 +547,18 @@ Therefore, $0$ or $\pm 2$ will be the determinant of the handcuff graph's H-dele
 
 \subsection{Bounds of Arc Index}
 We found the bounds of arc index by the theoretical background, or we found the new bounds inspired by the theoretical background.
-
+For the $\theta$-curve, it is known that the following theorems hold.
 
 \begin{theorem}
-Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
+Let T be any $\theta$-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
 \end{theorem}
 
 \begin{theorem}
-Let T be any theta-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \frac{1}{2}\sum_{i=1}^3\alpha(K_i).$$
+Let T be any $\theta$-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \frac{1}{2}\sum_{i=1}^3\alpha(K_i).$$
 \end{theorem}
 
 \begin{theorem}
-For any theta-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta))+36c(\theta)}}{3} \left(f(x) = \begin{cases} 
+For any $\theta$-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta))+36c(\theta)}}{3} \left(f(x) = \begin{cases} 
 		73 & x \equiv 0 \pmod 6\\ 
 		4 & x \equiv 1 \pmod 6\\ 
 		25 & x \equiv 2 \pmod 6\\ 
@@ -568,30 +569,12 @@ For any theta-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta)
 \end{theorem}
 
 \begin{theorem}
-For theta-curve $\theta$, if $c(\theta)$ is the crossing number, then $$\alpha(\theta) \leq c(\theta) + 3.$$
+For $\theta$-curve $T$,
+\[ \alpha(T) \leq c(T) + 3 \]
+where $c(T)$ is the crossing number of $T$.
 \end{theorem}
 
-\begin{theorem}
-Let T be any theta-curve. Then $$2+\sqrt{\max\deg_x R(S_T) - \min\deg_x R(S_T) + 4} \leq \alpha(T)$$ where $R(T)$ is a Yamada polynomial of the theta-curve T, and $S_{T}$ be a reduce simple closure of stacked tangle of a theta-curve T corresponding to minimal arc presentation of T.
-\end{theorem}
-\begin{defn}
-    The \textit{non-simple cap} is the cap that connects simple disk and non-simple disk or two non-simple disks.
-\end{defn}
-
-\begin{theorem}
-The number of the simple cap of the graph $G$ is invariant if least one of the edges are not crossed with others when the projection has minimal crossing, except the trivial theta-curve.
-\end{theorem}
-\begin{proof}
-     To find the number of the non-simple cap from the grid diagram, we can draw the horizontal lines which include 1 from row that has three 1s. Since non-simple cap connects 1s from rows which have three 1s, the number of horizontal lines is the number of the non-simple caps. When the edge that directly connects two vertices is not crossed, the number of edges that starts from the vertices, which is 5, is the number of the horizontal lines. It can be shown by drawing the binding circle of the knot. Since the binding circle crosses the crossed area of two other edges, the number of edges that starts from the vertices is 5, 2 from each vertices and 1 that directly connects the vertices, except the trivial theta-curve. Since $\alpha(G))$ is the number of caps, the number of simple cap is $\alpha(G) - 5$.\\
-\end{proof}
-
-\begin{defn}
-    In a handcuff curve, the \textit{vertex edge} is an edge that is connected to both vertices.
-\end{defn}
-
-\begin{defn}
-    In a handcuff curve, the \textit{link component} is a union of the loops from each vertex to itself.
-\end{defn}
+Now, for the handcuff graph, the followings hold.
 
 \begin{theorem}[Cromwell, P. R.]
     If $L$ is an alternating and non-split link, then
@@ -608,46 +591,39 @@ The number of the simple cap of the graph $G$ is invariant if least one of the e
 \begin{corol}
     If $H$ is a handcuff curve,
     \[ \alpha(H) \leq c(H)+5. \]
-    Especially, if the link component of $H$ is non-split,
+    Especially, if the constituent link of $H$ is non-split,
     \[ \alpha(H) \leq c(H)+3. \]
 \end{corol}
 
 \begin{proof}
-    If $H$ is a handcuff curve, the number of the edge is $3$, and the number of the bouquet is at most $2$. Thus the first inequality holds since $e=3, b \leq 2$. If there is a bouquet, one of the loops can be pulled out without affecting the rest. (See figure 1.) Then, if we remove the vertex edge of $H$, the remaining link component is a split link. Thus there are no bouquet if the link component of $H$ is non-split, and we have second inequality since $e=3, b=0$.
+    If $H$ is a handcuff curve, the number of the edge is $3$, and the number of the bouquet is at most $2$. Thus the first inequality holds since $e=3, b \leq 2$. If there is a bouquet, one of the loops can be pulled out without affecting the rest. (See figure 13.) Then, if we remove the vertex edge of $H$, the remaining constituent link is a split link. Thus there are no bouquet if the constituent link of $H$ is non-split, and we have second inequality since $e=3, b=0$.
 \end{proof}
 
 \begin{figure*}[h!]
     \centerline{\includegraphics[width=\textwidth]{image.png}}
-    \caption{caption}
+    \caption{Pulling the bouquet}
     \label{figure_4} 
 \end{figure*}
 
 \begin{prop}
-    For a handcuff curve $H$, let $L$ be a link component of $H$. Then,
+    For a handcuff curve $H$, let $L$ be the constituent link of $H$. Then,
     \[ \alpha(H) \geq \alpha(L)+1. \]
 \end{prop}
 \begin{proof}
-    In the arc presentation of $H$, let $v_1$, $v_2$ be the vertices of $H$. Then, there are half-planes that contain the vertex edge of $H$. If we remove them, the remainder is the arc presentation of $L$, the link component of $H$. Since the number of half-planes that contain the vertex edge is at least $1$, we obtain
+    In the arc presentation of $H$, let $v_1$, $v_2$ be the vertices of $H$. Then, there are half-planes that contain the vertex edge of $H$. If we remove them, the remainder is the arc presentation of $L$, the constituent link of $H$. Since the number of half-planes that contain the vertex edge is at least $1$, we obtain
     \[ \alpha(H) \geq \alpha(L) + (\text{the number of half plane that contain vertex edge}) \geq \alpha(L)+1. \]
 \end{proof}
 
-Using the Theorem 1, we obtain the following corollary.
+Using the Theorem 15, we obtain the following corollary.
 
 \begin{corol}
-    In the handcuff curve, if the link component $L$ is alternating and non-split, then
+    In the handcuff curve, if its constituent link $L$ is alternating and non-split, then
     \[ \alpha(H) \geq c(L)+3. \]
 \end{corol}
 
 \begin{proof}
-    Since $L$ is alternating and non-split link, then $\alpha(L)=c(L)+2$ by Theorem 1. Thus, \[\alpha(H) \geq \alpha(L)+1 = \left( c(L)+2 \right)+1 = c(L)+3\] according to Proposition 1.
+    Since $L$ is alternating and non-split link, then $\alpha(L)=c(L)+2$ by Theorem 15. Thus, \[\alpha(H) \geq \alpha(L)+1 = \left( c(L)+2 \right)+1 = c(L)+3\] according to Proposition 18.
 \end{proof}
-
-Combining the above corollary and the corollary of Theorem 2, we have the following theorem.
-
-\begin{theorem}
-    For the handcuff curve $H$, if the link component $L$ is alternating and non-split, then
-    \[ \alpha(H) = c(L)+3. \]
-\end{theorem}
 
 We now consider the Yamada polynomial of the handcuff curve and investigate the relationship between the difference of its maximum and minimum degrees and the arc index.
 
@@ -677,101 +653,184 @@ It is known that, for some integer $n$, the product $(-x)^n R(G)$ (where $R(G)$ 
     For the Yamada polynomial, the following properties hold.
     \begin{figure*}[h]
         \centerline{\includegraphics[width=0.75\linewidth]{yamada_property.png}}
-        \caption{Properties of Yamada polynomial.}
+        \caption{Properties of Yamada polynomial}
         \label{figure_3}
     \end{figure*}
 \end{theorem}
 
-Now, using the stacked tangle representation and the Yamada polynomial, we will prove the following theorem. The following theorem gives a lower bound for the arc index in terms of the Yamada polynomial.
+Now, using the stacked tangle representation and the Yamada polynomial, we establish lower bounds for the arc index of $\theta$-curves and handcuff graphs.
 
 \begin{theorem}
-    Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Then,
-    \[ \text{spr}(R(S_T)) \leq 2n+2 \]
-    where $n$ is the number of crossings in $S_T$ and $\mathrm{spr}(f)$ denotes the spread of $f$.
+Let $S_G$ be the simple closure of a stacked tangle of a $\theta$-curve or handcuff graph $G$. Then
+\[
+    \max\deg_x R(G) \leq c+n, \quad \min\deg_x R(G) \geq -(c+n),
+\]
+where $c$ and $n$ are the number of caps and crossings in $S_G$, respectively.
 \end{theorem}
 
-\begin{corol}
-    If $G$ is a theta curve or handcuff curve, then
-    \[ \alpha(G) \geq \frac{5 + \sqrt{4 \mathrm{spr}(R(G)) - 15}}{2}, \]
-    except when $G$ is the trivial theta curve.
-\end{corol}
+\begin{proof}
+Let a \emph{simple cap} be a cap connecting two simple disks, and a \emph{semi-simple cap} be a cap connecting a simple disk and a non-simple disk.
+We use double induction on $(c_s + c_{ss}, n)$, where $c_s$ and $c_{ss}$ are the numbers of simple caps and semi-simple caps, respectively.
+
+\subsubsection*{Basis Step}
+\begin{enumerate}
+    \item When $c_s + c_{ss} = 0$ \\
+    Since $c_s = c_{ss} = 0$, $S_G$ has no simple disks. Applying the Yamada relation Y14, we obtain
+    \[
+        R(S_G) = -x^{\pm 3}(-x^2 - x - 2 - x^{-1} - x^{-2}),
+    \]
+    and it holds the inequalities $\max\deg_x R(S_G) \le c+n$ and $\min\deg_x R(S_G) \ge -(c+n)$.
+
+    \item When $n=0$ \\
+    There are no crossings, so $S_G$ consists of trivial handcuff graph and the disjoint disks. Then $R(S_G)=0$ and clearly $0 \le c+n$, so the inequalities hold.
+\end{enumerate}
+
+\subsubsection*{Inductive Step}
+Assume the theorem holds for all $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$ with $c_s + c_{ss} > 0$. Consider $S_G$ with $c_s$ simple caps, $c_{ss}$ semi-simple caps, and $n$ crossings.
+
+Let $D_s$ be the topmost simple disk connected to the top disk, and $D$ the disk directly above $D_s$. We distinguish two cases: \\
+
+\textbf{Case 1.} No cap between $D_s$ and $D$
+\begin{enumerate}
+    \item If $D_s$ and $D$ do not intersect, swapping their positions does not change $S_G$.
+    \item If $D_s$ and $D$ intersect, apply Yamada relation Y9:
+    \[
+        R(S_G) - R(S_G^-) = (x-x^{-1}) \big(R(S_G^0) - R(S_G^\infty)\big),
+    \]
+    where $S_G^-, S_G^0, S_G^\infty$ are obtained by replacing $\Xslashfront$ with $\Xslashback$, $\czero$, $\cinf$, respectively.
+    $S_G^0$ and $S_G^\infty$ has fewer crossings than $S_G$, so the induction hypothesis ensures the following inequalities:
+    \begin{align*}
+        \max\deg_x R(S_G^0) \le c+n-1, \quad \min\deg_x R(S_G^0) \ge -(c+n-1) \\
+        \max\deg_x R(S_G^\infty) \le c+n-1, \quad \min\deg_x R(S_G^\infty) \ge -(c+n-1)
+    \end{align*}
+    Therefore, if $S_G^-$ satisfies the inequality, then $S_G$ does also.
+\end{enumerate}
+From the two cases above, when there is no cap between $D_s$ and $D$, it suffices to consider the diagram obtained by swapping $D_s$ and $D$.
+Repeating this process, we reduce to the case where a cap exists between $D_s$ and $D$. \\
+
+\textbf{Case 2.} There is a cap between $D_s$ and $D$
+\begin{enumerate}
+    \item If $D$ is a simple disk \\
+    When view from above, there are three cases:
+
+    \begin{figure*}[h]
+        \centerline{\includegraphics[width=0.5\linewidth]{figure/three_cases.png}}
+        \label{figure_3}
+    \end{figure*}
+
+    \\ When the first case, we can easily reduce the caps, and the inequality holds by inductive hypothesis. When the second and third cases,
+    we can reduce the cap and crossing using Y10. Let $S_G'$ be a reduced diagram with $c-1$ caps, $c_s - 1$ simple caps, $c_{ss}$ semi-simple caps, and $n-1$ crossings.
+    By inductive hypothesis,
+    \[
+        \max\deg_x R(S_G) = \max\deg_x R(S_G') \pm 2 \le c+n, \quad
+        \min\deg_x R(S_G) = \min\deg_x R(S_G') \pm 2 \ge -(c+n).
+    \]
+
+    \item If $D$ is non-simple disk \\
+    When there is no intersection between $D_s$ and $D$, we can easily reduce the caps, and the inequality holds by inductive hypothesis. Suppose there is an intersection. \\
+    When viewed from above, all the cases can be reduced as follows:
+
+    $$\begin{tabu}to .8\linewidth {X[7,c]X[c]X[2,c]X[c]X[7,c]X[c]X[2,c]}
+		$\includegraphics[width=1.1cm]{figure/DDQ11.png}$ \raisebox{.4cm}{or} $\raisebox{-.2cm}{\includegraphics[width=1cm]{figure/DDQ12.png}}$ & \raisebox{.4cm}{$\longrightarrow$} & $\includegraphics[width=1cm]{figure/DDQ15.png}$ & & $\includegraphics[height=1cm]{figure/DDQ13.png}$ \raisebox{.4cm}{or} $\raisebox{-.2cm}{\includegraphics[width=1cm]{figure/DDQ14.png}}$ & \raisebox{.4cm}{$\longrightarrow$} & $\includegraphics[width=1cm]{figure/DDQ15.png}$\\
+		$S_G$ &  & $S_G'$ &  & $S_G$ &  & $S_G''$
+		\end{tabu}$$
+
+    Applying Y10 and Y14, we can reduce diagrams $S_G'$ and $S_G''$ with $c-1$ caps, $c_s$ simple caps, $c_{ss}-1$ semi-simple caps, and $n-1$ crossings. Then by induction,
+    \begin{align*}
+        \max\deg_x R(S_G) = \max\deg_x R(S_G') \pm 1 \le c+n, \quad \min\deg_x R(S_G) = \min\deg_x R(S_G') \pm 1 \ge -(c+n) \\
+        \max\deg_x R(S_G) = \max\deg_x R(S_G'') \pm 2 \le c+n, \quad \min\deg_x R(S_G) = \min\deg_x R(S_G'') \pm 1 \ge -(c+n)\\
+    \end{align*}
+    and the inequalities hold for $S_G$.
+\end{enumerate}
+
+Thus, by induction, the inequalities hold for all simple closures of stacked tangles of $\theta$-curves and handcuff graphs.
+\end{proof}
+
+\begin{theorem}
+Let $S_G$ be a reduced simple closure of a stacked tangle corresponding to a minimal arc presentation of $G$. Then
+\[
+    \max\deg_x R(S_G) - \min\deg_x R(S_G) - 2n \le \alpha(G),
+\]
+where $n$ is the number of crossings and $\alpha(G)$ is the arc index of $G$.
+\end{theorem}
 
 \begin{proof}
-    Let $S_T$ be the closure of stacked tangle of theta curve or handcuff curve. Let $c_s, c_{ss}, c_n, n$ be the number of simple cap, semi-simple cap, non-simple cap and the number of crossings in $S_T$, respectively. We will prove the theorem using the mathematical induction on the pair $(c_s+c_{ss}, n)$, ordered lexicographically.
-    \begin{enumerate}
-        \item Basis cases
-        \begin{enumerate}
-            \item $c_s + c_{ss} = 0$ \\
-            Since there are no simple disks, $S_T$ is a trivial theta curve.
-            Then, there is at least $1$ crossing, and the spread of Yamada polynomial $4$.
-            Thus $\mathrm{spr}(R(S_T)) = 4 \leq 2n+2$.
-            \item $n = 0$ \\
-            Then, $S_T$ is a disjoint union of trivial handcuff graph and possibly some circles.
-            Thus, since the Yamada polynomial is $0$, $\mathrm{spr}(R(S_T)) = 0 \leq 2 = 2n+2$.
-        \end{enumerate}
-        Hence, basis cases hold.
-        
-        \item Inductive step \\
-        Assume that the theorem holds for all pairs $(c_s' + c_{ss}', n') < (c_s + c_{ss}, n)$, and suppose $c_s+c_{ss} > 0$.
-        If the top disk have only a non-simple cap, $c_s = c_{ss} = 0$. Thus the top disk have a semi-simple cap.
-        Let $D_s$ be the disk connected to the top disk, and $D$ be the disk directly above $D_s$.
-        Now we consider two cases.
-        \begin{enumerate}
-            \item There is no cap between $D_s$ and $D$. \\
-            Then, there are two possibilities: there is an intersection between $D_s$ and $D$, or there is not.
-            \begin{enumerate}
-                \item There is no intersection between $D_s$ and $D$. \\
-                We can swap the position of $D_s$ and $D$ without affecting the rest of the diagram.
-                Repeating it, we can assume that either the disk above $D_s$ is the top disk,
-                or there is a cap between $D_s$ and the disk above it.
-                \item There is an intersection between $D_s$ and $D$. \\
-                Using the relation
-                \[ R \left( \Xslashfront \right) - R \left( \Xslashback \right) = (x - x^{-1}) \left( R \left( \czero \right) - R \left ( \cinf \right) \right), \]
-                we can replace the crossing between $D_s$ and $D$ with $\Xslashback$, $\czero$ and $\cinf$. \\
-                In right hand side, both $R \left( \czero \right)$ and $R \left ( \cinf \right)$ have $c_s$ simple disks,
-                $c_{ss}$ semi-simple disks, and $n-1$ crossings. \\
-                By the induction hypothesis, their spread is at most $2(n-1)+2=2n$. Thus, the spread of right hand side is at most $2n+2$. \\
-                Moreover, $R \left( \Xslashback \right)$ can be interpreted as the diagram obtained
-                by swapping the positions of $D_s$ and $D$ in $S_T$. \\
-                After each swap, the distance between the top disk and $D_s$ decreases. \\
-                Thus, if we continue swapping $D_s$ with the disk directly above, $D_s$ will be directly below the top disk,
-                or there will be a cap between $D_s$ and the disk above it.
-            \end{enumerate}
-            In both cases, we can assume that there is a cap between $D_s$ and $D$.
-            \item There is a cap between $D_s$ and $D$. \\
-            Then, there are two possibilities: $D_s$ is simple or non-simple.
-            \begin{enumerate}
-                \item $D_s$ is simple. \\
-                We can reduce the number of caps using Reidemeister moves, as illustrated in Figure 2. \\
-                Then its spread is at most $2n+2$ by the induction hypothesis. \\
-                Therefore, the spread of $S_T$ is at most $2n+2$.
-                \item $D_s$ is non-simple. \\
-                The number of caps can be similarly reduced using the Reidemeister moves, as shown in Figure 3. \\
-                Then its spread is at most $2n+2$ by the induction hypothesis.
-            \end{enumerate}
-        \end{enumerate}
-    \end{enumerate}
-    Hence, by the base cases and the inductive step, the theorem follows by mathematical induction. \\ \\
-    Corollary follows by bounding the number of crossings $n$ in terms of the arc index $\alpha(G)$. Suppose $G$ is a theta curve, let $RS_T$ be a reduced stacked tangle with no nested caps. Since the stacked tangle has $2$ non-simple disks and $\alpha(G)-3$ simple disks, the following holds.
-    \begin{enumerate}
+In a minimal arc presentation, the number of caps $c$ equals the arc index $\alpha(G)$. Since $S_G$ is reduced simple closure, we can insert curls at each caps.
+Depending on the direction of the curl, we classify them into positive and negative curls, and let $p$ denote the number of maximum negative curls. \\
+Let $S_G^{neg}$ and $S_G^{pos}$ denote the diagrams with negative and positive curls inserted, respectively. Then,
+\[
+    R(S_G^{neg}) = x^{-2p} R(S_G), \quad
+    R(S_G^{pos}) = x^{2(c-p)} R(S_G).
+\]
+By analyzing the maximum and minimum degrees,
+\begin{align*}
+    \min\deg_xR(S_T) - 2p & = \min\deg_xR\left(S_T^{neg}\right)\\
+    & \ge -c - (n+p)\\
+    \max\deg_xR(S_T) + 2(c-p) & = \max\deg_xR\left(S_T^{pos}\right)\\
+    & \le c + \left[n+(c-p)\right]\\
+    \min\deg_xR(S_T) & \ge -c - n + p \\
+    \max\deg_xR(S_T) & n + p \\
+    \max\deg_xR(S_T) - \min\deg_xR(S_T) & \le c+2n 
+\end{align*}
+and we obtain
+\[
+    \max\deg_x R(S_G) - \min\deg_x R(S_G) \le c + 2n = \alpha(G) + 2n.
+\]
+\end{proof}
+
+\begin{theorem}
+Let $G$ be any $\theta$-curve or handcuff graph. Then
+\[
+    2 + \sqrt{\max\deg_x R(S_G) - \min\deg_x R(S_G) - 4} \le \alpha(G),
+\]
+where $R(G)$ is the Yamada polynomial of $G$.
+\end{theorem}
+
+\begin{proof}
+Let $S_G$ be a reduced simple closure of a stacked tangle corresponding to a minimal arc presentation of $G$.
+Then, the number of caps is $\alpha(G)$, and $S_G$ has $2$ non-simple disks and $\alpha(G)-3$ simple disks.
+The maximal number of crossings $n$ in $S_G$ can be estimated as follows. \\
+
+\textbf{Case 1.} $\theta$-curve
+
+\begin{enumerate}
         \item The number of crossings between simple disks is at most $\binom{\alpha(G)-3}{2}$.
         \item The number of crossings between simple and non-simple disks is at most $2 \cdot (\alpha(G)-3)$.
         \item The number of crossings between the two non-simple disks is at most $2$, except for the trivial theta curve.
-    \end{enumerate}
-    However, for each cap, the two arcs that it connects have no crossing since $RS_T$ has no nested caps. Moreover, any pair of simple arcs is connected by at most one cap. Note that between the two non-simple disks, there are at most two caps, except in the trivial theta curve case. Therefore, we obtain the following upper bound on $n$ in terms of $\alpha(G)$:
-    \[ n \leq \binom{\alpha(G)-3}{2} + 2(\alpha(G)-3) + 2 - (\alpha(G)-2) = \frac{1}{2} (\alpha(G)^2 - 5 \alpha(G) + 8). \]
-    Using the above theorem, we have the following inequality:
-    \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
-    Now suppose $G$ is a handcuff curve. Similarly, the following holds.
-    \begin{enumerate}
+\end{enumerate}
+
+However, for each cap, the two arcs that it connects have no crossing since $RS_T$ has no nested caps.
+Moreover, any pair of simple arcs is connected by at most one cap.
+Note that between the two non-simple disks, there are at most two caps, except in the trivial theta curve case. \\
+Therefore, we obtain the following upper bound on $n$ in terms of $\alpha(G)$:
+
+\[
+n \le \binom{\alpha(G)-3}{2} + 2(\alpha(G)-3) + 2 - (\alpha(G)-2) = \frac12 (\alpha(G)^2 - 5\alpha(G) + 8).
+\]
+
+
+\\ \textbf{Case 2.} Handcuff graph
+\begin{enumerate}
         \item The number of crossings between simple disks is at most $\binom{\alpha(G)-3}{2}$.
         \item The number of crossings between simple and non-simple disks is at most $2 \cdot (\alpha(G)-3)$.
         \item The number of crossings between the two non-simple disks is at most $1$.
-    \end{enumerate}
-    Note that, in contrast to the theta case, some two arcs in a handcuff curve can be connected to two caps simultaneously when a simple arc intersects a non-simple one, because there are two loops in a handcuff curve. Moreover, since a handcuff curve has only one edge connecting the two vertices, there can be at most one cap between the two non-simple disks. Thus, the number of crossings satisfies the same upper bound:
-    \[ n \leq \binom{\alpha(G)-3}{2} + 2(\alpha(G)-3) + 1 - (\alpha(G)-1-2) = \frac{1}{2} (\alpha(G)^2 - 5 \alpha(G) + 8), \]
-    and we obtain the following inequality:
-    \[ \alpha(G) \geq  \frac{5+\sqrt{4\mathrm{spr}(R(G))-15}}{2}. \]
+\end{enumerate}
+
+In contrast to the $\theta$-curve, a simple arc in a handcuff graph can intersect a non-simple arc connected to two caps, due to the two loops.
+Moreover, as there is at most one cap between the non-simple disks since there is only one edge between the two vertices. \\
+Thus, the number of crossings satisfies the same upper bound:
+
+\[
+n \le \binom{\alpha(G)-3}{2} + 2(\alpha(G)-3) + 1 - (\alpha(G)-3) = \frac12 (\alpha(G)^2 - 5\alpha(G) + 8).
+\]
+
+\\ By Theorem 24,
+\[ \max\deg_x R(S_G) - \min\deg_x R(S_G) \le 2n + \alpha(G) \le \alpha(G)^2 - 4\alpha(G) + 8. \]
+Solving for $\alpha(G)$ yields
+\[
+2 + \sqrt{|\max\deg_x R(S_G) - \min\deg_x R(S_G) - 4|} \le \alpha(G),
+\]
+which completes the proof.
 \end{proof}
 
 \include{result.tex}

@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  29 NOV 2025 22:44
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  29 NOV 2025 22:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/choim/OneDrive/문서/GitHub/R-E/Final_report/Final_report
-(c:/Users/choim/OneDrive/문서/GitHub/R-E/Final_report/Final_report.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -1066,7 +1066,7 @@ File: figure/region.png Graphic file (type bmp)
 File: figure/T-loop.png Graphic file (type bmp)
 <figure/T-loop.png>
 
-c:/Users/choim/OneDrive/문서/GitHub/R-E/Final_report/Final_report.tex:525: Missing number, treated as zero.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:525: Missing number, treated as zero.
 <to be read again> 
                    (
 l.525 ...efore, the H-deletion matrix is $n\time (
@@ -1107,7 +1107,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 708--710
 File: figure/three_cases.png Graphic file (type bmp)
 <figure/three_cases.png>
 
-c:/Users/choim/OneDrive/문서/GitHub/R-E/Final_report/Final_report.tex:721: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:721: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1152,7 +1152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 790--793
  []
 
 
-c:/Users/choim/OneDrive/문서/GitHub/R-E/Final_report/Final_report.tex:812: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:812: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1168,7 +1168,7 @@ or  <return>  to continue without it.
 
 [17]
 
-c:/Users/choim/OneDrive/문서/GitHub/R-E/Final_report/Final_report.tex:827: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:827: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1387,117 +1387,4 @@ File: grid_diagram/handcuff_6_4.png Graphic file (type bmp)
 <grid_diagram/handcuff_6_4.png>
 File: grid_diagram/handcuff_6_5.png Graphic file (type bmp)
 <grid_diagram/handcuff_6_5.png>
-File: grid_diagram/handcuff_6_6.png Graphic file (type bmp)
-<grid_diagram/handcuff_6_6.png>
-File: grid_diagram/handcuff_6_7.png Graphic file (type bmp)
-<grid_diagram/handcuff_6_7.png>
-File: grid_diagram/handcuff_6_8.png Graphic file (type bmp)
-<grid_diagram/handcuff_6_8.png>
-File: grid_diagram/handcuff_6_9.png Graphic file (type bmp)
-<grid_diagram/handcuff_6_9.png>
-File: grid_diagram/handcuff_7_1.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_1.png>
-File: grid_diagram/handcuff_7_2.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_2.png>
-File: grid_diagram/handcuff_7_3.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_3.png>
-File: grid_diagram/handcuff_7_4.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_4.png>
-File: grid_diagram/handcuff_7_5.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_5.png>
-File: grid_diagram/handcuff_7_6.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_6.png>
-File: grid_diagram/handcuff_7_7.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_7.png>
-File: grid_diagram/handcuff_7_8.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_8.png>
-File: grid_diagram/handcuff_7_9.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_9.png>
-File: grid_diagram/handcuff_7_10.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_10.png>
-File: grid_diagram/handcuff_7_11.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_11.png>
-File: grid_diagram/handcuff_7_12.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_12.png>
-File: grid_diagram/handcuff_7_13.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_13.png>
-File: grid_diagram/handcuff_7_14.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_14.png>
-File: grid_diagram/handcuff_7_15.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_15.png>
-File: grid_diagram/handcuff_7_16.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_16.png>
-File: grid_diagram/handcuff_7_17.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_17.png>
-File: grid_diagram/handcuff_7_18.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_18.png>
-File: grid_diagram/handcuff_7_19.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_19.png>
-File: grid_diagram/handcuff_7_20.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_20.png>
-File: grid_diagram/handcuff_7_21.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_21.png>
-File: grid_diagram/handcuff_7_22.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_22.png>
-File: grid_diagram/handcuff_7_23.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_23.png>
-File: grid_diagram/handcuff_7_24.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_24.png>
-File: grid_diagram/handcuff_7_25.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_25.png>
-File: grid_diagram/handcuff_7_26.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_26.png>
-File: grid_diagram/handcuff_7_27.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_27.png>
-File: grid_diagram/handcuff_7_28.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_28.png>
-File: grid_diagram/handcuff_7_29.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_29.png>
-File: grid_diagram/handcuff_7_30.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_30.png>
-File: grid_diagram/handcuff_7_31.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_31.png>
-File: grid_diagram/handcuff_7_32.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_32.png>
-File: grid_diagram/handcuff_7_33.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_33.png>
-File: grid_diagram/handcuff_7_34.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_34.png>
-File: grid_diagram/handcuff_7_35.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_35.png>
-File: grid_diagram/handcuff_7_36.png Graphic file (type bmp)
-<grid_diagram/handcuff_7_36.png>
-)
-
-[19
-
-]
-
-[20]
-
-[21
-
-
-] (./Final_report.aux (./result.aux))
- ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-05-26>
- ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
-Here is how much of TeX's memory you used:
- 27944 strings out of 468527
- 595724 string characters out of 5451377
- 978297 words of memory out of 5000000
- 55714 multiletter control sequences out of 15000+600000
- 636564 words of font info for 116 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 102i,18n,105p,584b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on Final_report.pdf (21 pages).
+Fi

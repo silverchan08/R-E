@@ -229,7 +229,7 @@ If the 1s of the Cromwell matrix are connected by horizontal and vertical lines 
 \end{figure*}
 
 \begin{theorem}
-    Arc presentations exist for every theta-curve and handcuff graph. 
+    Every $\theta$-curve and handcuff graph admit an arc presentation.
 \end{theorem}
 \begin{proof}
     For any theta-curve and handcuff graph, we can put it on a grid by using some suitable planar isotropy.
@@ -571,15 +571,15 @@ Therefore, $0$ or $\pm 2$ will be the determinant of the handcuff graph's H-dele
 We found the bounds of arc index by the theoretical background, or we found the new bounds inspired by the theoretical background.
 For the $\theta$-curve, it is known that the following theorems hold.
 
-\begin{theorem}
+\begin{theorem}[2]
 Let T be any $\theta$-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \underset{i \in \{1,2,3\}}\max \alpha(K_i) + 1.$$
 \end{theorem}
 
-\begin{theorem}
+\begin{theorem}[2]
 Let T be any $\theta$-curve and $K_1$, $K_2$, $K_3$ be three constituent knots of T. Then $$\alpha(T) \geq \frac{1}{2}\sum_{i=1}^3\alpha(K_i).$$
 \end{theorem}
 
-\begin{theorem}
+\begin{theorem}[2]
 For any $\theta$-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\theta))+36c(\theta)}}{3} \left(f(x) = \begin{cases} 
 		73 & x \equiv 0 \pmod 6\\ 
 		4 & x \equiv 1 \pmod 6\\ 
@@ -590,7 +590,7 @@ For any $\theta$-curve $\theta$, $$\alpha(\theta)\geq\frac{1+\sqrt{f(\alpha(\the
      \end{cases} \right).$$
 \end{theorem}
 
-\begin{theorem}
+\begin{theorem}[2]
 For $\theta$-curve $T$,
 \[ \alpha(T) \leq c(T) + 3 \]
 where $c(T)$ is the crossing number of $T$.
@@ -598,13 +598,13 @@ where $c(T)$ is the crossing number of $T$.
 
 Now, for the handcuff graph, the followings hold.
 
-\begin{theorem}[Cromwell, P. R.]
+\begin{theorem}[5]
     If $L$ is an alternating and non-split link, then
     \[ \alpha(L) = c(L)+2. \]
     %crossing number 정의를 써야하나???
 \end{theorem}
 
-\begin{theorem}[Lee, M. J., No, S., \& Oh, S.]
+\begin{theorem}[3]
     For any spatial graph $H$,
     \[ \alpha(H) \leq c(H)+e+b, \]
     where $e$ is the number of the edge and $b$ is the number of the bouquet.
@@ -866,10 +866,9 @@ which completes the proof.
 
 \section*{References}
     \begin{enumerate}
-      \item Yoonsang Lee. (2023). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
-      \item Lee, H. J., Hong, K., Lee, H., \& Oh, S. (2014). Mosaic number of knots. \textit{Journal of Knot Theory and Its Ramifications, 23}(13), 1450069.
-      \item Lee, M. J., No, S., \& Oh, S. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
       \item Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.
+      \item Yoonsang Lee. (2023). \textit{A Study on Arc Index of Theta-Curves}. Korea Science Academy of KAIST
+      \item Lee, M. J., No, S., \& Oh, S. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
       \item Yamada, S. (1989). An invariant of spatial graphs. \textit{Journal of Graph Theory, 13}(5), 537–551.
       \item Cromwell, P. R. (1995b). Embedding knots and links in an open book I: Basic properties. \textit{Topology and Its Applications, 64}(1), 37–58.
     \end{enumerate}

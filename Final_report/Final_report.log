@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  30 NOV 2025 00:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  30 NOV 2025 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1017,35 +1017,29 @@ File: figure/stacked_theta.png Graphic file (type bmp)
 File: figure/stacked_handcuff.png Graphic file (type bmp)
 <figure/stacked_handcuff.png>
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
-
- []
-
-LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
-(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 321.
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--328
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
 
  []
 
 
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+LaTeX Font Info:    Font shape `TU/UnBatang.ttf(0)/bx/n' in size <12> not available
+(Font)              Font shape `TU/UnBatang.ttf(0)/b/n' tried instead on input line 320.
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
 File: figure/Hdeletion.png Graphic file (type bmp)
 <figure/Hdeletion.png>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--355
+Underfull \hbox (badness 10000) in paragraph at lines 348--354
 
  []
 
@@ -1054,7 +1048,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--355
 [6]
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 391--393
+Underfull \hbox (badness 10000) in paragraph at lines 390--392
 
  []
 
@@ -1088,17 +1082,17 @@ File: figure/T-loop.png Graphic file (type bmp)
 
 
 [11]
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:548: Missing number, treated as zero.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:547: Missing number, treated as zero.
 <to be read again> 
                    (
-l.548 ...efore, the H-deletion matrix is $n\time (
+l.547 ...efore, the H-deletion matrix is $n\time (
                                                   n+1)$ matrix. If we delete...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 
-Overfull \hbox (36.42435pt too wide) in paragraph at lines 560--566
+Overfull \hbox (36.42435pt too wide) in paragraph at lines 559--565
 \TU/lmr/m/n/10 Knot and Line-shape is also independent. Therefore, the H-deletion matrix is a form of $[]$
  []
 
@@ -1119,27 +1113,27 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: yamada_property.png Graphic file (type bmp)
 <yamada_property.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
 
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 731--733
+Underfull \hbox (badness 10000) in paragraph at lines 730--732
 
  []
 
 File: figure/three_cases.png Graphic file (type bmp)
 <figure/three_cases.png>
 
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:744: LaTeX Error: There's no line here to end.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:743: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.744     \\ W
+l.743     \\ W
               hen the first case, we can easily reduce the caps, and the ine...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1150,7 +1144,7 @@ File: figure/DDQ11.png Graphic file (type bmp)
 File: figure/DDQ12.png Graphic file (type bmp)
 <figure/DDQ12.png>
 
-Overfull \hbox (1.33078pt too wide) in paragraph at lines 759--759
+Overfull \hbox (1.33078pt too wide) in paragraph at lines 758--758
  [][]| 
  []
 
@@ -1161,7 +1155,7 @@ File: figure/DDQ13.png Graphic file (type bmp)
 File: figure/DDQ14.png Graphic file (type bmp)
 <figure/DDQ14.png>
 
-Overfull \hbox (1.33078pt too wide) in paragraph at lines 759--759
+Overfull \hbox (1.33078pt too wide) in paragraph at lines 758--758
  [][]| 
  []
 
@@ -1170,7 +1164,7 @@ File: figure/DDQ15.png Graphic file (type bmp)
 
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 813--816
+Underfull \hbox (badness 10000) in paragraph at lines 812--815
 
  []
 
@@ -1178,26 +1172,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 813--816
 
 [17]
 
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:835: LaTeX Error: There's no line here to end.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:834: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.835 \\ \textbf
+l.834 \\ \textbf
                 {Case 2.} Handcuff graph
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:850: LaTeX Error: There's no line here to end.
+c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:849: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.850 \\ B
+l.849 \\ B
           y Theorem 24,
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1517,7 +1511,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  27971 strings out of 468527
  596462 string characters out of 5451377
- 978294 words of memory out of 5000000
+ 978297 words of memory out of 5000000
  55738 multiletter control sequences out of 15000+600000
  636564 words of font info for 116 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

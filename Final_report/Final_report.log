@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  30 NOV 2025 21:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.18)  30 NOV 2025 21:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report
-(c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex
+**"c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report"
+(c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -1082,7 +1082,7 @@ File: figure/T-loop.png Graphic file (type bmp)
 
 
 [11]
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:547: Missing number, treated as zero.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:547: Missing number, treated as zero.
 <to be read again> 
                    (
 l.547 ...efore, the H-deletion matrix is $n\time (
@@ -1127,7 +1127,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 730--732
 File: figure/three_cases.png Graphic file (type bmp)
 <figure/three_cases.png>
 
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:743: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:743: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1172,7 +1172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 812--815
 
 [17]
 
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:834: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:834: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1185,7 +1185,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-c:/Users/io25j/Documents/GitHub/R-E/Final_report/Final_report.tex:849: LaTeX Error: There's no line here to end.
+c:/Users/Jo Eunchan/Documents/GitHub/R-E/Final_report/Final_report.tex:849: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1510,11 +1510,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  27971 strings out of 468527
- 596462 string characters out of 5451377
+ 596477 string characters out of 5451377
  978297 words of memory out of 5000000
  55738 multiletter control sequences out of 15000+600000
  636564 words of font info for 116 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,18n,105p,582b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,18n,105p,589b,2781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Final_report.pdf (21 pages).

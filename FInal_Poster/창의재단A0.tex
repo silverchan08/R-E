@@ -1,0 +1,370 @@
+% !TEX program = lualatex 
+% Unofficial University of Cambridge Poster Template
+% https://github.com/andiac/gemini-cam
+% a fork of https://github.com/anishathalye/gemini
+% also refer to https://github.com/k4rtik/uchicago-poster
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[orientation=portrait,size=a0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{nott}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[labelformat=empty]{caption}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\setbeamerfont{block title}{size=\Large}
+\setbeamerfont{block body}{size=\Large}
+
+
+
+\captionsetup[subfigure]{labelformat=empty}
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+% \setlength{\sepwidth}{0.025\paperwidth}
+% \setlength{\colwidth}{0.45\paperwidth}
+
+% \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+
+% ====================
+% Title
+% ====================
+
+%\title{Arc Indices of Theta-Curves and Handcuff Graphs}
+%\titlegraphic[width=3cm]{figure/logo.png}
+
+\title{The Determinant and Arc Indices of\\
+$\theta$-Curves and Handcuff Graphs}
+
+\author{Cho, Eunchan$\mbox{}^*$ \hfill Shin, Jeongwon$\mbox{}^*$ \hfill Seo, Boyeon$\mbox{}^*$  \hfill Choi, Minho$\mbox{}^*$ \hfill Kim, Hun$\mbox{}^*$$\mbox{}^\ddagger$ \hfill Jin, GyoTaek$\mbox{}^\dagger$$\mbox{}^\ddagger$}
+
+\institute{$\mbox{}^*$Korea Science Academy of KAIST \hfill $\mbox{}^\dagger$Department of Mathematical Science, KAIST \hfill $\mbox{}^\ddagger$Supervisor}
+
+\logoleft{\includegraphics[height=10cm]{figure/logo.png}}
+
+% ====================
+% Footer (optional)
+% ====================
+
+\footercontent{
+  \begin{center}
+    \begin{minipage}[c]{\linewidth}
+      \centering
+      \makebox[0.3\linewidth][c]{%
+        \includegraphics[height=2cm]{logos/gwagibu_logo.png}
+      }%
+      \makebox[0.4\linewidth][c]{%
+        \includegraphics[height=2.1cm]{logos/image.png}
+      }%
+      \makebox[0.3\linewidth][c]{%
+        \includegraphics[height=1.3cm]{logos/kaist_logo.png}
+      }
+    \end{minipage}
+  \end{center}
+}
+
+
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+% \logoright{\includegraphics[height=2.4cm]{logos/utfpr-logo.png}}
+% \logoleft{\hspace{20ex}\includegraphics[height=3.5cm]{logos/ppgca-logo.png}}
+
+% ====================
+% Body
+% ====================
+
+
+
+\begin{document}
+
+% Refer to https://github.com/k4rtik/uchicago-poster
+% logo: https://www.cam.ac.uk/brand-resources/about-the-logo/logo-downloads
+% \addtobeamertemplate{headline}{}
+% {
+%     \begin{tikzpicture}[remember picture,overlay]
+%       \node [anchor=north west, inner sep=3cm] at ([xshift=-2.4cm,yshift=1.75cm]current page.north west)
+%       {\includegraphics[height=7cm]{logos/unott-logo.eps}}; 
+%     \end{tikzpicture}
+% }
+
+% \begin{columns}[t]
+% \separatorcolumn
+
+\begin{frame}[t]
+
+  \include{grid}
+  \vspace*{-2.5cm}
+
+% \begin{column}{\colwidth}
+\begin{columns}[t]
+  \column{0.33\textwidth}
+  \begin{block}{Definitions}
+    %\textbf{Knot} is an embedding of a circle in 3-dimensional Euclidean space.
+    %In \textbf{Knot Theory}, people classify each knot using their \textbf{Knot Invariant}. \\
+    \begin{itemize}
+      \item \textbf{$\theta$-curve}
+    \end{itemize}
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{figure/theta_exe.png}
+      \end{figure}
+    \begin{itemize}
+      \item \textbf{Handcuff graph}
+    \end{itemize}
+    \vspace*{-1cm}
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{figure/handcufflist.png}
+      \end{figure}
+  \end{block}
+
+\vspace*{1.4cm}
+
+  \begin{block}{Diagrams}
+    %\caption{An algorithm with caption}\label{alg:cap}
+    \begin{itemize} 
+      \item \textbf{Grid diagram and Arc presentation}
+    \end{itemize}
+    \vspace*{-1cm}
+      \begin{figure}[h]
+        \centering
+        \begin{tabular}{cc}
+          \includegraphics[width=0.6\textwidth]{figure/grid_diagram_1.png} &
+          \includegraphics[width=0.2\textwidth]{figure/grid_diagram_2.png} \\
+        \end{tabular}        
+      \end{figure}
+    \vspace*{-1cm}
+    \begin{itemize}
+      \item \textbf{Arc index} : The minimal number of pages among all possible arc presentations of K
+    \end{itemize}
+  \end{block}
+
+\vspace*{1.4cm}
+
+  \begin{block}{Matrices of $\theta$-Curves and Handcuff Graphs}
+  \begin{itemize}
+    \item \textbf{Cromwell matrix} :\\an $n\times n$ binary matrix each of whose rows and columns has exactly two 1s corresponding a grid diagram of a knot
+    \item \textbf{THC-Cromwell matrix} :\\expansion of Cromwell matrix into $\theta$-curves and handcuff graphs
+    \item \textbf{H-deletion matrix}
+  \end{itemize}
+  \vspace*{-1cm}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figure/Hdeletion.png}
+    \caption{H-deletion of $\theta$-curve graph $3_1$}
+  \end{figure}
+
+
+  \end{block}
+  \column{0.33\textwidth}
+
+  
+  % \begin{block}{Stacked Tangle Representation}
+  %   \begin{itemize}
+  %     \item \textbf{Non-simple disk} : A disk which contains one vertex and three line segments which joins the vertex and boundary point. 
+  %     \item \textbf{Simple disk} : A disk which contains simple arc which joins two points on the boundary.
+  %     \item \textbf{Stacked tangle} : Stacked disks each with the frame as boundary. Only two disks of the stacked tangle are non-simple disks(one is at the top), and others are simple disks. \\
+  %     %\item \textbf{Arcs} : Segments properly embedded in each disk, with endpoints on the boundary
+  %     \item \textbf{Caps} : Simple arc in outside of stacked tangle joining end points of arcs or line segments. \\
+  %   \end{itemize}
+  %   \begin{figure}
+  %     \centering
+  %     \includegraphics[width=0.4\textwidth]{figure/stacked_theta.png}
+  %     \caption{Stacked tangle of handcuff graph}
+  %   \end{figure}
+  %   \begin{itemize}
+  %     \item An arc in simple disk and arc in other simple disk or tree in non-simple disk intersect at most one point, and any two caps have no intersection when viewed from above.
+  %   \end{itemize}
+  %   \begin{figure}
+  %     \centering
+  %     \includegraphics[width=0.7\textwidth]{figure/stacked_tangle.png}
+  %     \caption{Stacked tangle and simple closure of handcuff graph $2_1$}
+  %   \end{figure}
+  %   \begin{itemize}
+  %     \item \textbf{Reduced simple closure of a stacked tangle} : A simple closure of a stacked tangle without any nested caps. Any two arcs (including line segment) joining by caps have no intersection when viewed from above.
+  %   %\item \textbf{Simple closure}: The planar projection of the stacked tangle without any nested caps
+  %   \end{itemize}
+  % \end{block}
+  \begin{block}{Determinants}
+
+  $\mathbf{Theorem\ 1.}$ Let $K$ be a knot. Then the determinant of a Cromwell matrix of $K$ is $0$ or $\pm 2$.
+  \begin{figure}[h]
+    \centering
+    \begin{tabular}{cccc}
+      \includegraphics[width=0.2\textwidth]{figure/trefoilimage.png} &
+      \includegraphics[width=0.2\textwidth]{figure/gridtheta.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix2.png} &
+      \includegraphics[width=0.24\textwidth]{figure/matrix3.png} \\
+    \end{tabular}  
+    \caption{Determinant of a Cromwell matrix of Trefoil}
+  \end{figure}
+
+  $\mathbf{Theorem\ 2.}$ Let $M$ be a THC-Cromwell matrix of $\theta$-curve or handcuff graph, and let det*($M$) be the determinant of H-deletion matrix of $M$. Then, \\
+		\begin{itemize}
+			\item det*($M$) = $\pm1$ $\iff$ $M$ represents $\theta$-curve
+			\item det*($M$) = $0$ or $\pm2$ $\iff$ $M$ represents handcuff graph
+		\end{itemize}
+    \vspace*{-2cm}
+  %\begin{figure}
+   % \centering
+    %\includegraphics[height=8.5cm]{figure/table.png}
+  %\end{figure}
+  \vspace*{0.5cm}
+  \begin{figure}[h]
+  \centering
+	\begin{tabular}{cccc}
+    \includegraphics[width=0.25\textwidth]{figure/Line-shape.png} &
+    \includegraphics[width=0.25\textwidth]{figure/matrix4.png} &
+    \includegraphics[width=0.21\textwidth]{figure/matrix5.png} &
+    \includegraphics[width=0.23\textwidth]{figure/matrix6.png} \\
+    \includegraphics[width=0.25\textwidth]{figure/T-shape.png} &
+    \includegraphics[width=0.25\textwidth]{figure/matrix7.png} &
+    \includegraphics[width=0.21\textwidth]{figure/matrix8.png} &
+    \includegraphics[width=0.22\textwidth]{figure/matrix9.png} \\
+  \end{tabular}
+  \vspace*{-0.5cm}
+  \caption{Determinant of a $\theta$-curve : Line-shape and T-shape}
+  \end{figure}
+  \vspace*{-2cm}
+  \begin{figure}[h]
+  \centering
+	\begin{tabular}{cccc}
+    \includegraphics[width=0.23\textwidth]{figure/T-loop.png} &
+    \includegraphics[width=0.25\textwidth]{figure/matrix10.png} &
+    \includegraphics[width=0.24\textwidth]{figure/matrix11.png} &
+    \includegraphics[width=0.23\textwidth]{figure/matrix12.png} \\
+  \end{tabular}
+  \vspace*{-0.5cm}
+  \caption{Determinant of a Handcuff graph}
+  \vspace*{-1.5cm}
+  \end{figure}
+  \vspace*{0.5cm}
+  \end{block}
+
+\vspace*{1.4cm}
+
+  \begin{block}{Upper Bounds of Arc Index}
+  $\mathbf{Notation.}$
+  \vspace{-0.7cm}
+  For a spatial graph $G$,
+  \begin{itemize}
+    \item $c(G)$: the number of crossing of $G$
+    \item $\alpha(G)$: arc index of $G$
+  \end{itemize}
+
+  $\mathbf{Theorem\ 3.}$ $[$3$]$ For a spatial graph $G$, 
+  \begin{equation*}
+    \alpha(G) \leq c(G) + e + b
+  \end{equation*}
+  where $e$ and $b$ are the number of edges and bouquet cut-components, repsectively.
+  
+  $\mathbf{Corollary\ 4.}$ For non-split handcuff graph $H$,
+  \begin{equation*}
+    \alpha(H) \leq c(H) + 3.
+  \end{equation*}
+
+ % $\mathbf{Theorem.}$ If H is handcuff, then 
+ % \begin{equation*}
+  %  \alpha(H) \geq \frac{1+\sqrt{f(\alpha(H)) + 36c(H)}}{3}
+ % \end{equation*}
+  %where
+ % \begin{equation*}
+  %  f(x) =
+   % \begin{cases}
+  %  73 & (x \equiv 0 \pmod{6}) \\
+ %   4 & (x \equiv 1 \pmod{6}) \\
+ %   25 & (x \equiv 2 \pmod{6}) \\
+ %   -8 & (x \equiv 3 \pmod{6}) \\
+ %   49 & (x \equiv 4 \pmod{6}) \\
+  %  -20 & (x \equiv 5 \pmod{6})
+ %   \end{cases}
+ % \end{equation*}
+
+  %$\mathbf{Theorem.}$ If $L$ is non-split alternating link, then 
+  %\begin{equation*}
+   % \alpha(L) = c(L)+2
+  %\end{equation*}
+
+  \end{block}
+
+  \column{0.33\textwidth}
+  \begin{block}{Lower Bounds of Arc Index}
+    
+    $\mathbf{Theorem\ 5.}$ Let $H$ be a handcuff graph and $L$ be a constituent link of $H$. If $L$ is non-split and alternating, then 
+  \begin{equation*}
+    \alpha(H) \geq c(L) + 3.
+  \end{equation*}
+
+    $\mathbf{Definition\ 6.}$ $[$4$]$ Let $D_G$ be a diagram of a $\theta$-curve of handcuff-graph $G$. The \textbf{Yamada poplynomial} $R(G) \in \mathbb{Z}[x^{\pm{1}}]$ is calculated by \\
+    \vspace*{0.5cm}
+    \includegraphics[width=\textwidth]{figure/yamada.png} \\
+    \vspace*{0.5cm}
+    \begin{center}
+    \includegraphics[width=0.9\textwidth]{figure/stackeds.png}
+    \end{center}
+
+    $\mathbf{Theorem\ 7.}$ Let $S_G$ be a simple closure of stacked tangle of a $\theta$-curve or handcuff graph $G$. And let $c$ and $n$ be the number of caps and crossings in $S_T$, respectively. Then,
+     \[ \mathrm{spr}(R(S_T)) \leq c+2n \]
+     where $\mathrm{spr}(f)$ denotes the difference between the maximal and minimal degrees of $f$.
+
+    $\mathbf{Theorem\ 8.}$ Let $G$ be a $\theta$-curve or handcuff graph. Then the arc index of G is given by
+     \[ \alpha(G) \ge 2 + \sqrt{\mathrm{spr}(R(S_G)) - 4}. \]
+    \vspace*{-1.5cm}
+  \end{block}
+
+  \begin{block}{Further Studies}
+    \begin{itemize}
+      \item Completely determine the arc indices.
+      \item Applying the result to other objects.
+    \end{itemize}
+    \vspace*{-1cm}
+  \end{block}
+
+  \begin{block}{References}
+{\small
+    \begin{description}
+      \item[1] Moriuchi, H. (2019). A table of $\theta$-curves and handcuff graphs with up to seven crossings. \textit{Advanced Studies in Pure Mathematics}, 281–290.
+      \item[2] Yoonsang Lee. (2023). A Study on Arc Index of Theta-Curves. Korea Science Academy of KAIST
+      \item[3] Minjung Lee, Sungjong No, and Seungsang Oh. (2018). Arc index of spatial graphs. \textit{Journal of Graph Theory, 90}(3), 406–415.
+      \item[4] Yamada, S. (1989). An invariant of spatial graphs. \textit{Journal of Graph Theory, 13}(5), 537–551.      
+    \end{description}
+}
+	% \TINY
+	% \bibliographystyle{apalike}
+	% \nocite{*}
+	% \bibliography{reference}
+
+  \end{block}
+
+\end{columns}
+
+
+\end{frame}
+\end{document}
